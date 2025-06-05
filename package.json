@@ -1,0 +1,17 @@
+{
+  "name": "cortes-water",
+  "version": "1.0.0",
+  "description": "A simple webpage project",
+  "main": "src/js/main.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "mkdir -p dist && cp -r src/* dist/ && zip -r dist/wordpress-package.zip dist/*",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+} 
