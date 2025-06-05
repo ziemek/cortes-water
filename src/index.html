@@ -3,24 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cortes Water</title>
+    <title>Cortes Island - Lake Water Data</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Cortes Water</h1>
-    </header>
-    
-    <main>
-        <section class="content">
-            <p>This is a simple webpage template.</p>
-        </section>
-    </main>
+<div class="container">
+    <h1>Cortes Island - Lake Water Data</h1>
 
-    <footer>
-        <p>&copy; 2024 Cortes Water. All rights reserved.</p>
-    </footer>
+    <div class="controls">
+        <div class="parameter-buttons">
+            <button class="param-btn active" data-param="temperature">Temperature</button>
+            <button class="param-btn" data-param="DO">Dissolved Oxygen</button>
+            <button class="param-btn" data-param="SPC">Conductance</button>
+            <button class="param-btn" data-param="TDS">Total Dissolved Solids</button>
+            <button class="param-btn" data-param="PH">pH</button>
+            <button class="param-btn" data-param="temp_oxygen">Temperature vs Oxygen Correlation</button>
+            <button class="param-btn" data-param="conductivity_tds">Conductivity vs TDS Correlation</button>
+            <button class="param-btn" data-param="ph_oxygen">pH vs Dissolved Oxygen Correlation</button>
+        </div>
 
-    <script src="js/main.js"></script>
+        <div class="view-toggle-container">
+            <div class="view-option">
+                <input type="radio" id="timeSeries" name="viewType" value="timeSeries" checked>
+                <label for="timeSeries">Time Series</label>
+            </div>
+            <div class="view-option">
+                <input type="radio" id="depthProfiles" name="viewType" value="depthProfiles">
+                <label for="depthProfiles">Depth Profiles</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="charts-grid" id="chartsContainer">
+    </div>
+
+    <div class="legend" id="legend">
+    </div>
+</div>
+
+<script src="js/visualization.js"></script>
 </body>
-</html> 
+</html>
