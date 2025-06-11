@@ -12,16 +12,12 @@
     <h1>Cortes Island - Lake Water Data</h1>
 
     <div class="controls">
-        <div class="parameter-buttons">
+        <div class="parameter-buttons primary-params">
             <button class="param-btn active" data-param="temperature">Temperature</button>
             <button class="param-btn" data-param="DO">Dissolved Oxygen</button>
             <button class="param-btn" data-param="SPC">Conductance</button>
             <button class="param-btn" data-param="TDS">Total Dissolved Solids</button>
             <button class="param-btn" data-param="PH">pH</button>
-            <button class="param-btn" data-param="temp_oxygen">Temperature vs Oxygen Correlation</button>
-            <button class="param-btn" data-param="conductivity_tds">Conductivity vs TDS Correlation</button>
-            <button class="param-btn" data-param="ph_oxygen">pH vs Dissolved Oxygen Correlation</button>
-            <button class="param-btn" data-param="secchi">Secchi Depth Analysis</button>
         </div>
 
         <div class="view-toggle-container">
@@ -34,6 +30,17 @@
                 <label for="depthProfiles">Depth Profiles</label>
             </div>
         </div>
+
+        <div class="separator"></div>
+
+        <div class="parameter-buttons correlation-params">
+            <button class="param-btn" data-param="temp_oxygen">Temperature vs Oxygen Correlation</button>
+            <button class="param-btn" data-param="conductivity_tds">Conductivity vs TDS Correlation</button>
+            <button class="param-btn" data-param="ph_oxygen">pH vs Dissolved Oxygen Correlation</button>
+            <button class="param-btn" data-param="secchi">Secchi Depth Analysis</button>
+        </div>
+
+        <div class="separator"></div>
     </div>
 
     <div class="charts-grid" id="chartsContainer">
@@ -43,6 +50,6 @@
     </div>
 </div>
 
-<script src="js/visualization.js"></script>
+<script type="module" src="js/main.js"></script>
 </body>
 </html>

@@ -10,11 +10,19 @@ A simple website template with HTML, CSS, and JavaScript.
 │   ├── index.html
 │   ├── css/
 │   │   └── styles.css
+│   ├── data/
+│   │   └── water-quality.json
 │   └── js/
-│       └── main.js
+│       ├── main.js
+│       ├── config.js
+│       ├── data-loader.js
+│       ├── visualization.js
+│       └── [other visualization modules]
 ├── package.json
 └── README.md
 ```
+
+The project is organized as a modular water quality data visualization website. The `data/` folder contains the water quality dataset, while the `js/` folder is split into specialized modules for different chart types (time-series, depth profiles, correlations) and utility functions. Each visualization module handles a specific aspect of the data analysis, with `main.js` coordinating the overall application flow and `config.js` managing display settings.
 
 ## Getting Started
 
@@ -44,6 +52,35 @@ This will:
 3. Create a ZIP file at `dist/wordpress-package.zip`
 
 You can then upload this ZIP file to your WordPress site.
+
+## GitHub Pages Deployment
+
+This project is configured to work with GitHub Pages. The root `index.html` automatically redirects to the built version in the `dist/` folder.
+
+### Setup:
+
+1. Build the project:
+```bash
+npm run deploy
+```
+
+2. Commit and push all files to your GitHub repository:
+```bash
+git add .
+git commit -m "Deploy to GitHub Pages"
+git push origin main
+```
+
+3. In your GitHub repository settings:
+   - Go to **Settings** → **Pages**
+   - Set **Source** to "Deploy from a branch"
+   - Select **Branch**: `main` (or `master`)
+   - Select **Folder**: `/ (root)`
+   - Click **Save**
+
+Your site will be available at `https://yourusername.github.io/your-repository-name/`
+
+The root `index.html` will automatically redirect visitors to `dist/index.html` where your built application lives.
 
 ## Cleaning up
 

@@ -57,11 +57,10 @@ h1 {
 
 .controls {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
+    gap: 25px;
+    margin-bottom: 40px;
 }
 
 .parameter-buttons {
@@ -69,6 +68,29 @@ h1 {
     gap: 12px;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+}
+
+.primary-params {
+    margin-bottom: 5px;
+}
+
+.correlation-params {
+    margin-top: 5px;
+}
+
+.separator {
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(30, 58, 138, 0.2) 20%, 
+        rgba(30, 58, 138, 0.3) 50%, 
+        rgba(30, 58, 138, 0.2) 80%, 
+        transparent 100%
+    );
+    margin: 2px 0;
+    border-radius: 2px;
 }
 
 .param-btn {
@@ -126,7 +148,6 @@ h1 {
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
     padding: 8px;
     border-radius: 25px;
-    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.2);
     backdrop-filter: blur(10px);
 }
 
@@ -167,6 +188,18 @@ h1 {
 .view-option input[type="radio"]:checked + label:hover {
     color: white;
     transform: translateY(-1px);
+}
+
+.view-option.disabled label {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: #f0f0f0;
+    color: #999;
+}
+
+.view-option.disabled input[type="radio"]:checked + label {
+    background: #cccccc;
+    box-shadow: none;
 }
 
 .charts-grid {

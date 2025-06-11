@@ -5,7 +5,7 @@
   "main": "src/js/main.js",
   "scripts": {
     "start": "live-server src",
-    "build": "mkdir -p dist && cp -r src/* dist/ && zip -r dist/wordpress-package.zip dist/*",
+    "build": "mkdir -p dist && cp -r src/* dist/ && echo 'Build complete'",
     "clean": "rm -rf dist"
   },
   "keywords": [],
