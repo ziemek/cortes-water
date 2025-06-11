@@ -3,44 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cortes Island - Lake Water Data</title>
+    <title>Cortes Island - Lake Monitoring Data</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <div class="container">
-    <h1>Cortes Island - Lake Water Data</h1>
+    <h1>Cortes Island - Lake Monitoring Data</h1>
 
     <div class="controls">
-        <div class="parameter-buttons primary-params">
-            <button class="param-btn active" data-param="temperature">Temperature</button>
-            <button class="param-btn" data-param="DO">Dissolved Oxygen</button>
-            <button class="param-btn" data-param="SPC">Conductance</button>
-            <button class="param-btn" data-param="TDS">Total Dissolved Solids</button>
-            <button class="param-btn" data-param="PH">pH</button>
-        </div>
+        <div class="controls-wrapper">
+            <div class="primary-controls">
+                <div class="parameter-group">
+                    <button class="param-btn active" data-param="temperature">Temperature</button>
+                    <button class="param-btn" data-param="DO">Dissolved Oxygen</button>
+                    <button class="param-btn" data-param="SPC">Conductance</button>
+                    <button class="param-btn" data-param="TDS">Total Dissolved Solids</button>
+                    <button class="param-btn" data-param="PH">pH</button>
+                </div>
 
-        <div class="view-toggle-container">
-            <div class="view-option">
-                <input type="radio" id="timeSeries" name="viewType" value="timeSeries" checked>
-                <label for="timeSeries">Time Series</label>
+                <div class="view-toggle-container">
+                    <div class="view-option">
+                        <input type="radio" id="timeSeries" name="viewType" value="timeSeries" checked>
+                        <label for="timeSeries">Time Series</label>
+                    </div>
+                    <div class="view-option">
+                        <input type="radio" id="depthProfiles" name="viewType" value="depthProfiles">
+                        <label for="depthProfiles">Depth Profiles</label>
+                    </div>
+                </div>
             </div>
-            <div class="view-option">
-                <input type="radio" id="depthProfiles" name="viewType" value="depthProfiles">
-                <label for="depthProfiles">Depth Profiles</label>
+
+            <div class="analysis-controls">
+                <div class="parameter-group">
+                    <button class="param-btn" data-param="temp_oxygen">Temperature vs Oxygen</button>
+                    <button class="param-btn" data-param="conductivity_tds">Conductivity vs TDS</button>
+                    <button class="param-btn" data-param="ph_oxygen">pH vs Dissolved Oxygen</button>
+                    <button class="param-btn" data-param="secchi">Secchi Depth Analysis</button>
+                </div>
             </div>
         </div>
-
-        <div class="separator"></div>
-
-        <div class="parameter-buttons correlation-params">
-            <button class="param-btn" data-param="temp_oxygen">Temperature vs Oxygen Correlation</button>
-            <button class="param-btn" data-param="conductivity_tds">Conductivity vs TDS Correlation</button>
-            <button class="param-btn" data-param="ph_oxygen">pH vs Dissolved Oxygen Correlation</button>
-            <button class="param-btn" data-param="secchi">Secchi Depth Analysis</button>
-        </div>
-
-        <div class="separator"></div>
     </div>
 
     <div class="charts-grid" id="chartsContainer">

@@ -57,10 +57,40 @@ h1 {
 
 .controls {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
+    justify-content: center;
     margin-bottom: 40px;
+}
+
+.controls-wrapper {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.primary-controls {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.analysis-controls {
+    display: flex;
+    justify-content: center;
+}
+
+.parameter-group {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 .parameter-buttons {
@@ -94,20 +124,19 @@ h1 {
 }
 
 .param-btn {
-    padding: 12px 20px;
+    padding: 8px 16px;
     border: 2px solid transparent;
-    border-radius: 30px;
-    font-size: 14px;
-    background: #f5f5f5;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 20px;
+    font-size: 13px;
+    background: #f8f9fa;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     color: #666;
-    font-weight: 600;
-    box-shadow:
-            0 4px 15px rgba(0, 0, 0, 0.1),
-            inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     position: relative;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 .param-btn::before {
@@ -127,28 +156,27 @@ h1 {
 
 .param-btn:hover {
     border-color: rgba(30, 58, 138, 0.3);
-    box-shadow:
-            0 10px 25px rgba(30, 58, 138, 0.3),
-            inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.25);
+    transform: translateY(-1px);
 }
 
 .param-btn.active {
     background: #14532d;
     color: white;
     border-color: transparent;
-    box-shadow:
-            0 8px 25px rgba(20, 83, 45, 0.4),
-            inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(20, 83, 45, 0.3);
 }
 
 .view-toggle-container {
     display: flex;
     align-items: center;
-    gap: 10px;
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
-    padding: 8px;
+    gap: 8px;
+    background: white;
+    padding: 4px;
     border-radius: 25px;
     backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .view-option {
@@ -163,10 +191,10 @@ h1 {
 
 .view-option label {
     display: block;
-    padding: 12px 20px;
+    padding: 8px 16px;
     border-radius: 20px;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
     color: #666;
@@ -175,31 +203,40 @@ h1 {
 }
 
 .view-option input[type="radio"]:checked + label {
-    background: #1e3a8a;
-    color: white;
-    box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);
+    background: rgba(30, 58, 138, 0.15);
+    color: #1e3a8a;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .view-option label:hover {
     color: #1e3a8a;
-    transform: translateY(-1px);
+    background: rgba(30, 58, 138, 0.08);
 }
 
 .view-option input[type="radio"]:checked + label:hover {
-    color: white;
-    transform: translateY(-1px);
+    color: #1e3a8a;
+    background: rgba(30, 58, 138, 0.2);
+}
+
+.view-option.disabled {
+    opacity: 0.3;
 }
 
 .view-option.disabled label {
-    opacity: 0.5;
     cursor: not-allowed;
-    background: #f0f0f0;
     color: #999;
+    background: transparent;
 }
 
 .view-option.disabled input[type="radio"]:checked + label {
-    background: #cccccc;
+    background: rgba(0, 0, 0, 0.05);
+    color: #999;
     box-shadow: none;
+}
+
+.view-option.disabled label:hover {
+    background: transparent;
+    color: #999;
 }
 
 .charts-grid {
@@ -410,39 +447,28 @@ h1 {
         grid-template-columns: 1fr;
     }
 
-    .controls {
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
+    .controls-wrapper {
+        padding: 8px;
     }
 
-    .parameter-buttons {
-        gap: 10px;
+    .primary-controls {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+
+    .parameter-group {
+        justify-content: center;
+        gap: 6px;
     }
 
     .param-btn {
-        padding: 10px 16px;
-        font-size: 13px;
+        padding: 8px 14px;
+        font-size: 12px;
     }
 
-    .view-toggle {
-        width: 200px;
-        height: 44px;
-    }
-
-    .toggle-slider:before {
-        height: 36px;
-        width: 94px;
-    }
-
-    .toggle-text-left,
-    .toggle-text-right {
-        width: 94px;
-        font-size: 13px;
-    }
-
-    input:checked + .toggle-slider:before {
-        transform: translateX(98px);
+    .view-toggle-container {
+        align-self: center;
     }
 
     h1 {
