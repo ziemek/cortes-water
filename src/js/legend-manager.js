@@ -82,8 +82,8 @@ export class LegendManager {
 
         const visibleData = this.dataLoader.getVisibleData();
 
-        if (currentView === 'depth') {
-            // Legend for depth profiles with enhanced metadata
+        if (currentView === 'depth' || currentView === 'horizontal') {
+            // Legend for depth profiles (both vertical and horizontal) with enhanced metadata
             const lakes = [...new Set(visibleData.map(d => d.lake))];
             lakes.forEach(lake => {
                 const lakeData = visibleData.filter(d => d.lake === lake);

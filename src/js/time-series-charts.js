@@ -94,7 +94,7 @@ export class TimeSeriesCharts {
         // Add axis labels
         svg.append('text')
             .attr('transform', 'rotate(-90)')
-            .attr('y', -40)
+            .attr('y', -55)
             .attr('x', -height / 2)
             .attr('dy', '1em')
             .style('text-anchor', 'middle')

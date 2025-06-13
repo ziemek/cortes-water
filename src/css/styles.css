@@ -47,8 +47,8 @@ body::before {
 
 h1 {
     text-align: center;
-    color: #1f2937;
-    margin-bottom: 40px;
+    color: #2d3748;
+    margin-bottom: 30px;
     font-size: 2.8em;
     font-weight: 800;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -58,7 +58,7 @@ h1 {
 .controls {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .controls-wrapper {
@@ -172,71 +172,59 @@ h1 {
     align-items: center;
     gap: 8px;
     background: white;
-    padding: 4px;
+    padding: 8px 12px;
     border-radius: 25px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.view-option {
-    position: relative;
-}
-
-.view-option input[type="radio"] {
-    opacity: 0;
-    position: absolute;
-    left: -9999px;
-}
-
-.view-option label {
-    display: block;
-    padding: 8px 16px;
-    border-radius: 20px;
+.view-toggle-container label {
     font-size: 13px;
     font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
     color: #666;
-    background: transparent;
+    margin-right: 8px;
     white-space: nowrap;
 }
 
-.view-option input[type="radio"]:checked + label {
-    background: rgba(30, 58, 138, 0.15);
+.view-toggle-container select {
+    padding: 6px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.9);
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    min-width: 140px;
+}
+
+.view-toggle-container select:hover {
+    border-color: rgba(30, 58, 138, 0.3);
     color: #1e3a8a;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(30, 58, 138, 0.1);
 }
 
-.view-option label:hover {
+.view-toggle-container select:focus {
+    border-color: #1e3a8a;
     color: #1e3a8a;
-    background: rgba(30, 58, 138, 0.08);
+    box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.2);
 }
 
-.view-option input[type="radio"]:checked + label:hover {
-    color: #1e3a8a;
-    background: rgba(30, 58, 138, 0.2);
-}
-
-.view-option.disabled {
-    opacity: 0.3;
-}
-
-.view-option.disabled label {
+.view-toggle-container.disabled select {
+    opacity: 0.5;
     cursor: not-allowed;
-    color: #999;
-    background: transparent;
-}
-
-.view-option.disabled input[type="radio"]:checked + label {
     background: rgba(0, 0, 0, 0.05);
     color: #999;
-    box-shadow: none;
 }
 
-.view-option.disabled label:hover {
-    background: transparent;
+.view-toggle-container.disabled select:hover,
+.view-toggle-container.disabled select:focus {
+    border-color: rgba(0, 0, 0, 0.1);
     color: #999;
+    box-shadow: none;
 }
 
 .charts-grid {
@@ -249,7 +237,7 @@ h1 {
 .chart-container {
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
     border-radius: 20px;
-    padding: 30px;
+    padding: 15px;
     box-shadow:
             0 15px 35px rgba(0, 0, 0, 0.1),
             0 0 0 1px rgba(255, 255, 255, 0.3),
@@ -261,36 +249,15 @@ h1 {
     overflow: hidden;
 }
 
-.chart-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #1e3a8a 0%, #14532d 50%, #0c4a6e 100%);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-.chart-container:hover::before {
-    opacity: 1;
-}
-
 .chart-container:hover {
-    box-shadow:
-            0 25px 50px rgba(30, 58, 138, 0.25),
-            0 0 0 2px rgba(30, 58, 138, 0.1),
-            inset 0 1px 0 rgba(255, 255, 255, 0.8);
-    transform: scale(1.02);
-    background: linear-gradient(145deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9));
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.88));
 }
 
 .chart-title {
     font-size: 1.5em;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #1f2937;
+    color: #2d3748;
     text-align: center;
     letter-spacing: -0.3px;
 }

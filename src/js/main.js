@@ -3,6 +3,7 @@ import DataLoader from './data-loader.js';
 import { ControlsManager } from './controls-manager.js';
 import { TimeSeriesCharts } from './time-series-charts.js';
 import { DepthProfileCharts } from './depth-profile-charts.js';
+import { HorizontalDepthCharts } from './horizontal-depth-charts.js';
 import { CorrelationCharts } from './correlation-charts.js';
 import { SecchiAnalysis } from './secchi-analysis.js';
 import { LegendManager } from './legend-manager.js';
@@ -14,6 +15,7 @@ class WaterQualityApp {
         this.controlsManager = new ControlsManager(this.dataLoader);
         this.timeSeriesCharts = new TimeSeriesCharts(this.dataLoader);
         this.depthProfileCharts = new DepthProfileCharts(this.dataLoader);
+        this.horizontalDepthCharts = new HorizontalDepthCharts(this.dataLoader);
         this.correlationCharts = new CorrelationCharts(this.dataLoader);
         this.secchiAnalysis = new SecchiAnalysis(this.dataLoader);
         this.legendManager = new LegendManager(this.dataLoader);
@@ -56,13 +58,18 @@ class WaterQualityApp {
             });
         });
 
-        // View toggle listener
-        document.querySelectorAll('input[name="viewType"]').forEach(radio => {
-            radio.addEventListener('change', (e) => {
-                const isDepthProfile = e.target.value === 'depthProfiles';
-                this.currentView = isDepthProfile ? 'depth' : 'time';
-                this.updateVisualization();
-            });
+        // View dropdown listener
+        const viewDropdown = document.getElementById('viewType');
+        viewDropdown.addEventListener('change', (e) => {
+            const selectedView = e.target.value;
+            if (selectedView === 'depthProfiles') {
+                this.currentView = 'depth';
+            } else if (selectedView === 'horizontalDepth') {
+                this.currentView = 'horizontal';
+            } else {
+                this.currentView = 'time';
+            }
+            this.updateVisualization();
         });
     }
 
@@ -74,6 +81,9 @@ class WaterQualityApp {
         if (this.currentView === 'depth') {
             this.depthProfileCharts.createDepthProfiles(this.currentParameter);
             this.legendManager.updateLegend('depth');
+        } else if (this.currentView === 'horizontal') {
+            this.horizontalDepthCharts.createHorizontalDepthProfiles(this.currentParameter);
+            this.legendManager.updateLegend('horizontal');
         } else if (this.currentParameter === 'temp_oxygen') {
             this.correlationCharts.createTemperatureOxygenScatter();
             this.legendManager.updateCorrelationLegend();

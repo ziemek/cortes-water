@@ -104,7 +104,7 @@ export function addAxes(svg, xScale, yScale, height, xLabel, yLabel) {
     if (yLabel) {
         svg.append('text')
             .attr('transform', 'rotate(-90)')
-            .attr('y', -40)
+            .attr('y', -50)
             .attr('x', -height / 2)
             .attr('dy', '1em')
             .style('text-anchor', 'middle')

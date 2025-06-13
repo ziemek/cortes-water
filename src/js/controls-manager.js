@@ -119,26 +119,29 @@ export class ControlsManager {
 
     updateViewToggleVisibility(currentParameter) {
         const correlationParams = ['temp_oxygen', 'conductivity_tds', 'ph_oxygen', 'secchi'];
-        const radioInputs = document.querySelectorAll('input[name="viewType"]');
+        const viewDropdown = document.getElementById('viewType');
         
         if (correlationParams.includes(currentParameter)) {
-            // Disable radio inputs and their labels
-            radioInputs.forEach(input => {
-                input.disabled = true;
-                input.parentElement.classList.add('disabled');
-            });
+            // Disable dropdown
+            viewDropdown.disabled = true;
+            viewDropdown.parentElement.classList.add('disabled');
             // Force time series view when showing correlations
-            document.getElementById('timeSeries').checked = true;
+            viewDropdown.value = 'timeSeries';
             return 'time';
         } else {
-            // Enable radio inputs and their labels
-            radioInputs.forEach(input => {
-                input.disabled = false;
-                input.parentElement.classList.remove('disabled');
-            });
+            // Enable dropdown
+            viewDropdown.disabled = false;
+            viewDropdown.parentElement.classList.remove('disabled');
+            
             // Return current view selection
-            const checkedRadio = document.querySelector('input[name="viewType"]:checked');
-            return checkedRadio && checkedRadio.value === 'depthProfiles' ? 'depth' : 'time';
+            const selectedValue = viewDropdown.value;
+            if (selectedValue === 'depthProfiles') {
+                return 'depth';
+            } else if (selectedValue === 'horizontalDepth') {
+                return 'horizontal';
+            } else {
+                return 'time';
+            }
         }
     }
 }

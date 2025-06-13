@@ -23,14 +23,12 @@
                 </div>
 
                 <div class="view-toggle-container">
-                    <div class="view-option">
-                        <input type="radio" id="timeSeries" name="viewType" value="timeSeries" checked>
-                        <label for="timeSeries">Time Series</label>
-                    </div>
-                    <div class="view-option">
-                        <input type="radio" id="depthProfiles" name="viewType" value="depthProfiles">
-                        <label for="depthProfiles">Depth Profiles</label>
-                    </div>
+                    <label for="viewType">View Type:</label>
+                    <select id="viewType" name="viewType">
+                        <option value="timeSeries">Time Series</option>
+                        <option value="depthProfiles">Depth Profiles</option>
+                        <option value="horizontalDepth">Horizontal Depth</option>
+                    </select>
                 </div>
             </div>
 
