@@ -1,0 +1,8119 @@
+[
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2019-03-28T19:45:00.000Z",
+    "samplers": [
+      "Mary Claire",
+      "Gina"
+    ],
+    "weather": "calm, sunny, some clouds",
+    "air_temperature": 19.4,
+    "secchi_depth": [
+      3.3,
+      3.6
+    ],
+    "nitrogen": 0.313,
+    "phosphorus": 0.0098,
+    "data_notes": "DO recorded in % by mistake",
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 11.3,
+        "dissolved_oxygen": 119.2,
+        "spc": 49.2,
+        "tds": 31.38,
+        "ph": 6.76
+      },
+      {
+        "depth": 1,
+        "water_temp": 10.2,
+        "dissolved_oxygen": 112,
+        "spc": 47.4,
+        "tds": 30.55,
+        "ph": 6.6
+      },
+      {
+        "depth": 2,
+        "water_temp": 8.2,
+        "dissolved_oxygen": 110,
+        "spc": 47.4,
+        "tds": 30.65,
+        "ph": 6.19
+      },
+      {
+        "depth": 3,
+        "water_temp": 6.1,
+        "dissolved_oxygen": 105,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.08
+      },
+      {
+        "depth": 4,
+        "water_temp": 5.4,
+        "dissolved_oxygen": 104.4,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 6.05
+      },
+      {
+        "depth": 5,
+        "water_temp": 5.1,
+        "dissolved_oxygen": 101.5,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 6.03
+      },
+      {
+        "depth": 6,
+        "water_temp": 4.9,
+        "dissolved_oxygen": 99.2,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 6.01
+      },
+      {
+        "depth": 7,
+        "water_temp": 4.7,
+        "dissolved_oxygen": 97,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 6
+      },
+      {
+        "depth": 8,
+        "water_temp": 4.5,
+        "dissolved_oxygen": 98.3,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 5.97
+      },
+      {
+        "depth": 9,
+        "water_temp": 4.4,
+        "dissolved_oxygen": 96.2,
+        "spc": 46.7,
+        "tds": 30.55,
+        "ph": 5.96
+      },
+      {
+        "depth": 10,
+        "water_temp": 4.3,
+        "dissolved_oxygen": 95.6,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 5.96
+      },
+      {
+        "depth": 11,
+        "water_temp": 4.3,
+        "dissolved_oxygen": 96.9,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 5.95
+      },
+      {
+        "depth": 12,
+        "water_temp": 4.2,
+        "dissolved_oxygen": 95.2,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 5.95
+      },
+      {
+        "depth": 13,
+        "water_temp": 4.2,
+        "dissolved_oxygen": 95.5,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 5.95
+      },
+      {
+        "depth": 14,
+        "water_temp": 4.2,
+        "dissolved_oxygen": 95.4,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 5.95
+      },
+      {
+        "depth": 15,
+        "water_temp": 4.2,
+        "dissolved_oxygen": 95.1,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 5.95
+      },
+      {
+        "depth": 16,
+        "water_temp": 4.2,
+        "dissolved_oxygen": 89.3,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 5.94
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2019-04-28T18:00:00.000Z",
+    "samplers": [
+      "Andrew Smith",
+      "Gina Trzesicka"
+    ],
+    "weather": "calm, sunny",
+    "air_temperature": 20.5,
+    "secchi_depth": [
+      3.5,
+      4.6
+    ],
+    "nitrogen": 0.29,
+    "phosphorus": 0.0066,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 12.5,
+        "dissolved_oxygen": 11.6,
+        "spc": 49.3,
+        "tds": 38.85,
+        "ph": 7.6
+      },
+      {
+        "depth": 1,
+        "water_temp": 12,
+        "dissolved_oxygen": 11.73,
+        "spc": 48.8,
+        "tds": 31.85,
+        "ph": 6.67
+      },
+      {
+        "depth": 2,
+        "water_temp": 12,
+        "dissolved_oxygen": 11.44,
+        "spc": 48.8,
+        "tds": 31.85,
+        "ph": 6.48
+      },
+      {
+        "depth": 3,
+        "water_temp": 11.9,
+        "dissolved_oxygen": 10.98,
+        "spc": 48.8,
+        "tds": 31.85,
+        "ph": 6.27
+      },
+      {
+        "depth": 4,
+        "water_temp": 11.4,
+        "dissolved_oxygen": 11.68,
+        "spc": 48.6,
+        "tds": 31.85,
+        "ph": 6.34
+      },
+      {
+        "depth": 5,
+        "water_temp": 7.5,
+        "dissolved_oxygen": 12.3,
+        "spc": 47.9,
+        "tds": 31.3,
+        "ph": 6.73
+      },
+      {
+        "depth": 6,
+        "water_temp": 5.8,
+        "dissolved_oxygen": 11.1,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.33
+      },
+      {
+        "depth": 7,
+        "water_temp": 4.8,
+        "dissolved_oxygen": 12.25,
+        "spc": 46.3,
+        "tds": 30.55,
+        "ph": 6.15
+      },
+      {
+        "depth": 8,
+        "water_temp": null,
+        "dissolved_oxygen": null,
+        "spc": null,
+        "tds": null,
+        "ph": null
+      },
+      {
+        "depth": 9,
+        "water_temp": 4.6,
+        "dissolved_oxygen": 12.2,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 6.07
+      },
+      {
+        "depth": 10,
+        "water_temp": 4.5,
+        "dissolved_oxygen": 12.3,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 6.05
+      },
+      {
+        "depth": 11,
+        "water_temp": 4.4,
+        "dissolved_oxygen": 12.12,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 6.04
+      },
+      {
+        "depth": 12,
+        "water_temp": 4.4,
+        "dissolved_oxygen": 11.89,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 6.03
+      },
+      {
+        "depth": 13,
+        "water_temp": 4.3,
+        "dissolved_oxygen": 11.7,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 6.02
+      },
+      {
+        "depth": 14,
+        "water_temp": 4.3,
+        "dissolved_oxygen": 11.9,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 6.02
+      },
+      {
+        "depth": 15,
+        "water_temp": 4.3,
+        "dissolved_oxygen": 11.64,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 6.02
+      },
+      {
+        "depth": 16,
+        "water_temp": 4.2,
+        "dissolved_oxygen": 11.3,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.02
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2019-05-12T11:00:00.000Z",
+    "samplers": [
+      "readers: Carrie and Max"
+    ],
+    "weather": "overcast, no breeze",
+    "air_temperature": null,
+    "secchi_depth": [
+      4.9,
+      4.98
+    ],
+    "nitrogen": 0.237,
+    "phosphorus": 0.0099,
+    "data_notes": "PH not calibrated, monitor acting up",
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 11.1,
+        "dissolved_oxygen": 11.87,
+        "spc": 51.4,
+        "tds": 33.15,
+        "ph": null
+      },
+      {
+        "depth": 1,
+        "water_temp": 10.9,
+        "dissolved_oxygen": 10.8,
+        "spc": 50.9,
+        "tds": 33.15,
+        "ph": null
+      },
+      {
+        "depth": 2,
+        "water_temp": 10.9,
+        "dissolved_oxygen": 10.22,
+        "spc": 51,
+        "tds": 33.15,
+        "ph": null
+      },
+      {
+        "depth": 3,
+        "water_temp": 10.9,
+        "dissolved_oxygen": 10.79,
+        "spc": 51,
+        "tds": 33.15,
+        "ph": null
+      },
+      {
+        "depth": 4,
+        "water_temp": 10.7,
+        "dissolved_oxygen": 10.38,
+        "spc": 51,
+        "tds": 33.15,
+        "ph": null
+      },
+      {
+        "depth": 5,
+        "water_temp": 10.7,
+        "dissolved_oxygen": 10.08,
+        "spc": 50.6,
+        "tds": 33.15,
+        "ph": null
+      },
+      {
+        "depth": 6,
+        "water_temp": 10.5,
+        "dissolved_oxygen": 10.27,
+        "spc": 50.8,
+        "tds": 33.15,
+        "ph": null
+      },
+      {
+        "depth": 7,
+        "water_temp": 10.7,
+        "dissolved_oxygen": 10.14,
+        "spc": 61.1,
+        "tds": 33.15,
+        "ph": null
+      },
+      {
+        "depth": 8,
+        "water_temp": 10.5,
+        "dissolved_oxygen": 9.63,
+        "spc": 51,
+        "tds": 33.15,
+        "ph": null
+      },
+      {
+        "depth": 9,
+        "water_temp": 9.2,
+        "dissolved_oxygen": 7.9,
+        "spc": 47.6,
+        "tds": 33.15,
+        "ph": null
+      },
+      {
+        "depth": 10,
+        "water_temp": 7.1,
+        "dissolved_oxygen": 7.3,
+        "spc": 46,
+        "tds": 30.55,
+        "ph": null
+      },
+      {
+        "depth": 11,
+        "water_temp": 6.4,
+        "dissolved_oxygen": 6.92,
+        "spc": 46.5,
+        "tds": 30.55,
+        "ph": null
+      },
+      {
+        "depth": 12,
+        "water_temp": 5.9,
+        "dissolved_oxygen": 7.3,
+        "spc": 46.4,
+        "tds": 29.9,
+        "ph": null
+      },
+      {
+        "depth": 13,
+        "water_temp": 6,
+        "dissolved_oxygen": 7.05,
+        "spc": 46.4,
+        "tds": 29.9,
+        "ph": null
+      },
+      {
+        "depth": 14,
+        "water_temp": 5.8,
+        "dissolved_oxygen": 4.51,
+        "spc": 47.5,
+        "tds": 32.2,
+        "ph": null
+      },
+      {
+        "depth": 15,
+        "water_temp": 5.5,
+        "dissolved_oxygen": 3.51,
+        "spc": 50,
+        "tds": 32.5,
+        "ph": null
+      },
+      {
+        "depth": 16,
+        "water_temp": 5.6,
+        "dissolved_oxygen": 2.74,
+        "spc": 50.8,
+        "tds": 33.15,
+        "ph": null
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2019-05-21T17:00:00.000Z",
+    "samplers": [
+      "Gina Trzesicka",
+      "Ania (Gina's guest)"
+    ],
+    "weather": "Windy, cloudy",
+    "air_temperature": 19.6,
+    "secchi_depth": [
+      4.4,
+      4.4
+    ],
+    "nitrogen": 0.239,
+    "phosphorus": 0.0034,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 19.7,
+        "dissolved_oxygen": 9.17,
+        "spc": 49.9,
+        "tds": 32.5,
+        "ph": 6.8
+      },
+      {
+        "depth": 1,
+        "water_temp": 19.3,
+        "dissolved_oxygen": 9,
+        "spc": 50.1,
+        "tds": 32.5,
+        "ph": 6.74
+      },
+      {
+        "depth": 2,
+        "water_temp": 19.4,
+        "dissolved_oxygen": 9.1,
+        "spc": 50.1,
+        "tds": 32.5,
+        "ph": 6.67
+      },
+      {
+        "depth": 3,
+        "water_temp": 18.8,
+        "dissolved_oxygen": 9.54,
+        "spc": 50.1,
+        "tds": 32.5,
+        "ph": 6.67
+      },
+      {
+        "depth": 4,
+        "water_temp": 15,
+        "dissolved_oxygen": 10.7,
+        "spc": 48.7,
+        "tds": 31.85,
+        "ph": 6.74
+      },
+      {
+        "depth": 5,
+        "water_temp": 10,
+        "dissolved_oxygen": 12.19,
+        "spc": 46.3,
+        "tds": 30.55,
+        "ph": 6.47
+      },
+      {
+        "depth": 6,
+        "water_temp": 8.5,
+        "dissolved_oxygen": 12.1,
+        "spc": 45.5,
+        "tds": 29.9,
+        "ph": 6.1
+      },
+      {
+        "depth": 7,
+        "water_temp": 7.4,
+        "dissolved_oxygen": 11.46,
+        "spc": 45.4,
+        "tds": 29.25,
+        "ph": 6.01
+      },
+      {
+        "depth": 8,
+        "water_temp": 6.8,
+        "dissolved_oxygen": 11.77,
+        "spc": 45.4,
+        "tds": 29.25,
+        "ph": 5.94
+      },
+      {
+        "depth": 9,
+        "water_temp": 6.3,
+        "dissolved_oxygen": 10.9,
+        "spc": 45.4,
+        "tds": 29.25,
+        "ph": 6.89
+      },
+      {
+        "depth": 10,
+        "water_temp": 5.8,
+        "dissolved_oxygen": 10.7,
+        "spc": 44.9,
+        "tds": 29.25,
+        "ph": 5.85
+      },
+      {
+        "depth": 11,
+        "water_temp": 5.7,
+        "dissolved_oxygen": 10.5,
+        "spc": 45.4,
+        "tds": 29.25,
+        "ph": 5.82
+      },
+      {
+        "depth": 12,
+        "water_temp": 5.9,
+        "dissolved_oxygen": 10.19,
+        "spc": 45.2,
+        "tds": 29.25,
+        "ph": 5.83
+      },
+      {
+        "depth": 13,
+        "water_temp": 5.5,
+        "dissolved_oxygen": 10.49,
+        "spc": 45,
+        "tds": 29.25,
+        "ph": 5.82
+      },
+      {
+        "depth": 14,
+        "water_temp": 5.5,
+        "dissolved_oxygen": 10.7,
+        "spc": 45.4,
+        "tds": 29.25,
+        "ph": 5.82
+      },
+      {
+        "depth": 15,
+        "water_temp": 5.7,
+        "dissolved_oxygen": 9.7,
+        "spc": 46.1,
+        "tds": 29.9,
+        "ph": 5.81
+      },
+      {
+        "depth": 16,
+        "water_temp": 5.8,
+        "dissolved_oxygen": 8.45,
+        "spc": 46.8,
+        "tds": 29.9,
+        "ph": 5.78
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2020-01-08T22:45:00.000Z",
+    "samplers": [
+      "Gina",
+      "Autumn (FOCI summer student0"
+    ],
+    "weather": "morning rain, afternoon sunny, no breeze, a bit muggy",
+    "air_temperature": 23.5,
+    "secchi_depth": [
+      5.7,
+      6.4
+    ],
+    "nitrogen": 0.205,
+    "phosphorus": 0.0071,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 25,
+        "dissolved_oxygen": 7.9,
+        "spc": 57.4,
+        "tds": 37.05,
+        "ph": 6.45
+      },
+      {
+        "depth": 1,
+        "water_temp": 24.5,
+        "dissolved_oxygen": 8.24,
+        "spc": 53.6,
+        "tds": 35.1,
+        "ph": 7.24
+      },
+      {
+        "depth": 2,
+        "water_temp": 24.2,
+        "dissolved_oxygen": 7.9,
+        "spc": 53.8,
+        "tds": 35.1,
+        "ph": 7.01
+      },
+      {
+        "depth": 3,
+        "water_temp": 24.3,
+        "dissolved_oxygen": 8.33,
+        "spc": 53.6,
+        "tds": 35.1,
+        "ph": 6.94
+      },
+      {
+        "depth": 4,
+        "water_temp": 23.4,
+        "dissolved_oxygen": 8.4,
+        "spc": 53.4,
+        "tds": 35.1,
+        "ph": 6.93
+      },
+      {
+        "depth": 5,
+        "water_temp": 18.3,
+        "dissolved_oxygen": 10.22,
+        "spc": 48.1,
+        "tds": 31.2,
+        "ph": 6.8
+      },
+      {
+        "depth": 6,
+        "water_temp": 14.3,
+        "dissolved_oxygen": 12.6,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 6.57
+      },
+      {
+        "depth": 7,
+        "water_temp": 11.1,
+        "dissolved_oxygen": 12.56,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 6.31
+      },
+      {
+        "depth": 8,
+        "water_temp": 9.2,
+        "dissolved_oxygen": 11.2,
+        "spc": 46.1,
+        "tds": 29.9,
+        "ph": 6
+      },
+      {
+        "depth": 9,
+        "water_temp": 7.6,
+        "dissolved_oxygen": 10.06,
+        "spc": 45.7,
+        "tds": 29.9,
+        "ph": 5.89
+      },
+      {
+        "depth": 10,
+        "water_temp": 6.5,
+        "dissolved_oxygen": 9.7,
+        "spc": 45.4,
+        "tds": 29.25,
+        "ph": 5.85
+      },
+      {
+        "depth": 11,
+        "water_temp": 6.3,
+        "dissolved_oxygen": 9.54,
+        "spc": 45.5,
+        "tds": 29.9,
+        "ph": 5.81
+      },
+      {
+        "depth": 12,
+        "water_temp": 6.4,
+        "dissolved_oxygen": 9.2,
+        "spc": 45.5,
+        "tds": 29.9,
+        "ph": 5.78
+      },
+      {
+        "depth": 13,
+        "water_temp": 6.1,
+        "dissolved_oxygen": 8.17,
+        "spc": 45.6,
+        "tds": 29.9,
+        "ph": 7.73
+      },
+      {
+        "depth": 14,
+        "water_temp": 6.2,
+        "dissolved_oxygen": 6.45,
+        "spc": 47.7,
+        "tds": 31.2,
+        "ph": 5.68
+      },
+      {
+        "depth": 15,
+        "water_temp": 5.8,
+        "dissolved_oxygen": 5.25,
+        "spc": 48.2,
+        "tds": 31.2,
+        "ph": 5.64
+      },
+      {
+        "depth": 16,
+        "water_temp": 5.7,
+        "dissolved_oxygen": 4.43,
+        "spc": 48.4,
+        "tds": 31.85,
+        "ph": 5.6
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2020-01-10T06:22:00.000Z",
+    "samplers": [
+      "Alma and Mary"
+    ],
+    "weather": "light wind, sunny",
+    "air_temperature": null,
+    "secchi_depth": [
+      5.7,
+      5.96
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 1,
+        "water_temp": 23.3,
+        "dissolved_oxygen": 7.65,
+        "spc": 52,
+        "tds": 33.8,
+        "ph": 7.2
+      },
+      {
+        "depth": 2,
+        "water_temp": 23.2,
+        "dissolved_oxygen": 7.4,
+        "spc": 51.7,
+        "tds": 33.8,
+        "ph": 7.2
+      },
+      {
+        "depth": 3,
+        "water_temp": 22.9,
+        "dissolved_oxygen": 7.69,
+        "spc": 52.2,
+        "tds": 33.8,
+        "ph": 7.18
+      },
+      {
+        "depth": 4,
+        "water_temp": 21.9,
+        "dissolved_oxygen": 8.2,
+        "spc": 51.9,
+        "tds": 33.88,
+        "ph": 7.12
+      },
+      {
+        "depth": 5,
+        "water_temp": 16.1,
+        "dissolved_oxygen": 11.2,
+        "spc": 47.5,
+        "tds": 31.2,
+        "ph": 7.05
+      },
+      {
+        "depth": 6,
+        "water_temp": 11.2,
+        "dissolved_oxygen": 11.71,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.8
+      },
+      {
+        "depth": 7,
+        "water_temp": 8.9,
+        "dissolved_oxygen": 10.75,
+        "spc": 46.5,
+        "tds": 30.55,
+        "ph": 6.3
+      },
+      {
+        "depth": 8,
+        "water_temp": 7.6,
+        "dissolved_oxygen": 10.25,
+        "spc": 46.1,
+        "tds": 29.9,
+        "ph": 6.2
+      },
+      {
+        "depth": 9,
+        "water_temp": 6.8,
+        "dissolved_oxygen": 9.85,
+        "spc": 46.1,
+        "tds": 29.25,
+        "ph": 6.12
+      },
+      {
+        "depth": 10,
+        "water_temp": 6.8,
+        "dissolved_oxygen": 9.75,
+        "spc": 45.4,
+        "tds": 29.25,
+        "ph": 6.1
+      },
+      {
+        "depth": 11,
+        "water_temp": 7.1,
+        "dissolved_oxygen": 9.1,
+        "spc": 44.6,
+        "tds": 29.25,
+        "ph": 6.07
+      },
+      {
+        "depth": 12,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 8.8,
+        "spc": 45,
+        "tds": 29.25,
+        "ph": 6.06
+      },
+      {
+        "depth": 13,
+        "water_temp": 6.3,
+        "dissolved_oxygen": 7.6,
+        "spc": 46.2,
+        "tds": 29.9,
+        "ph": 6
+      },
+      {
+        "depth": 14,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 6.36,
+        "spc": 46.3,
+        "tds": 29.9,
+        "ph": 5.95
+      },
+      {
+        "depth": 15,
+        "water_temp": 6.3,
+        "dissolved_oxygen": 5.26,
+        "spc": 47,
+        "tds": 31.2,
+        "ph": 5.89
+      },
+      {
+        "depth": 16,
+        "water_temp": 6.2,
+        "dissolved_oxygen": 5.55,
+        "spc": 47.4,
+        "tds": 31.2,
+        "ph": 5.87
+      },
+      {
+        "depth": 0,
+        "water_temp": 21.9,
+        "dissolved_oxygen": 8.01,
+        "spc": 58.1,
+        "tds": 34.45,
+        "ph": 7.1
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2020-02-11T18:30:00.000Z",
+    "samplers": [
+      "Gina and Carrie"
+    ],
+    "weather": "sunny, warm, calm",
+    "air_temperature": 18.1,
+    "secchi_depth": [
+      5,
+      5.7
+    ],
+    "nitrogen": 0.353,
+    "phosphorus": null,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 1,
+        "water_temp": 20.6,
+        "dissolved_oxygen": 8.3,
+        "spc": 52.9,
+        "tds": 34.45,
+        "ph": 7.21
+      },
+      {
+        "depth": 2,
+        "water_temp": 20.7,
+        "dissolved_oxygen": 8.38,
+        "spc": 53.1,
+        "tds": 34.45,
+        "ph": 7.02
+      },
+      {
+        "depth": 3,
+        "water_temp": 20.7,
+        "dissolved_oxygen": 8.07,
+        "spc": 53,
+        "tds": 34.45,
+        "ph": 7.02
+      },
+      {
+        "depth": 4,
+        "water_temp": 20.7,
+        "dissolved_oxygen": 7.84,
+        "spc": 52.8,
+        "tds": 34.45,
+        "ph": 7.01
+      },
+      {
+        "depth": 5,
+        "water_temp": 20.6,
+        "dissolved_oxygen": 8.03,
+        "spc": 53.8,
+        "tds": 34.45,
+        "ph": 7.03
+      },
+      {
+        "depth": 6,
+        "water_temp": 15.6,
+        "dissolved_oxygen": 9.24,
+        "spc": 47.7,
+        "tds": 34.2,
+        "ph": 6.9
+      },
+      {
+        "depth": 7,
+        "water_temp": 12,
+        "dissolved_oxygen": 9.64,
+        "spc": 46.6,
+        "tds": 30.55,
+        "ph": 6.53
+      },
+      {
+        "depth": 8,
+        "water_temp": 10,
+        "dissolved_oxygen": 9.25,
+        "spc": 46.2,
+        "tds": 29.9,
+        "ph": 6.05
+      },
+      {
+        "depth": 9,
+        "water_temp": 8.2,
+        "dissolved_oxygen": 8.4,
+        "spc": 45.8,
+        "tds": 29.9,
+        "ph": 5.98
+      },
+      {
+        "depth": 10,
+        "water_temp": 7,
+        "dissolved_oxygen": 7.13,
+        "spc": 46.5,
+        "tds": 29.9,
+        "ph": 5.9
+      },
+      {
+        "depth": 11,
+        "water_temp": 6.5,
+        "dissolved_oxygen": 6.8,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 5.86
+      },
+      {
+        "depth": 12,
+        "water_temp": 6.5,
+        "dissolved_oxygen": 7.16,
+        "spc": 49.7,
+        "tds": 29.9,
+        "ph": 5.84
+      },
+      {
+        "depth": 13,
+        "water_temp": 6.8,
+        "dissolved_oxygen": 6.13,
+        "spc": 49.8,
+        "tds": 32.5,
+        "ph": 5.77
+      },
+      {
+        "depth": 14,
+        "water_temp": 6.5,
+        "dissolved_oxygen": 3.38,
+        "spc": 49.5,
+        "tds": 32.5,
+        "ph": 5.74
+      },
+      {
+        "depth": 15,
+        "water_temp": 6.5,
+        "dissolved_oxygen": 2.36,
+        "spc": 49.8,
+        "tds": 32.5,
+        "ph": 5.75
+      },
+      {
+        "depth": 16,
+        "water_temp": null,
+        "dissolved_oxygen": null,
+        "spc": null,
+        "tds": null,
+        "ph": null
+      },
+      {
+        "depth": 0,
+        "water_temp": 12,
+        "dissolved_oxygen": 10.4,
+        "spc": 52,
+        "tds": 33.8,
+        "ph": 6.16
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2020-04-09T21:45:00.000Z",
+    "samplers": [
+      "Gina",
+      "Autumn"
+    ],
+    "weather": "Sunny, clouds, \"rain in the air\"",
+    "air_temperature": 19,
+    "secchi_depth": [
+      6.45,
+      5.6
+    ],
+    "nitrogen": 0.135,
+    "phosphorus": 0.0092,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 19.6,
+        "dissolved_oxygen": 11.16,
+        "spc": 52.9,
+        "tds": 34.45,
+        "ph": 6.55
+      },
+      {
+        "depth": 1,
+        "water_temp": 20.7,
+        "dissolved_oxygen": 10.78,
+        "spc": 53,
+        "tds": 34.45,
+        "ph": 6.63
+      },
+      {
+        "depth": 2,
+        "water_temp": 20.4,
+        "dissolved_oxygen": 9.6,
+        "spc": 52.6,
+        "tds": 34.45,
+        "ph": 5.66
+      },
+      {
+        "depth": 3,
+        "water_temp": 20.5,
+        "dissolved_oxygen": 9.18,
+        "spc": 52.9,
+        "tds": 34.45,
+        "ph": 6.7
+      },
+      {
+        "depth": 4,
+        "water_temp": 20.6,
+        "dissolved_oxygen": 8.97,
+        "spc": 52.6,
+        "tds": 34.45,
+        "ph": 6.76
+      },
+      {
+        "depth": 5,
+        "water_temp": 20.4,
+        "dissolved_oxygen": 8.94,
+        "spc": 52.5,
+        "tds": 34.45,
+        "ph": 6.73
+      },
+      {
+        "depth": 6,
+        "water_temp": 16.6,
+        "dissolved_oxygen": 11.15,
+        "spc": 47.3,
+        "tds": 30.55,
+        "ph": 6.69
+      },
+      {
+        "depth": 7,
+        "water_temp": 12.9,
+        "dissolved_oxygen": 12.9,
+        "spc": 46.6,
+        "tds": 29.9,
+        "ph": 6.57
+      },
+      {
+        "depth": 8,
+        "water_temp": 10.5,
+        "dissolved_oxygen": 12.31,
+        "spc": 46.2,
+        "tds": 29.9,
+        "ph": 6.41
+      },
+      {
+        "depth": 9,
+        "water_temp": 8.7,
+        "dissolved_oxygen": 10.67,
+        "spc": 46.1,
+        "tds": 29.9,
+        "ph": 6.4
+      },
+      {
+        "depth": 10,
+        "water_temp": 7.6,
+        "dissolved_oxygen": 9.81,
+        "spc": 45.6,
+        "tds": 29.9,
+        "ph": 6.31
+      },
+      {
+        "depth": 11,
+        "water_temp": 6.7,
+        "dissolved_oxygen": 8.88,
+        "spc": 46.1,
+        "tds": 29.9,
+        "ph": 6.25
+      },
+      {
+        "depth": 12,
+        "water_temp": 6.1,
+        "dissolved_oxygen": 8.93,
+        "spc": 46.1,
+        "tds": 29.9,
+        "ph": 6.17
+      },
+      {
+        "depth": 13,
+        "water_temp": 6.3,
+        "dissolved_oxygen": 8.49,
+        "spc": 46.1,
+        "tds": 29.9,
+        "ph": 6.08
+      },
+      {
+        "depth": 14,
+        "water_temp": 5.8,
+        "dissolved_oxygen": 5.51,
+        "spc": 47.7,
+        "tds": 31.2,
+        "ph": 5.9
+      },
+      {
+        "depth": 15,
+        "water_temp": 6,
+        "dissolved_oxygen": 5.12,
+        "spc": 48.5,
+        "tds": 32.5,
+        "ph": 5.82
+      },
+      {
+        "depth": 16,
+        "water_temp": 6.1,
+        "dissolved_oxygen": 2.9,
+        "spc": 53.5,
+        "tds": 35.1,
+        "ph": 5.77
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2020-05-05T17:00:00.000Z",
+    "samplers": [],
+    "weather": null,
+    "air_temperature": null,
+    "secchi_depth": [
+      null,
+      null
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 14.4,
+        "dissolved_oxygen": 11.85,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.71
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2021-08-06T19:00:00.000Z",
+    "samplers": [
+      "Gina and Ziemek"
+    ],
+    "weather": "sunny, light breeze",
+    "air_temperature": 19,
+    "secchi_depth": [
+      3.4,
+      2.7
+    ],
+    "nitrogen": 0.26,
+    "phosphorus": 0.011,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 22,
+        "dissolved_oxygen": 10.02,
+        "spc": 49.7,
+        "tds": 31.85,
+        "ph": 6.59
+      },
+      {
+        "depth": 1,
+        "water_temp": 20.1,
+        "dissolved_oxygen": 9.65,
+        "spc": 48.9,
+        "tds": 31.85,
+        "ph": 6.68
+      },
+      {
+        "depth": 2,
+        "water_temp": 19.8,
+        "dissolved_oxygen": 10.12,
+        "spc": 48.9,
+        "tds": 31.85,
+        "ph": 6.77
+      },
+      {
+        "depth": 3,
+        "water_temp": 19.5,
+        "dissolved_oxygen": 10.1,
+        "spc": 48.3,
+        "tds": 31.85,
+        "ph": 6.76
+      },
+      {
+        "depth": 4,
+        "water_temp": 17.3,
+        "dissolved_oxygen": 11.78,
+        "spc": 47.3,
+        "tds": 30.55,
+        "ph": 6.99
+      },
+      {
+        "depth": 5,
+        "water_temp": 11.1,
+        "dissolved_oxygen": 12.76,
+        "spc": 45.7,
+        "tds": 29.9,
+        "ph": 6.33
+      },
+      {
+        "depth": 6,
+        "water_temp": 9.5,
+        "dissolved_oxygen": 12.19,
+        "spc": 45.5,
+        "tds": 29.25,
+        "ph": 6.1
+      },
+      {
+        "depth": 7,
+        "water_temp": 8.5,
+        "dissolved_oxygen": 11.73,
+        "spc": 45.5,
+        "tds": 29.25,
+        "ph": 6.05
+      },
+      {
+        "depth": 8,
+        "water_temp": 7.7,
+        "dissolved_oxygen": 11.64,
+        "spc": 45.1,
+        "tds": 29.25,
+        "ph": 6
+      },
+      {
+        "depth": 9,
+        "water_temp": 7.1,
+        "dissolved_oxygen": 11.55,
+        "spc": 45.1,
+        "tds": 29.25,
+        "ph": 5.98
+      },
+      {
+        "depth": 10,
+        "water_temp": 6.5,
+        "dissolved_oxygen": 11.81,
+        "spc": 44.1,
+        "tds": 29.25,
+        "ph": 5.96
+      },
+      {
+        "depth": 11,
+        "water_temp": 6.3,
+        "dissolved_oxygen": 11.7,
+        "spc": 44.7,
+        "tds": 29.6,
+        "ph": 5.94
+      },
+      {
+        "depth": 12,
+        "water_temp": 6.4,
+        "dissolved_oxygen": 11.53,
+        "spc": 44.4,
+        "tds": 29.25,
+        "ph": 5.93
+      },
+      {
+        "depth": 13,
+        "water_temp": 6.2,
+        "dissolved_oxygen": 10.78,
+        "spc": 45.7,
+        "tds": 29.9,
+        "ph": 5.88
+      },
+      {
+        "depth": 14,
+        "water_temp": 6.1,
+        "dissolved_oxygen": 9.79,
+        "spc": 44.8,
+        "tds": 29.25,
+        "ph": 5.86
+      },
+      {
+        "depth": 15,
+        "water_temp": 5.9,
+        "dissolved_oxygen": 9.72,
+        "spc": 45.7,
+        "tds": 29.9,
+        "ph": 5.82
+      },
+      {
+        "depth": 16,
+        "water_temp": 5.3,
+        "dissolved_oxygen": 8.2,
+        "spc": 46.6,
+        "tds": 30.55,
+        "ph": 5.77
+      },
+      {
+        "depth": 0,
+        "water_temp": 20.5,
+        "dissolved_oxygen": 9,
+        "spc": 49.4,
+        "tds": 32.5,
+        "ph": 7.11
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2021-09-01T23:15:00.000Z",
+    "samplers": [
+      "readers: Carrie and Heidi"
+    ],
+    "weather": "Weather: wind, rain, recent melt",
+    "air_temperature": 5.8,
+    "secchi_depth": [
+      4.7,
+      4.95
+    ],
+    "nitrogen": 0.449,
+    "phosphorus": 0.0067,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": null,
+        "dissolved_oxygen": null,
+        "spc": null,
+        "tds": null,
+        "ph": null
+      },
+      {
+        "depth": 1,
+        "water_temp": 6.8,
+        "dissolved_oxygen": 10.58,
+        "spc": 49.7,
+        "tds": 32.5,
+        "ph": 6.93
+      },
+      {
+        "depth": 2,
+        "water_temp": 6.8,
+        "dissolved_oxygen": 10.58,
+        "spc": 49.9,
+        "tds": 32.5,
+        "ph": 6.98
+      },
+      {
+        "depth": 3,
+        "water_temp": 6.8,
+        "dissolved_oxygen": 10.63,
+        "spc": 50,
+        "tds": 32.5,
+        "ph": 6.89
+      },
+      {
+        "depth": 4,
+        "water_temp": 6.8,
+        "dissolved_oxygen": 10.84,
+        "spc": 49.9,
+        "tds": 32.5,
+        "ph": 6.88
+      },
+      {
+        "depth": 5,
+        "water_temp": 6.7,
+        "dissolved_oxygen": 10.78,
+        "spc": 50,
+        "tds": 32.5,
+        "ph": 6.88
+      },
+      {
+        "depth": 6,
+        "water_temp": 6.7,
+        "dissolved_oxygen": 10.81,
+        "spc": 50.1,
+        "tds": 32.5,
+        "ph": 6.88
+      },
+      {
+        "depth": 7,
+        "water_temp": 6.8,
+        "dissolved_oxygen": 11.16,
+        "spc": 49.9,
+        "tds": 32.5,
+        "ph": 6.87
+      },
+      {
+        "depth": 8,
+        "water_temp": 6.7,
+        "dissolved_oxygen": 11.1,
+        "spc": 50,
+        "tds": 32.5,
+        "ph": 6.87
+      },
+      {
+        "depth": 9,
+        "water_temp": 6.8,
+        "dissolved_oxygen": 10.84,
+        "spc": 50,
+        "tds": 32.5,
+        "ph": 6.87
+      },
+      {
+        "depth": 10,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 10.48,
+        "spc": 49.8,
+        "tds": 32.5,
+        "ph": 6.87
+      },
+      {
+        "depth": 11,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 10.63,
+        "spc": 50,
+        "tds": 32.5,
+        "ph": 6.87
+      },
+      {
+        "depth": 12,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 9.86,
+        "spc": 49.6,
+        "tds": 32.5,
+        "ph": 6.84
+      },
+      {
+        "depth": 13,
+        "water_temp": 5.7,
+        "dissolved_oxygen": 6.03,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.45
+      },
+      {
+        "depth": 14,
+        "water_temp": 5.5,
+        "dissolved_oxygen": 3.32,
+        "spc": 50,
+        "tds": 32.5,
+        "ph": 6.33
+      },
+      {
+        "depth": 15,
+        "water_temp": 5.6,
+        "dissolved_oxygen": 2.54,
+        "spc": 51.6,
+        "tds": 33.15,
+        "ph": 6.31
+      },
+      {
+        "depth": 16,
+        "water_temp": 5.4,
+        "dissolved_oxygen": 1.98,
+        "spc": 52.4,
+        "tds": 34.45,
+        "ph": 3.3
+      },
+      {
+        "depth": 0,
+        "water_temp": 4.7,
+        "dissolved_oxygen": 14.71,
+        "spc": 47,
+        "tds": 31.2,
+        "ph": 7.25
+      },
+      {
+        "depth": 1,
+        "water_temp": 4.7,
+        "dissolved_oxygen": 13.87,
+        "spc": 47.9,
+        "tds": 30.55,
+        "ph": 7.05
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2021-10-09T17:00:00.000Z",
+    "samplers": [
+      "Autumn and Sarah Moore"
+    ],
+    "weather": "calm sunset, late evening",
+    "air_temperature": null,
+    "secchi_depth": [
+      5.4,
+      4.2
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 1,
+        "water_temp": 21.5,
+        "dissolved_oxygen": 8.09,
+        "spc": 52.5,
+        "tds": 34.45,
+        "ph": 7.13
+      },
+      {
+        "depth": 2,
+        "water_temp": 22,
+        "dissolved_oxygen": 8.07,
+        "spc": 52.4,
+        "tds": 33.8,
+        "ph": 7.15
+      },
+      {
+        "depth": 3,
+        "water_temp": 21.5,
+        "dissolved_oxygen": 7.92,
+        "spc": 52.6,
+        "tds": 33.8,
+        "ph": 7.09
+      },
+      {
+        "depth": 4,
+        "water_temp": 21,
+        "dissolved_oxygen": 7.94,
+        "spc": 52.5,
+        "tds": 33.8,
+        "ph": 7.03
+      },
+      {
+        "depth": 5,
+        "water_temp": 20.4,
+        "dissolved_oxygen": 8.03,
+        "spc": 52,
+        "tds": 33.8,
+        "ph": 7.05
+      },
+      {
+        "depth": 6,
+        "water_temp": 15,
+        "dissolved_oxygen": 9.95,
+        "spc": 47.4,
+        "tds": 30.55,
+        "ph": 6.97
+      },
+      {
+        "depth": 7,
+        "water_temp": 12.1,
+        "dissolved_oxygen": 10.09,
+        "spc": 46.7,
+        "tds": 30.55,
+        "ph": 6.76
+      },
+      {
+        "depth": 8,
+        "water_temp": 10.3,
+        "dissolved_oxygen": 10.11,
+        "spc": 46.1,
+        "tds": 30.55,
+        "ph": 6.63
+      },
+      {
+        "depth": 9,
+        "water_temp": 8.7,
+        "dissolved_oxygen": 9.36,
+        "spc": 45.6,
+        "tds": 29.2,
+        "ph": 6.51
+      },
+      {
+        "depth": 10,
+        "water_temp": 7.2,
+        "dissolved_oxygen": 9.05,
+        "spc": 45.4,
+        "tds": 29.9,
+        "ph": 6.23
+      },
+      {
+        "depth": 11,
+        "water_temp": 6.8,
+        "dissolved_oxygen": 8.49,
+        "spc": 45.7,
+        "tds": 29.9,
+        "ph": 6.05
+      },
+      {
+        "depth": 12,
+        "water_temp": 6.5,
+        "dissolved_oxygen": 8.4,
+        "spc": 45.6,
+        "tds": 29.9,
+        "ph": 5.98
+      },
+      {
+        "depth": 13,
+        "water_temp": 6.3,
+        "dissolved_oxygen": 7.9,
+        "spc": 47.4,
+        "tds": 30.55,
+        "ph": 5.91
+      },
+      {
+        "depth": 14,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 6.51,
+        "spc": 48.5,
+        "tds": 31.2,
+        "ph": 5.86
+      },
+      {
+        "depth": 15,
+        "water_temp": 6.3,
+        "dissolved_oxygen": 4.82,
+        "spc": 49.2,
+        "tds": 31.8,
+        "ph": 5.81
+      },
+      {
+        "depth": 16,
+        "water_temp": 6.1,
+        "dissolved_oxygen": 4.46,
+        "spc": 50.1,
+        "tds": 32.5,
+        "ph": 5.78
+      },
+      {
+        "depth": 0,
+        "water_temp": 20.7,
+        "dissolved_oxygen": 6.77,
+        "spc": 53,
+        "tds": 34.45,
+        "ph": 6.96
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2021-11-02T18:46:00.000Z",
+    "samplers": [
+      "readers: Max and Heidi"
+    ],
+    "weather": "a bit windy, sun + clouds",
+    "air_temperature": 5.6,
+    "secchi_depth": [
+      3.12,
+      3.56
+    ],
+    "nitrogen": 0.339,
+    "phosphorus": 0.011,
+    "data_notes": "had to go around as the stream between Hague and Gunlint was blocked",
+    "measurements": [
+      {
+        "depth": 2,
+        "water_temp": 4.7,
+        "dissolved_oxygen": 13.43,
+        "spc": 47.9,
+        "tds": 30.55,
+        "ph": 6.94
+      },
+      {
+        "depth": 3,
+        "water_temp": 4.7,
+        "dissolved_oxygen": 13.62,
+        "spc": 47,
+        "tds": 31.2,
+        "ph": 6.86
+      },
+      {
+        "depth": 4,
+        "water_temp": 4.6,
+        "dissolved_oxygen": 13.35,
+        "spc": 47.7,
+        "tds": 30.55,
+        "ph": 6.82
+      },
+      {
+        "depth": 5,
+        "water_temp": 4.6,
+        "dissolved_oxygen": 13.51,
+        "spc": 47.3,
+        "tds": 31.02,
+        "ph": 6.82
+      },
+      {
+        "depth": 6,
+        "water_temp": 4.6,
+        "dissolved_oxygen": 13.35,
+        "spc": 47.7,
+        "tds": 30.55,
+        "ph": 6.83
+      },
+      {
+        "depth": 7,
+        "water_temp": 4.6,
+        "dissolved_oxygen": 15.75,
+        "spc": 47.9,
+        "tds": 30.55,
+        "ph": 6.83
+      },
+      {
+        "depth": 8,
+        "water_temp": 4.8,
+        "dissolved_oxygen": 13.17,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 6.85
+      },
+      {
+        "depth": 9,
+        "water_temp": 4.7,
+        "dissolved_oxygen": 13.03,
+        "spc": 47.7,
+        "tds": 30.55,
+        "ph": 6.86
+      },
+      {
+        "depth": 10,
+        "water_temp": 4.6,
+        "dissolved_oxygen": 13.25,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.87
+      },
+      {
+        "depth": 11,
+        "water_temp": 4.6,
+        "dissolved_oxygen": 13.29,
+        "spc": 47.8,
+        "tds": 30.55,
+        "ph": 6.89
+      },
+      {
+        "depth": 12,
+        "water_temp": 4.6,
+        "dissolved_oxygen": 13.2,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.89
+      },
+      {
+        "depth": 13,
+        "water_temp": 4.7,
+        "dissolved_oxygen": 13.08,
+        "spc": 46.7,
+        "tds": 30.55,
+        "ph": 6.89
+      },
+      {
+        "depth": 14,
+        "water_temp": 4.7,
+        "dissolved_oxygen": 12.88,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.9
+      },
+      {
+        "depth": 15,
+        "water_temp": 4.6,
+        "dissolved_oxygen": 12.99,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.9
+      },
+      {
+        "depth": 16,
+        "water_temp": 4.6,
+        "dissolved_oxygen": 13.27,
+        "spc": 47.5,
+        "tds": 30.55,
+        "ph": 6.91
+      },
+      {
+        "depth": 0,
+        "water_temp": 4.6,
+        "dissolved_oxygen": 12.55,
+        "spc": 45.4,
+        "tds": 29.25,
+        "ph": 6.38
+      },
+      {
+        "depth": 1,
+        "water_temp": 4.6,
+        "dissolved_oxygen": 12.55,
+        "spc": 45.4,
+        "tds": 29.25,
+        "ph": 6.25
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2022-01-07T19:10:00.000Z",
+    "samplers": [
+      "Andrew and Carrie"
+    ],
+    "weather": "overcast",
+    "air_temperature": 17.1,
+    "secchi_depth": [
+      4.45,
+      4.95
+    ],
+    "nitrogen": 0.181,
+    "phosphorus": null,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 1,
+        "water_temp": 20.6,
+        "dissolved_oxygen": 8.42,
+        "spc": 50,
+        "tds": 32.5,
+        "ph": 7.09
+      },
+      {
+        "depth": 2,
+        "water_temp": 19.7,
+        "dissolved_oxygen": 8.46,
+        "spc": 50.2,
+        "tds": 32.5,
+        "ph": 7.09
+      },
+      {
+        "depth": 3,
+        "water_temp": 19.1,
+        "dissolved_oxygen": 8.69,
+        "spc": 50.2,
+        "tds": 32.5,
+        "ph": 7.04
+      },
+      {
+        "depth": 4,
+        "water_temp": 17,
+        "dissolved_oxygen": 10.18,
+        "spc": 50.5,
+        "tds": 33.15,
+        "ph": 6.99
+      },
+      {
+        "depth": 5,
+        "water_temp": 12.5,
+        "dissolved_oxygen": 12.26,
+        "spc": 47.4,
+        "tds": 30.55,
+        "ph": 6.98
+      },
+      {
+        "depth": 6,
+        "water_temp": 9.4,
+        "dissolved_oxygen": 12,
+        "spc": 47.3,
+        "tds": 30.55,
+        "ph": 6.77
+      },
+      {
+        "depth": 7,
+        "water_temp": 7.4,
+        "dissolved_oxygen": 11.2,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.47
+      },
+      {
+        "depth": 8,
+        "water_temp": 6.4,
+        "dissolved_oxygen": 11.4,
+        "spc": 46.5,
+        "tds": 30.55,
+        "ph": 6.3
+      },
+      {
+        "depth": 9,
+        "water_temp": 5.8,
+        "dissolved_oxygen": 11.2,
+        "spc": 46.6,
+        "tds": 30.55,
+        "ph": 6.17
+      },
+      {
+        "depth": 10,
+        "water_temp": 5.4,
+        "dissolved_oxygen": 11.1,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 6.04
+      },
+      {
+        "depth": 11,
+        "water_temp": 5.3,
+        "dissolved_oxygen": 10.88,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.03
+      },
+      {
+        "depth": 12,
+        "water_temp": 5.1,
+        "dissolved_oxygen": 11.05,
+        "spc": 46.6,
+        "tds": 30.55,
+        "ph": 6.03
+      },
+      {
+        "depth": 13,
+        "water_temp": 5.1,
+        "dissolved_oxygen": 10.24,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 6.03
+      },
+      {
+        "depth": 14,
+        "water_temp": 5,
+        "dissolved_oxygen": 10.24,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 5.99
+      },
+      {
+        "depth": 15,
+        "water_temp": 5,
+        "dissolved_oxygen": 9.2,
+        "spc": 47.5,
+        "tds": 30.55,
+        "ph": 5.98
+      },
+      {
+        "depth": 16,
+        "water_temp": 5,
+        "dissolved_oxygen": 8.47,
+        "spc": 48.3,
+        "tds": 31.2,
+        "ph": 5.96
+      },
+      {
+        "depth": 0,
+        "water_temp": 23.5,
+        "dissolved_oxygen": 7.75,
+        "spc": 52,
+        "tds": 33.5,
+        "ph": 7.56
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2022-02-01T18:50:00.000Z",
+    "samplers": [
+      "Heidi and Carrie"
+    ],
+    "weather": "calm, light cloud cover, air 11.5",
+    "air_temperature": 11.5,
+    "secchi_depth": [
+      3.4,
+      3.4
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "no water samples",
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 6.9,
+        "dissolved_oxygen": 12.59,
+        "spc": 47.5,
+        "tds": 30.55,
+        "ph": 6.7
+      },
+      {
+        "depth": 1,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 11.24,
+        "spc": 45.7,
+        "tds": 29.9,
+        "ph": 6.5
+      },
+      {
+        "depth": 2,
+        "water_temp": 6.8,
+        "dissolved_oxygen": 11,
+        "spc": 46,
+        "tds": 29.9,
+        "ph": 6.97
+      },
+      {
+        "depth": 3,
+        "water_temp": 6.7,
+        "dissolved_oxygen": 10.93,
+        "spc": 46,
+        "tds": 29.9,
+        "ph": 6.93
+      },
+      {
+        "depth": 4,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 10.66,
+        "spc": 47.3,
+        "tds": 29.9,
+        "ph": 6.4
+      },
+      {
+        "depth": 5,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 10.66,
+        "spc": 47.7,
+        "tds": 29.9,
+        "ph": 6.39
+      },
+      {
+        "depth": 6,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 10.58,
+        "spc": 46.6,
+        "tds": 30.55,
+        "ph": 6.38
+      },
+      {
+        "depth": 7,
+        "water_temp": 6.4,
+        "dissolved_oxygen": 10.43,
+        "spc": 46.3,
+        "tds": 30.55,
+        "ph": 6.39
+      },
+      {
+        "depth": 8,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 10.52,
+        "spc": 46.1,
+        "tds": 30.55,
+        "ph": 6.4
+      },
+      {
+        "depth": 9,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 10.82,
+        "spc": 46.3,
+        "tds": 30.55,
+        "ph": 6.42
+      },
+      {
+        "depth": 10,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 10.41,
+        "spc": 46.2,
+        "tds": 30.55,
+        "ph": 6.41
+      },
+      {
+        "depth": 11,
+        "water_temp": 6.5,
+        "dissolved_oxygen": 10.35,
+        "spc": 46.4,
+        "tds": 29.9,
+        "ph": 6.42
+      },
+      {
+        "depth": 12,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 10.41,
+        "spc": 47.4,
+        "tds": 30.55,
+        "ph": 6.41
+      },
+      {
+        "depth": 13,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 10.35,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.41
+      },
+      {
+        "depth": 14,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 10.37,
+        "spc": 47.2,
+        "tds": 31.2,
+        "ph": 6.41
+      },
+      {
+        "depth": 15,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 10.16,
+        "spc": 47.5,
+        "tds": 31.2,
+        "ph": 6.4
+      },
+      {
+        "depth": 16,
+        "water_temp": 6.2,
+        "dissolved_oxygen": 10.07,
+        "spc": 47.7,
+        "tds": 31.2,
+        "ph": 6.38
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2022-02-03T20:11:00.000Z",
+    "samplers": [
+      "Max and Carrie"
+    ],
+    "weather": "overcast, no wind",
+    "air_temperature": 12.6,
+    "secchi_depth": [
+      4.2,
+      4.45
+    ],
+    "nitrogen": 0.23,
+    "phosphorus": 0.0032,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 2,
+        "water_temp": 4.6,
+        "dissolved_oxygen": 12.47,
+        "spc": 45.4,
+        "tds": 29.25,
+        "ph": 6.23
+      },
+      {
+        "depth": 3,
+        "water_temp": 4.6,
+        "dissolved_oxygen": 12.45,
+        "spc": 45.4,
+        "tds": 29.25,
+        "ph": 6.22
+      },
+      {
+        "depth": 4,
+        "water_temp": 4.5,
+        "dissolved_oxygen": 12.47,
+        "spc": 45.4,
+        "tds": 29.25,
+        "ph": 6.24
+      },
+      {
+        "depth": 5,
+        "water_temp": 4.5,
+        "dissolved_oxygen": 12.4,
+        "spc": 45.4,
+        "tds": 29.25,
+        "ph": 6.25
+      },
+      {
+        "depth": 6,
+        "water_temp": 4.5,
+        "dissolved_oxygen": 12.32,
+        "spc": 45.5,
+        "tds": 29.25,
+        "ph": 6.26
+      },
+      {
+        "depth": 7,
+        "water_temp": 4.5,
+        "dissolved_oxygen": 12.27,
+        "spc": 45.5,
+        "tds": 29.25,
+        "ph": 6.26
+      },
+      {
+        "depth": 8,
+        "water_temp": 4.4,
+        "dissolved_oxygen": 12.41,
+        "spc": 45.5,
+        "tds": 29.25,
+        "ph": 6.28
+      },
+      {
+        "depth": 9,
+        "water_temp": 4.4,
+        "dissolved_oxygen": 12.38,
+        "spc": 45.5,
+        "tds": 29.25,
+        "ph": 6.29
+      },
+      {
+        "depth": 10,
+        "water_temp": 4.4,
+        "dissolved_oxygen": 12.34,
+        "spc": 45.5,
+        "tds": 29.25,
+        "ph": 6.28
+      },
+      {
+        "depth": 11,
+        "water_temp": 4.4,
+        "dissolved_oxygen": 12.23,
+        "spc": 45.5,
+        "tds": 29.25,
+        "ph": 6.28
+      },
+      {
+        "depth": 12,
+        "water_temp": 4.4,
+        "dissolved_oxygen": 12.24,
+        "spc": 45.5,
+        "tds": 29.25,
+        "ph": 6.3
+      },
+      {
+        "depth": 13,
+        "water_temp": 4.4,
+        "dissolved_oxygen": 12.27,
+        "spc": 45.5,
+        "tds": 29.25,
+        "ph": 6.3
+      },
+      {
+        "depth": 14,
+        "water_temp": 4.4,
+        "dissolved_oxygen": 12.05,
+        "spc": 45.5,
+        "tds": 29.25,
+        "ph": 6.3
+      },
+      {
+        "depth": 15,
+        "water_temp": 4.4,
+        "dissolved_oxygen": 12.08,
+        "spc": 45.5,
+        "tds": 29.25,
+        "ph": 6.32
+      },
+      {
+        "depth": 16,
+        "water_temp": 4.3,
+        "dissolved_oxygen": 12.12,
+        "spc": 45.5,
+        "tds": 29.25,
+        "ph": 6.32
+      },
+      {
+        "depth": 1,
+        "water_temp": 8.2,
+        "dissolved_oxygen": 12.45,
+        "spc": 46.2,
+        "tds": 29.9,
+        "ph": 6.8
+      },
+      {
+        "depth": 2,
+        "water_temp": 8.2,
+        "dissolved_oxygen": 11.92,
+        "spc": 46.1,
+        "tds": 29.9,
+        "ph": 6.82
+      },
+      {
+        "depth": 3,
+        "water_temp": 8.2,
+        "dissolved_oxygen": 12.21,
+        "spc": 46,
+        "tds": 29.9,
+        "ph": 6.78
+      },
+      {
+        "depth": 4,
+        "water_temp": 7.1,
+        "dissolved_oxygen": 12.4,
+        "spc": 46,
+        "tds": 29.9,
+        "ph": 6.74
+      },
+      {
+        "depth": 5,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 12.54,
+        "spc": 45.9,
+        "tds": 29.9,
+        "ph": 6.53
+      },
+      {
+        "depth": 6,
+        "water_temp": 6.1,
+        "dissolved_oxygen": 12.15,
+        "spc": 45.9,
+        "tds": 29.9,
+        "ph": 6.4
+      },
+      {
+        "depth": 7,
+        "water_temp": 5.3,
+        "dissolved_oxygen": 12.08,
+        "spc": 45.8,
+        "tds": 29.9,
+        "ph": 6.2
+      },
+      {
+        "depth": 8,
+        "water_temp": 5.2,
+        "dissolved_oxygen": 12.26,
+        "spc": 45.9,
+        "tds": 29.9,
+        "ph": 6.17
+      },
+      {
+        "depth": 9,
+        "water_temp": 5.1,
+        "dissolved_oxygen": 12.15,
+        "spc": 45.9,
+        "tds": 29.9,
+        "ph": 6.17
+      },
+      {
+        "depth": 10,
+        "water_temp": 5.1,
+        "dissolved_oxygen": 12.26,
+        "spc": 45.9,
+        "tds": 29.9,
+        "ph": 6.18
+      },
+      {
+        "depth": 11,
+        "water_temp": 5,
+        "dissolved_oxygen": 11.89,
+        "spc": 45.8,
+        "tds": 29.9,
+        "ph": 6.19
+      },
+      {
+        "depth": 12,
+        "water_temp": 5,
+        "dissolved_oxygen": 11.92,
+        "spc": 45.9,
+        "tds": 29.9,
+        "ph": 6.21
+      },
+      {
+        "depth": 13,
+        "water_temp": 5,
+        "dissolved_oxygen": 11.96,
+        "spc": 45.9,
+        "tds": 29.9,
+        "ph": 6.23
+      },
+      {
+        "depth": 14,
+        "water_temp": 5,
+        "dissolved_oxygen": 12.13,
+        "spc": 45.9,
+        "tds": 29.9,
+        "ph": 6.26
+      },
+      {
+        "depth": 15,
+        "water_temp": 4.9,
+        "dissolved_oxygen": 11.6,
+        "spc": 45.9,
+        "tds": 29.9,
+        "ph": 6.3
+      },
+      {
+        "depth": 16,
+        "water_temp": 4.9,
+        "dissolved_oxygen": 11.55,
+        "spc": 46,
+        "tds": 29.9,
+        "ph": 6.28
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "date": "2024-09-11T12:10:00-08:00",
+    "samplers": [
+      "Norleen",
+      "Gina"
+    ],
+    "weather": "sunny, calm, partly cloudy",
+    "air_temperature": 19.7,
+    "secchi_depth": [
+      5.2
+    ],
+    "measurements": [
+      {
+        "depth": 0,
+        "temperature": 22.6,
+        "DO": 9.66,
+        "SPC": 55.8,
+        "TDS": 36.4,
+        "PH": 7.63
+      },
+      {
+        "depth": 1,
+        "temperature": 21.9,
+        "DO": 6.19,
+        "SPC": 55.9,
+        "TDS": 36.4,
+        "PH": 7.58
+      },
+      {
+        "depth": 2,
+        "temperature": 21.8,
+        "DO": 6.73,
+        "SPC": 58.1,
+        "TDS": 36.4,
+        "PH": 7.59
+      },
+      {
+        "depth": 3,
+        "temperature": 21.9,
+        "DO": 7.03,
+        "SPC": 55.8,
+        "TDS": 31.4,
+        "PH": 7.55
+      },
+      {
+        "depth": 4,
+        "temperature": 21.9,
+        "DO": 7.8,
+        "SPC": 55.9,
+        "TDS": 36.4,
+        "PH": 7.56
+      },
+      {
+        "depth": 5,
+        "temperature": 19.2,
+        "DO": 8.75,
+        "SPC": 52.1,
+        "TDS": 33.8,
+        "PH": 7.27
+      },
+      {
+        "depth": 6,
+        "temperature": 15.3,
+        "DO": 11.17,
+        "SPC": 48.7,
+        "TDS": 31.25,
+        "PH": 7.01
+      },
+      {
+        "depth": 7,
+        "temperature": 10.5,
+        "DO": 11,
+        "SPC": 49.7,
+        "TDS": 31.2,
+        "PH": 6.91
+      },
+      {
+        "depth": 8,
+        "temperature": 9.1,
+        "DO": 9.97,
+        "SPC": 47.9,
+        "TDS": 31.2,
+        "PH": 6.23
+      },
+      {
+        "depth": 9,
+        "temperature": 7.4,
+        "DO": 8.27,
+        "SPC": 48.4,
+        "TDS": 31.2,
+        "PH": 6.25
+      },
+      {
+        "depth": 10,
+        "temperature": 6.9,
+        "DO": 8.35,
+        "SPC": 48,
+        "TDS": 31.2,
+        "PH": 6.27
+      },
+      {
+        "depth": 11,
+        "temperature": 6.1,
+        "DO": 7.8,
+        "SPC": 48.5,
+        "TDS": 31.2,
+        "PH": 6.21
+      },
+      {
+        "depth": 12,
+        "temperature": 6.5,
+        "DO": 7.43,
+        "SPC": 48.4,
+        "TDS": 31.2,
+        "PH": 6.24
+      },
+      {
+        "depth": 13,
+        "temperature": 6.7,
+        "DO": 7.21,
+        "SPC": 48.8,
+        "TDS": 31.2,
+        "PH": 6.21
+      },
+      {
+        "depth": 14,
+        "temperature": 6.1,
+        "DO": 7.44,
+        "SPC": 52.1,
+        "TDS": 33.6,
+        "PH": 6.19
+      },
+      {
+        "depth": 15,
+        "temperature": 6.4,
+        "DO": 3.22,
+        "SPC": 54,
+        "TDS": 35.1,
+        "PH": 6.2
+      },
+      {
+        "depth": 16,
+        "temperature": 6.3,
+        "DO": 2.97,
+        "SPC": 54.2,
+        "TDS": 35.1,
+        "PH": 6.23
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "date": "2024-10-13T21:00:00-08:00",
+    "samplers": [
+      "Wisia",
+      "Gina"
+    ],
+    "weather": "calm, cloudy",
+    "air_temperature": 18,
+    "secchi_depth": [
+      4.3,
+      4.3
+    ],
+    "measurements": [
+      {
+        "depth": 0,
+        "temperature": 15.9,
+        "DO": 4.3,
+        "SPC": 53.8,
+        "TDS": 35.1,
+        "PH": 7.68
+      },
+      {
+        "depth": 1,
+        "temperature": 15.9,
+        "DO": 5.19,
+        "SPC": 53.9,
+        "TDS": 35.1,
+        "PH": 7.69
+      },
+      {
+        "depth": 2,
+        "temperature": 15.7,
+        "DO": 6.36,
+        "SPC": 54.5,
+        "TDS": 35.1,
+        "PH": 7.47
+      },
+      {
+        "depth": 3,
+        "temperature": 15.7,
+        "DO": 7.18,
+        "SPC": 53.9,
+        "TDS": 35.1,
+        "PH": 7.45
+      },
+      {
+        "depth": 4,
+        "temperature": 15.7,
+        "DO": 7.48,
+        "SPC": 54.1,
+        "TDS": 35.1,
+        "PH": 7.42
+      },
+      {
+        "depth": 5,
+        "temperature": 15.3,
+        "DO": 7.95,
+        "SPC": 54.9,
+        "TDS": 35.1,
+        "PH": 7.4
+      },
+      {
+        "depth": 6,
+        "temperature": 15.1,
+        "DO": 8.48,
+        "SPC": 54.2,
+        "TDS": 35.1,
+        "PH": 7.3
+      },
+      {
+        "depth": 7,
+        "temperature": 12.5,
+        "DO": 9.5,
+        "SPC": 49.5,
+        "TDS": 31.85,
+        "PH": 6.92
+      },
+      {
+        "depth": 8,
+        "temperature": 10.4,
+        "DO": 8,
+        "SPC": 48.1,
+        "TDS": 31.85,
+        "PH": 6.37
+      },
+      {
+        "depth": 9,
+        "temperature": 8.5,
+        "DO": 7.94,
+        "SPC": 49.8,
+        "TDS": 31.2,
+        "PH": 6.24
+      },
+      {
+        "depth": 10,
+        "temperature": 7.2,
+        "DO": 8.31,
+        "SPC": 48.8,
+        "TDS": 31.85,
+        "PH": 6.23
+      },
+      {
+        "depth": 11,
+        "temperature": 6.5,
+        "DO": 8.1,
+        "SPC": 48.8,
+        "TDS": 31.85,
+        "PH": 6.22
+      },
+      {
+        "depth": 12,
+        "temperature": 6.1,
+        "DO": 7.67,
+        "SPC": 48.6,
+        "TDS": 31.85,
+        "PH": 6.2
+      },
+      {
+        "depth": 13,
+        "temperature": 6.5,
+        "DO": 7.02,
+        "SPC": 51.6,
+        "TDS": 33.15,
+        "PH": 6.13
+      },
+      {
+        "depth": 14,
+        "temperature": 6.4,
+        "DO": 4.91,
+        "SPC": 52.2,
+        "TDS": 34.45,
+        "PH": 6.09
+      },
+      {
+        "depth": 15,
+        "temperature": 6.5,
+        "DO": 4.11,
+        "SPC": 54.9,
+        "TDS": 35.75,
+        "PH": 6.05
+      },
+      {
+        "depth": 16,
+        "temperature": 6.2,
+        "DO": 3.19,
+        "SPC": 59.9,
+        "TDS": 39,
+        "PH": 6.09
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "date": "2024-12-19T10:30:00-06:00",
+    "samplers": [
+      "Gimel Ziemek"
+    ],
+    "weather": "raining, cloudy",
+    "air_temperature": 18.9,
+    "secchi_depth": [
+      3.5,
+      4
+    ],
+    "measurements": [
+      {
+        "depth": 0,
+        "temperature": 6.7,
+        "DO": 8.76,
+        "SPC": 55,
+        "TDS": 39.95,
+        "PH": 6.1
+      },
+      {
+        "depth": 1,
+        "temperature": 6.5,
+        "DO": 9.65,
+        "SPC": 51.6,
+        "TDS": 33.8,
+        "PH": 6.42
+      },
+      {
+        "depth": 2,
+        "temperature": 6.5,
+        "DO": 9.8,
+        "SPC": 51.7,
+        "TDS": 33.8,
+        "PH": 6.44
+      },
+      {
+        "depth": 3,
+        "temperature": 6.5,
+        "DO": 12,
+        "SPC": 51.8,
+        "TDS": 33.8,
+        "PH": 6.49
+      },
+      {
+        "depth": 4,
+        "temperature": 6.5,
+        "DO": 9.7,
+        "SPC": 51.7,
+        "TDS": 33.8,
+        "PH": 6.52
+      },
+      {
+        "depth": 5,
+        "temperature": 6.5,
+        "DO": 9.6,
+        "SPC": 51.7,
+        "TDS": 33.8,
+        "PH": 6.58
+      },
+      {
+        "depth": 6,
+        "temperature": 6.5,
+        "DO": 9.4,
+        "SPC": 51.7,
+        "TDS": 33.8,
+        "PH": 6.64
+      },
+      {
+        "depth": 7,
+        "temperature": 6.5,
+        "DO": 9.24,
+        "SPC": 51.7,
+        "TDS": 33.8,
+        "PH": 6.67
+      },
+      {
+        "depth": 8,
+        "temperature": 6.5,
+        "DO": 9.43,
+        "SPC": 51.7,
+        "TDS": 33.8,
+        "PH": 6.69
+      },
+      {
+        "depth": 9,
+        "temperature": 6.5,
+        "DO": 9.42,
+        "SPC": 51.7,
+        "TDS": 33.8,
+        "PH": 6.7
+      },
+      {
+        "depth": 10,
+        "temperature": 6.5,
+        "DO": 9.45,
+        "SPC": 51.7,
+        "TDS": 33.8,
+        "PH": 6.72
+      },
+      {
+        "depth": 11,
+        "temperature": 6.5,
+        "DO": 9.36,
+        "SPC": 51.7,
+        "TDS": 33.8,
+        "PH": 6.72
+      },
+      {
+        "depth": 12,
+        "temperature": 6.3,
+        "DO": 8.89,
+        "SPC": 51.1,
+        "TDS": 33.15,
+        "PH": 6.63
+      },
+      {
+        "depth": 13,
+        "temperature": 6.5,
+        "DO": 5.51,
+        "SPC": 52.2,
+        "TDS": 33.8,
+        "PH": 6.82
+      },
+      {
+        "depth": 14,
+        "temperature": 5.3,
+        "DO": 3.85,
+        "SPC": 55,
+        "TDS": 35.67,
+        "PH": 6.2
+      },
+      {
+        "depth": 15,
+        "temperature": 5.1,
+        "DO": 2.18,
+        "SPC": 57.6,
+        "TDS": 37.7,
+        "PH": 6.19
+      },
+      {
+        "depth": 16,
+        "temperature": 5,
+        "DO": 1.96,
+        "SPC": 51.5,
+        "TDS": 40.3,
+        "PH": 6.23
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "date": "2025-03-02T14:15:00-08:00",
+    "samplers": [
+      "Carrie",
+      "Gino"
+    ],
+    "weather": "Sunny, light breeze, some clouds",
+    "air_temperature": 15.7,
+    "secchi_depth": [
+      3.8,
+      3.1
+    ],
+    "measurements": [
+      {
+        "depth": 0,
+        "temperature": 6.2,
+        "DO": 17.5,
+        "SPC": 29.5,
+        "TDS": 18.95,
+        "PH": 6.82
+      },
+      {
+        "depth": 1,
+        "temperature": 6.2,
+        "DO": 13.17,
+        "SPC": 50,
+        "TDS": 32.5,
+        "PH": 6.57
+      },
+      {
+        "depth": 2,
+        "temperature": 6,
+        "DO": 12.91,
+        "SPC": 50.1,
+        "TDS": 32.5,
+        "PH": 6.55
+      },
+      {
+        "depth": 3,
+        "temperature": 6,
+        "DO": 12.84,
+        "SPC": 50.2,
+        "TDS": 32.5,
+        "PH": 6.6
+      },
+      {
+        "depth": 4,
+        "temperature": 5.3,
+        "DO": 12.92,
+        "SPC": 50.4,
+        "TDS": 32.5,
+        "PH": 6.62
+      },
+      {
+        "depth": 5,
+        "temperature": 4.8,
+        "DO": 12.31,
+        "SPC": 50.4,
+        "TDS": 32.5,
+        "PH": 6.63
+      },
+      {
+        "depth": 6,
+        "temperature": 4.8,
+        "DO": 12.2,
+        "SPC": 50.4,
+        "TDS": 32.5,
+        "PH": 6.65
+      },
+      {
+        "depth": 7,
+        "temperature": 4.6,
+        "DO": 12.26,
+        "SPC": 50.7,
+        "TDS": 32.15,
+        "PH": 6.66
+      },
+      {
+        "depth": 8,
+        "temperature": 4.5,
+        "DO": 12.15,
+        "SPC": 50.7,
+        "TDS": 32.15,
+        "PH": 6.68
+      },
+      {
+        "depth": 9,
+        "temperature": 4.4,
+        "DO": 12.11,
+        "SPC": 50.7,
+        "TDS": 33.15,
+        "PH": 6.69
+      },
+      {
+        "depth": 10,
+        "temperature": 4.4,
+        "DO": 12.6,
+        "SPC": 50.8,
+        "TDS": 33.15,
+        "PH": 6.69
+      },
+      {
+        "depth": 11,
+        "temperature": 4.2,
+        "DO": 12.19,
+        "SPC": 50.9,
+        "TDS": 33.15,
+        "PH": 6.7
+      },
+      {
+        "depth": 12,
+        "temperature": 4.2,
+        "DO": 12.06,
+        "SPC": 50.7,
+        "TDS": 33.15,
+        "PH": 6.7
+      },
+      {
+        "depth": 13,
+        "temperature": 4.2,
+        "DO": 12.09,
+        "SPC": 50.8,
+        "TDS": 33.15,
+        "PH": 6.7
+      },
+      {
+        "depth": 14,
+        "temperature": 4.2,
+        "DO": 11.74,
+        "SPC": 51,
+        "TDS": 33.15,
+        "PH": 6.69
+      },
+      {
+        "depth": 15,
+        "temperature": 4.2,
+        "DO": 11.55,
+        "SPC": 51.2,
+        "TDS": 33.15,
+        "PH": 6.68
+      },
+      {
+        "depth": 16,
+        "temperature": 4.1,
+        "DO": 11.53,
+        "SPC": 51.2,
+        "TDS": 33.15,
+        "PH": 6.67
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "date": "2025-06-01T11:00:00-07:00",
+    "samplers": [
+      "Gina",
+      "Ziemer"
+    ],
+    "weather": "windy, partly cloudy",
+    "air_temperature": 19,
+    "secchi_depth": [
+      3.6,
+      3.4
+    ],
+    "measurements": [
+      {
+        "depth": 0,
+        "temperature": 17.4,
+        "DO": 9.77,
+        "SPC": 50,
+        "TDS": 32.5,
+        "PH": 7.21
+      },
+      {
+        "depth": 1,
+        "temperature": 17.3,
+        "DO": 9.47,
+        "SPC": 49.9,
+        "TDS": 32.5,
+        "PH": 7.25
+      },
+      {
+        "depth": 2,
+        "temperature": 17.2,
+        "DO": 9.53,
+        "SPC": 49.8,
+        "TDS": 32.5,
+        "PH": 7.29
+      },
+      {
+        "depth": 3,
+        "temperature": 17.2,
+        "DO": 9.42,
+        "SPC": 49.8,
+        "TDS": 32.5,
+        "PH": 7.3
+      },
+      {
+        "depth": 4,
+        "temperature": 15.1,
+        "DO": 11.04,
+        "SPC": 49.4,
+        "TDS": 31.85,
+        "PH": 7.33
+      },
+      {
+        "depth": 5,
+        "temperature": 9.5,
+        "DO": 12.6,
+        "SPC": 49.2,
+        "TDS": 31.85,
+        "PH": 7.08
+      },
+      {
+        "depth": 6,
+        "temperature": 7.3,
+        "DO": 10.95,
+        "SPC": 49.4,
+        "TDS": 31.85,
+        "PH": 6.83
+      },
+      {
+        "depth": 7,
+        "temperature": 6.3,
+        "DO": 11.3,
+        "SPC": 50,
+        "TDS": 32.5,
+        "PH": 6.5
+      },
+      {
+        "depth": 8,
+        "temperature": 6,
+        "DO": 11.07,
+        "SPC": 50,
+        "TDS": 32.5,
+        "PH": 6.52
+      },
+      {
+        "depth": 9,
+        "temperature": 5.3,
+        "DO": 10.81,
+        "SPC": 50.5,
+        "TDS": 33.15,
+        "PH": 6.49
+      },
+      {
+        "depth": 10,
+        "temperature": 5,
+        "DO": 10.24,
+        "SPC": 51.1,
+        "TDS": 33.15,
+        "PH": 6.43
+      },
+      {
+        "depth": 11,
+        "temperature": 4.8,
+        "DO": 9.95,
+        "SPC": 51.6,
+        "TDS": 33.8,
+        "PH": 6.39
+      },
+      {
+        "depth": 12,
+        "temperature": 4.7,
+        "DO": 9.77,
+        "SPC": 51.7,
+        "TDS": 33.8,
+        "PH": 6.38
+      },
+      {
+        "depth": 13,
+        "temperature": 4.6,
+        "DO": 8.82,
+        "SPC": 52,
+        "TDS": 33.8,
+        "PH": 6.37
+      },
+      {
+        "depth": 14,
+        "temperature": 4.5,
+        "DO": 8.75,
+        "SPC": 52.5,
+        "TDS": 33.8,
+        "PH": 6.35
+      },
+      {
+        "depth": 15,
+        "temperature": 4.5,
+        "DO": 7.6,
+        "SPC": 52.5,
+        "TDS": 33.8,
+        "PH": 6.33
+      },
+      {
+        "depth": 16,
+        "temperature": 4.5,
+        "DO": 7.55,
+        "SPC": 53.3,
+        "TDS": 34.45,
+        "PH": 6.29
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2019-03-28T20:45:00.000Z",
+    "samplers": [
+      "Mary Claire",
+      "Gina"
+    ],
+    "weather": "calm, sunny, some clouds, light wind",
+    "air_temperature": 13,
+    "secchi_depth": [
+      3.9,
+      3.9
+    ],
+    "nitrogen": 0.391,
+    "phosphorus": 0.0214,
+    "data_notes": "\"x\" note:DO recorded in %",
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 10.9,
+        "dissolved_oxygen": 123.7,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 6.53
+      },
+      {
+        "depth": 1,
+        "water_temp": 9.7,
+        "dissolved_oxygen": 129.6,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 6.6
+      },
+      {
+        "depth": 2,
+        "water_temp": 9.4,
+        "dissolved_oxygen": 117.4,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 6.58
+      },
+      {
+        "depth": 3,
+        "water_temp": 8.2,
+        "dissolved_oxygen": 119.9,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.45
+      },
+      {
+        "depth": 4,
+        "water_temp": 6.9,
+        "dissolved_oxygen": 116.5,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 6.38
+      },
+      {
+        "depth": 5,
+        "water_temp": 5.8,
+        "dissolved_oxygen": 113.5,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.36
+      },
+      {
+        "depth": 6,
+        "water_temp": 5.3,
+        "dissolved_oxygen": 108.8,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.35
+      },
+      {
+        "depth": 7,
+        "water_temp": 5,
+        "dissolved_oxygen": 106.2,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.32
+      },
+      {
+        "depth": 8,
+        "water_temp": 4.9,
+        "dissolved_oxygen": 103.2,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.3
+      },
+      {
+        "depth": 9,
+        "water_temp": 4.9,
+        "dissolved_oxygen": 103.3,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.28
+      },
+      {
+        "depth": 10,
+        "water_temp": 4.9,
+        "dissolved_oxygen": 103.1,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.27
+      },
+      {
+        "depth": 11,
+        "water_temp": 4.9,
+        "dissolved_oxygen": 100.9,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.25
+      },
+      {
+        "depth": 12,
+        "water_temp": 4.9,
+        "dissolved_oxygen": 100.8,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.24
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2019-04-28T18:45:00.000Z",
+    "samplers": [
+      "Andrew Smith",
+      "Gina Trzesicka"
+    ],
+    "weather": "calm, sunny",
+    "air_temperature": 11.2,
+    "secchi_depth": [
+      3.8,
+      3
+    ],
+    "nitrogen": 0.243,
+    "phosphorus": 0.012,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 11.6,
+        "dissolved_oxygen": 12.6,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 7.05
+      },
+      {
+        "depth": 1,
+        "water_temp": 11.5,
+        "dissolved_oxygen": 12.6,
+        "spc": 46.7,
+        "tds": 30.55,
+        "ph": 6.89
+      },
+      {
+        "depth": 2,
+        "water_temp": 11.2,
+        "dissolved_oxygen": 12.5,
+        "spc": 46.7,
+        "tds": 30.55,
+        "ph": 6.93
+      },
+      {
+        "depth": 3,
+        "water_temp": 11.1,
+        "dissolved_oxygen": 12.4,
+        "spc": 46.7,
+        "tds": 30.55,
+        "ph": 6.89
+      },
+      {
+        "depth": 4,
+        "water_temp": 11.1,
+        "dissolved_oxygen": 12.45,
+        "spc": 46.7,
+        "tds": 30.55,
+        "ph": 6.87
+      },
+      {
+        "depth": 5,
+        "water_temp": 11,
+        "dissolved_oxygen": 12.2,
+        "spc": 46.7,
+        "tds": 30.55,
+        "ph": 6.84
+      },
+      {
+        "depth": 6,
+        "water_temp": 10.8,
+        "dissolved_oxygen": 12.3,
+        "spc": 46.7,
+        "tds": 30.55,
+        "ph": 6.82
+      },
+      {
+        "depth": 7,
+        "water_temp": 10.7,
+        "dissolved_oxygen": 12.25,
+        "spc": 46.7,
+        "tds": 30.55,
+        "ph": 6.79
+      },
+      {
+        "depth": 8,
+        "water_temp": 9.2,
+        "dissolved_oxygen": 12.09,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 6.81
+      },
+      {
+        "depth": 9,
+        "water_temp": 8,
+        "dissolved_oxygen": 11.45,
+        "spc": 47.3,
+        "tds": 30.55,
+        "ph": 6.71
+      },
+      {
+        "depth": 10,
+        "water_temp": 7.3,
+        "dissolved_oxygen": 11.15,
+        "spc": 47.3,
+        "tds": 30.55,
+        "ph": 6.59
+      },
+      {
+        "depth": 11,
+        "water_temp": 7.1,
+        "dissolved_oxygen": 10.8,
+        "spc": 47.4,
+        "tds": 30.55,
+        "ph": 6.46
+      },
+      {
+        "depth": 12,
+        "water_temp": 7,
+        "dissolved_oxygen": 7.1,
+        "spc": 47.4,
+        "tds": 30.55,
+        "ph": 6.38
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2019-05-21T18:00:00.000Z",
+    "samplers": [
+      "Gina Trzesicka",
+      "Ania Jasiak (Gina's guest)"
+    ],
+    "weather": "Windy, cloudy",
+    "air_temperature": 18.6,
+    "secchi_depth": [
+      3.1,
+      3.1
+    ],
+    "nitrogen": 0.255,
+    "phosphorus": 0.0062,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 19.1,
+        "dissolved_oxygen": 9.7,
+        "spc": 46.7,
+        "tds": 30.55,
+        "ph": 6.75
+      },
+      {
+        "depth": 1,
+        "water_temp": 19,
+        "dissolved_oxygen": 9.27,
+        "spc": 46.7,
+        "tds": 30.55,
+        "ph": 6.84
+      },
+      {
+        "depth": 2,
+        "water_temp": 18.9,
+        "dissolved_oxygen": 9.3,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 6.89
+      },
+      {
+        "depth": 3,
+        "water_temp": 19,
+        "dissolved_oxygen": 8.95,
+        "spc": 46.6,
+        "tds": 30.55,
+        "ph": 6.92
+      },
+      {
+        "depth": 4,
+        "water_temp": 16,
+        "dissolved_oxygen": 10.73,
+        "spc": 46.2,
+        "tds": 29.9,
+        "ph": 7.03
+      },
+      {
+        "depth": 5,
+        "water_temp": 14,
+        "dissolved_oxygen": 11.3,
+        "spc": 46.2,
+        "tds": 29.9,
+        "ph": 6.93
+      },
+      {
+        "depth": 6,
+        "water_temp": 12.9,
+        "dissolved_oxygen": 11.01,
+        "spc": 45.8,
+        "tds": 29.9,
+        "ph": 6.72
+      },
+      {
+        "depth": 7,
+        "water_temp": 11.1,
+        "dissolved_oxygen": 9.92,
+        "spc": 45.6,
+        "tds": 29.25,
+        "ph": 6.47
+      },
+      {
+        "depth": 8,
+        "water_temp": 10.4,
+        "dissolved_oxygen": 9.83,
+        "spc": 46.1,
+        "tds": 29.9,
+        "ph": 6.36
+      },
+      {
+        "depth": 9,
+        "water_temp": 9.3,
+        "dissolved_oxygen": 8.52,
+        "spc": 46.1,
+        "tds": 29.9,
+        "ph": 6.19
+      },
+      {
+        "depth": 10,
+        "water_temp": 9.6,
+        "dissolved_oxygen": 8.1,
+        "spc": 45.7,
+        "tds": 29.9,
+        "ph": 6.13
+      },
+      {
+        "depth": 11,
+        "water_temp": 8.9,
+        "dissolved_oxygen": 7.6,
+        "spc": 46.2,
+        "tds": 30.55,
+        "ph": 6.06
+      },
+      {
+        "depth": 12,
+        "water_temp": 8.7,
+        "dissolved_oxygen": 6.89,
+        "spc": 46.1,
+        "tds": 29.9,
+        "ph": 6.01
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2019-06-16T22:50:00.000Z",
+    "samplers": [
+      "Akshara Sangiorgio",
+      "Gina"
+    ],
+    "weather": "sunny light breeze, hazy",
+    "air_temperature": 30,
+    "secchi_depth": [
+      4.5,
+      6.6
+    ],
+    "nitrogen": 0.18,
+    "phosphorus": 0.0057,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 24,
+        "dissolved_oxygen": 9.28,
+        "spc": 49.5,
+        "tds": 31.85,
+        "ph": 7.25
+      },
+      {
+        "depth": 1,
+        "water_temp": 23.8,
+        "dissolved_oxygen": 9.05,
+        "spc": 28.3,
+        "tds": 31.2,
+        "ph": 6.93
+      },
+      {
+        "depth": 2,
+        "water_temp": 23.4,
+        "dissolved_oxygen": 8.95,
+        "spc": 48.1,
+        "tds": 31.2,
+        "ph": 6.76
+      },
+      {
+        "depth": 3,
+        "water_temp": 22.7,
+        "dissolved_oxygen": 8.92,
+        "spc": 48.2,
+        "tds": 31.2,
+        "ph": 6.69
+      },
+      {
+        "depth": 4,
+        "water_temp": 22.4,
+        "dissolved_oxygen": 8.9,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.62
+      },
+      {
+        "depth": 5,
+        "water_temp": 18,
+        "dissolved_oxygen": 10.86,
+        "spc": 46.4,
+        "tds": 29.9,
+        "ph": 6.83
+      },
+      {
+        "depth": 6,
+        "water_temp": 14.2,
+        "dissolved_oxygen": 12.91,
+        "spc": 46.5,
+        "tds": 29.25,
+        "ph": 6.69
+      },
+      {
+        "depth": 7,
+        "water_temp": 12.5,
+        "dissolved_oxygen": 11.89,
+        "spc": 45.4,
+        "tds": 29.9,
+        "ph": 6.55
+      },
+      {
+        "depth": 8,
+        "water_temp": 11.3,
+        "dissolved_oxygen": 9.57,
+        "spc": 46.2,
+        "tds": 29.9,
+        "ph": 6.41
+      },
+      {
+        "depth": 9,
+        "water_temp": 10,
+        "dissolved_oxygen": 7.86,
+        "spc": 46.3,
+        "tds": 29.9,
+        "ph": 6.25
+      },
+      {
+        "depth": 10,
+        "water_temp": 9.4,
+        "dissolved_oxygen": 5.78,
+        "spc": 46,
+        "tds": 30.55,
+        "ph": 6.09
+      },
+      {
+        "depth": 11,
+        "water_temp": 9.5,
+        "dissolved_oxygen": 4.16,
+        "spc": 46.4,
+        "tds": 30.55,
+        "ph": 5.95
+      },
+      {
+        "depth": 12,
+        "water_temp": 9.4,
+        "dissolved_oxygen": 3.79,
+        "spc": 46.6,
+        "tds": 30.55,
+        "ph": 5.88
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2019-07-17T01:00:00.000Z",
+    "samplers": [
+      "Akshara Sangiorgio",
+      "Gina"
+    ],
+    "weather": "na",
+    "air_temperature": 21.2,
+    "secchi_depth": [
+      6.2,
+      5.3
+    ],
+    "nitrogen": 0.176,
+    "phosphorus": null,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 25.5,
+        "dissolved_oxygen": 9.54,
+        "spc": 49,
+        "tds": 31.85,
+        "ph": 7.15
+      },
+      {
+        "depth": 1,
+        "water_temp": 25.2,
+        "dissolved_oxygen": 9.34,
+        "spc": 48.9,
+        "tds": 31.85,
+        "ph": 7.24
+      },
+      {
+        "depth": 2,
+        "water_temp": 25.2,
+        "dissolved_oxygen": 9.42,
+        "spc": 49,
+        "tds": 31.85,
+        "ph": 7.23
+      },
+      {
+        "depth": 3,
+        "water_temp": 25,
+        "dissolved_oxygen": 9.62,
+        "spc": 48.9,
+        "tds": 31.85,
+        "ph": 7.27
+      },
+      {
+        "depth": 4,
+        "water_temp": 24,
+        "dissolved_oxygen": 9.92,
+        "spc": 48.5,
+        "tds": 31.85,
+        "ph": 7.28
+      },
+      {
+        "depth": 5,
+        "water_temp": 22.4,
+        "dissolved_oxygen": 10.29,
+        "spc": 48.6,
+        "tds": 31.85,
+        "ph": 7.31
+      },
+      {
+        "depth": 6,
+        "water_temp": 19,
+        "dissolved_oxygen": 12.64,
+        "spc": 47.5,
+        "tds": 31.2,
+        "ph": 7.32
+      },
+      {
+        "depth": 7,
+        "water_temp": 15,
+        "dissolved_oxygen": 12.45,
+        "spc": 46.7,
+        "tds": 29.9,
+        "ph": 7.19
+      },
+      {
+        "depth": 8,
+        "water_temp": 12.3,
+        "dissolved_oxygen": 9.99,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.86
+      },
+      {
+        "depth": 9,
+        "water_temp": 10.8,
+        "dissolved_oxygen": 7.63,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.5
+      },
+      {
+        "depth": 10,
+        "water_temp": 9.9,
+        "dissolved_oxygen": 4.62,
+        "spc": 48.2,
+        "tds": 31.2,
+        "ph": 6.27
+      },
+      {
+        "depth": 11,
+        "water_temp": 9.7,
+        "dissolved_oxygen": 3.11,
+        "spc": 49.1,
+        "tds": 31.85,
+        "ph": 6.13
+      },
+      {
+        "depth": 12,
+        "water_temp": 9.8,
+        "dissolved_oxygen": 2.32,
+        "spc": 49.4,
+        "tds": 32.5,
+        "ph": 6.03
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2019-08-13T22:45:00.000Z",
+    "samplers": [
+      "Gina",
+      "Autumn (FOCI summer student0"
+    ],
+    "weather": "morning rain, afternoon sunny, no breeze, a bit muggy",
+    "air_temperature": 27.4,
+    "secchi_depth": [
+      7.4,
+      5.4
+    ],
+    "nitrogen": 0.203,
+    "phosphorus": 0.014,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 25.7,
+        "dissolved_oxygen": 8.93,
+        "spc": 49.3,
+        "tds": 31.85,
+        "ph": 6.84
+      },
+      {
+        "depth": 1,
+        "water_temp": 25,
+        "dissolved_oxygen": 8.49,
+        "spc": 49.3,
+        "tds": 31.85,
+        "ph": 6.79
+      },
+      {
+        "depth": 2,
+        "water_temp": 24.6,
+        "dissolved_oxygen": 8.52,
+        "spc": 49.4,
+        "tds": 31.85,
+        "ph": 6.72
+      },
+      {
+        "depth": 3,
+        "water_temp": 24.6,
+        "dissolved_oxygen": 8.26,
+        "spc": 49,
+        "tds": 31.85,
+        "ph": 6.68
+      },
+      {
+        "depth": 4,
+        "water_temp": 24.3,
+        "dissolved_oxygen": 8.5,
+        "spc": 49,
+        "tds": 31.85,
+        "ph": 6.66
+      },
+      {
+        "depth": 5,
+        "water_temp": 23.7,
+        "dissolved_oxygen": 8.45,
+        "spc": 48.8,
+        "tds": 31.85,
+        "ph": 6.64
+      },
+      {
+        "depth": 6,
+        "water_temp": 21.3,
+        "dissolved_oxygen": 9.6,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.65
+      },
+      {
+        "depth": 7,
+        "water_temp": 16.7,
+        "dissolved_oxygen": 9.5,
+        "spc": 46.6,
+        "tds": 31.55,
+        "ph": 6.4
+      },
+      {
+        "depth": 8,
+        "water_temp": 13.2,
+        "dissolved_oxygen": 5.73,
+        "spc": 47.5,
+        "tds": 31.2,
+        "ph": 6.06
+      },
+      {
+        "depth": 9,
+        "water_temp": 11.7,
+        "dissolved_oxygen": 3.6,
+        "spc": 47.8,
+        "tds": 31.2,
+        "ph": 5.87
+      },
+      {
+        "depth": 10,
+        "water_temp": 11,
+        "dissolved_oxygen": 1.63,
+        "spc": 49.5,
+        "tds": 31.85,
+        "ph": 5.75
+      },
+      {
+        "depth": 11,
+        "water_temp": 10.2,
+        "dissolved_oxygen": 1.24,
+        "spc": 52.9,
+        "tds": 34.45,
+        "ph": 5.72
+      },
+      {
+        "depth": 12,
+        "water_temp": 10.5,
+        "dissolved_oxygen": 1.17,
+        "spc": 53.9,
+        "tds": 35.1,
+        "ph": 5.72
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2019-09-16T21:00:00.000Z",
+    "samplers": [
+      "Gina",
+      "Autumn"
+    ],
+    "weather": "sunny, windy, some clouds",
+    "air_temperature": 19,
+    "secchi_depth": [
+      4.3,
+      6.9
+    ],
+    "nitrogen": 0.169,
+    "phosphorus": 0.0069,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 21,
+        "dissolved_oxygen": 8.55,
+        "spc": 48.9,
+        "tds": 31.85,
+        "ph": 6.52
+      },
+      {
+        "depth": 1,
+        "water_temp": 20.7,
+        "dissolved_oxygen": 8.81,
+        "spc": 49.7,
+        "tds": 31.85,
+        "ph": 6.44
+      },
+      {
+        "depth": 2,
+        "water_temp": 20.7,
+        "dissolved_oxygen": 8.86,
+        "spc": 48.6,
+        "tds": 31.2,
+        "ph": 6.28
+      },
+      {
+        "depth": 3,
+        "water_temp": 20.5,
+        "dissolved_oxygen": 8.64,
+        "spc": 48.4,
+        "tds": 31.85,
+        "ph": 6.3
+      },
+      {
+        "depth": 4,
+        "water_temp": 20.3,
+        "dissolved_oxygen": 9.97,
+        "spc": 48.4,
+        "tds": 31.85,
+        "ph": 6.29
+      },
+      {
+        "depth": 5,
+        "water_temp": 20.3,
+        "dissolved_oxygen": 8.84,
+        "spc": 48.2,
+        "tds": 31.85,
+        "ph": 6.3
+      },
+      {
+        "depth": 6,
+        "water_temp": 20.2,
+        "dissolved_oxygen": 8.79,
+        "spc": 48.7,
+        "tds": 31.85,
+        "ph": 6.25
+      },
+      {
+        "depth": 7,
+        "water_temp": 20,
+        "dissolved_oxygen": 8.41,
+        "spc": 47.7,
+        "tds": 31.85,
+        "ph": 6.29
+      },
+      {
+        "depth": 8,
+        "water_temp": 14.6,
+        "dissolved_oxygen": 6,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.18
+      },
+      {
+        "depth": 9,
+        "water_temp": 11.9,
+        "dissolved_oxygen": 3.11,
+        "spc": 49.2,
+        "tds": 32.85,
+        "ph": 5.82
+      },
+      {
+        "depth": 10,
+        "water_temp": 19.8,
+        "dissolved_oxygen": 1.65,
+        "spc": 55.4,
+        "tds": 36.4,
+        "ph": 5.61
+      },
+      {
+        "depth": 11,
+        "water_temp": 10,
+        "dissolved_oxygen": 1.3,
+        "spc": 60,
+        "tds": 38.35,
+        "ph": 5.53
+      },
+      {
+        "depth": 12,
+        "water_temp": 9.9,
+        "dissolved_oxygen": 1.22,
+        "spc": 61.1,
+        "tds": 39.65,
+        "ph": 5.53
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2019-11-05T21:30:00.000Z",
+    "samplers": [
+      "Carrie and Max"
+    ],
+    "weather": "overcast, no breeze",
+    "air_temperature": null,
+    "secchi_depth": [
+      4.6,
+      5.3
+    ],
+    "nitrogen": 0.239,
+    "phosphorus": 0.013,
+    "data_notes": "\"x\" = DO in percent",
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": null,
+        "dissolved_oxygen": null,
+        "spc": null,
+        "tds": null,
+        "ph": null
+      },
+      {
+        "depth": 1,
+        "water_temp": 12.1,
+        "dissolved_oxygen": 97.8,
+        "spc": 47.4,
+        "tds": 31.2,
+        "ph": null
+      },
+      {
+        "depth": 2,
+        "water_temp": 11.9,
+        "dissolved_oxygen": 96.6,
+        "spc": 47.4,
+        "tds": 31.2,
+        "ph": null
+      },
+      {
+        "depth": 3,
+        "water_temp": 11.9,
+        "dissolved_oxygen": 89,
+        "spc": 47.2,
+        "tds": 31.2,
+        "ph": null
+      },
+      {
+        "depth": 4,
+        "water_temp": 11.7,
+        "dissolved_oxygen": 88.2,
+        "spc": 47.6,
+        "tds": 30.55,
+        "ph": null
+      },
+      {
+        "depth": 5,
+        "water_temp": 11.6,
+        "dissolved_oxygen": 90.6,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": null
+      },
+      {
+        "depth": 6,
+        "water_temp": 11.7,
+        "dissolved_oxygen": 89,
+        "spc": 47.4,
+        "tds": 30.55,
+        "ph": null
+      },
+      {
+        "depth": 7,
+        "water_temp": 11.6,
+        "dissolved_oxygen": 88.8,
+        "spc": 47.4,
+        "tds": 30.55,
+        "ph": null
+      },
+      {
+        "depth": 8,
+        "water_temp": 11.6,
+        "dissolved_oxygen": 88.8,
+        "spc": 47.3,
+        "tds": 31.2,
+        "ph": null
+      },
+      {
+        "depth": 9,
+        "water_temp": 11.6,
+        "dissolved_oxygen": 88.8,
+        "spc": 47.8,
+        "tds": 31.2,
+        "ph": null
+      },
+      {
+        "depth": 10,
+        "water_temp": 11.6,
+        "dissolved_oxygen": 87.4,
+        "spc": 47.5,
+        "tds": 31.2,
+        "ph": null
+      },
+      {
+        "depth": 11,
+        "water_temp": 11.6,
+        "dissolved_oxygen": 87.6,
+        "spc": 47.6,
+        "tds": 31.2,
+        "ph": null
+      },
+      {
+        "depth": 12,
+        "water_temp": 11.5,
+        "dissolved_oxygen": 82.3,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": null
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2019-12-15T19:35:00.000Z",
+    "samplers": [
+      "na"
+    ],
+    "weather": "clear",
+    "air_temperature": 15,
+    "secchi_depth": [
+      6.1,
+      5.3
+    ],
+    "nitrogen": 0.31,
+    "phosphorus": 0.012,
+    "data_notes": "\"na\" = not measured",
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": null,
+        "dissolved_oxygen": null,
+        "spc": null,
+        "tds": null,
+        "ph": null
+      },
+      {
+        "depth": 1,
+        "water_temp": 8.3,
+        "dissolved_oxygen": 11.4,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.99
+      },
+      {
+        "depth": 2,
+        "water_temp": 7.9,
+        "dissolved_oxygen": 10.1,
+        "spc": 47.4,
+        "tds": 31,
+        "ph": 6.89
+      },
+      {
+        "depth": 3,
+        "water_temp": 7.8,
+        "dissolved_oxygen": 10,
+        "spc": 47.6,
+        "tds": 30,
+        "ph": 6.9
+      },
+      {
+        "depth": 4,
+        "water_temp": 7.9,
+        "dissolved_oxygen": 10.64,
+        "spc": 47.6,
+        "tds": 31.2,
+        "ph": 6.91
+      },
+      {
+        "depth": 5,
+        "water_temp": 7.7,
+        "dissolved_oxygen": 9.8,
+        "spc": 47.5,
+        "tds": 31.2,
+        "ph": 6.94
+      },
+      {
+        "depth": 6,
+        "water_temp": 7.9,
+        "dissolved_oxygen": 9.78,
+        "spc": 47.5,
+        "tds": 31.2,
+        "ph": 6.96
+      },
+      {
+        "depth": 7,
+        "water_temp": 7.9,
+        "dissolved_oxygen": 9.84,
+        "spc": 47.6,
+        "tds": 31.2,
+        "ph": 6.99
+      },
+      {
+        "depth": 8,
+        "water_temp": 7.9,
+        "dissolved_oxygen": 11.7,
+        "spc": 47.4,
+        "tds": 31.2,
+        "ph": 7
+      },
+      {
+        "depth": 9,
+        "water_temp": 7.9,
+        "dissolved_oxygen": 11.8,
+        "spc": 47.5,
+        "tds": 31.2,
+        "ph": 7.01
+      },
+      {
+        "depth": 10,
+        "water_temp": 8,
+        "dissolved_oxygen": 12.03,
+        "spc": 47.7,
+        "tds": 31.2,
+        "ph": 7.02
+      },
+      {
+        "depth": 11,
+        "water_temp": 7.6,
+        "dissolved_oxygen": 11.2,
+        "spc": 47.6,
+        "tds": 31.2,
+        "ph": 7.02
+      },
+      {
+        "depth": 12,
+        "water_temp": 7.6,
+        "dissolved_oxygen": 11.3,
+        "spc": 47.6,
+        "tds": 31.2,
+        "ph": 7.02
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2020-01-21T22:15:00.000Z",
+    "samplers": [
+      "na"
+    ],
+    "weather": "wind, drizzle, recent melt",
+    "air_temperature": 5.6,
+    "secchi_depth": [
+      4.1,
+      4.1
+    ],
+    "nitrogen": 0.275,
+    "phosphorus": 0.014,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 4.9,
+        "dissolved_oxygen": 14.91,
+        "spc": 46.4,
+        "tds": 30.55,
+        "ph": 7.21
+      },
+      {
+        "depth": 1,
+        "water_temp": 4.9,
+        "dissolved_oxygen": 16,
+        "spc": 46.7,
+        "tds": 30.55,
+        "ph": 7.32
+      },
+      {
+        "depth": 2,
+        "water_temp": 4.9,
+        "dissolved_oxygen": 16.19,
+        "spc": 47.7,
+        "tds": 29.9,
+        "ph": 7.02
+      },
+      {
+        "depth": 3,
+        "water_temp": 4.7,
+        "dissolved_oxygen": 14.99,
+        "spc": 47.8,
+        "tds": 30.55,
+        "ph": 6.93
+      },
+      {
+        "depth": 4,
+        "water_temp": 4.9,
+        "dissolved_oxygen": 15.2,
+        "spc": 46.3,
+        "tds": 30.55,
+        "ph": 6.9
+      },
+      {
+        "depth": 5,
+        "water_temp": 4.9,
+        "dissolved_oxygen": 15.01,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 6.91
+      },
+      {
+        "depth": 6,
+        "water_temp": 4.7,
+        "dissolved_oxygen": 15.01,
+        "spc": 46.5,
+        "tds": 30.55,
+        "ph": 6.93
+      },
+      {
+        "depth": 7,
+        "water_temp": 4.6,
+        "dissolved_oxygen": 14.81,
+        "spc": 46.6,
+        "tds": 30.55,
+        "ph": 6.94
+      },
+      {
+        "depth": 8,
+        "water_temp": 4.7,
+        "dissolved_oxygen": 14.5,
+        "spc": 46.3,
+        "tds": 30.55,
+        "ph": 7.01
+      },
+      {
+        "depth": 9,
+        "water_temp": 4.7,
+        "dissolved_oxygen": 14.92,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 7.05
+      },
+      {
+        "depth": 10,
+        "water_temp": 4.7,
+        "dissolved_oxygen": 14.78,
+        "spc": 46.5,
+        "tds": 30.55,
+        "ph": 7.1
+      },
+      {
+        "depth": 11,
+        "water_temp": 4.8,
+        "dissolved_oxygen": 14.8,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 7.13
+      },
+      {
+        "depth": 12,
+        "water_temp": 4.8,
+        "dissolved_oxygen": 14.85,
+        "spc": 46.4,
+        "tds": 30.55,
+        "ph": 7.17
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2020-02-23T19:00:00.000Z",
+    "samplers": [
+      "Max and Heidi"
+    ],
+    "weather": "windy, sunny+clouds",
+    "air_temperature": 7.1,
+    "secchi_depth": [
+      3.2,
+      3.1
+    ],
+    "nitrogen": 0.298,
+    "phosphorus": 0.007,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 4.8,
+        "dissolved_oxygen": 13.98,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 7.78
+      },
+      {
+        "depth": 1,
+        "water_temp": 4.8,
+        "dissolved_oxygen": 13.7,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.84
+      },
+      {
+        "depth": 2,
+        "water_temp": 4.8,
+        "dissolved_oxygen": 13.57,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.6
+      },
+      {
+        "depth": 3,
+        "water_temp": 4.8,
+        "dissolved_oxygen": 13.53,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.48
+      },
+      {
+        "depth": 4,
+        "water_temp": 4.8,
+        "dissolved_oxygen": 13.46,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.41
+      },
+      {
+        "depth": 5,
+        "water_temp": 4.8,
+        "dissolved_oxygen": 13.39,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.37
+      },
+      {
+        "depth": 6,
+        "water_temp": 4.8,
+        "dissolved_oxygen": 13.35,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.34
+      },
+      {
+        "depth": 7,
+        "water_temp": 4.8,
+        "dissolved_oxygen": 13.33,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.34
+      },
+      {
+        "depth": 8,
+        "water_temp": 4.8,
+        "dissolved_oxygen": 13.33,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.35
+      },
+      {
+        "depth": 9,
+        "water_temp": 4.8,
+        "dissolved_oxygen": 13.33,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.36
+      },
+      {
+        "depth": 10,
+        "water_temp": 4.8,
+        "dissolved_oxygen": 13.27,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.39
+      },
+      {
+        "depth": 11,
+        "water_temp": 4.8,
+        "dissolved_oxygen": 13.27,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.39
+      },
+      {
+        "depth": 12,
+        "water_temp": 4.8,
+        "dissolved_oxygen": 13.27,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.39
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2020-03-26T18:30:00.000Z",
+    "samplers": [
+      "Max and Carrie"
+    ],
+    "weather": "overcast, rain, no wind",
+    "air_temperature": 12.6,
+    "secchi_depth": [
+      3.2,
+      3
+    ],
+    "nitrogen": 0.303,
+    "phosphorus": 0.01,
+    "data_notes": "\"x\"=unstable DO",
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 8.1,
+        "dissolved_oxygen": 14.38,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 6.42
+      },
+      {
+        "depth": 1,
+        "water_temp": 8,
+        "dissolved_oxygen": 14.34,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 6.44
+      },
+      {
+        "depth": 2,
+        "water_temp": 8,
+        "dissolved_oxygen": 13.96,
+        "spc": 46.7,
+        "tds": 30.55,
+        "ph": 6.47
+      },
+      {
+        "depth": 3,
+        "water_temp": 7.9,
+        "dissolved_oxygen": 13.54,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 6.5
+      },
+      {
+        "depth": 4,
+        "water_temp": 7.5,
+        "dissolved_oxygen": 13.6,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 6.51
+      },
+      {
+        "depth": 5,
+        "water_temp": 7,
+        "dissolved_oxygen": 13.25,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 6.49
+      },
+      {
+        "depth": 6,
+        "water_temp": 6.9,
+        "dissolved_oxygen": 13.29,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 6.43
+      },
+      {
+        "depth": 7,
+        "water_temp": 6.5,
+        "dissolved_oxygen": 13.32,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 6.41
+      },
+      {
+        "depth": 8,
+        "water_temp": 6.2,
+        "dissolved_oxygen": 13.17,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 6.35
+      },
+      {
+        "depth": 9,
+        "water_temp": 5.9,
+        "dissolved_oxygen": 12.3,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 6.33
+      },
+      {
+        "depth": 10,
+        "water_temp": 5.7,
+        "dissolved_oxygen": 12.35,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 6.33
+      },
+      {
+        "depth": 11,
+        "water_temp": 5.7,
+        "dissolved_oxygen": 12.3,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 6.33
+      },
+      {
+        "depth": 12,
+        "water_temp": 5.6,
+        "dissolved_oxygen": 12.34,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 6.33
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2020-05-05T18:00:00.000Z",
+    "samplers": [
+      "Gina and Carrie"
+    ],
+    "weather": "sunny, calm",
+    "air_temperature": null,
+    "secchi_depth": [
+      4.6,
+      4.4
+    ],
+    "nitrogen": 0.22,
+    "phosphorus": 0.004,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 14,
+        "dissolved_oxygen": 11.9,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 7.08
+      },
+      {
+        "depth": 1,
+        "water_temp": 13.7,
+        "dissolved_oxygen": 11.55,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 6.91
+      },
+      {
+        "depth": 2,
+        "water_temp": 13.4,
+        "dissolved_oxygen": 10.9,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 6.81
+      },
+      {
+        "depth": 3,
+        "water_temp": 13.2,
+        "dissolved_oxygen": 10.8,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 6.77
+      },
+      {
+        "depth": 4,
+        "water_temp": 13.1,
+        "dissolved_oxygen": 10.9,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 6.76
+      },
+      {
+        "depth": 5,
+        "water_temp": 12.3,
+        "dissolved_oxygen": 12.1,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 6.93
+      },
+      {
+        "depth": 6,
+        "water_temp": 10.1,
+        "dissolved_oxygen": 12.03,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.51
+      },
+      {
+        "depth": 7,
+        "water_temp": 8.2,
+        "dissolved_oxygen": 11.17,
+        "spc": 47.4,
+        "tds": 30.55,
+        "ph": 6.26
+      },
+      {
+        "depth": 8,
+        "water_temp": 7.8,
+        "dissolved_oxygen": 11.18,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.19
+      },
+      {
+        "depth": 9,
+        "water_temp": 7.6,
+        "dissolved_oxygen": 10.25,
+        "spc": 47.4,
+        "tds": 30.55,
+        "ph": 6.12
+      },
+      {
+        "depth": 10,
+        "water_temp": 7.5,
+        "dissolved_oxygen": 10.5,
+        "spc": 47.4,
+        "tds": 30.55,
+        "ph": 6.08
+      },
+      {
+        "depth": 11,
+        "water_temp": 7.4,
+        "dissolved_oxygen": 9.57,
+        "spc": 47.5,
+        "tds": 30.28,
+        "ph": 6.05
+      },
+      {
+        "depth": 12,
+        "water_temp": 6.9,
+        "dissolved_oxygen": 9.36,
+        "spc": 47.6,
+        "tds": 31.2,
+        "ph": 6.03
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2020-05-31T23:00:00.000Z",
+    "samplers": [
+      "Gina and Ziemek (Gina's son)"
+    ],
+    "weather": "sunny, light wind",
+    "air_temperature": 18.9,
+    "secchi_depth": [
+      4.5,
+      5.3
+    ],
+    "nitrogen": 0.204,
+    "phosphorus": 0.0037,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 20.1,
+        "dissolved_oxygen": 9.72,
+        "spc": 47.8,
+        "tds": 31.55,
+        "ph": 7.15
+      },
+      {
+        "depth": 1,
+        "water_temp": 19.9,
+        "dissolved_oxygen": 9.71,
+        "spc": 47.1,
+        "tds": 30.55,
+        "ph": 7.07
+      },
+      {
+        "depth": 2,
+        "water_temp": 19.3,
+        "dissolved_oxygen": 9.9,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 7.15
+      },
+      {
+        "depth": 3,
+        "water_temp": 19,
+        "dissolved_oxygen": 9.64,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 7.14
+      },
+      {
+        "depth": 4,
+        "water_temp": 18,
+        "dissolved_oxygen": 10.35,
+        "spc": 46.5,
+        "tds": 30.55,
+        "ph": 7.23
+      },
+      {
+        "depth": 5,
+        "water_temp": 16.4,
+        "dissolved_oxygen": 11.11,
+        "spc": 45.6,
+        "tds": 30.55,
+        "ph": 7.12
+      },
+      {
+        "depth": 6,
+        "water_temp": 13.6,
+        "dissolved_oxygen": 13.66,
+        "spc": 45.9,
+        "tds": 30.55,
+        "ph": 7.23
+      },
+      {
+        "depth": 7,
+        "water_temp": 10.2,
+        "dissolved_oxygen": 12,
+        "spc": 46.5,
+        "tds": 30.55,
+        "ph": 6.17
+      },
+      {
+        "depth": 8,
+        "water_temp": 9.8,
+        "dissolved_oxygen": 9.97,
+        "spc": 46.1,
+        "tds": 30.55,
+        "ph": 6.77
+      },
+      {
+        "depth": 9,
+        "water_temp": 9,
+        "dissolved_oxygen": 8.14,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 6.5
+      },
+      {
+        "depth": 10,
+        "water_temp": 8.5,
+        "dissolved_oxygen": 7.14,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 6.35
+      },
+      {
+        "depth": 11,
+        "water_temp": 8.4,
+        "dissolved_oxygen": 5.83,
+        "spc": 46.5,
+        "tds": 30.55,
+        "ph": 6.15
+      },
+      {
+        "depth": 12,
+        "water_temp": 8.5,
+        "dissolved_oxygen": 5.6,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.15
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2020-06-20T18:25:00.000Z",
+    "samplers": [
+      "Andrew and Carrie"
+    ],
+    "weather": "windy, overcast, wind",
+    "air_temperature": 17.6,
+    "secchi_depth": [
+      5.4,
+      5.4
+    ],
+    "nitrogen": 0.198,
+    "phosphorus": 0.0072,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 20.1,
+        "dissolved_oxygen": 9.16,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.59
+      },
+      {
+        "depth": 1,
+        "water_temp": 20.1,
+        "dissolved_oxygen": 8.85,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.64
+      },
+      {
+        "depth": 2,
+        "water_temp": 20.1,
+        "dissolved_oxygen": 9.32,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.71
+      },
+      {
+        "depth": 3,
+        "water_temp": 19.9,
+        "dissolved_oxygen": 8.95,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.69
+      },
+      {
+        "depth": 4,
+        "water_temp": 18.1,
+        "dissolved_oxygen": 9.53,
+        "spc": 47.9,
+        "tds": 31.2,
+        "ph": 6.69
+      },
+      {
+        "depth": 5,
+        "water_temp": 17.3,
+        "dissolved_oxygen": 9.86,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.43
+      },
+      {
+        "depth": 6,
+        "water_temp": 14.6,
+        "dissolved_oxygen": 11.83,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.39
+      },
+      {
+        "depth": 7,
+        "water_temp": 10.5,
+        "dissolved_oxygen": 9.54,
+        "spc": 47.9,
+        "tds": 31.2,
+        "ph": 7.94
+      },
+      {
+        "depth": 8,
+        "water_temp": 9.1,
+        "dissolved_oxygen": 8.6,
+        "spc": 48.3,
+        "tds": 31.2,
+        "ph": 6.84
+      },
+      {
+        "depth": 9,
+        "water_temp": 8.2,
+        "dissolved_oxygen": 6.54,
+        "spc": 48.4,
+        "tds": 31.85,
+        "ph": 6.75
+      },
+      {
+        "depth": 10,
+        "water_temp": 7.9,
+        "dissolved_oxygen": 4.45,
+        "spc": 49.1,
+        "tds": 31.85,
+        "ph": 6.67
+      },
+      {
+        "depth": 11,
+        "water_temp": 7.8,
+        "dissolved_oxygen": 3.96,
+        "spc": 49.2,
+        "tds": 31.85,
+        "ph": 5.63
+      },
+      {
+        "depth": 12,
+        "water_temp": 7.8,
+        "dissolved_oxygen": 3.85,
+        "spc": 49.4,
+        "tds": 31.85,
+        "ph": 5.61
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2020-07-25T17:30:00.000Z",
+    "samplers": [
+      "Mary and Alma"
+    ],
+    "weather": "light wind, sunny",
+    "air_temperature": null,
+    "secchi_depth": [
+      5.5,
+      5.9
+    ],
+    "nitrogen": 0.173,
+    "phosphorus": null,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 22.9,
+        "dissolved_oxygen": 8.01,
+        "spc": 48.6,
+        "tds": 31.85,
+        "ph": 6.83
+      },
+      {
+        "depth": 1,
+        "water_temp": 22.4,
+        "dissolved_oxygen": 8.42,
+        "spc": 49,
+        "tds": 31.85,
+        "ph": 6.95
+      },
+      {
+        "depth": 2,
+        "water_temp": 21.1,
+        "dissolved_oxygen": 8.5,
+        "spc": 49.1,
+        "tds": 31.85,
+        "ph": 6.9
+      },
+      {
+        "depth": 3,
+        "water_temp": 22,
+        "dissolved_oxygen": 8.65,
+        "spc": 49.2,
+        "tds": 31.85,
+        "ph": 6.97
+      },
+      {
+        "depth": 4,
+        "water_temp": 21.9,
+        "dissolved_oxygen": 8.45,
+        "spc": 49.2,
+        "tds": 31.85,
+        "ph": 6.96
+      },
+      {
+        "depth": 5,
+        "water_temp": 21,
+        "dissolved_oxygen": 8.85,
+        "spc": 48.6,
+        "tds": 31.85,
+        "ph": 7.14
+      },
+      {
+        "depth": 6,
+        "water_temp": 17,
+        "dissolved_oxygen": 8.6,
+        "spc": 48.3,
+        "tds": 31.2,
+        "ph": 6.76
+      },
+      {
+        "depth": 7,
+        "water_temp": 13,
+        "dissolved_oxygen": 7.94,
+        "spc": 48.6,
+        "tds": 31.85,
+        "ph": 6.46
+      },
+      {
+        "depth": 8,
+        "water_temp": 10.5,
+        "dissolved_oxygen": 6.65,
+        "spc": 49.1,
+        "tds": 31.85,
+        "ph": 6.04
+      },
+      {
+        "depth": 9,
+        "water_temp": 8.7,
+        "dissolved_oxygen": 3.35,
+        "spc": 50,
+        "tds": 32.5,
+        "ph": 5.77
+      },
+      {
+        "depth": 10,
+        "water_temp": 8.4,
+        "dissolved_oxygen": 2.21,
+        "spc": 51,
+        "tds": 33.15,
+        "ph": 5.72
+      },
+      {
+        "depth": 11,
+        "water_temp": 8.4,
+        "dissolved_oxygen": 1.78,
+        "spc": 51.2,
+        "tds": 33.15,
+        "ph": 5.7
+      },
+      {
+        "depth": 12,
+        "water_temp": 8.6,
+        "dissolved_oxygen": 1.68,
+        "spc": 51,
+        "tds": 33.15,
+        "ph": 5.59
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2020-09-02T02:30:00.000Z",
+    "samplers": [
+      "Autumn and Sarah Moore"
+    ],
+    "weather": "calm sunset, nice clouds",
+    "air_temperature": 19.7,
+    "secchi_depth": [
+      4.9,
+      4.9
+    ],
+    "nitrogen": 0.171,
+    "phosphorus": null,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 22.2,
+        "dissolved_oxygen": 7.74,
+        "spc": 49.6,
+        "tds": 31.85,
+        "ph": 7.2
+      },
+      {
+        "depth": 1,
+        "water_temp": 22.2,
+        "dissolved_oxygen": 7.77,
+        "spc": 49.3,
+        "tds": 31.85,
+        "ph": 7.03
+      },
+      {
+        "depth": 2,
+        "water_temp": 21.5,
+        "dissolved_oxygen": 8.01,
+        "spc": 49.2,
+        "tds": 31.85,
+        "ph": 7.05
+      },
+      {
+        "depth": 3,
+        "water_temp": 21.2,
+        "dissolved_oxygen": 7.88,
+        "spc": 48.9,
+        "tds": 31.85,
+        "ph": 6.97
+      },
+      {
+        "depth": 4,
+        "water_temp": 21.2,
+        "dissolved_oxygen": 7.55,
+        "spc": 49.1,
+        "tds": 31.85,
+        "ph": 6.97
+      },
+      {
+        "depth": 5,
+        "water_temp": 20.8,
+        "dissolved_oxygen": 7.98,
+        "spc": 49.1,
+        "tds": 31.85,
+        "ph": 6.95
+      },
+      {
+        "depth": 6,
+        "water_temp": 20.7,
+        "dissolved_oxygen": 7.88,
+        "spc": 48.8,
+        "tds": 31.85,
+        "ph": 6.9
+      },
+      {
+        "depth": 7,
+        "water_temp": 17.6,
+        "dissolved_oxygen": 7,
+        "spc": 48.6,
+        "tds": 31.85,
+        "ph": 6.77
+      },
+      {
+        "depth": 8,
+        "water_temp": 13.7,
+        "dissolved_oxygen": 4.6,
+        "spc": 48.9,
+        "tds": 31.85,
+        "ph": 6.4
+      },
+      {
+        "depth": 9,
+        "water_temp": 10.7,
+        "dissolved_oxygen": 2.55,
+        "spc": 50,
+        "tds": 32.5,
+        "ph": 5.8
+      },
+      {
+        "depth": 10,
+        "water_temp": 10.1,
+        "dissolved_oxygen": 1.98,
+        "spc": 51.3,
+        "tds": 33.15,
+        "ph": 5.7
+      },
+      {
+        "depth": 11,
+        "water_temp": 9.8,
+        "dissolved_oxygen": 1.16,
+        "spc": 56.6,
+        "tds": 36.4,
+        "ph": 5.7
+      },
+      {
+        "depth": 12,
+        "water_temp": 9.4,
+        "dissolved_oxygen": 1.06,
+        "spc": 58.6,
+        "tds": 37.7,
+        "ph": 5.73
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2020-09-22T18:00:00.000Z",
+    "samplers": [
+      "Gina and Carrie"
+    ],
+    "weather": "sunny, calm changed to windy",
+    "air_temperature": 17.5,
+    "secchi_depth": [
+      4.9,
+      5.8
+    ],
+    "nitrogen": 0.195,
+    "phosphorus": 0.0046,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 21.1,
+        "dissolved_oxygen": 8.54,
+        "spc": 49.3,
+        "tds": 39.85,
+        "ph": 6.97
+      },
+      {
+        "depth": 1,
+        "water_temp": 21.1,
+        "dissolved_oxygen": 8.43,
+        "spc": 49.6,
+        "tds": 32.5,
+        "ph": 6.99
+      },
+      {
+        "depth": 2,
+        "water_temp": 21.2,
+        "dissolved_oxygen": 8.35,
+        "spc": 49.3,
+        "tds": 31.85,
+        "ph": 7.02
+      },
+      {
+        "depth": 3,
+        "water_temp": 21.1,
+        "dissolved_oxygen": 8.25,
+        "spc": 49.3,
+        "tds": 31.5,
+        "ph": 7.03
+      },
+      {
+        "depth": 4,
+        "water_temp": 21.1,
+        "dissolved_oxygen": 8.11,
+        "spc": 49.4,
+        "tds": 32.5,
+        "ph": 7.07
+      },
+      {
+        "depth": 5,
+        "water_temp": 21.1,
+        "dissolved_oxygen": 8.02,
+        "spc": 49.2,
+        "tds": 31.85,
+        "ph": 7.05
+      },
+      {
+        "depth": 6,
+        "water_temp": 20.7,
+        "dissolved_oxygen": 8.02,
+        "spc": 49.3,
+        "tds": 31.85,
+        "ph": 7.07
+      },
+      {
+        "depth": 7,
+        "water_temp": 18.1,
+        "dissolved_oxygen": 5.05,
+        "spc": 49.9,
+        "tds": 31.85,
+        "ph": 6.92
+      },
+      {
+        "depth": 8,
+        "water_temp": 14,
+        "dissolved_oxygen": 2.29,
+        "spc": 49,
+        "tds": 31.85,
+        "ph": 6.44
+      },
+      {
+        "depth": 9,
+        "water_temp": 11.6,
+        "dissolved_oxygen": 1.51,
+        "spc": 51,
+        "tds": 33.15,
+        "ph": 6.14
+      },
+      {
+        "depth": 10,
+        "water_temp": 10.5,
+        "dissolved_oxygen": 1.1,
+        "spc": 56.4,
+        "tds": 37.05,
+        "ph": 5.84
+      },
+      {
+        "depth": 11,
+        "water_temp": 9.8,
+        "dissolved_oxygen": 1.1,
+        "spc": 61.7,
+        "tds": 39.65,
+        "ph": 5.83
+      },
+      {
+        "depth": 12,
+        "water_temp": null,
+        "dissolved_oxygen": null,
+        "spc": null,
+        "tds": null,
+        "ph": null
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2020-11-02T19:00:00.000Z",
+    "samplers": [
+      "Gina and Carrie"
+    ],
+    "weather": "cloudy, light to strong wind sw (changed from ne)",
+    "air_temperature": 11.5,
+    "secchi_depth": [
+      4,
+      3.7
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 12.6,
+        "dissolved_oxygen": 9.72,
+        "spc": 48.7,
+        "tds": 31.85,
+        "ph": 6.71
+      },
+      {
+        "depth": 1,
+        "water_temp": 12.5,
+        "dissolved_oxygen": 9.1,
+        "spc": 48.9,
+        "tds": 31.85,
+        "ph": 6.69
+      },
+      {
+        "depth": 2,
+        "water_temp": 12.5,
+        "dissolved_oxygen": 9.24,
+        "spc": 48.7,
+        "tds": 31.2,
+        "ph": 6.69
+      },
+      {
+        "depth": 3,
+        "water_temp": 12.6,
+        "dissolved_oxygen": 9.16,
+        "spc": 48.5,
+        "tds": 31.2,
+        "ph": 6.67
+      },
+      {
+        "depth": 4,
+        "water_temp": 12.7,
+        "dissolved_oxygen": 9.26,
+        "spc": 48.5,
+        "tds": 31.85,
+        "ph": 6.69
+      },
+      {
+        "depth": 5,
+        "water_temp": 12.5,
+        "dissolved_oxygen": 9.1,
+        "spc": 48.9,
+        "tds": 31.2,
+        "ph": 6.65
+      },
+      {
+        "depth": 6,
+        "water_temp": 12.4,
+        "dissolved_oxygen": 9.14,
+        "spc": 48.4,
+        "tds": 31.2,
+        "ph": 6.69
+      },
+      {
+        "depth": 7,
+        "water_temp": 12.4,
+        "dissolved_oxygen": 9.2,
+        "spc": 48.6,
+        "tds": 31.85,
+        "ph": 6.71
+      },
+      {
+        "depth": 8,
+        "water_temp": 12.6,
+        "dissolved_oxygen": 9.26,
+        "spc": 48.5,
+        "tds": 31.85,
+        "ph": 6.67
+      },
+      {
+        "depth": 9,
+        "water_temp": 12.5,
+        "dissolved_oxygen": 9.09,
+        "spc": 48.5,
+        "tds": 31.85,
+        "ph": 6.68
+      },
+      {
+        "depth": 10,
+        "water_temp": 12.6,
+        "dissolved_oxygen": 9.04,
+        "spc": 48.6,
+        "tds": 31.2,
+        "ph": 6.67
+      },
+      {
+        "depth": 11,
+        "water_temp": 12.7,
+        "dissolved_oxygen": 8.91,
+        "spc": 48.9,
+        "tds": 31.2,
+        "ph": 6.69
+      },
+      {
+        "depth": 12,
+        "water_temp": 12.4,
+        "dissolved_oxygen": 8.05,
+        "spc": 49,
+        "tds": 31.2,
+        "ph": 6.65
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2020-12-09T17:30:00.000Z",
+    "samplers": [
+      "Max and Carrie"
+    ],
+    "weather": "high misty clouds",
+    "air_temperature": 9,
+    "secchi_depth": [
+      6.5,
+      6.6
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 8.3,
+        "dissolved_oxygen": 11.9,
+        "spc": 48.7,
+        "tds": 31.85,
+        "ph": 6.88
+      },
+      {
+        "depth": 1,
+        "water_temp": 8.3,
+        "dissolved_oxygen": 11.51,
+        "spc": 48.8,
+        "tds": 31.2,
+        "ph": 6.72
+      },
+      {
+        "depth": 2,
+        "water_temp": 7.9,
+        "dissolved_oxygen": 11.36,
+        "spc": 47.7,
+        "tds": 31.2,
+        "ph": 6.64
+      },
+      {
+        "depth": 3,
+        "water_temp": 8.2,
+        "dissolved_oxygen": 11.36,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.58
+      },
+      {
+        "depth": 4,
+        "water_temp": 8.4,
+        "dissolved_oxygen": 11.13,
+        "spc": 47.7,
+        "tds": 31.2,
+        "ph": 6.57
+      },
+      {
+        "depth": 5,
+        "water_temp": 8.1,
+        "dissolved_oxygen": 11.22,
+        "spc": 48.1,
+        "tds": 31.2,
+        "ph": 6.58
+      },
+      {
+        "depth": 6,
+        "water_temp": 8.5,
+        "dissolved_oxygen": 11.43,
+        "spc": 47.5,
+        "tds": 31.2,
+        "ph": 6.6
+      },
+      {
+        "depth": 7,
+        "water_temp": 8,
+        "dissolved_oxygen": 11.16,
+        "spc": 47.5,
+        "tds": 31.2,
+        "ph": 6.63
+      },
+      {
+        "depth": 8,
+        "water_temp": 8.4,
+        "dissolved_oxygen": 11.28,
+        "spc": 47.5,
+        "tds": 31.2,
+        "ph": 6.66
+      },
+      {
+        "depth": 9,
+        "water_temp": 8.4,
+        "dissolved_oxygen": 11.17,
+        "spc": 47.7,
+        "tds": 31.2,
+        "ph": 6.68
+      },
+      {
+        "depth": 10,
+        "water_temp": 8.1,
+        "dissolved_oxygen": 11.08,
+        "spc": 47.6,
+        "tds": 31.2,
+        "ph": 6.67
+      },
+      {
+        "depth": 11,
+        "water_temp": 8.1,
+        "dissolved_oxygen": 11.14,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.71
+      },
+      {
+        "depth": 12,
+        "water_temp": 8,
+        "dissolved_oxygen": 10.82,
+        "spc": 48.1,
+        "tds": 31.2,
+        "ph": 6.7
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2021-01-14T19:45:00.000Z",
+    "samplers": [
+      "Heidi and Carrie"
+    ],
+    "weather": "calm sun high clouds",
+    "air_temperature": 8.7,
+    "secchi_depth": [
+      5.6,
+      6.1
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "no water samples",
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 6.9,
+        "dissolved_oxygen": 11.88,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.49
+      },
+      {
+        "depth": 1,
+        "water_temp": 6.7,
+        "dissolved_oxygen": 12.03,
+        "spc": 47.4,
+        "tds": 30.55,
+        "ph": 6.49
+      },
+      {
+        "depth": 2,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 11.9,
+        "spc": 47.2,
+        "tds": 31.2,
+        "ph": 6.52
+      },
+      {
+        "depth": 3,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 11.89,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.56
+      },
+      {
+        "depth": 4,
+        "water_temp": 6.5,
+        "dissolved_oxygen": 11.8,
+        "spc": 47.5,
+        "tds": 30.55,
+        "ph": 6.57
+      },
+      {
+        "depth": 5,
+        "water_temp": 6.5,
+        "dissolved_oxygen": 11.93,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.6
+      },
+      {
+        "depth": 6,
+        "water_temp": 6.8,
+        "dissolved_oxygen": 11.66,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.63
+      },
+      {
+        "depth": 7,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 11.58,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.65
+      },
+      {
+        "depth": 8,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 11.76,
+        "spc": 47.3,
+        "tds": 30.55,
+        "ph": 6.68
+      },
+      {
+        "depth": 9,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 11.88,
+        "spc": 47.4,
+        "tds": 30.55,
+        "ph": 6.69
+      },
+      {
+        "depth": 10,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 11.74,
+        "spc": 47.3,
+        "tds": 30.55,
+        "ph": 6.73
+      },
+      {
+        "depth": 11,
+        "water_temp": 6.7,
+        "dissolved_oxygen": 11.67,
+        "spc": 47.3,
+        "tds": 30.55,
+        "ph": 6.7
+      },
+      {
+        "depth": 12,
+        "water_temp": 6.7,
+        "dissolved_oxygen": 11.68,
+        "spc": 47.4,
+        "tds": 30.55,
+        "ph": 6.71
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2021-02-16T20:30:00.000Z",
+    "samplers": [
+      "Max and Heidi"
+    ],
+    "weather": "Mostly cloudy",
+    "air_temperature": 7.8,
+    "secchi_depth": [
+      4.9,
+      4.5
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "no lab samples",
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 5.2,
+        "dissolved_oxygen": 13.01,
+        "spc": 46.8,
+        "tds": 30.55,
+        "ph": 6.68
+      },
+      {
+        "depth": 1,
+        "water_temp": 5,
+        "dissolved_oxygen": 13.32,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 6.47
+      },
+      {
+        "depth": 2,
+        "water_temp": 5.1,
+        "dissolved_oxygen": 12.72,
+        "spc": 46.6,
+        "tds": 30.55,
+        "ph": 6.37
+      },
+      {
+        "depth": 3,
+        "water_temp": 5.1,
+        "dissolved_oxygen": 13,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 6.32
+      },
+      {
+        "depth": 4,
+        "water_temp": 5.1,
+        "dissolved_oxygen": 13.05,
+        "spc": 46.6,
+        "tds": 30.55,
+        "ph": 6.31
+      },
+      {
+        "depth": 5,
+        "water_temp": 4.9,
+        "dissolved_oxygen": 13.06,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 6.32
+      },
+      {
+        "depth": 6,
+        "water_temp": 4.9,
+        "dissolved_oxygen": 12.54,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 6.33
+      },
+      {
+        "depth": 7,
+        "water_temp": 4.9,
+        "dissolved_oxygen": 12.55,
+        "spc": 46.7,
+        "tds": 30.55,
+        "ph": 6.33
+      },
+      {
+        "depth": 8,
+        "water_temp": 5,
+        "dissolved_oxygen": 12.63,
+        "spc": 46.4,
+        "tds": 30.55,
+        "ph": 6.33
+      },
+      {
+        "depth": 9,
+        "water_temp": 5,
+        "dissolved_oxygen": 12.83,
+        "spc": 47,
+        "tds": 30.55,
+        "ph": 6.35
+      },
+      {
+        "depth": 10,
+        "water_temp": 5.1,
+        "dissolved_oxygen": 12.43,
+        "spc": 46.6,
+        "tds": 30.55,
+        "ph": 6.35
+      },
+      {
+        "depth": 11,
+        "water_temp": 5.1,
+        "dissolved_oxygen": 12.56,
+        "spc": 46.7,
+        "tds": 30.55,
+        "ph": 6.37
+      },
+      {
+        "depth": 12,
+        "water_temp": 5,
+        "dissolved_oxygen": 12.32,
+        "spc": 46.6,
+        "tds": 30.55,
+        "ph": 6.38
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2021-03-18T18:00:00.000Z",
+    "samplers": [
+      "Carrie and Gina"
+    ],
+    "weather": "nice and sunny turned to WET/rain",
+    "air_temperature": 7.8,
+    "secchi_depth": [
+      2.9,
+      2.9
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "murky water. No lab samples",
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 6.6,
+        "dissolved_oxygen": 14.6,
+        "spc": 47.7,
+        "tds": 31.2,
+        "ph": 6.92
+      },
+      {
+        "depth": 1,
+        "water_temp": 6.5,
+        "dissolved_oxygen": 14.51,
+        "spc": 47.7,
+        "tds": 31.2,
+        "ph": 6.78
+      },
+      {
+        "depth": 2,
+        "water_temp": 6.5,
+        "dissolved_oxygen": 14.42,
+        "spc": 47.7,
+        "tds": 31.2,
+        "ph": 6.73
+      },
+      {
+        "depth": 3,
+        "water_temp": 6.5,
+        "dissolved_oxygen": 13.67,
+        "spc": 47.8,
+        "tds": 31.2,
+        "ph": 6.72
+      },
+      {
+        "depth": 4,
+        "water_temp": 6.3,
+        "dissolved_oxygen": 14.3,
+        "spc": 47.8,
+        "tds": 31.2,
+        "ph": 6.81
+      },
+      {
+        "depth": 5,
+        "water_temp": 5.8,
+        "dissolved_oxygen": 13.8,
+        "spc": 47.8,
+        "tds": 31.2,
+        "ph": 6.83
+      },
+      {
+        "depth": 6,
+        "water_temp": 5.7,
+        "dissolved_oxygen": 14.42,
+        "spc": 47.8,
+        "tds": 31.2,
+        "ph": 6.71
+      },
+      {
+        "depth": 7,
+        "water_temp": 5.6,
+        "dissolved_oxygen": 14.17,
+        "spc": 47.8,
+        "tds": 31.2,
+        "ph": 6.67
+      },
+      {
+        "depth": 8,
+        "water_temp": 5.6,
+        "dissolved_oxygen": 14.06,
+        "spc": 47.8,
+        "tds": 31.2,
+        "ph": 6.66
+      },
+      {
+        "depth": 9,
+        "water_temp": 5.6,
+        "dissolved_oxygen": 14,
+        "spc": 47.8,
+        "tds": 31.2,
+        "ph": 6.69
+      },
+      {
+        "depth": 10,
+        "water_temp": 5.6,
+        "dissolved_oxygen": 14.02,
+        "spc": 47.8,
+        "tds": 31.2,
+        "ph": 6.72
+      },
+      {
+        "depth": 11,
+        "water_temp": 5.6,
+        "dissolved_oxygen": 13.81,
+        "spc": 47.8,
+        "tds": 31.2,
+        "ph": 6.74
+      },
+      {
+        "depth": 12,
+        "water_temp": 5.5,
+        "dissolved_oxygen": 14.17,
+        "spc": 47.9,
+        "tds": 31.2,
+        "ph": 6.73
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2021-04-20T18:15:00.000Z",
+    "samplers": [
+      "Carrie and Gina"
+    ],
+    "weather": "sunny, calm",
+    "air_temperature": 18.4,
+    "secchi_depth": [
+      3.7,
+      4.4
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "no lab samples, but see Dillon Creek for April in DWG",
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 15.9,
+        "dissolved_oxygen": 11.72,
+        "spc": 48.5,
+        "tds": 31.2,
+        "ph": 7.07
+      },
+      {
+        "depth": 1,
+        "water_temp": 15.7,
+        "dissolved_oxygen": 12.11,
+        "spc": 48.4,
+        "tds": 31.2,
+        "ph": 7.06
+      },
+      {
+        "depth": 2,
+        "water_temp": 12,
+        "dissolved_oxygen": 13.65,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 7.35
+      },
+      {
+        "depth": 3,
+        "water_temp": 10.2,
+        "dissolved_oxygen": 14,
+        "spc": 47.9,
+        "tds": 31.2,
+        "ph": 7.12
+      },
+      {
+        "depth": 4,
+        "water_temp": 9.6,
+        "dissolved_oxygen": 14.17,
+        "spc": 47.8,
+        "tds": 31.2,
+        "ph": 6.92
+      },
+      {
+        "depth": 5,
+        "water_temp": 8.8,
+        "dissolved_oxygen": 14.27,
+        "spc": 47.8,
+        "tds": 31.2,
+        "ph": 6.97
+      },
+      {
+        "depth": 6,
+        "water_temp": 8.6,
+        "dissolved_oxygen": 14.38,
+        "spc": 47.8,
+        "tds": 31.2,
+        "ph": 6.96
+      },
+      {
+        "depth": 7,
+        "water_temp": 8.3,
+        "dissolved_oxygen": 13.31,
+        "spc": 49.9,
+        "tds": 31.2,
+        "ph": 6.81
+      },
+      {
+        "depth": 8,
+        "water_temp": 8.2,
+        "dissolved_oxygen": 13.18,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.73
+      },
+      {
+        "depth": 9,
+        "water_temp": 8.1,
+        "dissolved_oxygen": 12.9,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.7
+      },
+      {
+        "depth": 10,
+        "water_temp": 7.8,
+        "dissolved_oxygen": 12.11,
+        "spc": 48.2,
+        "tds": 31.2,
+        "ph": 6.65
+      },
+      {
+        "depth": 11,
+        "water_temp": 7.2,
+        "dissolved_oxygen": 12.16,
+        "spc": 48.2,
+        "tds": 31.2,
+        "ph": 6.59
+      },
+      {
+        "depth": 12,
+        "water_temp": 7.7,
+        "dissolved_oxygen": 11.77,
+        "spc": 48.3,
+        "tds": 31.2,
+        "ph": 6.57
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2021-05-05T21:00:00.000Z",
+    "samplers": [
+      "Gina and Lisa Ferentinos"
+    ],
+    "weather": "cloudy, rain, windy",
+    "air_temperature": 14.5,
+    "secchi_depth": [
+      5.2,
+      5.2
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "no lab samples",
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 16.8,
+        "dissolved_oxygen": 10.9,
+        "spc": 48.5,
+        "tds": 31.85,
+        "ph": 7.1
+      },
+      {
+        "depth": 1,
+        "water_temp": 16.9,
+        "dissolved_oxygen": 11.25,
+        "spc": 48.7,
+        "tds": 31.85,
+        "ph": 7
+      },
+      {
+        "depth": 2,
+        "water_temp": 16.9,
+        "dissolved_oxygen": 11.05,
+        "spc": 48.7,
+        "tds": 31.85,
+        "ph": 6.98
+      },
+      {
+        "depth": 3,
+        "water_temp": 16.9,
+        "dissolved_oxygen": 10.86,
+        "spc": 48.6,
+        "tds": 31.85,
+        "ph": 6.97
+      },
+      {
+        "depth": 4,
+        "water_temp": 16.8,
+        "dissolved_oxygen": 11.03,
+        "spc": 48.7,
+        "tds": 31.85,
+        "ph": 6.98
+      },
+      {
+        "depth": 5,
+        "water_temp": 12.8,
+        "dissolved_oxygen": 14.14,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 7.11
+      },
+      {
+        "depth": 6,
+        "water_temp": 10.4,
+        "dissolved_oxygen": 15.41,
+        "spc": 47.7,
+        "tds": 31.2,
+        "ph": 7.11
+      },
+      {
+        "depth": 7,
+        "water_temp": 9.7,
+        "dissolved_oxygen": 15.76,
+        "spc": 48.2,
+        "tds": 31.2,
+        "ph": 6.81
+      },
+      {
+        "depth": 8,
+        "water_temp": 8.5,
+        "dissolved_oxygen": 12.12,
+        "spc": 48.5,
+        "tds": 31.2,
+        "ph": 6.52
+      },
+      {
+        "depth": 9,
+        "water_temp": 8.3,
+        "dissolved_oxygen": 9.32,
+        "spc": 48.7,
+        "tds": 31.85,
+        "ph": 6.36
+      },
+      {
+        "depth": 10,
+        "water_temp": 8,
+        "dissolved_oxygen": 7.36,
+        "spc": 49.2,
+        "tds": 31.85,
+        "ph": 6.26
+      },
+      {
+        "depth": 11,
+        "water_temp": 8,
+        "dissolved_oxygen": 6.17,
+        "spc": 49.5,
+        "tds": 32.5,
+        "ph": 6.18
+      },
+      {
+        "depth": 12,
+        "water_temp": 7.9,
+        "dissolved_oxygen": 5.4,
+        "spc": 49.7,
+        "tds": 32.5,
+        "ph": 6.14
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2021-07-07T18:30:00.000Z",
+    "samplers": [
+      "Gina and Michelle Douglas (summer assistant)"
+    ],
+    "weather": "sunny, warm, light breeze",
+    "air_temperature": 28.9,
+    "secchi_depth": [
+      6.7,
+      6.6
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "no water samples",
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": null,
+        "dissolved_oxygen": null,
+        "spc": null,
+        "tds": null,
+        "ph": null
+      },
+      {
+        "depth": 1,
+        "water_temp": 24.4,
+        "dissolved_oxygen": 7.63,
+        "spc": 50.9,
+        "tds": 31.35,
+        "ph": 7.36
+      },
+      {
+        "depth": 2,
+        "water_temp": 24.1,
+        "dissolved_oxygen": 8.46,
+        "spc": 50.9,
+        "tds": 33.15,
+        "ph": 7.17
+      },
+      {
+        "depth": 3,
+        "water_temp": 24.7,
+        "dissolved_oxygen": 8.67,
+        "spc": 50.8,
+        "tds": 33.15,
+        "ph": 7.15
+      },
+      {
+        "depth": 4,
+        "water_temp": 23.5,
+        "dissolved_oxygen": 9.23,
+        "spc": 50.8,
+        "tds": 33.15,
+        "ph": 7.01
+      },
+      {
+        "depth": 5,
+        "water_temp": 20.1,
+        "dissolved_oxygen": 11.59,
+        "spc": 49.4,
+        "tds": 33.85,
+        "ph": 7.55
+      },
+      {
+        "depth": 6,
+        "water_temp": 14.4,
+        "dissolved_oxygen": 15.77,
+        "spc": 48.7,
+        "tds": 33.85,
+        "ph": 7.67
+      },
+      {
+        "depth": 7,
+        "water_temp": 10.8,
+        "dissolved_oxygen": 14.75,
+        "spc": 48.7,
+        "tds": 33.85,
+        "ph": 7.21
+      },
+      {
+        "depth": 8,
+        "water_temp": 9.4,
+        "dissolved_oxygen": 10.01,
+        "spc": 49.5,
+        "tds": 32.5,
+        "ph": 6.64
+      },
+      {
+        "depth": 9,
+        "water_temp": 8.9,
+        "dissolved_oxygen": 7.02,
+        "spc": 51,
+        "tds": 33.15,
+        "ph": 6.39
+      },
+      {
+        "depth": 10,
+        "water_temp": 8.6,
+        "dissolved_oxygen": 4.49,
+        "spc": 52.5,
+        "tds": 34.45,
+        "ph": 6.26
+      },
+      {
+        "depth": 11,
+        "water_temp": 8.4,
+        "dissolved_oxygen": 3.23,
+        "spc": 54.5,
+        "tds": 35.75,
+        "ph": 6.18
+      },
+      {
+        "depth": 12,
+        "water_temp": 8.4,
+        "dissolved_oxygen": 2.33,
+        "spc": 55.2,
+        "tds": 35.75,
+        "ph": 6.14
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2021-07-28T18:45:00.000Z",
+    "samplers": [
+      "Gina and Michelle Douglas (summer assistant)"
+    ],
+    "weather": "sunny, hot, calm",
+    "air_temperature": 21.7,
+    "secchi_depth": [
+      6.9,
+      6.9
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 24,
+        "dissolved_oxygen": 5.13,
+        "spc": 51.7,
+        "tds": 34.8,
+        "ph": 7.5
+      },
+      {
+        "depth": 1,
+        "water_temp": 23.9,
+        "dissolved_oxygen": 6.7,
+        "spc": 51.7,
+        "tds": 34.8,
+        "ph": 7.1
+      },
+      {
+        "depth": 2,
+        "water_temp": 23.7,
+        "dissolved_oxygen": 7.5,
+        "spc": 51.7,
+        "tds": 34.8,
+        "ph": 7.08
+      },
+      {
+        "depth": 3,
+        "water_temp": 23.7,
+        "dissolved_oxygen": 7.86,
+        "spc": 51.7,
+        "tds": 34.8,
+        "ph": 7.1
+      },
+      {
+        "depth": 4,
+        "water_temp": 23.6,
+        "dissolved_oxygen": 8.27,
+        "spc": 51.6,
+        "tds": 34.8,
+        "ph": 7.1
+      },
+      {
+        "depth": 5,
+        "water_temp": 22.5,
+        "dissolved_oxygen": 9.08,
+        "spc": 51.4,
+        "tds": 34.15,
+        "ph": 7.17
+      },
+      {
+        "depth": 6,
+        "water_temp": 17,
+        "dissolved_oxygen": 13.04,
+        "spc": 48.9,
+        "tds": 34.15,
+        "ph": 7.44
+      },
+      {
+        "depth": 7,
+        "water_temp": 12,
+        "dissolved_oxygen": 14.67,
+        "spc": 49.2,
+        "tds": 34.85,
+        "ph": 7.18
+      },
+      {
+        "depth": 8,
+        "water_temp": 10.3,
+        "dissolved_oxygen": 11.12,
+        "spc": 50.6,
+        "tds": 33.15,
+        "ph": 6.68
+      },
+      {
+        "depth": 9,
+        "water_temp": 9.4,
+        "dissolved_oxygen": 6.75,
+        "spc": 52.1,
+        "tds": 34.8,
+        "ph": 6.39
+      },
+      {
+        "depth": 10,
+        "water_temp": 8.9,
+        "dissolved_oxygen": 3.57,
+        "spc": 54.8,
+        "tds": 35.75,
+        "ph": 6.24
+      },
+      {
+        "depth": 11,
+        "water_temp": 8.7,
+        "dissolved_oxygen": 2.23,
+        "spc": 57.4,
+        "tds": 37.05,
+        "ph": 6.16
+      },
+      {
+        "depth": 12,
+        "water_temp": null,
+        "dissolved_oxygen": null,
+        "spc": null,
+        "tds": null,
+        "ph": null
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2021-08-26T21:00:00.000Z",
+    "samplers": [
+      "Gina"
+    ],
+    "weather": "windy, cloudy, light rain",
+    "air_temperature": 19.7,
+    "secchi_depth": [
+      5.7,
+      null
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 20.7,
+        "dissolved_oxygen": 6.1,
+        "spc": 50.6,
+        "tds": 33.15,
+        "ph": 6.93
+      },
+      {
+        "depth": 1,
+        "water_temp": 21.9,
+        "dissolved_oxygen": 7.8,
+        "spc": 50.8,
+        "tds": 33.15,
+        "ph": 6.87
+      },
+      {
+        "depth": 2,
+        "water_temp": 21.9,
+        "dissolved_oxygen": 8.48,
+        "spc": 50.9,
+        "tds": 33.15,
+        "ph": 6.9
+      },
+      {
+        "depth": 3,
+        "water_temp": 21.9,
+        "dissolved_oxygen": 8.62,
+        "spc": 50.6,
+        "tds": 33.15,
+        "ph": 6.91
+      },
+      {
+        "depth": 4,
+        "water_temp": 21.7,
+        "dissolved_oxygen": 8.84,
+        "spc": 50.7,
+        "tds": 33.15,
+        "ph": 6.91
+      },
+      {
+        "depth": 5,
+        "water_temp": 22,
+        "dissolved_oxygen": 8.87,
+        "spc": 50.9,
+        "tds": 33.15,
+        "ph": 6.91
+      },
+      {
+        "depth": 6,
+        "water_temp": 21.7,
+        "dissolved_oxygen": 8.78,
+        "spc": 50.6,
+        "tds": 33.15,
+        "ph": 6.92
+      },
+      {
+        "depth": 7,
+        "water_temp": 19.5,
+        "dissolved_oxygen": 11.22,
+        "spc": 48.8,
+        "tds": 31.85,
+        "ph": 6.85
+      },
+      {
+        "depth": 8,
+        "water_temp": 14.3,
+        "dissolved_oxygen": 9.43,
+        "spc": 49.9,
+        "tds": 32.5,
+        "ph": 6.5
+      },
+      {
+        "depth": 9,
+        "water_temp": 11.9,
+        "dissolved_oxygen": 4.56,
+        "spc": 52.3,
+        "tds": 33.8,
+        "ph": 6.14
+      },
+      {
+        "depth": 10,
+        "water_temp": 10.9,
+        "dissolved_oxygen": 2.1,
+        "spc": 58.5,
+        "tds": 37.7,
+        "ph": 6.05
+      },
+      {
+        "depth": 11,
+        "water_temp": 10.4,
+        "dissolved_oxygen": 1.39,
+        "spc": 60.7,
+        "tds": 39,
+        "ph": 6.08
+      },
+      {
+        "depth": 12,
+        "water_temp": null,
+        "dissolved_oxygen": null,
+        "spc": null,
+        "tds": null,
+        "ph": null
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2021-09-19T09:30:00.000Z",
+    "samplers": [
+      "carrie and gina"
+    ],
+    "weather": "clouds, sunny, light wind",
+    "air_temperature": 15.9,
+    "secchi_depth": [
+      6.1,
+      6.9
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "no water samples",
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 19.1,
+        "dissolved_oxygen": 8.56,
+        "spc": 50,
+        "tds": 32.5,
+        "ph": 7.46
+      },
+      {
+        "depth": 1,
+        "water_temp": 19,
+        "dissolved_oxygen": 8.87,
+        "spc": 49.8,
+        "tds": 32.5,
+        "ph": 6.98
+      },
+      {
+        "depth": 2,
+        "water_temp": 18.8,
+        "dissolved_oxygen": 8.77,
+        "spc": 50,
+        "tds": 32.5,
+        "ph": 6.95
+      },
+      {
+        "depth": 3,
+        "water_temp": 18.8,
+        "dissolved_oxygen": 8.45,
+        "spc": 50,
+        "tds": 32.5,
+        "ph": 6.98
+      },
+      {
+        "depth": 4,
+        "water_temp": 18.8,
+        "dissolved_oxygen": 8.88,
+        "spc": 49.9,
+        "tds": 32.5,
+        "ph": 6.96
+      },
+      {
+        "depth": 5,
+        "water_temp": 18.7,
+        "dissolved_oxygen": 8.67,
+        "spc": 49.8,
+        "tds": 32.5,
+        "ph": 6.93
+      },
+      {
+        "depth": 6,
+        "water_temp": 18.7,
+        "dissolved_oxygen": 8.84,
+        "spc": 49.9,
+        "tds": 32.5,
+        "ph": 6.9
+      },
+      {
+        "depth": 7,
+        "water_temp": 18.8,
+        "dissolved_oxygen": 8.61,
+        "spc": 50,
+        "tds": 32.5,
+        "ph": 6.91
+      },
+      {
+        "depth": 8,
+        "water_temp": 15.8,
+        "dissolved_oxygen": 4.64,
+        "spc": 50.4,
+        "tds": 32.5,
+        "ph": 6.69
+      },
+      {
+        "depth": 9,
+        "water_temp": 12,
+        "dissolved_oxygen": 1.85,
+        "spc": 53.1,
+        "tds": 34.45,
+        "ph": 6.44
+      },
+      {
+        "depth": 10,
+        "water_temp": 10.9,
+        "dissolved_oxygen": 1.28,
+        "spc": 57.7,
+        "tds": 37.3,
+        "ph": 6.07
+      },
+      {
+        "depth": 11,
+        "water_temp": 10.4,
+        "dissolved_oxygen": 1.2,
+        "spc": 62,
+        "tds": 40.6,
+        "ph": 6.02
+      },
+      {
+        "depth": 12,
+        "water_temp": null,
+        "dissolved_oxygen": null,
+        "spc": null,
+        "tds": null,
+        "ph": null
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2021-10-13T22:15:00.000Z",
+    "samplers": [
+      "Carrie and Gina"
+    ],
+    "weather": "calm, light coulds, rain",
+    "air_temperature": 13,
+    "secchi_depth": [
+      4.3,
+      5.9
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "November -- skipped this month",
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 14.3,
+        "dissolved_oxygen": 8.24,
+        "spc": 50,
+        "tds": 32.5,
+        "ph": 6.78
+      },
+      {
+        "depth": 1,
+        "water_temp": 14.3,
+        "dissolved_oxygen": 8.62,
+        "spc": 50.4,
+        "tds": 32.5,
+        "ph": 6.67
+      },
+      {
+        "depth": 2,
+        "water_temp": 14.2,
+        "dissolved_oxygen": 9.11,
+        "spc": 50.2,
+        "tds": 32.5,
+        "ph": 6.71
+      },
+      {
+        "depth": 3,
+        "water_temp": 14.1,
+        "dissolved_oxygen": 9.03,
+        "spc": 49.9,
+        "tds": 32.5,
+        "ph": 7.79
+      },
+      {
+        "depth": 4,
+        "water_temp": 14.2,
+        "dissolved_oxygen": 9.03,
+        "spc": 50.1,
+        "tds": 32.5,
+        "ph": 6.72
+      },
+      {
+        "depth": 5,
+        "water_temp": 14.3,
+        "dissolved_oxygen": 9.27,
+        "spc": 50.5,
+        "tds": 32.5,
+        "ph": 6.69
+      },
+      {
+        "depth": 6,
+        "water_temp": 14.1,
+        "dissolved_oxygen": 9.32,
+        "spc": 50.1,
+        "tds": 32.5,
+        "ph": 6.66
+      },
+      {
+        "depth": 7,
+        "water_temp": 14,
+        "dissolved_oxygen": 9.24,
+        "spc": 50,
+        "tds": 32.5,
+        "ph": 6.68
+      },
+      {
+        "depth": 8,
+        "water_temp": 14.2,
+        "dissolved_oxygen": 9.07,
+        "spc": 50.1,
+        "tds": 32.5,
+        "ph": 6.69
+      },
+      {
+        "depth": 9,
+        "water_temp": 14.2,
+        "dissolved_oxygen": 9.14,
+        "spc": 50.1,
+        "tds": 32.5,
+        "ph": 6.7
+      },
+      {
+        "depth": 10,
+        "water_temp": 14.1,
+        "dissolved_oxygen": 9.07,
+        "spc": 50.2,
+        "tds": 32.5,
+        "ph": 6.69
+      },
+      {
+        "depth": 11,
+        "water_temp": 13.9,
+        "dissolved_oxygen": 9.23,
+        "spc": 50.2,
+        "tds": 32.5,
+        "ph": 6.67
+      },
+      {
+        "depth": 12,
+        "water_temp": 14.1,
+        "dissolved_oxygen": 9.27,
+        "spc": 50.1,
+        "tds": 32.5,
+        "ph": 6.67
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2022-01-18T19:30:00.000Z",
+    "samplers": [
+      "Carrie and Gina"
+    ],
+    "weather": "calm, light clouds, foggy",
+    "air_temperature": 7.3,
+    "secchi_depth": [
+      4.5,
+      4.9
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "some ice on lake, less than on Gunflint",
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 4.4,
+        "dissolved_oxygen": 13.9,
+        "spc": 47.3,
+        "tds": 30.55,
+        "ph": 6.25
+      },
+      {
+        "depth": 1,
+        "water_temp": 4.2,
+        "dissolved_oxygen": 13.24,
+        "spc": 47.7,
+        "tds": 30.55,
+        "ph": 6.07
+      },
+      {
+        "depth": 2,
+        "water_temp": 4.3,
+        "dissolved_oxygen": 13.29,
+        "spc": 47.5,
+        "tds": 30.55,
+        "ph": 5.96
+      },
+      {
+        "depth": 3,
+        "water_temp": 4.3,
+        "dissolved_oxygen": 13.23,
+        "spc": 47.6,
+        "tds": 30.55,
+        "ph": 5.94
+      },
+      {
+        "depth": 4,
+        "water_temp": 4.3,
+        "dissolved_oxygen": 13.31,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 5.93
+      },
+      {
+        "depth": 5,
+        "water_temp": 4.1,
+        "dissolved_oxygen": 13.17,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 5.97
+      },
+      {
+        "depth": 6,
+        "water_temp": 4.2,
+        "dissolved_oxygen": 13.15,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6
+      },
+      {
+        "depth": 7,
+        "water_temp": 4.1,
+        "dissolved_oxygen": 13.04,
+        "spc": 47.4,
+        "tds": 30.55,
+        "ph": 6.03
+      },
+      {
+        "depth": 8,
+        "water_temp": 4,
+        "dissolved_oxygen": 13.17,
+        "spc": 47.5,
+        "tds": 31.2,
+        "ph": 6.06
+      },
+      {
+        "depth": 9,
+        "water_temp": 4.1,
+        "dissolved_oxygen": 13.02,
+        "spc": 47.5,
+        "tds": 30.55,
+        "ph": 6.09
+      },
+      {
+        "depth": 10,
+        "water_temp": 4,
+        "dissolved_oxygen": 13.3,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.1
+      },
+      {
+        "depth": 11,
+        "water_temp": 4.1,
+        "dissolved_oxygen": 12.93,
+        "spc": 47.44,
+        "tds": 30.55,
+        "ph": 6.11
+      },
+      {
+        "depth": 12,
+        "water_temp": 4.1,
+        "dissolved_oxygen": 12.86,
+        "spc": 47.5,
+        "tds": 30.55,
+        "ph": 6.13
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2022-02-17T22:20:00.000Z",
+    "samplers": [
+      "Carrie and Gina"
+    ],
+    "weather": "sunny, calm, light breeze",
+    "air_temperature": 9.1,
+    "secchi_depth": [
+      4.5,
+      4.7
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 5,
+        "dissolved_oxygen": 7.22,
+        "spc": 47.9,
+        "tds": 31.2,
+        "ph": 6.66
+      },
+      {
+        "depth": 1,
+        "water_temp": 4.9,
+        "dissolved_oxygen": 7.24,
+        "spc": 47.9,
+        "tds": 31.2,
+        "ph": 6.27
+      },
+      {
+        "depth": 2,
+        "water_temp": 4.7,
+        "dissolved_oxygen": 9.8,
+        "spc": 47.8,
+        "tds": 31.2,
+        "ph": 6.24
+      },
+      {
+        "depth": 3,
+        "water_temp": 4.7,
+        "dissolved_oxygen": 10.32,
+        "spc": 47.9,
+        "tds": 31.2,
+        "ph": 6.27
+      },
+      {
+        "depth": 4,
+        "water_temp": 4.6,
+        "dissolved_oxygen": 10.8,
+        "spc": 47.9,
+        "tds": 31.2,
+        "ph": 6.17
+      },
+      {
+        "depth": 5,
+        "water_temp": 4.6,
+        "dissolved_oxygen": 11.16,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.17
+      },
+      {
+        "depth": 6,
+        "water_temp": 4.6,
+        "dissolved_oxygen": 11.45,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.19
+      },
+      {
+        "depth": 7,
+        "water_temp": 4.5,
+        "dissolved_oxygen": 11.72,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.2
+      },
+      {
+        "depth": 8,
+        "water_temp": 4.5,
+        "dissolved_oxygen": 11.91,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.21
+      },
+      {
+        "depth": 9,
+        "water_temp": 4.5,
+        "dissolved_oxygen": 12.04,
+        "spc": 47.9,
+        "tds": 31.2,
+        "ph": 6.23
+      },
+      {
+        "depth": 10,
+        "water_temp": 4.5,
+        "dissolved_oxygen": 12.16,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.24
+      },
+      {
+        "depth": 11,
+        "water_temp": 4.5,
+        "dissolved_oxygen": 12.24,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.25
+      },
+      {
+        "depth": 12,
+        "water_temp": 4.5,
+        "dissolved_oxygen": 12.38,
+        "spc": 48,
+        "tds": 31.2,
+        "ph": 6.26
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2022-03-23T21:20:00.000Z",
+    "samplers": [
+      "Carrie and Gina"
+    ],
+    "weather": "sunny, windy, some clouds",
+    "air_temperature": 9.6,
+    "secchi_depth": [
+      3.1,
+      4.3
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 7.2,
+        "dissolved_oxygen": 13.83,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.7
+      },
+      {
+        "depth": 1,
+        "water_temp": 6.9,
+        "dissolved_oxygen": 13.96,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.57
+      },
+      {
+        "depth": 2,
+        "water_temp": 6.9,
+        "dissolved_oxygen": 13.94,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.37
+      },
+      {
+        "depth": 3,
+        "water_temp": 6.9,
+        "dissolved_oxygen": 13.85,
+        "spc": 47.3,
+        "tds": 30.55,
+        "ph": 6.17
+      },
+      {
+        "depth": 4,
+        "water_temp": 6.8,
+        "dissolved_oxygen": 13.84,
+        "spc": 47.3,
+        "tds": 30.55,
+        "ph": 6.21
+      },
+      {
+        "depth": 5,
+        "water_temp": 6.8,
+        "dissolved_oxygen": 13.8,
+        "spc": 47.3,
+        "tds": 30.55,
+        "ph": 6.24
+      },
+      {
+        "depth": 6,
+        "water_temp": 6.7,
+        "dissolved_oxygen": 13.74,
+        "spc": 47.3,
+        "tds": 30.55,
+        "ph": 6.28
+      },
+      {
+        "depth": 7,
+        "water_temp": 6.7,
+        "dissolved_oxygen": 13.67,
+        "spc": 47.3,
+        "tds": 30.55,
+        "ph": 6.31
+      },
+      {
+        "depth": 8,
+        "water_temp": 6.7,
+        "dissolved_oxygen": 13.39,
+        "spc": 47.3,
+        "tds": 30.55,
+        "ph": 6.33
+      },
+      {
+        "depth": 9,
+        "water_temp": 6.7,
+        "dissolved_oxygen": 13.69,
+        "spc": 47.3,
+        "tds": 30.55,
+        "ph": 6.27
+      },
+      {
+        "depth": 10,
+        "water_temp": 6.7,
+        "dissolved_oxygen": 13.54,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.38
+      },
+      {
+        "depth": 11,
+        "water_temp": 6.7,
+        "dissolved_oxygen": 13.44,
+        "spc": 47.3,
+        "tds": 30.55,
+        "ph": 6.41
+      },
+      {
+        "depth": 12,
+        "water_temp": 6.7,
+        "dissolved_oxygen": 13.57,
+        "spc": 47.3,
+        "tds": 30.55,
+        "ph": 6.42
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "station": "DWH",
+    "date": "2022-05-10T21:20:00.000Z",
+    "samplers": [
+      "Carrie and Gina"
+    ],
+    "weather": "sunny, windy, some clouds",
+    "air_temperature": 16.3,
+    "secchi_depth": [
+      3.1,
+      3
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
+    "measurements": [
+      {
+        "depth": 0,
+        "water_temp": 15.9,
+        "dissolved_oxygen": 7.03,
+        "spc": 45.1,
+        "tds": 29.25,
+        "ph": 6.62
+      },
+      {
+        "depth": 1,
+        "water_temp": 15.7,
+        "dissolved_oxygen": 7.34,
+        "spc": 45.3,
+        "tds": 29.25,
+        "ph": 6.57
+      },
+      {
+        "depth": 2,
+        "water_temp": 15.2,
+        "dissolved_oxygen": 7.8,
+        "spc": 45.2,
+        "tds": 29.25,
+        "ph": 6.6
+      },
+      {
+        "depth": 3,
+        "water_temp": 14.5,
+        "dissolved_oxygen": 8.8,
+        "spc": 45.4,
+        "tds": 29.25,
+        "ph": 6.61
+      },
+      {
+        "depth": 4,
+        "water_temp": 12.6,
+        "dissolved_oxygen": 9.52,
+        "spc": 46,
+        "tds": 29.9,
+        "ph": 6.63
+      },
+      {
+        "depth": 5,
+        "water_temp": 11.6,
+        "dissolved_oxygen": 10.12,
+        "spc": 46.3,
+        "tds": 30.55,
+        "ph": 6.55
+      },
+      {
+        "depth": 6,
+        "water_temp": 10,
+        "dissolved_oxygen": 10.42,
+        "spc": 46.9,
+        "tds": 30.55,
+        "ph": 6.43
+      },
+      {
+        "depth": 7,
+        "water_temp": 9.1,
+        "dissolved_oxygen": 10.31,
+        "spc": 47.2,
+        "tds": 30.55,
+        "ph": 6.27
+      },
+      {
+        "depth": 8,
+        "water_temp": 8.7,
+        "dissolved_oxygen": 9.73,
+        "spc": 47.4,
+        "tds": 30.55,
+        "ph": 6.18
+      },
+      {
+        "depth": 9,
+        "water_temp": 8.5,
+        "dissolved_oxygen": 9.48,
+        "spc": 47.5,
+        "tds": 30.55,
+        "ph": 6.15
+      },
+      {
+        "depth": 10,
+        "water_temp": 8.4,
+        "dissolved_oxygen": 9.26,
+        "spc": 47.5,
+        "tds": 30.2,
+        "ph": 6.14
+      },
+      {
+        "depth": 11,
+        "water_temp": 8.3,
+        "dissolved_oxygen": 8.88,
+        "spc": 47.6,
+        "tds": 31.2,
+        "ph": 6.15
+      },
+      {
+        "depth": 12,
+        "water_temp": 8.3,
+        "dissolved_oxygen": 8.55,
+        "spc": 47.8,
+        "tds": 31.2,
+        "ph": 6.15
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "date": "2024-09-11T13:20:00-08:00",
+    "samplers": [
+      "Norleen",
+      "Gina"
+    ],
+    "weather": "sunny, calm, partly cloudy",
+    "air_temperature": 24.5,
+    "secchi_depth": [
+      5,
+      3.5
+    ],
+    "measurements": [
+      {
+        "depth": 0,
+        "temperature": 22.4,
+        "DO": 26.25,
+        "SPC": 51,
+        "TDS": 33.15,
+        "PH": 7.46
+      },
+      {
+        "depth": 1,
+        "temperature": 22.6,
+        "DO": 6.67,
+        "SPC": 51.3,
+        "TDS": 33.15,
+        "PH": 6.78
+      },
+      {
+        "depth": 2,
+        "temperature": 22.4,
+        "DO": 6.03,
+        "SPC": 51.1,
+        "TDS": 33.15,
+        "PH": 7.45
+      },
+      {
+        "depth": 3,
+        "temperature": 21.9,
+        "DO": 7.02,
+        "SPC": 51.1,
+        "TDS": 33.15,
+        "PH": 7.47
+      },
+      {
+        "depth": 4,
+        "temperature": 21.9,
+        "DO": 9.05,
+        "SPC": 51,
+        "TDS": 33.15,
+        "PH": 7.51
+      },
+      {
+        "depth": 5,
+        "temperature": 21.9,
+        "DO": 7.42,
+        "SPC": 51,
+        "TDS": 33.15,
+        "PH": 7.5
+      },
+      {
+        "depth": 6,
+        "temperature": 21.9,
+        "DO": 7.33,
+        "SPC": 51,
+        "TDS": 33.15,
+        "PH": 7.25
+      },
+      {
+        "depth": 7,
+        "temperature": 18,
+        "DO": 6.35,
+        "SPC": 51.1,
+        "TDS": 33.15,
+        "PH": 6.51
+      },
+      {
+        "depth": 8,
+        "temperature": 14.7,
+        "DO": 3.85,
+        "SPC": 52.8,
+        "TDS": 34.45,
+        "PH": 6
+      },
+      {
+        "depth": 9,
+        "temperature": 12.5,
+        "DO": 1.91,
+        "SPC": 54.8,
+        "TDS": 35.75,
+        "PH": 5.97
+      },
+      {
+        "depth": 10,
+        "temperature": 11.3,
+        "DO": 1.71,
+        "SPC": 64.5,
+        "TDS": 42.25,
+        "PH": 6.14
+      },
+      {
+        "depth": 11,
+        "temperature": 10.7,
+        "DO": 1.6,
+        "SPC": 67.2,
+        "TDS": 44.55,
+        "PH": 6.23
+      },
+      {
+        "depth": 12,
+        "temperature": 10.3,
+        "DO": 1.58,
+        "SPC": 68,
+        "TDS": 44.2,
+        "PH": 6.34
+      },
+      {
+        "depth": 13,
+        "temperature": 10.4,
+        "DO": 1.58,
+        "SPC": 68.5,
+        "TDS": 44.2,
+        "PH": 6.39
+      },
+      {
+        "depth": 14,
+        "temperature": 10.7,
+        "DO": 1.55,
+        "SPC": 69.7,
+        "TDS": 44.85,
+        "PH": 6.45
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "date": "2024-10-13T15:00:00-08:00",
+    "samplers": [
+      "Wisia",
+      "Gina"
+    ],
+    "weather": "breeze, cloudy",
+    "air_temperature": 19.4,
+    "secchi_depth": [
+      4.45,
+      4
+    ],
+    "measurements": [
+      {
+        "depth": 0,
+        "temperature": 16,
+        "DO": 4.87,
+        "SPC": 50.9,
+        "TDS": 33.15,
+        "PH": 7.35
+      },
+      {
+        "depth": 1,
+        "temperature": 16.1,
+        "DO": 5.71,
+        "SPC": 51,
+        "TDS": 33.15,
+        "PH": 7.22
+      },
+      {
+        "depth": 2,
+        "temperature": 16.3,
+        "DO": 6.31,
+        "SPC": 50.6,
+        "TDS": 33.15,
+        "PH": 7.15
+      },
+      {
+        "depth": 3,
+        "temperature": 16.1,
+        "DO": 7.1,
+        "SPC": 50.8,
+        "TDS": 33.15,
+        "PH": 7.16
+      },
+      {
+        "depth": 4,
+        "temperature": 16.1,
+        "DO": 7.42,
+        "SPC": 51.1,
+        "TDS": 33.5,
+        "PH": 7.15
+      },
+      {
+        "depth": 5,
+        "temperature": 16.3,
+        "DO": 7.91,
+        "SPC": 50.7,
+        "TDS": 33.5,
+        "PH": 7.14
+      },
+      {
+        "depth": 6,
+        "temperature": 16.1,
+        "DO": 8.01,
+        "SPC": 50.9,
+        "TDS": 33.15,
+        "PH": 7.13
+      },
+      {
+        "depth": 7,
+        "temperature": 16.1,
+        "DO": 8.41,
+        "SPC": 50.9,
+        "TDS": 33.15,
+        "PH": 7.13
+      },
+      {
+        "depth": 8,
+        "temperature": 16,
+        "DO": 8.41,
+        "SPC": 51.2,
+        "TDS": 33.15,
+        "PH": 7.11
+      },
+      {
+        "depth": 9,
+        "temperature": 15.9,
+        "DO": 8.31,
+        "SPC": 50.7,
+        "TDS": 33.15,
+        "PH": 7.05
+      },
+      {
+        "depth": 10,
+        "temperature": 11.9,
+        "DO": 4.14,
+        "SPC": 70.1,
+        "TDS": 36.15,
+        "PH": 6.49
+      },
+      {
+        "depth": 11,
+        "temperature": 11.7,
+        "DO": 2,
+        "SPC": 72.5,
+        "TDS": 47.45,
+        "PH": 6.39
+      },
+      {
+        "depth": 12,
+        "temperature": 10.5,
+        "DO": 1.81,
+        "SPC": 73.3,
+        "TDS": 47.1,
+        "PH": 6.39
+      },
+      {
+        "depth": 13,
+        "temperature": 10.3,
+        "DO": 1.69,
+        "SPC": 74.3,
+        "TDS": 47.9,
+        "PH": 6.45
+      },
+      {
+        "depth": 14,
+        "temperature": 10.5,
+        "DO": 1.67,
+        "SPC": 76.8,
+        "TDS": 50.05,
+        "PH": 6.46
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "date": "2024-12-19T11:30:00-08:00",
+    "samplers": [
+      "Gimel Ziemek"
+    ],
+    "weather": "rain",
+    "air_temperature": 6.9,
+    "secchi_depth": [
+      4,
+      4.8
+    ],
+    "measurements": [
+      {
+        "depth": 0,
+        "temperature": 7,
+        "DO": 10.1,
+        "SPC": 50.9,
+        "TDS": 33.15,
+        "PH": 6.88
+      },
+      {
+        "depth": 1,
+        "temperature": 7,
+        "DO": 9.8,
+        "SPC": 50.9,
+        "TDS": 33.15,
+        "PH": 6.94
+      },
+      {
+        "depth": 2,
+        "temperature": 7,
+        "DO": 9.7,
+        "SPC": 50,
+        "TDS": 33.15,
+        "PH": 6.95
+      },
+      {
+        "depth": 3,
+        "temperature": 7,
+        "DO": 9.5,
+        "SPC": 50.8,
+        "TDS": 33.15,
+        "PH": 6.77
+      },
+      {
+        "depth": 4,
+        "temperature": 7,
+        "DO": 9.4,
+        "SPC": 50.9,
+        "TDS": 33.15,
+        "PH": 6.78
+      },
+      {
+        "depth": 5,
+        "temperature": 7,
+        "DO": 9.3,
+        "SPC": 50.9,
+        "TDS": 33.15,
+        "PH": 6.99
+      },
+      {
+        "depth": 6,
+        "temperature": 7,
+        "DO": 9.4,
+        "SPC": 50.9,
+        "TDS": 33.15,
+        "PH": 6.99
+      },
+      {
+        "depth": 7,
+        "temperature": 7,
+        "DO": 9.2,
+        "SPC": 50.9,
+        "TDS": 33.15,
+        "PH": 7.01
+      },
+      {
+        "depth": 8,
+        "temperature": 7,
+        "DO": 9.3,
+        "SPC": 50.8,
+        "TDS": 33.15,
+        "PH": 7
+      },
+      {
+        "depth": 9,
+        "temperature": 7,
+        "DO": 9.3,
+        "SPC": 50.8,
+        "TDS": 33.15,
+        "PH": 7
+      },
+      {
+        "depth": 10,
+        "temperature": 7,
+        "DO": 9.3,
+        "SPC": 51.9,
+        "TDS": 33.15,
+        "PH": 6.99
+      },
+      {
+        "depth": 11,
+        "temperature": 7,
+        "DO": 9.2,
+        "SPC": 50.9,
+        "TDS": 33.15,
+        "PH": 7
+      },
+      {
+        "depth": 12,
+        "temperature": 7,
+        "DO": 9.2,
+        "SPC": 50.9,
+        "TDS": 33.15,
+        "PH": 7
+      },
+      {
+        "depth": 13,
+        "temperature": 7,
+        "DO": 9.2,
+        "SPC": 50.9,
+        "TDS": 33.15,
+        "PH": 7.01
+      },
+      {
+        "depth": 14,
+        "temperature": 7,
+        "DO": 9.3,
+        "SPC": 50.8,
+        "TDS": 33.15,
+        "PH": 7
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "date": "2025-03-02T14:15:00-08:00",
+    "samplers": [
+      "Carrie",
+      "Gino"
+    ],
+    "weather": "Sunny, light breeze, some clouds",
+    "air_temperature": 8.5,
+    "secchi_depth": [
+      4,
+      4.1
+    ],
+    "measurements": [
+      {
+        "depth": 0,
+        "temperature": 6.1,
+        "DO": 13.72,
+        "SPC": 49.8,
+        "TDS": 32.5,
+        "PH": 6.89
+      },
+      {
+        "depth": 1,
+        "temperature": 6.1,
+        "DO": 13.83,
+        "SPC": 50,
+        "TDS": 32.5,
+        "PH": 7
+      },
+      {
+        "depth": 2,
+        "temperature": 5.7,
+        "DO": 13.83,
+        "SPC": 50,
+        "TDS": 32.5,
+        "PH": 7
+      },
+      {
+        "depth": 3,
+        "temperature": 5,
+        "DO": 13.5,
+        "SPC": 49.9,
+        "TDS": 32.5,
+        "PH": 6.99
+      },
+      {
+        "depth": 4,
+        "temperature": 5,
+        "DO": 13.5,
+        "SPC": 48.3,
+        "TDS": 32.5,
+        "PH": 6.9
+      },
+      {
+        "depth": 5,
+        "temperature": 5.2,
+        "DO": 13.23,
+        "SPC": 52.4,
+        "TDS": 32.5,
+        "PH": 6.97
+      },
+      {
+        "depth": 6,
+        "temperature": 6.1,
+        "DO": 13.26,
+        "SPC": 50.1,
+        "TDS": 32.5,
+        "PH": 6.95
+      },
+      {
+        "depth": 7,
+        "temperature": 5,
+        "DO": 13.15,
+        "SPC": 50.1,
+        "TDS": 32.5,
+        "PH": 6.93
+      },
+      {
+        "depth": 8,
+        "temperature": 5,
+        "DO": 13.21,
+        "SPC": 50.1,
+        "TDS": 32.5,
+        "PH": 6.92
+      },
+      {
+        "depth": 9,
+        "temperature": 5,
+        "DO": 12.84,
+        "SPC": 41.2,
+        "TDS": 32.5,
+        "PH": 6.91
+      },
+      {
+        "depth": 10,
+        "temperature": 5,
+        "DO": 12.99,
+        "SPC": 41.2,
+        "TDS": 32.5,
+        "PH": 6.91
+      },
+      {
+        "depth": 11,
+        "temperature": 5,
+        "DO": 12.81,
+        "SPC": 41.2,
+        "TDS": 32.5,
+        "PH": 6.88
+      },
+      {
+        "depth": 12,
+        "temperature": 5,
+        "DO": 12.81,
+        "SPC": 41.3,
+        "TDS": 32.5,
+        "PH": 6.88
+      },
+      {
+        "depth": 13,
+        "temperature": 5,
+        "DO": 12.88,
+        "SPC": 41.2,
+        "TDS": 32.5,
+        "PH": 6.88
+      },
+      {
+        "depth": 14,
+        "temperature": 5,
+        "DO": 10.88,
+        "SPC": 20.5,
+        "TDS": 32.15,
+        "PH": 6.85
+      }
+    ]
+  },
+  {
+    "lake": "Hague",
+    "date": "2025-06-01T11:00:00-07:00",
+    "samplers": [
+      "Gina",
+      "Ziemer"
+    ],
+    "weather": "windy, partly cloudy",
+    "air_temperature": 15,
+    "secchi_depth": [
+      4.4,
+      4.4
+    ],
+    "measurements": [
+      {
+        "depth": 0,
+        "temperature": 16.6,
+        "DO": 9.77,
+        "SPC": 49.9,
+        "TDS": 31.8,
+        "PH": 7.37
+      },
+      {
+        "depth": 1,
+        "temperature": 16.6,
+        "DO": 9.82,
+        "SPC": 49,
+        "TDS": 31.85,
+        "PH": 7.44
+      },
+      {
+        "depth": 2,
+        "temperature": 16.5,
+        "DO": 9.78,
+        "SPC": 49,
+        "TDS": 31.85,
+        "PH": 7.47
+      },
+      {
+        "depth": 3,
+        "temperature": 16.5,
+        "DO": 9.78,
+        "SPC": 48.9,
+        "TDS": 31.85,
+        "PH": 7.47
+      },
+      {
+        "depth": 4,
+        "temperature": 16.5,
+        "DO": 9.76,
+        "SPC": 49,
+        "TDS": 31.85,
+        "PH": 7.48
+      },
+      {
+        "depth": 5,
+        "temperature": 15.3,
+        "DO": 10.7,
+        "SPC": 48.1,
+        "TDS": 31.85,
+        "PH": 7.43
+      },
+      {
+        "depth": 6,
+        "temperature": 12.7,
+        "DO": 10.92,
+        "SPC": 49.9,
+        "TDS": 31.85,
+        "PH": 7.29
+      },
+      {
+        "depth": 7,
+        "temperature": 11.7,
+        "DO": 10.51,
+        "SPC": 49,
+        "TDS": 31.85,
+        "PH": 6.95
+      },
+      {
+        "depth": 8,
+        "temperature": 9.4,
+        "DO": 9.76,
+        "SPC": 49.3,
+        "TDS": 31.85,
+        "PH": 6.8
+      },
+      {
+        "depth": 9,
+        "temperature": 8.9,
+        "DO": 8.96,
+        "SPC": 49.5,
+        "TDS": 31.85,
+        "PH": 6.61
+      },
+      {
+        "depth": 10,
+        "temperature": 8.3,
+        "DO": 7.65,
+        "SPC": 49.7,
+        "TDS": 32.5,
+        "PH": 6.44
+      },
+      {
+        "depth": 11,
+        "temperature": 8.3,
+        "DO": 7.41,
+        "SPC": 49.7,
+        "TDS": 32.5,
+        "PH": 6.41
+      },
+      {
+        "depth": 12,
+        "temperature": 8.3,
+        "DO": 7.42,
+        "SPC": 49.8,
+        "TDS": 32.5,
+        "PH": 6.41
+      },
+      {
+        "depth": 13,
+        "temperature": 8.3,
+        "DO": 7.09,
+        "SPC": 49.9,
+        "TDS": 32.5,
+        "PH": 6.41
+      },
+      {
+        "depth": 14,
+        "temperature": 8.3,
+        "DO": 6.92,
+        "SPC": 50.4,
+        "TDS": 32.5,
+        "PH": 6.35
+      }
+    ]
+  }
+]

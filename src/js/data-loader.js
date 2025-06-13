@@ -10,104 +10,33 @@ class DataLoader {
 
     async loadData() {
         try {
-            // Get list of all JSON files in ./data directory
-            const dataFiles = await this.getDataFiles();
-
-            // Fetch and combine all JSON files
-            const allData = [];
-            for (const filename of dataFiles) {
-                try {
-                    const response = await fetch(`./data/${filename}`);
-                    if (response.ok) {
-                        const fileData = await response.json();
-                        // Add filename metadata to each record if needed
-                        if (Array.isArray(fileData)) {
-                            fileData.forEach(record => record._sourceFile = filename);
-                            allData.push(...fileData);
-                        } else {
-                            // Handle single object files
-                            fileData._sourceFile = filename;
-                            allData.push(fileData);
-                        }
-                    } else {
-                        console.warn(`Failed to fetch ${filename}: ${response.status}`);
-                    }
-                } catch (fileError) {
-                    console.warn(`Error loading ${filename}:`, fileError);
-                }
+            // Load the main water data file
+            const response = await fetch('./data/water-quality.json');
+            
+            if (!response.ok) {
+                throw new Error(`Failed to fetch water-data.json: ${response.status}`);
             }
 
-            this.data = allData;
+            const fileData = await response.json();
+            
+            // Handle array or single object data
+            if (Array.isArray(fileData)) {
+                this.data = fileData;
+            } else {
+                this.data = [fileData];
+            }
+
             this.initializeSeriesTracking();
             return this.data;
         } catch (error) {
             console.error('Error loading data:', error);
             d3.select('#chartsContainer').html(
                 '<p style="text-align: center; color: red; font-size: 18px;">' +
-                'Error loading data files. Please make sure JSON files exist in the ./data directory.' +
+                'Error loading water-data.json. Please make sure the file exists in the ./data directory.' +
                 '</p>'
             );
             throw error;
         }
-    }
-
-    async getDataFiles() {
-        // Method 1: Try to fetch a directory listing (works with some servers)
-        try {
-            const response = await fetch('./data/');
-            const html = await response.text();
-
-            // Parse HTML directory listing for water*.json files
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, 'text/html');
-            const links = Array.from(doc.querySelectorAll('a[href$=".json"]'))
-                .filter(link => link.getAttribute('href').startsWith('water'));
-
-            if (links.length > 0) {
-                return links.map(link => link.getAttribute('href'));
-            }
-        } catch (e) {
-            // Directory listing failed, fall back to known patterns
-        }
-
-        // Method 2: Try common filename patterns
-        const commonPatterns = [
-            'water-quality.json',
-            'data.json',
-            // Year patterns
-            ...Array.from({length: 10}, (_, i) => `${2015 + i}.json`),
-            ...Array.from({length: 10}, (_, i) => `water-quality-${2015 + i}.json`),
-            // Month patterns for current/recent years
-            ...this.generateMonthlyPatterns(['2023', '2024', '2025'])
-        ];
-
-        const existingFiles = [];
-        for (const filename of commonPatterns) {
-            try {
-                const response = await fetch(`./data/${filename}`, { method: 'HEAD' });
-                if (response.ok) {
-                    existingFiles.push(filename);
-                }
-            } catch (e) {
-                // File doesn't exist, continue
-            }
-        }
-
-        return existingFiles;
-    }
-
-    generateMonthlyPatterns(years) {
-        const patterns = [];
-        const months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
-
-        for (const year of years) {
-            for (const month of months) {
-                patterns.push(`${year}-${month}.json`);
-                patterns.push(`water-quality-${year}-${month}.json`);
-            }
-        }
-
-        return patterns;
     }
 
     // Initialize series tracking and visibility controls
