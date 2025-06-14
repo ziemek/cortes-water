@@ -83,73 +83,125 @@ export class LegendManager {
         const visibleData = this.dataLoader.getVisibleData();
 
         if (currentView === 'depth' || currentView === 'horizontal') {
-            // Legend for depth profiles (both vertical and horizontal) with enhanced metadata
+            // Compact summary legend for depth profiles to avoid overcrowding
             const lakes = [...new Set(visibleData.map(d => d.lake))];
+            
+            // Add a header explaining the compact view
+            legend.append('div')
+                .style('margin-bottom', '15px')
+                .style('padding', '20px')
+                .style('background', 'linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85))')
+                .style('border-radius', '20px')
+                .style('font-size', '14px')
+                .style('backdrop-filter', 'blur(15px)')
+                .style('border', '1px solid rgba(255, 255, 255, 0.2)')
+                .style('box-shadow', '0 15px 35px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.8)')
+                .html(`
+                    <strong>Depth Profile Summary</strong><br/>
+                    <span style="font-size: 12px; color: #666;">
+                        Each line represents a different sampling date. 
+                        Hover over data points for detailed information.
+                    </span>
+                `);
+
             lakes.forEach(lake => {
                 const lakeData = visibleData.filter(d => d.lake === lake);
-                const allLakeData = this.dataLoader.getData().filter(d => d.lake === lake);
-                const colors = generateColorPalette(config.baseColorPalettes[lake], allLakeData.length);
-
-                lakeData.forEach((dataset) => {
-                    const datasetIndex = allLakeData.findIndex(d => d.date === dataset.date);
-                    const legendItem = legend.append('div')
-                        .attr('class', 'legend-item');
-
-                    const legendHeader = legendItem.append('div')
-                        .attr('class', 'legend-header');
-
-                    legendHeader.append('div')
-                        .attr('class', 'legend-color')
-                        .style('background-color', colors[datasetIndex]);
-
-                    legendHeader.append('span')
-                        .text(`${lake} - ${formatDate(dataset.date)}`);
-
-                    // Add metadata
-                    const metadata = [];
-                    if (dataset.weather) metadata.push(`Weather: ${dataset.weather}`);
-                    if (dataset.air_temperature) metadata.push(`Air Temp: ${dataset.air_temperature}°C`);
-                    if (dataset.water_temperature) metadata.push(`Water Temp: ${dataset.water_temperature}°C`);
-                    if (dataset.measurers) metadata.push(`Measurers: ${dataset.measurers}`);
-                    if (dataset.time) metadata.push(`Time: ${dataset.time}`);
-
-                    if (metadata.length > 0) {
-                        legendItem.append('div')
-                            .attr('class', 'legend-metadata')
-                            .html(metadata.join('<br/>'));
-                    }
-                });
-            });
-        } else {
-            // Legend for time series with metadata
-            const lakes = [...new Set(visibleData.map(d => d.lake))];
-            lakes.forEach(lake => {
-                const lakeData = visibleData.filter(d => d.lake === lake);
-
+                const dateRange = d3.extent(lakeData, d => new Date(d.date));
+                
                 const legendItem = legend.append('div')
-                    .attr('class', 'legend-item');
+                    .attr('class', 'legend-item')
+                    .style('margin-bottom', '10px');
 
                 const legendHeader = legendItem.append('div')
-                    .attr('class', 'legend-header');
+                    .attr('class', 'legend-header')
+                    .style('display', 'flex')
+                    .style('align-items', 'center')
+                    .style('margin-bottom', '5px');
 
                 legendHeader.append('div')
                     .attr('class', 'legend-color')
-                    .style('background-color', config.baseColorPalettes[lake][0]);
+                    .style('background-color', config.baseColorPalettes[lake][0])
+                    .style('width', '20px')
+                    .style('height', '20px')
+                    .style('margin-right', '10px')
+                    .style('border-radius', '3px');
 
                 legendHeader.append('span')
-                    .text(`${lake}`);
+                    .style('font-weight', 'bold')
+                    .text(`${lake} Lake`);
 
-                // Add summary metadata
-                const dateRange = d3.extent(lakeData, d => new Date(d.date));
-                const weatherTypes = [...new Set(lakeData.map(d => d.weather).filter(w => w))];
-
-                const metadata = [`Datasets: ${lakeData.length}`];
+                // Add compact summary metadata
+                const metadata = [`${lakeData.length} datasets`];
                 if (dateRange[0] && dateRange[1]) {
-                    metadata.push(`Period: ${formatDate(dateRange[0])} - ${formatDate(dateRange[1])}`);
+                    metadata.push(`${formatDate(dateRange[0])} - ${formatDate(dateRange[1])}`);
                 }
 
                 legendItem.append('div')
                     .attr('class', 'legend-metadata')
+                    .style('font-size', '12px')
+                    .style('color', '#666')
+                    .style('margin-left', '30px')
+                    .html(metadata.join('<br/>'));
+            });
+        } else {
+            // Compact summary legend for time series
+            const lakes = [...new Set(visibleData.map(d => d.lake))];
+            
+            // Add a header explaining the compact view
+            legend.append('div')
+                .style('margin-bottom', '15px')
+                .style('padding', '20px')
+                .style('background', 'linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85))')
+                .style('border-radius', '20px')
+                .style('font-size', '14px')
+                .style('backdrop-filter', 'blur(15px)')
+                .style('border', '1px solid rgba(255, 255, 255, 0.2)')
+                .style('box-shadow', '0 15px 35px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.8)')
+                .html(`
+                    <strong>Time Series Summary</strong><br/>
+                    <span style="font-size: 12px; color: #666;">
+                        Each line represents a different sampling date. 
+                        Hover over data points for detailed information.
+                    </span>
+                `);
+
+            lakes.forEach(lake => {
+                const lakeData = visibleData.filter(d => d.lake === lake);
+                const dateRange = d3.extent(lakeData, d => new Date(d.date));
+                
+                const legendItem = legend.append('div')
+                    .attr('class', 'legend-item')
+                    .style('margin-bottom', '10px');
+
+                const legendHeader = legendItem.append('div')
+                    .attr('class', 'legend-header')
+                    .style('display', 'flex')
+                    .style('align-items', 'center')
+                    .style('margin-bottom', '5px');
+
+                legendHeader.append('div')
+                    .attr('class', 'legend-color')
+                    .style('background-color', config.baseColorPalettes[lake][0])
+                    .style('width', '20px')
+                    .style('height', '20px')
+                    .style('margin-right', '10px')
+                    .style('border-radius', '3px');
+
+                legendHeader.append('span')
+                    .style('font-weight', 'bold')
+                    .text(`${lake} Lake`);
+
+                // Add compact summary metadata
+                const metadata = [`${lakeData.length} datasets`];
+                if (dateRange[0] && dateRange[1]) {
+                    metadata.push(`${formatDate(dateRange[0])} - ${formatDate(dateRange[1])}`);
+                }
+
+                legendItem.append('div')
+                    .attr('class', 'legend-metadata')
+                    .style('font-size', '12px')
+                    .style('color', '#666')
+                    .style('margin-left', '30px')
                     .html(metadata.join('<br/>'));
             });
         }
