@@ -36,14 +36,17 @@ Island. The site features time-series analysis, depth profiles, correlation char
 ## Getting Started
 
 1. **Install dependencies:**
+
    ```bash
    npm install
    ```
 
 2. **Start the development server:**
+
    ```bash
    npm start
    ```
+
    This will start a live server on `http://localhost:8080` and automatically open the website in your default browser. The server will reload automatically when you make changes to any files.
 
 3. **Build for production:**
@@ -72,4 +75,3 @@ node scripts/convert-csv.js "Lake Name" input.csv output.json
 ## GitHub Pages Deployment
 
 This project is automatically deployed to GitHub Pages using GitHub Actions. The deployment workflow is triggered on every push to the `main` branch and builds the site using the `npm run build` command before publishing to the `gh-pages` branch. You can view the live site at your repository's GitHub Pages URL once deployment is complete.
-

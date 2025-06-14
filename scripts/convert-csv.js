@@ -4,7 +4,9 @@ const fs = require('fs');
 const path = require('path');
 
 function showUsage() {
-  console.log('Usage: node lake-parser.js <lake-name> <input-file> <output-file>');
+  console.log(
+    'Usage: node lake-parser.js <lake-name> <input-file> <output-file>'
+  );
   console.log('');
   console.log('Arguments:');
   console.log('  lake-name    Name of the lake (e.g., "Hague")');
@@ -16,7 +18,10 @@ function showUsage() {
 }
 
 function parseLakeData(csvContent, lakeName = 'Unknown') {
-  const lines = csvContent.split('\n').map(line => line.trim()).filter(line => line);
+  const lines = csvContent
+    .split('\n')
+    .map((line) => line.trim())
+    .filter((line) => line);
   const result = [];
 
   let currentEntry = null;
@@ -30,13 +35,22 @@ function parseLakeData(csvContent, lakeName = 'Unknown') {
     if (i === 0) continue;
 
     // Check if this is a year row
-    if (columns[0] && !isNaN(columns[0]) && columns[0].toString().length === 4) {
+    if (
+      columns[0] &&
+      !isNaN(columns[0]) &&
+      columns[0].toString().length === 4
+    ) {
       currentYear = parseInt(columns[0]);
       continue;
     }
 
     // Check if this is a station row (starts with station ID like "DWG", but not "March")
-    if (columns[0] && typeof columns[0] === 'string' && columns[0].match(/^[A-Z]+$/) && columns[0] !== 'March') {
+    if (
+      columns[0] &&
+      typeof columns[0] === 'string' &&
+      columns[0].match(/^[A-Z]+$/) &&
+      columns[0] !== 'March'
+    ) {
       // Save previous entry if it exists
       if (currentEntry) {
         result.push(currentEntry);
@@ -54,7 +68,7 @@ function parseLakeData(csvContent, lakeName = 'Unknown') {
         nitrogen: null,
         phosphorus: null,
         data_notes: null,
-        measurements: []
+        measurements: [],
       };
 
       // Add the first measurement
@@ -65,7 +79,7 @@ function parseLakeData(csvContent, lakeName = 'Unknown') {
           DO: cleanDOValue(columns[3]),
           SPC: parseFloat(columns[4]) || null,
           TDS: parseFloat(columns[5]) || null,
-          PH: parseFloat(columns[6]) || null
+          PH: parseFloat(columns[6]) || null,
         });
       }
 
@@ -73,14 +87,19 @@ function parseLakeData(csvContent, lakeName = 'Unknown') {
       extractMetadata(columns, currentEntry);
     }
     // Check if this is a measurement row (starts with null/empty but has depth)
-    else if (currentEntry && columns[1] !== null && columns[1] !== undefined && !isNaN(columns[1])) {
+    else if (
+      currentEntry &&
+      columns[1] !== null &&
+      columns[1] !== undefined &&
+      !isNaN(columns[1])
+    ) {
       currentEntry.measurements.push({
         depth: parseFloat(columns[1]),
         temperature: parseFloat(columns[2]) || null,
         DO: cleanDOValue(columns[3]),
         SPC: parseFloat(columns[4]) || null,
         TDS: parseFloat(columns[5]) || null,
-        PH: parseFloat(columns[6]) || null
+        PH: parseFloat(columns[6]) || null,
       });
 
       // Check for metadata in this row
@@ -155,7 +174,10 @@ function extractMetadata(columns, entry) {
     // People/samplers
     if (colStr.includes('people:') && nextValue) {
       const people = nextValue.toString();
-      entry.samplers = people.split(',').map(p => p.trim()).filter(p => p);
+      entry.samplers = people
+        .split(',')
+        .map((p) => p.trim())
+        .filter((p) => p);
     }
 
     // Air temperature
@@ -181,7 +203,10 @@ function extractMetadata(columns, entry) {
     }
 
     // Phosphorus (also check for "phosporus" typo)
-    if ((colStr.includes('phosphorus') || colStr.includes('phosporus')) && nextValue) {
+    if (
+      (colStr.includes('phosphorus') || colStr.includes('phosporus')) &&
+      nextValue
+    ) {
       const phosphorus = parseFloat(nextValue);
       if (!isNaN(phosphorus)) entry.phosphorus = phosphorus;
     }
@@ -208,12 +233,14 @@ function parseDate(dateStr) {
 
     // Assume Pacific timezone (UTC-8 or UTC-7 depending on DST)
     // For simplicity, we'll use UTC-8 (PST) offset
-    const utcTime = date.getTime() + (8 * 60 * 60 * 1000); // Add 8 hours for UTC
+    const utcTime = date.getTime() + 8 * 60 * 60 * 1000; // Add 8 hours for UTC
     return new Date(utcTime).toISOString();
   }
 
   // Format: MM/dd/yyyy hh:mm AM/PM (US format like "03/28/2019 12:45 PM")
-  let match = cleanDateStr.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})\s+(\d{1,2}):(\d{2})\s+(AM|PM)$/i);
+  let match = cleanDateStr.match(
+    /^(\d{1,2})\/(\d{1,2})\/(\d{4})\s+(\d{1,2}):(\d{2})\s+(AM|PM)$/i
+  );
   if (match) {
     const [, month, day, year, hour, minute, ampm] = match;
     let hour24 = parseInt(hour);
@@ -222,11 +249,19 @@ function parseDate(dateStr) {
     } else if (ampm.toUpperCase() === 'AM' && hour24 === 12) {
       hour24 = 0;
     }
-    return createPacificDate(parseInt(year), parseInt(month), parseInt(day), hour24, parseInt(minute));
+    return createPacificDate(
+      parseInt(year),
+      parseInt(month),
+      parseInt(day),
+      hour24,
+      parseInt(minute)
+    );
   }
 
   // Format: dd/MM/yyyy hh:mm AM/PM (European format like "16/07/2019 05: 00 PM")
-  match = cleanDateStr.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})\s+(\d{1,2}):\s*(\d{2})\s+(AM|PM)$/i);
+  match = cleanDateStr.match(
+    /^(\d{1,2})\/(\d{1,2})\/(\d{4})\s+(\d{1,2}):\s*(\d{2})\s+(AM|PM)$/i
+  );
   if (match) {
     const [, day, month, year, hour, minute, ampm] = match;
     let hour24 = parseInt(hour);
@@ -235,7 +270,13 @@ function parseDate(dateStr) {
     } else if (ampm.toUpperCase() === 'AM' && hour24 === 12) {
       hour24 = 0;
     }
-    return createPacificDate(parseInt(year), parseInt(month), parseInt(day), hour24, parseInt(minute));
+    return createPacificDate(
+      parseInt(year),
+      parseInt(month),
+      parseInt(day),
+      hour24,
+      parseInt(minute)
+    );
   }
 
   // Format: yyyy/MMM/dd hh:mm (original Hague format like "2019/Mar/28 13:45")
@@ -243,52 +284,112 @@ function parseDate(dateStr) {
   if (match) {
     const [, year, monthStr, day, hour, minute] = match;
     const monthMap = {
-      'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6,
-      'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12
+      Jan: 1,
+      Feb: 2,
+      Mar: 3,
+      Apr: 4,
+      May: 5,
+      Jun: 6,
+      Jul: 7,
+      Aug: 8,
+      Sep: 9,
+      Oct: 10,
+      Nov: 11,
+      Dec: 12,
     };
     const month = monthMap[monthStr];
     if (month !== undefined) {
-      return createPacificDate(parseInt(year), month, parseInt(day), parseInt(hour), parseInt(minute));
+      return createPacificDate(
+        parseInt(year),
+        month,
+        parseInt(day),
+        parseInt(hour),
+        parseInt(minute)
+      );
     }
   }
 
   // Format: M/d/yy h:mm (short format like "3/31/21 4:10")
-  match = cleanDateStr.match(/^(\d{1,2})\/(\d{1,2})\/(\d{2})\s+(\d{1,2}):(\d{2})$/);
+  match = cleanDateStr.match(
+    /^(\d{1,2})\/(\d{1,2})\/(\d{2})\s+(\d{1,2}):(\d{2})$/
+  );
   if (match) {
     const [, month, day, year, hour, minute] = match;
     const fullYear = parseInt(year) + (parseInt(year) < 50 ? 2000 : 1900); // Assume 21st century for years < 50
-    return createPacificDate(fullYear, parseInt(month), parseInt(day), parseInt(hour), parseInt(minute));
+    return createPacificDate(
+      fullYear,
+      parseInt(month),
+      parseInt(day),
+      parseInt(hour),
+      parseInt(minute)
+    );
   }
 
   // Format: M/d/yy h:mm (another variant like "5/10/22 13:20")
-  match = cleanDateStr.match(/^(\d{1,2})\/(\d{1,2})\/(\d{2})\s+(\d{1,2}):(\d{2})$/);
+  match = cleanDateStr.match(
+    /^(\d{1,2})\/(\d{1,2})\/(\d{2})\s+(\d{1,2}):(\d{2})$/
+  );
   if (match) {
     const [, month, day, year, hour, minute] = match;
     const fullYear = parseInt(year) + 2000;
-    return createPacificDate(fullYear, parseInt(month), parseInt(day), parseInt(hour), parseInt(minute));
+    return createPacificDate(
+      fullYear,
+      parseInt(month),
+      parseInt(day),
+      parseInt(hour),
+      parseInt(minute)
+    );
   }
 
   // Format: dd/MM/yyyy hh.mm (with periods like "06/16/2019 14.50")
-  match = cleanDateStr.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})\s+(\d{1,2})\.(\d{2})$/);
+  match = cleanDateStr.match(
+    /^(\d{1,2})\/(\d{1,2})\/(\d{4})\s+(\d{1,2})\.(\d{2})$/
+  );
   if (match) {
     const [, day, month, year, hour, minute] = match;
-    return createPacificDate(parseInt(year), parseInt(month), parseInt(day), parseInt(hour), parseInt(minute));
+    return createPacificDate(
+      parseInt(year),
+      parseInt(month),
+      parseInt(day),
+      parseInt(hour),
+      parseInt(minute)
+    );
   }
 
   // Format: dd/MM/yyyy hh:mm (24-hour without AM/PM like "16/07/2019 18:00")
-  match = cleanDateStr.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})\s+(\d{1,2}):(\d{2})$/);
+  match = cleanDateStr.match(
+    /^(\d{1,2})\/(\d{1,2})\/(\d{4})\s+(\d{1,2}):(\d{2})$/
+  );
   if (match) {
     const [, day, month, year, hour, minute] = match;
     // Determine if this is US (MM/dd) or European (dd/MM) format by checking if day > 12
     if (parseInt(day) > 12) {
       // Must be European format (dd/MM/yyyy)
-      return createPacificDate(parseInt(year), parseInt(month), parseInt(day), parseInt(hour), parseInt(minute));
+      return createPacificDate(
+        parseInt(year),
+        parseInt(month),
+        parseInt(day),
+        parseInt(hour),
+        parseInt(minute)
+      );
     } else if (parseInt(month) > 12) {
       // Must be US format (MM/dd/yyyy)
-      return createPacificDate(parseInt(year), parseInt(day), parseInt(month), parseInt(hour), parseInt(minute));
+      return createPacificDate(
+        parseInt(year),
+        parseInt(day),
+        parseInt(month),
+        parseInt(hour),
+        parseInt(minute)
+      );
     } else {
       // Ambiguous - could be either format. Default to US format for consistency
-      return createPacificDate(parseInt(year), parseInt(day), parseInt(month), parseInt(hour), parseInt(minute));
+      return createPacificDate(
+        parseInt(year),
+        parseInt(day),
+        parseInt(month),
+        parseInt(hour),
+        parseInt(minute)
+      );
     }
   }
 
@@ -308,26 +409,50 @@ function parseDate(dateStr) {
   }
 
   // Format: dd/MM/yyyy hh:mm (time only like "16:00 PM" - handle malformed)
-  match = cleanDateStr.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})\s+(\d{1,2}):(\d{2})\s+PM$/i);
+  match = cleanDateStr.match(
+    /^(\d{1,2})\/(\d{1,2})\/(\d{4})\s+(\d{1,2}):(\d{2})\s+PM$/i
+  );
   if (match) {
     const [, day, month, year, hour, minute] = match;
     let hour24 = parseInt(hour);
     if (hour24 !== 12) hour24 += 12; // Add 12 for PM
-    return createPacificDate(parseInt(year), parseInt(month), parseInt(day), hour24, parseInt(minute));
+    return createPacificDate(
+      parseInt(year),
+      parseInt(month),
+      parseInt(day),
+      hour24,
+      parseInt(minute)
+    );
   }
 
   // Format: dd/MM/yyyy hh:mm (simple 24-hour like "15/12/2019 12:47")
-  match = cleanDateStr.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})\s+(\d{1,2}):(\d{2})$/);
+  match = cleanDateStr.match(
+    /^(\d{1,2})\/(\d{1,2})\/(\d{4})\s+(\d{1,2}):(\d{2})$/
+  );
   if (match) {
     const [, day, month, year, hour, minute] = match;
-    return createPacificDate(parseInt(year), parseInt(month), parseInt(day), parseInt(hour), parseInt(minute));
+    return createPacificDate(
+      parseInt(year),
+      parseInt(month),
+      parseInt(day),
+      parseInt(hour),
+      parseInt(minute)
+    );
   }
 
   // Format: dd/MM/yyyy hh:mm (time without minutes like "16/02/2021 11:30")
-  match = cleanDateStr.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})\s+(\d{1,2}):(\d{2})$/);
+  match = cleanDateStr.match(
+    /^(\d{1,2})\/(\d{1,2})\/(\d{4})\s+(\d{1,2}):(\d{2})$/
+  );
   if (match) {
     const [, day, month, year, hour, minute] = match;
-    return createPacificDate(parseInt(year), parseInt(month), parseInt(day), parseInt(hour), parseInt(minute));
+    return createPacificDate(
+      parseInt(year),
+      parseInt(month),
+      parseInt(day),
+      parseInt(hour),
+      parseInt(minute)
+    );
   }
 
   // Format: time only (like "10:30")
@@ -336,7 +461,13 @@ function parseDate(dateStr) {
     const [, hour, minute] = match;
     // Use current date with provided time - this might need adjustment based on context
     const now = new Date();
-    return createPacificDate(now.getFullYear(), now.getMonth() + 1, now.getDate(), parseInt(hour), parseInt(minute));
+    return createPacificDate(
+      now.getFullYear(),
+      now.getMonth() + 1,
+      now.getDate(),
+      parseInt(hour),
+      parseInt(minute)
+    );
   }
 
   console.warn(`Could not parse date format: "${cleanDateStr}"`);
@@ -395,9 +526,10 @@ function main() {
       console.log(`  Station: ${first.station}`);
       console.log(`  Date: ${first.date}`);
       console.log(`  Measurements: ${first.measurements.length} depth levels`);
-      console.log(`  Samplers: ${first.samplers.join(', ') || 'None specified'}`);
+      console.log(
+        `  Samplers: ${first.samplers.join(', ') || 'None specified'}`
+      );
     }
-
   } catch (error) {
     console.error(`Error processing file: ${error.message}`);
     process.exit(1);

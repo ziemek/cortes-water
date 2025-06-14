@@ -8,12 +8,15 @@
     "merge-data": "node scripts/merge-data.js",
     "prebuild": "npm run merge-data",
     "build": "mkdir -p dist && cp -r src/* dist/ && echo 'Build complete'",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "prettier": "^3.5.3"
   }
-} 
+}
