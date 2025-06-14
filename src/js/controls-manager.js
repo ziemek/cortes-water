@@ -63,8 +63,10 @@ export class ControlsManager {
 
     // Add master "All Years" checkbox first
     const totalSeries = allSeries.length;
-    const visibleCount = allSeries.filter((s) => visibleSeries.has(s.id)).length;
-    
+    const visibleCount = allSeries.filter((s) =>
+      visibleSeries.has(s.id)
+    ).length;
+
     let masterCheckboxState = 0; // 0 = none, 1 = some, 2 = all
     if (visibleCount === totalSeries) masterCheckboxState = 2;
     else if (visibleCount > 0) masterCheckboxState = 1;
@@ -235,12 +237,12 @@ export class ControlsManager {
   toggleMasterVisibility() {
     const masterCheckbox = d3.select('#vis-all-years');
     const isChecked = masterCheckbox.property('checked');
-    
+
     this.dataLoader.toggleAllDates(isChecked);
-    
+
     // Update all year checkboxes to match master state
     this.updateAllYearCheckboxes();
-    
+
     // Trigger visualization update
     if (window.app) {
       window.app.updateVisualization();
@@ -250,12 +252,14 @@ export class ControlsManager {
   updateMasterCheckboxState() {
     const allSeries = this.dataLoader.getAllSeries();
     const visibleSeries = this.dataLoader.getVisibleSeries();
-    const visibleCount = allSeries.filter((s) => visibleSeries.has(s.id)).length;
-    
+    const visibleCount = allSeries.filter((s) =>
+      visibleSeries.has(s.id)
+    ).length;
+
     let masterCheckboxState = 0; // 0 = none, 1 = some, 2 = all
     if (visibleCount === allSeries.length) masterCheckboxState = 2;
     else if (visibleCount > 0) masterCheckboxState = 1;
-    
+
     const masterCheckbox = d3.select('#vis-all-years');
     if (masterCheckbox.node()) {
       masterCheckbox
@@ -268,14 +272,16 @@ export class ControlsManager {
     const allSeries = this.dataLoader.getAllSeries();
     const visibleSeries = this.dataLoader.getVisibleSeries();
     const byYear = d3.group(allSeries, (d) => new Date(d.date).getFullYear());
-    
+
     byYear.forEach((seriesForYear, year) => {
-      const visibleCount = seriesForYear.filter((s) => visibleSeries.has(s.id)).length;
-      
+      const visibleCount = seriesForYear.filter((s) =>
+        visibleSeries.has(s.id)
+      ).length;
+
       let checkboxState = 0;
       if (visibleCount === seriesForYear.length) checkboxState = 2;
       else if (visibleCount > 0) checkboxState = 1;
-      
+
       const yearCheckbox = d3.select(`#vis-year-${year}`);
       if (yearCheckbox.node()) {
         yearCheckbox
