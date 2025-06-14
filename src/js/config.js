@@ -1,6 +1,7 @@
 // Configuration and constants for the water quality visualization
 export const config = {
-    maxVisibleDefault: 12, // Show first 12 series by default
+    maxVisibleDefault: 12, // Show first 12 series by default (deprecated, now using recent months)
+    recentMonthsDefault: 18, // Show the most recent 18 months of data by default
     baseColorPalettes: {
         'Gunflint': ['#FF6B6B', '#FF8E53', '#FF9F43'],
         'Hague': ['#4ECDC4', '#45B7D1', '#6C5CE7']

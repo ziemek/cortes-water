@@ -62,9 +62,46 @@ class DataLoader {
             });
         });
 
-        // Show first maxVisibleDefault series by default
-        this.allSeries.slice(0, config.maxVisibleDefault).forEach(series => {
-            this.visibleSeries.add(series.id);
+        // Select the most recent 18 months of data by default
+        this.selectRecentMonths(config.recentMonthsDefault);
+    }
+
+    // Select data from the most recent N months
+    selectRecentMonths(months) {
+        // Find the most recent date in the data
+        const allDates = this.allSeries.map(s => new Date(s.date));
+        const mostRecentDate = new Date(Math.max(...allDates));
+        
+        // Calculate the cutoff date (N months ago)
+        const cutoffDate = new Date(mostRecentDate);
+        cutoffDate.setMonth(cutoffDate.getMonth() - months);
+        
+        // Select all series from the cutoff date onwards
+        this.allSeries.forEach(series => {
+            const seriesDate = new Date(series.date);
+            if (seriesDate >= cutoffDate) {
+                this.visibleSeries.add(series.id);
+            }
+        });
+
+        // Update checkbox states to reflect the selection (if checkboxes exist)
+        setTimeout(() => this.updateAllCheckboxStates(), 100);
+    }
+
+    // Update all checkbox states after programmatic selection changes
+    updateAllCheckboxStates() {
+        // Update year checkboxes
+        this.updateAllYearCheckboxStates();
+        
+        // Update date checkboxes (only if they exist)
+        const uniqueDateOnlys = [...new Set(this.allSeries.map(s => getDateOnly(s.date)))];
+        uniqueDateOnlys.forEach(dateOnly => {
+            const seriesForDateOnly = this.allSeries.filter(s => getDateOnly(s.date) === dateOnly);
+            const allChecked = seriesForDateOnly.every(s => this.visibleSeries.has(s.id));
+            const checkbox = d3.select(`#vis-date-${dateToValidId(dateOnly)}`);
+            if (checkbox.node()) {
+                checkbox.property('checked', allChecked);
+            }
         });
     }
 
