@@ -7,6 +7,26 @@ export class TimeSeriesCharts {
         this.dataLoader = dataLoader;
     }
 
+    // Calculate optimal tick interval based on date range
+    getOptimalTickInterval(dateExtent) {
+        const [startDate, endDate] = dateExtent;
+        const timeDiffMonths = (endDate.getFullYear() - startDate.getFullYear()) * 12 + 
+                              (endDate.getMonth() - startDate.getMonth());
+        
+        // Choose tick interval based on total time span
+        if (timeDiffMonths <= 6) {
+            return d3.timeMonth.every(1);  // Monthly ticks for 6 months or less
+        } else if (timeDiffMonths <= 12) {
+            return d3.timeMonth.every(2);  // Every 2 months for up to 1 year
+        } else if (timeDiffMonths <= 24) {
+            return d3.timeMonth.every(3);  // Every 3 months for up to 2 years
+        } else if (timeDiffMonths <= 48) {
+            return d3.timeMonth.every(6);  // Every 6 months for up to 4 years
+        } else {
+            return d3.timeYear.every(1);   // Yearly ticks for longer periods
+        }
+    }
+
     // Enhanced time series visualization
     createTimeSeriesView(currentParameter) {
         const container = d3.select('#chartsContainer');
@@ -82,13 +102,17 @@ export class TimeSeriesCharts {
         // Add grid and axes
         addGrid(svg, xScale, yScale, width, height);
         
-        // Add axes with time formatting
+        // Calculate optimal tick interval based on date range
+        const dateExtent = d3.extent(timeSeriesData, d => d.date);
+        const tickInterval = this.getOptimalTickInterval(dateExtent);
+        
+        // Add axes with dynamic time formatting
         svg.append('g')
             .attr('class', 'axis')
             .attr('transform', `translate(0,${height})`)
             .call(d3.axisBottom(xScale)
-                .ticks(d3.timeMonth.every(3))
-                .tickFormat(d3.timeFormat('%B %Y')));
+                .ticks(tickInterval)
+                .tickFormat(d3.timeFormat('%b %Y')));
 
         svg.append('g')
             .attr('class', 'axis')
