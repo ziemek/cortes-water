@@ -1,5 +1,5 @@
 // UI Controls Management
-import { formatDate, dateToValidId } from './utils.js';
+import { formatDate, dateToValidId, getDateOnly, formatDateOnly } from './utils.js';
 
 export class ControlsManager {
     constructor(dataLoader) {
@@ -137,9 +137,9 @@ export class ControlsManager {
             .style('margin-bottom', '10px')
             .text('Select by Date:');
 
-        // Group by date
-        const byDate = d3.group(allSeries, d => d.date);
-        const uniqueDates = [...byDate.keys()].sort();
+        // Group by date-only (without time)
+        const byDateOnly = d3.group(allSeries, d => getDateOnly(d.date));
+        const uniqueDateOnlys = [...byDateOnly.keys()].sort();
 
         // Add checkboxes for each date
         const checkboxContainer = parentDiv.append('div')
@@ -155,9 +155,9 @@ export class ControlsManager {
 
         const visibleSeries = this.dataLoader.getVisibleSeries();
 
-        uniqueDates.forEach(date => {
-            const seriesForDate = byDate.get(date);
-            const allChecked = seriesForDate.every(s => visibleSeries.has(s.id));
+        uniqueDateOnlys.forEach(dateOnly => {
+            const seriesForDateOnly = byDateOnly.get(dateOnly);
+            const allChecked = seriesForDateOnly.every(s => visibleSeries.has(s.id));
 
             const item = checkboxContainer.append('div')
                 .style('display', 'flex')
@@ -174,21 +174,29 @@ export class ControlsManager {
 
             const checkbox = item.append('input')
                 .attr('type', 'checkbox')
-                .attr('id', `vis-date-${dateToValidId(date)}`)
+                .attr('id', `vis-date-${dateToValidId(dateOnly)}`)
                 .property('checked', allChecked)
                 .style('margin-right', '8px')
-                .on('change', () => this.toggleDateVisibility(date));
+                .on('change', () => this.toggleDateOnlyVisibility(dateOnly));
 
             item.append('label')
-                .attr('for', `vis-date-${dateToValidId(date)}`)
+                .attr('for', `vis-date-${dateToValidId(dateOnly)}`)
                 .style('cursor', 'pointer')
                 .style('font-size', '14px')
-                .text(formatDate(date));
+                .text(`${formatDateOnly(dateOnly)} (${seriesForDateOnly.length})`);
         });
     }
 
     toggleDateVisibility(date) {
         this.dataLoader.toggleDateVisibility(date);
+        // Trigger visualization update
+        if (window.app) {
+            window.app.updateVisualization();
+        }
+    }
+
+    toggleDateOnlyVisibility(dateOnly) {
+        this.dataLoader.toggleDateOnlyVisibility(dateOnly);
         // Trigger visualization update
         if (window.app) {
             window.app.updateVisualization();
@@ -209,12 +217,12 @@ export class ControlsManager {
         // Update date checkboxes for this year
         const allSeries = this.dataLoader.getAllSeries();
         const visibleSeries = this.dataLoader.getVisibleSeries();
-        const datesInYear = [...new Set(allSeries.filter(s => new Date(s.date).getFullYear() === year).map(s => s.date))];
+        const datesInYear = [...new Set(allSeries.filter(s => new Date(s.date).getFullYear() === year).map(s => getDateOnly(s.date)))];
         
-        datesInYear.forEach(date => {
-            const seriesForDate = allSeries.filter(s => s.date === date);
-            const allChecked = seriesForDate.every(s => visibleSeries.has(s.id));
-            d3.select(`#vis-date-${dateToValidId(date)}`).property('checked', allChecked);
+        datesInYear.forEach(dateOnly => {
+            const seriesForDateOnly = allSeries.filter(s => getDateOnly(s.date) === dateOnly);
+            const allChecked = seriesForDateOnly.every(s => visibleSeries.has(s.id));
+            d3.select(`#vis-date-${dateToValidId(dateOnly)}`).property('checked', allChecked);
         });
 
         // Trigger visualization update

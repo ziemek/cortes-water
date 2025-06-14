@@ -1,6 +1,6 @@
 // Data loading and management
 import { config } from './config.js';
-import { dateToValidId } from './utils.js';
+import { dateToValidId, getDateOnly } from './utils.js';
 
 class DataLoader {
     constructor() {
@@ -93,13 +93,31 @@ class DataLoader {
         this.updateYearCheckboxState(year);
     }
 
+    // Toggle date-only visibility (applies to all series with same calendar date)
+    toggleDateOnlyVisibility(dateOnly) {
+        const seriesForDateOnly = this.allSeries.filter(s => getDateOnly(s.date) === dateOnly);
+        const allChecked = seriesForDateOnly.every(s => this.visibleSeries.has(s.id));
+
+        seriesForDateOnly.forEach(s => {
+            if (allChecked) {
+                this.visibleSeries.delete(s.id);
+            } else {
+                this.visibleSeries.add(s.id);
+            }
+        });
+
+        // Update year checkbox state after date change
+        const year = new Date(dateOnly).getFullYear();
+        this.updateYearCheckboxState(year);
+    }
+
     // Toggle all dates
     toggleAllDates(show) {
-        const uniqueDates = [...new Set(this.allSeries.map(s => s.date))];
+        const uniqueDateOnlys = [...new Set(this.allSeries.map(s => getDateOnly(s.date)))];
 
-        uniqueDates.forEach(date => {
-            const seriesForDate = this.allSeries.filter(s => s.date === date);
-            seriesForDate.forEach(s => {
+        uniqueDateOnlys.forEach(dateOnly => {
+            const seriesForDateOnly = this.allSeries.filter(s => getDateOnly(s.date) === dateOnly);
+            seriesForDateOnly.forEach(s => {
                 if (show) {
                     this.visibleSeries.add(s.id);
                 } else {
@@ -108,7 +126,7 @@ class DataLoader {
             });
 
             // Update checkbox
-            d3.select(`#vis-date-${dateToValidId(date)}`).property('checked', show);
+            d3.select(`#vis-date-${dateToValidId(dateOnly)}`).property('checked', show);
         });
 
         // Update all year checkboxes after date changes
@@ -132,11 +150,11 @@ class DataLoader {
         this.updateYearCheckboxState(year);
 
         // Update all date checkboxes for this year
-        const datesInYear = [...new Set(seriesForYear.map(s => s.date))];
-        datesInYear.forEach(date => {
-            const seriesForDate = this.allSeries.filter(s => s.date === date);
-            const dateAllChecked = seriesForDate.every(s => this.visibleSeries.has(s.id));
-            d3.select(`#vis-date-${dateToValidId(date)}`).property('checked', dateAllChecked);
+        const datesInYear = [...new Set(seriesForYear.map(s => getDateOnly(s.date)))];
+        datesInYear.forEach(dateOnly => {
+            const seriesForDateOnly = this.allSeries.filter(s => getDateOnly(s.date) === dateOnly);
+            const dateAllChecked = seriesForDateOnly.every(s => this.visibleSeries.has(s.id));
+            d3.select(`#vis-date-${dateToValidId(dateOnly)}`).property('checked', dateAllChecked);
         });
     }
 
@@ -159,11 +177,11 @@ class DataLoader {
         });
 
         // Update all date checkboxes as well
-        const uniqueDates = [...new Set(this.allSeries.map(s => s.date))];
-        uniqueDates.forEach(date => {
-            const seriesForDate = this.allSeries.filter(s => s.date === date);
-            const allChecked = seriesForDate.every(s => this.visibleSeries.has(s.id));
-            d3.select(`#vis-date-${dateToValidId(date)}`).property('checked', allChecked);
+        const uniqueDateOnlys = [...new Set(this.allSeries.map(s => getDateOnly(s.date)))];
+        uniqueDateOnlys.forEach(dateOnly => {
+            const seriesForDateOnly = this.allSeries.filter(s => getDateOnly(s.date) === dateOnly);
+            const allChecked = seriesForDateOnly.every(s => this.visibleSeries.has(s.id));
+            d3.select(`#vis-date-${dateToValidId(dateOnly)}`).property('checked', allChecked);
         });
     }
 

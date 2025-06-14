@@ -177,3 +177,18 @@ export function addTrendLine(svg, data, xScale, yScale, xParam, yParam) {
 export function dateToValidId(dateString) {
     return dateString.replace(/[:.]/g, '-');
 }
+
+// Extract date-only string (YYYY-MM-DD) from datetime string
+export function getDateOnly(dateString) {
+    return new Date(dateString).toISOString().split('T')[0];
+}
+
+// Format date-only string for display
+export function formatDateOnly(dateOnlyString) {
+    const date = new Date(dateOnlyString + 'T00:00:00');
+    return date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+    });
+}
