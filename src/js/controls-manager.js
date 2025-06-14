@@ -26,7 +26,7 @@ export class ControlsManager {
         controlsDiv.append('h4')
             .style('color', '#2c3e50')
             .style('margin-bottom', '15px')
-            .text(`Show/Hide Datasets by Date:`);
+            .text(`Show/Hide Datasets by Year and Date:`);
 
         // Add select all/none buttons
         const buttonDiv = controlsDiv.append('div')
@@ -40,7 +40,10 @@ export class ControlsManager {
             .style('background', '#e8f4f8')
             .style('cursor', 'pointer')
             .text('Select All')
-            .on('click', () => this.toggleAllDates(true));
+            .on('click', () => {
+                this.toggleAllDates(true);
+                this.dataLoader.updateAllYearCheckboxStates();
+            });
 
         buttonDiv.append('button')
             .style('padding', '8px 16px')
@@ -49,14 +52,97 @@ export class ControlsManager {
             .style('background', '#f8e8e8')
             .style('cursor', 'pointer')
             .text('Select None')
-            .on('click', () => this.toggleAllDates(false));
+            .on('click', () => {
+                this.toggleAllDates(false);
+                this.dataLoader.updateAllYearCheckboxStates();
+            });
+
+        // Create year selectors section
+        this.createYearSelectors(controlsDiv, allSeries);
+
+        // Create date selectors section
+        this.createDateSelectors(controlsDiv, allSeries);
+    }
+
+    createYearSelectors(parentDiv, allSeries) {
+        // Group by year
+        const byYear = d3.group(allSeries, d => new Date(d.date).getFullYear());
+        const uniqueYears = [...byYear.keys()].sort();
+
+        // Year selectors header
+        parentDiv.append('h5')
+            .style('color', '#2c3e50')
+            .style('margin-bottom', '10px')
+            .style('margin-top', '20px')
+            .text('Select by Year:');
+
+        // Year checkboxes container
+        const yearContainer = parentDiv.append('div')
+            .style('display', 'grid')
+            .style('grid-template-columns', 'repeat(auto-fit, minmax(120px, 1fr))')
+            .style('gap', '10px')
+            .style('margin-bottom', '20px')
+            .style('padding', '10px')
+            .style('background', 'white')
+            .style('border-radius', '8px')
+            .style('box-shadow', '0 2px 5px rgba(0,0,0,0.1)');
+
+        const visibleSeries = this.dataLoader.getVisibleSeries();
+
+        uniqueYears.forEach(year => {
+            const seriesForYear = byYear.get(year);
+            const visibleCount = seriesForYear.filter(s => visibleSeries.has(s.id)).length;
+            
+            let checkboxState = 0; // 0 = none, 1 = some, 2 = all
+            if (visibleCount === seriesForYear.length) checkboxState = 2;
+            else if (visibleCount > 0) checkboxState = 1;
+
+            const item = yearContainer.append('div')
+                .style('display', 'flex')
+                .style('align-items', 'center')
+                .style('padding', '8px')
+                .style('border-radius', '4px')
+                .style('transition', 'background 0.2s')
+                .style('background', 'rgba(30, 58, 138, 0.05)')
+                .on('mouseover', function() {
+                    d3.select(this).style('background', 'rgba(30, 58, 138, 0.1)');
+                })
+                .on('mouseout', function() {
+                    d3.select(this).style('background', 'rgba(30, 58, 138, 0.05)');
+                });
+
+            const checkbox = item.append('input')
+                .attr('type', 'checkbox')
+                .attr('id', `vis-year-${year}`)
+                .style('margin-right', '8px')
+                .style('transform', 'scale(1.1)')
+                .property('checked', checkboxState === 2)
+                .property('indeterminate', checkboxState === 1)
+                .on('change', () => this.toggleYearVisibility(year));
+
+            item.append('label')
+                .attr('for', `vis-year-${year}`)
+                .style('cursor', 'pointer')
+                .style('font-size', '14px')
+                .style('font-weight', '600')
+                .style('color', '#1e3a8a')
+                .text(`${year} (${seriesForYear.length})`);
+        });
+    }
+
+    createDateSelectors(parentDiv, allSeries) {
+        // Date selectors header
+        parentDiv.append('h5')
+            .style('color', '#2c3e50')
+            .style('margin-bottom', '10px')
+            .text('Select by Date:');
 
         // Group by date
         const byDate = d3.group(allSeries, d => d.date);
         const uniqueDates = [...byDate.keys()].sort();
 
         // Add checkboxes for each date
-        const checkboxContainer = controlsDiv.append('div')
+        const checkboxContainer = parentDiv.append('div')
             .style('display', 'grid')
             .style('grid-template-columns', 'repeat(auto-fit, minmax(200px, 1fr))')
             .style('gap', '10px')
@@ -117,6 +203,34 @@ export class ControlsManager {
         }
     }
 
+    toggleYearVisibility(year) {
+        this.dataLoader.toggleYearVisibility(year);
+        
+        // Update date checkboxes for this year
+        const allSeries = this.dataLoader.getAllSeries();
+        const visibleSeries = this.dataLoader.getVisibleSeries();
+        const datesInYear = [...new Set(allSeries.filter(s => new Date(s.date).getFullYear() === year).map(s => s.date))];
+        
+        datesInYear.forEach(date => {
+            const seriesForDate = allSeries.filter(s => s.date === date);
+            const allChecked = seriesForDate.every(s => visibleSeries.has(s.id));
+            d3.select(`#vis-date-${dateToValidId(date)}`).property('checked', allChecked);
+        });
+
+        // Trigger visualization update
+        if (window.app) {
+            window.app.updateVisualization();
+        }
+    }
+
+    toggleAllYears(show) {
+        this.dataLoader.toggleAllYears(show);
+        // Trigger visualization update
+        if (window.app) {
+            window.app.updateVisualization();
+        }
+    }
+
     updateViewToggleVisibility(currentParameter) {
         const correlationParams = ['temp_oxygen', 'conductivity_tds', 'ph_oxygen', 'secchi'];
         const viewDropdown = document.getElementById('viewType');
@@ -142,6 +256,13 @@ export class ControlsManager {
             } else {
                 return 'time';
             }
+        }
+    }
+
+    // Refresh visibility controls (called when visualization changes)
+    refreshVisibilityControls() {
+        if (d3.select('#visibilityControls').node()) {
+            this.createVisibilityControls();
         }
     }
 }

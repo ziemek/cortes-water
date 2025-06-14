@@ -409,6 +409,45 @@ h1 {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Three-state checkbox styling */
+input[type="checkbox"]:indeterminate {
+    opacity: 0.8;
+    position: relative;
+}
+
+/* Better cross-browser indeterminate styling */
+input[type="checkbox"]:indeterminate::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 2px;
+    background: #1e3a8a;
+    border-radius: 1px;
+}
+
+/* Year selector specific styling */
+#visibilityControls h5 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.year-selector {
+    background: rgba(30, 58, 138, 0.05) !important;
+}
+
+.year-selector:hover {
+    background: rgba(30, 58, 138, 0.1) !important;
+}
+
+.year-selector label {
+    font-weight: 600 !important;
+    color: #1e3a8a !important;
+}
+
 @media (max-width: 768px) {
     .charts-grid {
         grid-template-columns: 1fr;
