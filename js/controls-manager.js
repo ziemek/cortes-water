@@ -33,37 +33,7 @@ export class ControlsManager {
       .append('h4')
       .style('color', '#2c3e50')
       .style('margin-bottom', '15px')
-      .text(`Show/Hide Datasets by Year and Date:`);
-
-    // Add select all/none buttons
-    const buttonDiv = controlsDiv.append('div').style('margin-bottom', '15px');
-
-    buttonDiv
-      .append('button')
-      .style('padding', '8px 16px')
-      .style('margin-right', '10px')
-      .style('border', '1px solid #ddd')
-      .style('border-radius', '4px')
-      .style('background', '#e8f4f8')
-      .style('cursor', 'pointer')
-      .text('Select All')
-      .on('click', () => {
-        this.toggleAllDates(true);
-        this.dataLoader.updateAllYearCheckboxStates();
-      });
-
-    buttonDiv
-      .append('button')
-      .style('padding', '8px 16px')
-      .style('border', '1px solid #ddd')
-      .style('border-radius', '4px')
-      .style('background', '#f8e8e8')
-      .style('cursor', 'pointer')
-      .text('Select None')
-      .on('click', () => {
-        this.toggleAllDates(false);
-        this.dataLoader.updateAllYearCheckboxStates();
-      });
+      .text(`Select Datasets`);
 
     // Create year selectors section
     this.createYearSelectors(controlsDiv, allSeries);
@@ -76,14 +46,6 @@ export class ControlsManager {
     // Group by year
     const byYear = d3.group(allSeries, (d) => new Date(d.date).getFullYear());
     const uniqueYears = [...byYear.keys()].sort();
-
-    // Year selectors header
-    parentDiv
-      .append('h5')
-      .style('color', '#2c3e50')
-      .style('margin-bottom', '10px')
-      .style('margin-top', '20px')
-      .text('Select by Year:');
 
     // Year checkboxes container
     const yearContainer = parentDiv
@@ -98,6 +60,50 @@ export class ControlsManager {
       .style('box-shadow', '0 2px 5px rgba(0,0,0,0.1)');
 
     const visibleSeries = this.dataLoader.getVisibleSeries();
+
+    // Add master "All Years" checkbox first
+    const totalSeries = allSeries.length;
+    const visibleCount = allSeries.filter((s) =>
+      visibleSeries.has(s.id)
+    ).length;
+
+    let masterCheckboxState = 0; // 0 = none, 1 = some, 2 = all
+    if (visibleCount === totalSeries) masterCheckboxState = 2;
+    else if (visibleCount > 0) masterCheckboxState = 1;
+
+    const masterItem = yearContainer
+      .append('div')
+      .style('display', 'flex')
+      .style('align-items', 'center')
+      .style('padding', '8px')
+      .style('border-radius', '4px')
+      .style('transition', 'background 0.2s')
+      .style('background', 'rgba(30, 58, 138, 0.05)')
+      .on('mouseover', function () {
+        d3.select(this).style('background', 'rgba(30, 58, 138, 0.1)');
+      })
+      .on('mouseout', function () {
+        d3.select(this).style('background', 'rgba(30, 58, 138, 0.05)');
+      });
+
+    const masterCheckbox = masterItem
+      .append('input')
+      .attr('type', 'checkbox')
+      .attr('id', 'vis-all-years')
+      .style('margin-right', '8px')
+      .style('transform', 'scale(1.2)')
+      .property('checked', masterCheckboxState === 2)
+      .property('indeterminate', masterCheckboxState === 1)
+      .on('change', () => this.toggleMasterVisibility());
+
+    masterItem
+      .append('label')
+      .attr('for', 'vis-all-years')
+      .style('cursor', 'pointer')
+      .style('font-size', '14px')
+      .style('font-weight', '700')
+      .style('color', '#1e3a8a')
+      .text(`All Years (${totalSeries})`);
 
     uniqueYears.forEach((year) => {
       const seriesForYear = byYear.get(year);
@@ -146,13 +152,6 @@ export class ControlsManager {
   }
 
   createDateSelectors(parentDiv, allSeries) {
-    // Date selectors header
-    parentDiv
-      .append('h5')
-      .style('color', '#2c3e50')
-      .style('margin-bottom', '10px')
-      .text('Select by Date:');
-
     // Group by date-only (without time)
     const byDateOnly = d3.group(allSeries, (d) => getDateOnly(d.date));
     const uniqueDateOnlys = [...byDateOnly.keys()].sort();
@@ -219,6 +218,8 @@ export class ControlsManager {
 
   toggleDateOnlyVisibility(dateOnly) {
     this.dataLoader.toggleDateOnlyVisibility(dateOnly);
+    // Update master checkbox state
+    this.updateMasterCheckboxState();
     // Trigger visualization update
     if (window.app) {
       window.app.updateVisualization();
@@ -231,6 +232,63 @@ export class ControlsManager {
     if (window.app) {
       window.app.updateVisualization();
     }
+  }
+
+  toggleMasterVisibility() {
+    const masterCheckbox = d3.select('#vis-all-years');
+    const isChecked = masterCheckbox.property('checked');
+
+    this.dataLoader.toggleAllDates(isChecked);
+
+    // Update all year checkboxes to match master state
+    this.updateAllYearCheckboxes();
+
+    // Trigger visualization update
+    if (window.app) {
+      window.app.updateVisualization();
+    }
+  }
+
+  updateMasterCheckboxState() {
+    const allSeries = this.dataLoader.getAllSeries();
+    const visibleSeries = this.dataLoader.getVisibleSeries();
+    const visibleCount = allSeries.filter((s) =>
+      visibleSeries.has(s.id)
+    ).length;
+
+    let masterCheckboxState = 0; // 0 = none, 1 = some, 2 = all
+    if (visibleCount === allSeries.length) masterCheckboxState = 2;
+    else if (visibleCount > 0) masterCheckboxState = 1;
+
+    const masterCheckbox = d3.select('#vis-all-years');
+    if (masterCheckbox.node()) {
+      masterCheckbox
+        .property('checked', masterCheckboxState === 2)
+        .property('indeterminate', masterCheckboxState === 1);
+    }
+  }
+
+  updateAllYearCheckboxes() {
+    const allSeries = this.dataLoader.getAllSeries();
+    const visibleSeries = this.dataLoader.getVisibleSeries();
+    const byYear = d3.group(allSeries, (d) => new Date(d.date).getFullYear());
+
+    byYear.forEach((seriesForYear, year) => {
+      const visibleCount = seriesForYear.filter((s) =>
+        visibleSeries.has(s.id)
+      ).length;
+
+      let checkboxState = 0;
+      if (visibleCount === seriesForYear.length) checkboxState = 2;
+      else if (visibleCount > 0) checkboxState = 1;
+
+      const yearCheckbox = d3.select(`#vis-year-${year}`);
+      if (yearCheckbox.node()) {
+        yearCheckbox
+          .property('checked', checkboxState === 2)
+          .property('indeterminate', checkboxState === 1);
+      }
+    });
   }
 
   toggleYearVisibility(year) {
@@ -259,6 +317,9 @@ export class ControlsManager {
         allChecked
       );
     });
+
+    // Update master checkbox state
+    this.updateMasterCheckboxState();
 
     // Trigger visualization update
     if (window.app) {
