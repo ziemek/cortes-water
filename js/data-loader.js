@@ -3,268 +3,316 @@ import { config } from './config.js';
 import { dateToValidId, getDateOnly } from './utils.js';
 
 class DataLoader {
-    constructor() {
-        this.data = [];
-        this.allSeries = [];
-        this.visibleSeries = new Set();
+  constructor() {
+    this.data = [];
+    this.allSeries = [];
+    this.visibleSeries = new Set();
+  }
+
+  async loadData() {
+    try {
+      // Load the main water data file
+      const response = await fetch('./data/water-data.json');
+
+      if (!response.ok) {
+        throw new Error(`Failed to fetch water-data.json: ${response.status}`);
+      }
+
+      const fileData = await response.json();
+
+      // Handle array or single object data
+      if (Array.isArray(fileData)) {
+        this.data = fileData;
+      } else {
+        this.data = [fileData];
+      }
+
+      this.initializeSeriesTracking();
+      return this.data;
+    } catch (error) {
+      console.error('Error loading data:', error);
+      d3.select('#chartsContainer').html(
+        '<p style="text-align: center; color: red; font-size: 18px;">' +
+          'Error loading water-data.json. Please make sure the file exists in the ./data directory.' +
+          '</p>'
+      );
+      throw error;
     }
+  }
 
-    async loadData() {
-        try {
-            // Load the main water data file
-            const response = await fetch('./data/water-data.json');
-            
-            if (!response.ok) {
-                throw new Error(`Failed to fetch water-data.json: ${response.status}`);
-            }
+  // Initialize series tracking and visibility controls
+  initializeSeriesTracking() {
+    this.allSeries = [];
+    this.visibleSeries.clear();
 
-            const fileData = await response.json();
-            
-            // Handle array or single object data
-            if (Array.isArray(fileData)) {
-                this.data = fileData;
-            } else {
-                this.data = [fileData];
-            }
+    const lakes = [...new Set(this.data.map((d) => d.lake))];
 
-            this.initializeSeriesTracking();
-            return this.data;
-        } catch (error) {
-            console.error('Error loading data:', error);
-            d3.select('#chartsContainer').html(
-                '<p style="text-align: center; color: red; font-size: 18px;">' +
-                'Error loading water-data.json. Please make sure the file exists in the ./data directory.' +
-                '</p>'
-            );
-            throw error;
+    lakes.forEach((lake) => {
+      const lakeData = this.data
+        .filter((d) => d.lake === lake)
+        .sort((a, b) => new Date(a.date) - new Date(b.date));
+      lakeData.forEach((dataset, i) => {
+        const seriesId = `${lake}-${i}`;
+        this.allSeries.push({
+          id: seriesId,
+          lake: lake,
+          date: dataset.date,
+          index: i,
+          dataset: dataset,
+        });
+      });
+    });
+
+    // Select the most recent 18 months of data by default
+    this.selectRecentMonths(config.recentMonthsDefault);
+  }
+
+  // Select data from the most recent N months
+  selectRecentMonths(months) {
+    // Find the most recent date in the data
+    const allDates = this.allSeries.map((s) => new Date(s.date));
+    const mostRecentDate = new Date(Math.max(...allDates));
+
+    // Calculate the cutoff date (N months ago)
+    const cutoffDate = new Date(mostRecentDate);
+    cutoffDate.setMonth(cutoffDate.getMonth() - months);
+
+    // Select all series from the cutoff date onwards
+    this.allSeries.forEach((series) => {
+      const seriesDate = new Date(series.date);
+      if (seriesDate >= cutoffDate) {
+        this.visibleSeries.add(series.id);
+      }
+    });
+
+    // Update checkbox states to reflect the selection (if checkboxes exist)
+    setTimeout(() => this.updateAllCheckboxStates(), 100);
+  }
+
+  // Update all checkbox states after programmatic selection changes
+  updateAllCheckboxStates() {
+    // Update year checkboxes
+    this.updateAllYearCheckboxStates();
+
+    // Update date checkboxes (only if they exist)
+    const uniqueDateOnlys = [
+      ...new Set(this.allSeries.map((s) => getDateOnly(s.date))),
+    ];
+    uniqueDateOnlys.forEach((dateOnly) => {
+      const seriesForDateOnly = this.allSeries.filter(
+        (s) => getDateOnly(s.date) === dateOnly
+      );
+      const allChecked = seriesForDateOnly.every((s) =>
+        this.visibleSeries.has(s.id)
+      );
+      const checkbox = d3.select(`#vis-date-${dateToValidId(dateOnly)}`);
+      if (checkbox.node()) {
+        checkbox.property('checked', allChecked);
+      }
+    });
+  }
+
+  // Get filtered data based on visibility
+  getVisibleData() {
+    return this.allSeries
+      .filter((s) => this.visibleSeries.has(s.id))
+      .map((s) => s.dataset);
+  }
+
+  // Toggle date visibility (applies to both lakes)
+  toggleDateVisibility(date) {
+    const seriesForDate = this.allSeries.filter((s) => s.date === date);
+    const allChecked = seriesForDate.every((s) => this.visibleSeries.has(s.id));
+
+    seriesForDate.forEach((s) => {
+      if (allChecked) {
+        this.visibleSeries.delete(s.id);
+      } else {
+        this.visibleSeries.add(s.id);
+      }
+    });
+
+    // Update year checkbox state after date change
+    const year = new Date(date).getFullYear();
+    this.updateYearCheckboxState(year);
+  }
+
+  // Toggle date-only visibility (applies to all series with same calendar date)
+  toggleDateOnlyVisibility(dateOnly) {
+    const seriesForDateOnly = this.allSeries.filter(
+      (s) => getDateOnly(s.date) === dateOnly
+    );
+    const allChecked = seriesForDateOnly.every((s) =>
+      this.visibleSeries.has(s.id)
+    );
+
+    seriesForDateOnly.forEach((s) => {
+      if (allChecked) {
+        this.visibleSeries.delete(s.id);
+      } else {
+        this.visibleSeries.add(s.id);
+      }
+    });
+
+    // Update year checkbox state after date change
+    const year = new Date(dateOnly).getFullYear();
+    this.updateYearCheckboxState(year);
+  }
+
+  // Toggle all dates
+  toggleAllDates(show) {
+    const uniqueDateOnlys = [
+      ...new Set(this.allSeries.map((s) => getDateOnly(s.date))),
+    ];
+
+    uniqueDateOnlys.forEach((dateOnly) => {
+      const seriesForDateOnly = this.allSeries.filter(
+        (s) => getDateOnly(s.date) === dateOnly
+      );
+      seriesForDateOnly.forEach((s) => {
+        if (show) {
+          this.visibleSeries.add(s.id);
+        } else {
+          this.visibleSeries.delete(s.id);
         }
-    }
+      });
 
-    // Initialize series tracking and visibility controls
-    initializeSeriesTracking() {
-        this.allSeries = [];
-        this.visibleSeries.clear();
+      // Update checkbox
+      d3.select(`#vis-date-${dateToValidId(dateOnly)}`).property(
+        'checked',
+        show
+      );
+    });
 
-        const lakes = [...new Set(this.data.map(d => d.lake))];
+    // Update all year checkboxes after date changes
+    this.updateAllYearCheckboxStates();
+  }
 
-        lakes.forEach(lake => {
-            const lakeData = this.data.filter(d => d.lake === lake)
-                .sort((a, b) => new Date(a.date) - new Date(b.date));
-            lakeData.forEach((dataset, i) => {
-                const seriesId = `${lake}-${i}`;
-                this.allSeries.push({
-                    id: seriesId,
-                    lake: lake,
-                    date: dataset.date,
-                    index: i,
-                    dataset: dataset
-                });
-            });
-        });
+  // Toggle year visibility (applies to all dates in that year)
+  toggleYearVisibility(year) {
+    const seriesForYear = this.allSeries.filter(
+      (s) => new Date(s.date).getFullYear() === year
+    );
+    const allChecked = seriesForYear.every((s) => this.visibleSeries.has(s.id));
 
-        // Select the most recent 18 months of data by default
-        this.selectRecentMonths(config.recentMonthsDefault);
-    }
+    seriesForYear.forEach((s) => {
+      if (allChecked) {
+        this.visibleSeries.delete(s.id);
+      } else {
+        this.visibleSeries.add(s.id);
+      }
+    });
 
-    // Select data from the most recent N months
-    selectRecentMonths(months) {
-        // Find the most recent date in the data
-        const allDates = this.allSeries.map(s => new Date(s.date));
-        const mostRecentDate = new Date(Math.max(...allDates));
-        
-        // Calculate the cutoff date (N months ago)
-        const cutoffDate = new Date(mostRecentDate);
-        cutoffDate.setMonth(cutoffDate.getMonth() - months);
-        
-        // Select all series from the cutoff date onwards
-        this.allSeries.forEach(series => {
-            const seriesDate = new Date(series.date);
-            if (seriesDate >= cutoffDate) {
-                this.visibleSeries.add(series.id);
-            }
-        });
+    // Update the year checkbox state
+    this.updateYearCheckboxState(year);
 
-        // Update checkbox states to reflect the selection (if checkboxes exist)
-        setTimeout(() => this.updateAllCheckboxStates(), 100);
-    }
+    // Update all date checkboxes for this year
+    const datesInYear = [
+      ...new Set(seriesForYear.map((s) => getDateOnly(s.date))),
+    ];
+    datesInYear.forEach((dateOnly) => {
+      const seriesForDateOnly = this.allSeries.filter(
+        (s) => getDateOnly(s.date) === dateOnly
+      );
+      const dateAllChecked = seriesForDateOnly.every((s) =>
+        this.visibleSeries.has(s.id)
+      );
+      d3.select(`#vis-date-${dateToValidId(dateOnly)}`).property(
+        'checked',
+        dateAllChecked
+      );
+    });
+  }
 
-    // Update all checkbox states after programmatic selection changes
-    updateAllCheckboxStates() {
-        // Update year checkboxes
-        this.updateAllYearCheckboxStates();
-        
-        // Update date checkboxes (only if they exist)
-        const uniqueDateOnlys = [...new Set(this.allSeries.map(s => getDateOnly(s.date)))];
-        uniqueDateOnlys.forEach(dateOnly => {
-            const seriesForDateOnly = this.allSeries.filter(s => getDateOnly(s.date) === dateOnly);
-            const allChecked = seriesForDateOnly.every(s => this.visibleSeries.has(s.id));
-            const checkbox = d3.select(`#vis-date-${dateToValidId(dateOnly)}`);
-            if (checkbox.node()) {
-                checkbox.property('checked', allChecked);
-            }
-        });
-    }
+  // Toggle all years
+  toggleAllYears(show) {
+    const uniqueYears = [
+      ...new Set(this.allSeries.map((s) => new Date(s.date).getFullYear())),
+    ];
 
-    // Get filtered data based on visibility
-    getVisibleData() {
-        return this.allSeries
-            .filter(s => this.visibleSeries.has(s.id))
-            .map(s => s.dataset);
-    }
-
-    // Toggle date visibility (applies to both lakes)
-    toggleDateVisibility(date) {
-        const seriesForDate = this.allSeries.filter(s => s.date === date);
-        const allChecked = seriesForDate.every(s => this.visibleSeries.has(s.id));
-
-        seriesForDate.forEach(s => {
-            if (allChecked) {
-                this.visibleSeries.delete(s.id);
-            } else {
-                this.visibleSeries.add(s.id);
-            }
-        });
-
-        // Update year checkbox state after date change
-        const year = new Date(date).getFullYear();
-        this.updateYearCheckboxState(year);
-    }
-
-    // Toggle date-only visibility (applies to all series with same calendar date)
-    toggleDateOnlyVisibility(dateOnly) {
-        const seriesForDateOnly = this.allSeries.filter(s => getDateOnly(s.date) === dateOnly);
-        const allChecked = seriesForDateOnly.every(s => this.visibleSeries.has(s.id));
-
-        seriesForDateOnly.forEach(s => {
-            if (allChecked) {
-                this.visibleSeries.delete(s.id);
-            } else {
-                this.visibleSeries.add(s.id);
-            }
-        });
-
-        // Update year checkbox state after date change
-        const year = new Date(dateOnly).getFullYear();
-        this.updateYearCheckboxState(year);
-    }
-
-    // Toggle all dates
-    toggleAllDates(show) {
-        const uniqueDateOnlys = [...new Set(this.allSeries.map(s => getDateOnly(s.date)))];
-
-        uniqueDateOnlys.forEach(dateOnly => {
-            const seriesForDateOnly = this.allSeries.filter(s => getDateOnly(s.date) === dateOnly);
-            seriesForDateOnly.forEach(s => {
-                if (show) {
-                    this.visibleSeries.add(s.id);
-                } else {
-                    this.visibleSeries.delete(s.id);
-                }
-            });
-
-            // Update checkbox
-            d3.select(`#vis-date-${dateToValidId(dateOnly)}`).property('checked', show);
-        });
-
-        // Update all year checkboxes after date changes
-        this.updateAllYearCheckboxStates();
-    }
-
-    // Toggle year visibility (applies to all dates in that year)
-    toggleYearVisibility(year) {
-        const seriesForYear = this.allSeries.filter(s => new Date(s.date).getFullYear() === year);
-        const allChecked = seriesForYear.every(s => this.visibleSeries.has(s.id));
-
-        seriesForYear.forEach(s => {
-            if (allChecked) {
-                this.visibleSeries.delete(s.id);
-            } else {
-                this.visibleSeries.add(s.id);
-            }
-        });
-
-        // Update the year checkbox state
-        this.updateYearCheckboxState(year);
-
-        // Update all date checkboxes for this year
-        const datesInYear = [...new Set(seriesForYear.map(s => getDateOnly(s.date)))];
-        datesInYear.forEach(dateOnly => {
-            const seriesForDateOnly = this.allSeries.filter(s => getDateOnly(s.date) === dateOnly);
-            const dateAllChecked = seriesForDateOnly.every(s => this.visibleSeries.has(s.id));
-            d3.select(`#vis-date-${dateToValidId(dateOnly)}`).property('checked', dateAllChecked);
-        });
-    }
-
-    // Toggle all years
-    toggleAllYears(show) {
-        const uniqueYears = [...new Set(this.allSeries.map(s => new Date(s.date).getFullYear()))];
-
-        uniqueYears.forEach(year => {
-            const seriesForYear = this.allSeries.filter(s => new Date(s.date).getFullYear() === year);
-            seriesForYear.forEach(s => {
-                if (show) {
-                    this.visibleSeries.add(s.id);
-                } else {
-                    this.visibleSeries.delete(s.id);
-                }
-            });
-
-            // Update year checkbox
-            this.updateYearCheckboxState(year);
-        });
-
-        // Update all date checkboxes as well
-        const uniqueDateOnlys = [...new Set(this.allSeries.map(s => getDateOnly(s.date)))];
-        uniqueDateOnlys.forEach(dateOnly => {
-            const seriesForDateOnly = this.allSeries.filter(s => getDateOnly(s.date) === dateOnly);
-            const allChecked = seriesForDateOnly.every(s => this.visibleSeries.has(s.id));
-            d3.select(`#vis-date-${dateToValidId(dateOnly)}`).property('checked', allChecked);
-        });
-    }
-
-    // Get year checkbox state (0 = none, 1 = some, 2 = all)
-    getYearCheckboxState(year) {
-        const seriesForYear = this.allSeries.filter(s => new Date(s.date).getFullYear() === year);
-        const visibleCount = seriesForYear.filter(s => this.visibleSeries.has(s.id)).length;
-        
-        if (visibleCount === 0) return 0;
-        if (visibleCount === seriesForYear.length) return 2;
-        return 1; // partially selected
-    }
-
-    // Update year checkbox to reflect current state
-    updateYearCheckboxState(year) {
-        const state = this.getYearCheckboxState(year);
-        const checkbox = d3.select(`#vis-year-${year}`);
-        
-        if (checkbox.node()) {
-            if (state === 0) {
-                checkbox.property('checked', false).property('indeterminate', false);
-            } else if (state === 1) {
-                checkbox.property('checked', false).property('indeterminate', true);
-            } else {
-                checkbox.property('checked', true).property('indeterminate', false);
-            }
+    uniqueYears.forEach((year) => {
+      const seriesForYear = this.allSeries.filter(
+        (s) => new Date(s.date).getFullYear() === year
+      );
+      seriesForYear.forEach((s) => {
+        if (show) {
+          this.visibleSeries.add(s.id);
+        } else {
+          this.visibleSeries.delete(s.id);
         }
-    }
+      });
 
-    // Update all year checkboxes
-    updateAllYearCheckboxStates() {
-        const uniqueYears = [...new Set(this.allSeries.map(s => new Date(s.date).getFullYear()))];
-        uniqueYears.forEach(year => this.updateYearCheckboxState(year));
-    }
+      // Update year checkbox
+      this.updateYearCheckboxState(year);
+    });
 
-    getData() {
-        return this.data;
-    }
+    // Update all date checkboxes as well
+    const uniqueDateOnlys = [
+      ...new Set(this.allSeries.map((s) => getDateOnly(s.date))),
+    ];
+    uniqueDateOnlys.forEach((dateOnly) => {
+      const seriesForDateOnly = this.allSeries.filter(
+        (s) => getDateOnly(s.date) === dateOnly
+      );
+      const allChecked = seriesForDateOnly.every((s) =>
+        this.visibleSeries.has(s.id)
+      );
+      d3.select(`#vis-date-${dateToValidId(dateOnly)}`).property(
+        'checked',
+        allChecked
+      );
+    });
+  }
 
-    getAllSeries() {
-        return this.allSeries;
-    }
+  // Get year checkbox state (0 = none, 1 = some, 2 = all)
+  getYearCheckboxState(year) {
+    const seriesForYear = this.allSeries.filter(
+      (s) => new Date(s.date).getFullYear() === year
+    );
+    const visibleCount = seriesForYear.filter((s) =>
+      this.visibleSeries.has(s.id)
+    ).length;
 
-    getVisibleSeries() {
-        return this.visibleSeries;
+    if (visibleCount === 0) return 0;
+    if (visibleCount === seriesForYear.length) return 2;
+    return 1; // partially selected
+  }
+
+  // Update year checkbox to reflect current state
+  updateYearCheckboxState(year) {
+    const state = this.getYearCheckboxState(year);
+    const checkbox = d3.select(`#vis-year-${year}`);
+
+    if (checkbox.node()) {
+      if (state === 0) {
+        checkbox.property('checked', false).property('indeterminate', false);
+      } else if (state === 1) {
+        checkbox.property('checked', false).property('indeterminate', true);
+      } else {
+        checkbox.property('checked', true).property('indeterminate', false);
+      }
     }
+  }
+
+  // Update all year checkboxes
+  updateAllYearCheckboxStates() {
+    const uniqueYears = [
+      ...new Set(this.allSeries.map((s) => new Date(s.date).getFullYear())),
+    ];
+    uniqueYears.forEach((year) => this.updateYearCheckboxState(year));
+  }
+
+  getData() {
+    return this.data;
+  }
+
+  getAllSeries() {
+    return this.allSeries;
+  }
+
+  getVisibleSeries() {
+    return this.visibleSeries;
+  }
 }
 
 export default DataLoader;
