@@ -1,5 +1,6 @@
 // Data loading and management
 import { config } from './config.js';
+import { dateToValidId } from './utils.js';
 
 class DataLoader {
     constructor() {
@@ -11,7 +12,7 @@ class DataLoader {
     async loadData() {
         try {
             // Load the main water data file
-            const response = await fetch('./data/water-quality.json');
+            const response = await fetch('./data/water-data.json');
             
             if (!response.ok) {
                 throw new Error(`Failed to fetch water-data.json: ${response.status}`);
@@ -103,7 +104,7 @@ class DataLoader {
             });
 
             // Update checkbox
-            d3.select(`#vis-date-${date}`).property('checked', show);
+            d3.select(`#vis-date-${dateToValidId(date)}`).property('checked', show);
         });
     }
 

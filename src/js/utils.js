@@ -172,3 +172,8 @@ export function addTrendLine(svg, data, xScale, yScale, xParam, yParam) {
         .style('fill', '#666')
         .text(`R² = ${rSquared.toFixed(3)}`);
 }
+
+// Convert date string to valid CSS ID
+export function dateToValidId(dateString) {
+    return dateString.replace(/[:.]/g, '-');
+}

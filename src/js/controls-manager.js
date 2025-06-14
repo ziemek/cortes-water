@@ -1,5 +1,5 @@
 // UI Controls Management
-import { formatDate } from './utils.js';
+import { formatDate, dateToValidId } from './utils.js';
 
 export class ControlsManager {
     constructor(dataLoader) {
@@ -88,13 +88,13 @@ export class ControlsManager {
 
             const checkbox = item.append('input')
                 .attr('type', 'checkbox')
-                .attr('id', `vis-date-${date}`)
+                .attr('id', `vis-date-${dateToValidId(date)}`)
                 .property('checked', allChecked)
                 .style('margin-right', '8px')
                 .on('change', () => this.toggleDateVisibility(date));
 
             item.append('label')
-                .attr('for', `vis-date-${date}`)
+                .attr('for', `vis-date-${dateToValidId(date)}`)
                 .style('cursor', 'pointer')
                 .style('font-size', '14px')
                 .text(formatDate(date));

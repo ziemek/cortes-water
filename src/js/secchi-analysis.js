@@ -48,18 +48,19 @@ export class SecchiAnalysis {
 
         // Process data
         const timeSeriesData = datasets.map(dataset => {
-            const avgSecchi = d3.mean(dataset.secchi_depth);
+            const avgSecchi = d3.mean(dataset.secchi_depth.filter(d => d !== null && d !== undefined));
+            const surfaceMeasurement = dataset.measurements && dataset.measurements[0];
             return {
                 lake: dataset.lake,
                 date: new Date(dataset.date),
                 value: avgSecchi,
                 weather: dataset.weather,
                 airTemp: dataset.air_temperature,
-                surfaceTemp: dataset.measurements[0].temperature,
-                surfaceDO: dataset.measurements[0].DO,
-                surfacePH: dataset.measurements[0].PH
+                surfaceTemp: surfaceMeasurement ? surfaceMeasurement.temperature : null,
+                surfaceDO: surfaceMeasurement ? surfaceMeasurement.DO : null,
+                surfacePH: surfaceMeasurement ? surfaceMeasurement.PH : null
             };
-        }).filter(d => d.value !== undefined);
+        }).filter(d => d.value !== undefined && d.value !== null);
 
         if (timeSeriesData.length === 0) {
             container.append('p')
@@ -156,9 +157,9 @@ export class SecchiAnalysis {
                         <strong>${d.lake} Lake</strong><br/>
                         Date: ${formatDate(d.date)}<br/>
                         Secchi Depth: ${d.value.toFixed(2)}m<br/>
-                        Surface Temp: ${d.surfaceTemp.toFixed(1)}°C<br/>
-                        Surface DO: ${d.surfaceDO.toFixed(2)} mg/L<br/>
-                        Surface pH: ${d.surfacePH.toFixed(2)}<br/>
+                        ${d.surfaceTemp !== null ? `Surface Temp: ${d.surfaceTemp.toFixed(1)}°C<br/>` : ''}
+                        ${d.surfaceDO !== null ? `Surface DO: ${d.surfaceDO.toFixed(2)} mg/L<br/>` : ''}
+                        ${d.surfacePH !== null ? `Surface pH: ${d.surfacePH.toFixed(2)}<br/>` : ''}
                         Weather: ${d.weather}<br/>
                         Air Temp: ${d.airTemp}°C
                     `)
@@ -205,8 +206,9 @@ export class SecchiAnalysis {
 
         // Process data
         const correlationData = datasets.map(dataset => {
-            const avgSecchi = d3.mean(dataset.secchi_depth);
-            const surfaceValue = dataset.measurements[0][param.param];
+            const avgSecchi = d3.mean(dataset.secchi_depth.filter(d => d !== null && d !== undefined));
+            const surfaceMeasurement = dataset.measurements && dataset.measurements[0];
+            const surfaceValue = surfaceMeasurement ? surfaceMeasurement[param.param] : null;
             return {
                 lake: dataset.lake,
                 date: new Date(dataset.date),
@@ -215,7 +217,8 @@ export class SecchiAnalysis {
                 weather: dataset.weather,
                 airTemp: dataset.air_temperature
             };
-        }).filter(d => d.secchi !== undefined && d.value !== undefined);
+        }).filter(d => d.secchi !== undefined && d.secchi !== null && 
+                      d.value !== undefined && d.value !== null);
 
         if (correlationData.length === 0) {
             container.append('p')

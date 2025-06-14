@@ -41,9 +41,11 @@ export class HorizontalDepthCharts {
             .append('g')
             .attr('transform', `translate(${margin.left},${margin.top})`);
 
-        // Get value range for the parameter
+        // Get value range for the parameter (filter out null values)
         const allValues = lakeData.flatMap(d =>
-            d.measurements.map(m => m[currentParameter])
+            d.measurements
+                .filter(m => m[currentParameter] !== null && m[currentParameter] !== undefined)
+                .map(m => m[currentParameter])
         );
         const maxDepth = Math.max(...lakeData.flatMap(d =>
             d.measurements.map(m => m.depth)
@@ -77,47 +79,54 @@ export class HorizontalDepthCharts {
             const datasetIndex = allLakeData.findIndex(d => d.date === dataset.date);
             const color = colors[datasetIndex];
 
-            svg.append('path')
-                .datum(dataset.measurements)
-                .attr('class', 'line')
-                .attr('d', line)
-                .style('stroke', color)
-                .style('stroke-width', '2')
-                .style('fill', 'none')
-                .style('opacity', 0.8);
+            // Filter out null values for the line
+            const validMeasurements = dataset.measurements.filter(m => 
+                m[currentParameter] !== null && m[currentParameter] !== undefined
+            );
 
-            // Add dots
-            svg.selectAll(`.dot-${datasetIndex}`)
-                .data(dataset.measurements)
-                .enter().append('circle')
-                .attr('class', `dot dot-${datasetIndex}`)
-                .attr('cx', d => xScale(d.depth))
-                .attr('cy', d => yScale(d[currentParameter]))
-                .attr('r', 3)
-                .style('fill', color)
-                .style('stroke', 'white')
-                .style('stroke-width', 1)
-                .style('cursor', 'pointer')
-                .on('mouseover', function(event, d) {
-                    tooltip.transition()
-                        .duration(200)
-                        .style('opacity', .9);
-                    tooltip.html(`
-                        <strong>${lakeName} Lake</strong><br/>
-                        Date: ${formatDate(dataset.date)}<br/>
-                        Depth: ${d.depth}m<br/>
-                        ${getParameterLabel(currentParameter)}: ${d[currentParameter]}<br/>
-                        Weather: ${dataset.weather}<br/>
-                        Air Temp: ${dataset.air_temperature}°C
-                    `)
-                        .style('left', (event.pageX + 10) + 'px')
-                        .style('top', (event.pageY - 28) + 'px');
-                })
-                .on('mouseout', function(d) {
-                    tooltip.transition()
-                        .duration(500)
-                        .style('opacity', 0);
-                });
+            if (validMeasurements.length > 0) {
+                svg.append('path')
+                    .datum(validMeasurements)
+                    .attr('class', 'line')
+                    .attr('d', line)
+                    .style('stroke', color)
+                    .style('stroke-width', '2')
+                    .style('fill', 'none')
+                    .style('opacity', 0.8);
+
+                // Add dots only for valid measurements
+                svg.selectAll(`.dot-${datasetIndex}`)
+                    .data(validMeasurements)
+                    .enter().append('circle')
+                    .attr('class', `dot dot-${datasetIndex}`)
+                    .attr('cx', d => xScale(d.depth))
+                    .attr('cy', d => yScale(d[currentParameter]))
+                    .attr('r', 3)
+                    .style('fill', color)
+                    .style('stroke', 'white')
+                    .style('stroke-width', 1)
+                    .style('cursor', 'pointer')
+                    .on('mouseover', function(event, d) {
+                        tooltip.transition()
+                            .duration(200)
+                            .style('opacity', .9);
+                        tooltip.html(`
+                            <strong>${lakeName} Lake</strong><br/>
+                            Date: ${formatDate(dataset.date)}<br/>
+                            Depth: ${d.depth}m<br/>
+                            ${getParameterLabel(currentParameter)}: ${d[currentParameter]}<br/>
+                            Weather: ${dataset.weather}<br/>
+                            Air Temp: ${dataset.air_temperature}°C
+                        `)
+                            .style('left', (event.pageX + 10) + 'px')
+                            .style('top', (event.pageY - 28) + 'px');
+                    })
+                    .on('mouseout', function(d) {
+                        tooltip.transition()
+                            .duration(500)
+                            .style('opacity', 0);
+                    });
+            }
         });
     }
 }
