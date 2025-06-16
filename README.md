@@ -1,7 +1,8 @@
 # Cortes Water Website
 
-A simple water quality data visualization website that displays interactive charts and analysis for lake water monitoring data, in particular for Cortes
-Island. The site features time-series analysis, depth profiles, correlation charts, and Secchi disk transparency measurements to help understand water quality trends.
+A data visualization website that displays interactive charts and analysis for lake water monitoring data, in particular
+for Cortes Island. The site features time-series analysis, depth profiles, correlation charts, and Secchi disk
+transparency measurements to help understand water quality trends.
 
 ## Project Structure
 
