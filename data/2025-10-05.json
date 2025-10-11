@@ -1,0 +1,54 @@
+[
+  {
+    "lake": "Gunflint",
+    "date": "2025-10-05T12:50:00-08:00",
+    "samplers": ["Gima", "Carrie"],
+    "weather": "Sunny, calm, very nice",
+    "air_temperature": 15.7,
+    "secchi_depth": [4.20, 4.70],
+    "measurements": [
+      {"depth": 0, "temperature": 16.9, "DO": 8.36, "SPC": 54, "TDS": 35.8, "PH": 6.96},
+      {"depth": 1, "temperature": 16.9, "DO": 9.8, "SPC": 54, "TDS": 35.1, "PH": 7.04},
+      {"depth": 2, "temperature": 16.4, "DO": 9.6, "SPC": 54, "TDS": 35.1, "PH": 7.09},
+      {"depth": 3, "temperature": 16.2, "DO": 9.29, "SPC": 53.9, "TDS": 35.1, "PH": 7.68},
+      {"depth": 4, "temperature": 16.1, "DO": 9.18, "SPC": 53.9, "TDS": 35.1, "PH": 7.04},
+      {"depth": 5, "temperature": 16.1, "DO": 9.02, "SPC": 53.9, "TDS": 35.1, "PH": 7.05},
+      {"depth": 6, "temperature": 14.9, "DO": 8.72, "SPC": 53.5, "TDS": 35.1, "PH": 7.14},
+      {"depth": 7, "temperature": 10.9, "DO": 9.71, "SPC": 51.0, "TDS": 33.15, "PH": 7.16},
+      {"depth": 8, "temperature": 7.8, "DO": 8.70, "SPC": 61.2, "TDS": 39.15, "PH": 7.24},
+      {"depth": 9, "temperature": 6.5, "DO": 8.24, "SPC": 61.3, "TDS": 33.8, "PH": 7.46},
+      {"depth": 10, "temperature": 5.5, "DO": 8.25, "SPC": 52.2, "TDS": 33.8, "PH": 7.65},
+      {"depth": 11, "temperature": 5.2, "DO": 7.03, "SPC": 52.6, "TDS": 34.45, "PH": 7.87},
+      {"depth": 12, "temperature": 4.9, "DO": 7.06, "SPC": 58.1, "TDS": 34.45, "PH": 8.0},
+      {"depth": 13, "temperature": 4.8, "DO": 5.71, "SPC": 54, "TDS": 35.1, "PH": 8.18},
+      {"depth": 14, "temperature": 4.8, "DO": 4.31, "SPC": 52.4, "TDS": 31.5, "PH": 8.23},
+      {"depth": 15, "temperature": 4.7, "DO": 4.05, "SPC": 52.8, "TDS": 32.7, "PH": 8.39},
+      {"depth": 16, "temperature": 4.7, "DO": 2.87, "SPC": 58.8, "TDS": 33.5, "PH": 8.4}
+    ]
+  },
+  {
+    "lake": "Hague",
+    "date": "2025-10-05T12:50:00-08:00",
+    "samplers": ["Gima", "Carrie"],
+    "weather": "Sunny, light breeze",
+    "air_temperature": 15.5,
+    "secchi_depth": [3.80, 3.70],
+    "measurements": [
+      {"depth": 0, "temperature": 16.9, "DO": 8.75, "SPC": 51.8, "TDS": 32.8, "PH": 7.23},
+      {"depth": 1, "temperature": 16.4, "DO": 8.71, "SPC": 51.8, "TDS": 32.8, "PH": 7.4},
+      {"depth": 2, "temperature": 16.3, "DO": 8.70, "SPC": 51.8, "TDS": 33.8, "PH": 7.44},
+      {"depth": 3, "temperature": 16.2, "DO": 8.24, "SPC": 51.8, "TDS": 33.8, "PH": 7.47},
+      {"depth": 4, "temperature": 16.1, "DO": 8.58, "SPC": 51.7, "TDS": 33.8, "PH": 7.52},
+      {"depth": 5, "temperature": 16.1, "DO": 8.59, "SPC": 51.7, "TDS": 33.8, "PH": 7.55},
+      {"depth": 6, "temperature": 16.1, "DO": 8.11, "SPC": 51.8, "TDS": 33.8, "PH": 7.6},
+      {"depth": 7, "temperature": 16.1, "DO": 8.07, "SPC": 51.7, "TDS": 33.8, "PH": 7.66},
+      {"depth": 8, "temperature": 16.1, "DO": 8.42, "SPC": 51.7, "TDS": 33.8, "PH": 7.74},
+      {"depth": 9, "temperature": 13.5, "DO": 2.45, "SPC": 54.5, "TDS": 35.75, "PH": 7.88},
+      {"depth": 10, "temperature": 10.4, "DO": 2.61, "SPC": 72.3, "TDS": 46.5, "PH": 8.04},
+      {"depth": 11, "temperature": 9.9, "DO": 2.5, "SPC": 76, "TDS": 49.4, "PH": 8.41},
+      {"depth": 12, "temperature": 9.9, "DO": 2.43, "SPC": 76.5, "TDS": 49.4, "PH": 8.4},
+      {"depth": 13, "temperature": 9.9, "DO": 2.3, "SPC": 76.5, "TDS": 49.4, "PH": 8.41},
+      {"depth": 14, "temperature": 9.9, "DO": 2.30, "SPC": 76.3, "TDS": 49.4, "PH": 8.42}
+    ]
+  }
+]
