@@ -3,6 +3,7 @@ import {
   formatDate,
   dateToValidId,
   getDateOnly,
+  getYear,
   formatDateOnly,
 } from './utils.js';
 
@@ -44,7 +45,7 @@ export class ControlsManager {
 
   createYearSelectors(parentDiv, allSeries) {
     // Group by year
-    const byYear = d3.group(allSeries, (d) => new Date(d.date).getFullYear());
+    const byYear = d3.group(allSeries, (d) => getYear(d.date));
     const uniqueYears = [...byYear.keys()].sort();
 
     // Year checkboxes container
@@ -271,7 +272,7 @@ export class ControlsManager {
   updateAllYearCheckboxes() {
     const allSeries = this.dataLoader.getAllSeries();
     const visibleSeries = this.dataLoader.getVisibleSeries();
-    const byYear = d3.group(allSeries, (d) => new Date(d.date).getFullYear());
+    const byYear = d3.group(allSeries, (d) => getYear(d.date));
 
     byYear.forEach((seriesForYear, year) => {
       const visibleCount = seriesForYear.filter((s) =>
@@ -300,7 +301,7 @@ export class ControlsManager {
     const datesInYear = [
       ...new Set(
         allSeries
-          .filter((s) => new Date(s.date).getFullYear() === year)
+          .filter((s) => getYear(s.date) === year)
           .map((s) => getDateOnly(s.date))
       ),
     ];

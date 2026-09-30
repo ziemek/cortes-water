@@ -2,7 +2,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2019-03-29T04:45:00.000Z",
+    "date": "2019-03-28T13:45:00-07:00",
     "samplers": [
       "Mary Claire",
       "Gina"
@@ -126,7 +126,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2019-04-29T02:45:00.000Z",
+    "date": "2019-04-28T11:45:00-07:00",
     "samplers": [
       "Andrew Smith",
       "Gina Trzesicka"
@@ -250,7 +250,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2019-05-22T02:00:00.000Z",
+    "date": "2019-05-21T11:00:00-07:00",
     "samplers": [
       "Gina Trzesicka",
       "Ania Jasiak (Gina's guest)"
@@ -374,7 +374,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2019-06-17T06:50:00.000Z",
+    "date": "2019-06-16T15:50:00-07:00",
     "samplers": [
       "Akshara Sangiorgio",
       "Gina"
@@ -498,7 +498,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2019-07-17T09:00:00.000Z",
+    "date": "2019-07-16T18:00:00-07:00",
     "samplers": [
       "Akshara Sangiorgio",
       "Gina"
@@ -622,7 +622,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2019-08-14T06:45:00.000Z",
+    "date": "2019-08-13T15:45:00-07:00",
     "samplers": [
       "Gina",
       "Autumn (FOCI summer student0"
@@ -746,7 +746,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2019-09-17T05:00:00.000Z",
+    "date": "2019-09-16T14:00:00-07:00",
     "samplers": [
       "Gina",
       "Autumn"
@@ -870,7 +870,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2019-11-06T05:30:00.000Z",
+    "date": "2019-11-05T13:30:00-08:00",
     "samplers": [
       "Carrie and Max"
     ],
@@ -884,14 +884,6 @@
     "phosphorus": 0.013,
     "data_notes": "\"x\" = DO in percent",
     "measurements": [
-      {
-        "depth": 0,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
       {
         "depth": 1,
         "temperature": 12.1,
@@ -993,7 +985,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2019-12-16T03:35:00.000Z",
+    "date": "2019-12-15T11:35:00-08:00",
     "samplers": [
       "na"
     ],
@@ -1007,14 +999,6 @@
     "phosphorus": 0.012,
     "data_notes": "\"na\" = not measured",
     "measurements": [
-      {
-        "depth": 0,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
       {
         "depth": 1,
         "temperature": 8.3,
@@ -1116,7 +1100,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2020-01-22T06:15:00.000Z",
+    "date": "2020-01-21T14:15:00-08:00",
     "samplers": [
       "na"
     ],
@@ -1239,7 +1223,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2020-02-24T03:00:00.000Z",
+    "date": "2020-02-23T11:00:00-08:00",
     "samplers": [
       "Max and Heidi"
     ],
@@ -1362,7 +1346,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2020-03-27T02:30:00.000Z",
+    "date": "2020-03-26T11:30:00-07:00",
     "samplers": [
       "Max and Carrie"
     ],
@@ -1485,7 +1469,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2020-05-06T02:00:00.000Z",
+    "date": "2020-05-05T11:00:00-07:00",
     "samplers": [
       "Gina and Carrie"
     ],
@@ -1608,7 +1592,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2020-06-01T07:00:00.000Z",
+    "date": "2020-05-31T16:00:00-07:00",
     "samplers": [
       "Gina and Ziemek (Gina's son)"
     ],
@@ -1731,7 +1715,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2020-06-21T02:25:00.000Z",
+    "date": "2020-06-20T11:25:00-07:00",
     "samplers": [
       "Andrew and Carrie"
     ],
@@ -1854,7 +1838,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2020-07-26T01:30:00.000Z",
+    "date": "2020-07-25T10:30:00-07:00",
     "samplers": [
       "Mary and Alma"
     ],
@@ -1977,7 +1961,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2020-09-02T10:30:00.000Z",
+    "date": "2020-09-01T19:30:00-07:00",
     "samplers": [
       "Autumn and Sarah Moore"
     ],
@@ -2100,7 +2084,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2020-09-23T02:00:00.000Z",
+    "date": "2020-09-22T11:00:00-07:00",
     "samplers": [
       "Gina and Carrie"
     ],
@@ -2209,21 +2193,13 @@
         "SPC": 61.7,
         "TDS": 39.65,
         "PH": 5.83
-      },
-      {
-        "depth": 12,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2020-11-03T03:00:00.000Z",
+    "date": "2020-11-02T11:00:00-08:00",
     "samplers": [
       "Gina and Carrie"
     ],
@@ -2346,7 +2322,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2020-12-10T01:30:00.000Z",
+    "date": "2020-12-09T09:30:00-08:00",
     "samplers": [
       "Max and Carrie"
     ],
@@ -2469,7 +2445,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2021-01-15T03:45:00.000Z",
+    "date": "2021-01-14T11:45:00-08:00",
     "samplers": [
       "Heidi and Carrie"
     ],
@@ -2592,7 +2568,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2021-02-17T04:30:00.000Z",
+    "date": "2021-02-16T12:30:00-08:00",
     "samplers": [
       "Max and Heidi"
     ],
@@ -2715,7 +2691,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2021-03-19T02:00:00.000Z",
+    "date": "2021-03-18T11:00:00-07:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -2838,7 +2814,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2021-04-21T02:15:00.000Z",
+    "date": "2021-04-20T11:15:00-07:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -2961,7 +2937,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2021-05-06T05:00:00.000Z",
+    "date": "2021-05-05T14:00:00-07:00",
     "samplers": [
       "Gina and Lisa Ferentinos"
     ],
@@ -3084,7 +3060,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2021-07-08T02:30:00.000Z",
+    "date": "2021-07-07T11:30:00-07:00",
     "samplers": [
       "Gina and Michelle Douglas (summer assistant)"
     ],
@@ -3098,14 +3074,6 @@
     "phosphorus": null,
     "data_notes": "no water samples",
     "measurements": [
-      {
-        "depth": 0,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
       {
         "depth": 1,
         "temperature": 24.4,
@@ -3207,7 +3175,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2021-07-29T02:45:00.000Z",
+    "date": "2021-07-28T11:45:00-07:00",
     "samplers": [
       "Gina and Michelle Douglas (summer assistant)"
     ],
@@ -3316,21 +3284,13 @@
         "SPC": 57.4,
         "TDS": 37.05,
         "PH": 6.16
-      },
-      {
-        "depth": 12,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2021-08-27T05:00:00.000Z",
+    "date": "2021-08-26T14:00:00-07:00",
     "samplers": [
       "Gina"
     ],
@@ -3439,21 +3399,13 @@
         "SPC": 60.7,
         "TDS": 39,
         "PH": 6.08
-      },
-      {
-        "depth": 12,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2021-09-19T17:30:00.000Z",
+    "date": "2021-09-19T02:30:00-07:00",
     "samplers": [
       "carrie and gina"
     ],
@@ -3562,21 +3514,13 @@
         "SPC": 62,
         "TDS": 40.6,
         "PH": 6.02
-      },
-      {
-        "depth": 12,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2021-10-14T06:15:00.000Z",
+    "date": "2021-10-13T15:15:00-07:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -3699,7 +3643,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2022-01-19T03:30:00.000Z",
+    "date": "2022-01-18T11:30:00-08:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -3822,7 +3766,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2022-02-18T06:20:00.000Z",
+    "date": "2022-02-17T14:20:00-08:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -3945,7 +3889,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2022-03-24T05:20:00.000Z",
+    "date": "2022-03-23T14:20:00-07:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -4068,7 +4012,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2022-05-11T05:20:00.000Z",
+    "date": "2022-05-10T14:20:00-07:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -4191,7 +4135,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2022-06-12T01:00:00.000Z",
+    "date": "2022-06-11T10:00:00-07:00",
     "samplers": [
       "Gina and Ziemek (Gina's son)"
     ],
@@ -4314,7 +4258,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2022-07-17T01:30:00.000Z",
+    "date": "2022-07-16T10:30:00-07:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -4437,7 +4381,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2022-08-17T02:30:00.000Z",
+    "date": "2022-08-16T11:30:00-07:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -4538,29 +4482,13 @@
         "SPC": 59.8,
         "TDS": 31,
         "PH": 5.8
-      },
-      {
-        "depth": 11,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 12,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2022-09-21T05:00:00.000Z",
+    "date": "2022-09-20T14:00:00-07:00",
     "samplers": [
       "Gina and Wisia (Gina's daughter)"
     ],
@@ -4669,21 +4597,13 @@
         "SPC": 65,
         "TDS": 42.1,
         "PH": 6.07
-      },
-      {
-        "depth": 12,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2022-10-19T03:00:00.000Z",
+    "date": "2022-10-18T12:00:00-07:00",
     "samplers": [
       "Gina and Wisia (Gina's daughter)"
     ],
@@ -4814,7 +4734,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2022-12-27T01:30:00.000Z",
+    "date": "2022-12-26T09:30:00-08:00",
     "samplers": [
       "Gina and Ziemek (Gina's son)"
     ],
@@ -4969,7 +4889,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2023-02-15T02:15:00.000Z",
+    "date": "2023-02-14T10:15:00-08:00",
     "samplers": [
       "Gina and Carrie"
     ],
@@ -5124,7 +5044,7 @@
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2023-03-23T01:30:00.000Z",
+    "date": "2023-03-22T10:30:00-07:00",
     "samplers": [
       "Carrie",
       "Gina"
@@ -5258,29 +5178,13 @@
         "SPC": 48.4,
         "TDS": 31.2,
         "PH": null
-      },
-      {
-        "depth": 15,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 16,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2023-06-30T02:00:00.000Z",
+    "date": "2023-06-29T11:00:00-07:00",
     "samplers": [
       "Sue Ellingsen",
       "Gina"
@@ -5414,29 +5318,13 @@
         "SPC": 51.1,
         "TDS": 33.15,
         "PH": 6.69
-      },
-      {
-        "depth": 15,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 16,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2023-07-19T02:30:00.000Z",
+    "date": "2023-07-18T11:30:00-07:00",
     "samplers": [
       "Manuel (FOCI)",
       "Gina"
@@ -5562,37 +5450,13 @@
         "SPC": 50.9,
         "TDS": 33.15,
         "PH": 8.66
-      },
-      {
-        "depth": 14,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 15,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 16,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2023-08-24T02:00:00.000Z",
+    "date": "2023-08-23T11:00:00-07:00",
     "samplers": [
       "Sue Ellingsen",
       "Gina"
@@ -5718,37 +5582,13 @@
         "SPC": 58.4,
         "TDS": 37.7,
         "PH": 6.81
-      },
-      {
-        "depth": 14,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 15,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 16,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2023-11-14T03:30:00.000Z",
+    "date": "2023-11-13T11:30:00-08:00",
     "samplers": [
       "Carrie",
       "Gina"
@@ -5882,29 +5722,13 @@
         "SPC": 49.9,
         "TDS": 32.5,
         "PH": 7.61
-      },
-      {
-        "depth": 15,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 16,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2023-12-24T05:45:00.000Z",
+    "date": "2023-12-23T13:45:00-08:00",
     "samplers": [
       "Gina",
       "Ziemek"
@@ -6038,29 +5862,13 @@
         "SPC": 50.2,
         "TDS": 32.5,
         "PH": 7.13
-      },
-      {
-        "depth": 15,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 16,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2024-02-13T02:30:00.000Z",
+    "date": "2024-02-12T10:30:00-08:00",
     "samplers": [
       "Carrie",
       "Gina"
@@ -6194,29 +6002,13 @@
         "SPC": 48.2,
         "TDS": 31.2,
         "PH": 7.01
-      },
-      {
-        "depth": 15,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 16,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2024-04-04T02:30:00.000Z",
+    "date": "2024-04-03T11:30:00-07:00",
     "samplers": [
       "Carrie",
       "Gina"
@@ -6350,29 +6142,13 @@
         "SPC": 49.4,
         "TDS": 31.85,
         "PH": 6.63
-      },
-      {
-        "depth": 15,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 16,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2024-05-08T02:30:00.000Z",
+    "date": "2024-05-07T11:30:00-07:00",
     "samplers": [
       "Carrie",
       "Gina"
@@ -6498,37 +6274,13 @@
         "SPC": 48.7,
         "TDS": 31.85,
         "PH": 6.25
-      },
-      {
-        "depth": 14,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 15,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 16,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2024-06-14T02:30:00.000Z",
+    "date": "2024-06-13T11:30:00-07:00",
     "samplers": [
       "Carrie",
       "Gina"
@@ -6662,29 +6414,13 @@
         "SPC": 56.5,
         "TDS": 36.4,
         "PH": 6.27
-      },
-      {
-        "depth": 15,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 16,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2024-07-19T01:30:00.000Z",
+    "date": "2024-07-18T10:30:00-07:00",
     "samplers": [
       "Sue",
       "Gina"
@@ -6810,37 +6546,13 @@
         "SPC": 65.6,
         "TDS": 42.9,
         "PH": 6.33
-      },
-      {
-        "depth": 14,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 15,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 16,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2024-08-15T01:30:00.000Z",
+    "date": "2024-08-14T10:30:00-07:00",
     "samplers": [
       "Gina",
       "Xavier Lee (FOCI)"
@@ -6974,29 +6686,13 @@
         "SPC": 68.5,
         "TDS": 44.85,
         "PH": 6.44
-      },
-      {
-        "depth": 15,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 16,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2024-09-12T04:30:00.000Z",
+    "date": "2024-09-11T13:30:00-07:00",
     "samplers": [
       "Norleen",
       "Gina"
@@ -7130,29 +6826,13 @@
         "SPC": 69.7,
         "TDS": 44.85,
         "PH": 6.45
-      },
-      {
-        "depth": 15,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 16,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": null,
+    "date": "2024-10-13T15:00:00-07:00",
     "samplers": [
       "Gina",
       "Wisia (Gina's daughter)"
@@ -7286,29 +6966,13 @@
         "SPC": 76.8,
         "TDS": 50.5,
         "PH": 6.46
-      },
-      {
-        "depth": 15,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 16,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
     "station": "DWH",
-    "date": "2024-12-20T03:30:00.000Z",
+    "date": "2024-12-19T11:30:00-08:00",
     "samplers": [
       "Gina",
       "Ziemek (Gina's son)"
@@ -7442,332 +7106,6 @@
         "SPC": 50.9,
         "TDS": 33.15,
         "PH": 7
-      },
-      {
-        "depth": 15,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 16,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      }
-    ]
-  },
-  {
-    "lake": "Hague",
-    "station": "DWH",
-    "date": null,
-    "samplers": [
-      "Time: 15:15"
-    ],
-    "weather": "Date: March 2",
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
-    ],
-    "nitrogen": null,
-    "phosphorus": null,
-    "data_notes": "Note: Lakes were partly frozen, mid-Feb thin ice",
-    "measurements": [
-      {
-        "depth": 0,
-        "temperature": 6.1,
-        "DO": 19.76,
-        "SPC": 49.8,
-        "TDS": 32.5,
-        "PH": 6.39
-      },
-      {
-        "depth": 1,
-        "temperature": 6.1,
-        "DO": 13.69,
-        "SPC": 50,
-        "TDS": 32.5,
-        "PH": 7
-      },
-      {
-        "depth": 2,
-        "temperature": 5.7,
-        "DO": 13.83,
-        "SPC": 50,
-        "TDS": 32.5,
-        "PH": 7
-      },
-      {
-        "depth": 3,
-        "temperature": 5.6,
-        "DO": 13.5,
-        "SPC": 49.9,
-        "TDS": 32.5,
-        "PH": 6.88
-      },
-      {
-        "depth": 4,
-        "temperature": 5,
-        "DO": 13.5,
-        "SPC": 48.3,
-        "TDS": 32.5,
-        "PH": 6.88
-      },
-      {
-        "depth": 5,
-        "temperature": 5,
-        "DO": 13.23,
-        "SPC": 50.1,
-        "TDS": 32.5,
-        "PH": 6.57
-      },
-      {
-        "depth": 6,
-        "temperature": 5.1,
-        "DO": 13.26,
-        "SPC": 50.1,
-        "TDS": 32.5,
-        "PH": 6.55
-      },
-      {
-        "depth": 7,
-        "temperature": 5,
-        "DO": 13.15,
-        "SPC": 4,
-        "TDS": 4,
-        "PH": 6.55
-      },
-      {
-        "depth": 8,
-        "temperature": 5,
-        "DO": 13.21,
-        "SPC": 4,
-        "TDS": 4,
-        "PH": 6.52
-      },
-      {
-        "depth": 9,
-        "temperature": 5,
-        "DO": 12.82,
-        "SPC": 4.2,
-        "TDS": 4,
-        "PH": 6.51
-      },
-      {
-        "depth": 10,
-        "temperature": 5,
-        "DO": 12.83,
-        "SPC": 4.2,
-        "TDS": 4,
-        "PH": 6.51
-      },
-      {
-        "depth": 11,
-        "temperature": 5,
-        "DO": 12.81,
-        "SPC": 4.2,
-        "TDS": 4,
-        "PH": 6.68
-      },
-      {
-        "depth": 12,
-        "temperature": 5,
-        "DO": 12.51,
-        "SPC": 4.3,
-        "TDS": 4,
-        "PH": 6.68
-      },
-      {
-        "depth": 13,
-        "temperature": 4,
-        "DO": 12.38,
-        "SPC": 4.8,
-        "TDS": 4,
-        "PH": 6.68
-      },
-      {
-        "depth": 14,
-        "temperature": 4,
-        "DO": 10.88,
-        "SPC": 30.5,
-        "TDS": 31.15,
-        "PH": 6.85
-      },
-      {
-        "depth": 15,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 16,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      }
-    ]
-  },
-  {
-    "lake": "Hague",
-    "station": "DWH",
-    "date": null,
-    "samplers": [
-      "Gina & Ziemek"
-    ],
-    "weather": "Lightning partly cloudy",
-    "air_temperature": 15,
-    "secchi_depth": [
-      4.4,
-      4.4
-    ],
-    "nitrogen": null,
-    "phosphorus": null,
-    "data_notes": null,
-    "measurements": [
-      {
-        "depth": 0,
-        "temperature": 16.6,
-        "DO": 9.77,
-        "SPC": 49.9,
-        "TDS": 31.85,
-        "PH": 7.37
-      },
-      {
-        "depth": 1,
-        "temperature": 16.6,
-        "DO": 9.82,
-        "SPC": 49,
-        "TDS": 31.85,
-        "PH": 7.44
-      },
-      {
-        "depth": 2,
-        "temperature": 16.5,
-        "DO": 9.78,
-        "SPC": 49,
-        "TDS": 31.85,
-        "PH": 7.47
-      },
-      {
-        "depth": 3,
-        "temperature": 16.5,
-        "DO": 9.78,
-        "SPC": 48.9,
-        "TDS": 31.85,
-        "PH": 7.47
-      },
-      {
-        "depth": 4,
-        "temperature": 16.5,
-        "DO": 9.74,
-        "SPC": 49,
-        "TDS": 31.85,
-        "PH": 7.48
-      },
-      {
-        "depth": 5,
-        "temperature": 15.3,
-        "DO": 10.7,
-        "SPC": 48.1,
-        "TDS": 31.85,
-        "PH": 7.43
-      },
-      {
-        "depth": 6,
-        "temperature": 12.7,
-        "DO": 10.92,
-        "SPC": 49,
-        "TDS": 31.85,
-        "PH": 7.39
-      },
-      {
-        "depth": 7,
-        "temperature": 11.7,
-        "DO": 10.51,
-        "SPC": 49,
-        "TDS": 31.85,
-        "PH": 6.95
-      },
-      {
-        "depth": 8,
-        "temperature": 9.4,
-        "DO": 9.76,
-        "SPC": 49.5,
-        "TDS": 31.85,
-        "PH": 6.8
-      },
-      {
-        "depth": 9,
-        "temperature": 8.1,
-        "DO": 8.76,
-        "SPC": 49.5,
-        "TDS": 31.85,
-        "PH": 6.61
-      },
-      {
-        "depth": 10,
-        "temperature": 8.5,
-        "DO": 7.65,
-        "SPC": 49.7,
-        "TDS": 32.5,
-        "PH": 6.44
-      },
-      {
-        "depth": 11,
-        "temperature": 8.3,
-        "DO": 7.41,
-        "SPC": 49.7,
-        "TDS": 32.5,
-        "PH": 6.41
-      },
-      {
-        "depth": 12,
-        "temperature": 8.3,
-        "DO": 7.42,
-        "SPC": 49.8,
-        "TDS": 32.5,
-        "PH": 6.41
-      },
-      {
-        "depth": 13,
-        "temperature": 8.3,
-        "DO": 7.09,
-        "SPC": 49.1,
-        "TDS": 32.5,
-        "PH": 6.41
-      },
-      {
-        "depth": 14,
-        "temperature": 8.3,
-        "DO": 6.92,
-        "SPC": 50.4,
-        "TDS": 32.5,
-        "PH": 6.35
-      },
-      {
-        "depth": 15,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 16,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       }
     ]
   }

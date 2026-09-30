@@ -29,7 +29,7 @@ transparency measurements to help understand water quality trends.
 ├── scripts/                            # Build and data processing scripts
 │   ├── merge-data.js                   # Data merging utility
 │   └── convert-csv.js                  # CSV to JSON converter
-├── origiinal-data/                     # Raw data and source files
+├── original-data/                      # Raw field-sheet CSVs (not used by the app)
 ├── package.json                        # Project dependencies
 └── README.md
 ```

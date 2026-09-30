@@ -1,6 +1,6 @@
 // Data loading and management
 import { config } from './config.js';
-import { dateToValidId, getDateOnly } from './utils.js';
+import { dateToValidId, getDateOnly, getYear } from './utils.js';
 
 class DataLoader {
   constructor() {
@@ -133,7 +133,7 @@ class DataLoader {
     });
 
     // Update year checkbox state after date change
-    const year = new Date(date).getFullYear();
+    const year = getYear(date);
     this.updateYearCheckboxState(year);
   }
 
@@ -155,7 +155,7 @@ class DataLoader {
     });
 
     // Update year checkbox state after date change
-    const year = new Date(dateOnly).getFullYear();
+    const year = Number(dateOnly.slice(0, 4));
     this.updateYearCheckboxState(year);
   }
 
@@ -191,7 +191,7 @@ class DataLoader {
   // Toggle year visibility (applies to all dates in that year)
   toggleYearVisibility(year) {
     const seriesForYear = this.allSeries.filter(
-      (s) => new Date(s.date).getFullYear() === year
+      (s) => getYear(s.date) === year
     );
     const allChecked = seriesForYear.every((s) => this.visibleSeries.has(s.id));
 
@@ -227,12 +227,12 @@ class DataLoader {
   // Toggle all years
   toggleAllYears(show) {
     const uniqueYears = [
-      ...new Set(this.allSeries.map((s) => new Date(s.date).getFullYear())),
+      ...new Set(this.allSeries.map((s) => getYear(s.date))),
     ];
 
     uniqueYears.forEach((year) => {
       const seriesForYear = this.allSeries.filter(
-        (s) => new Date(s.date).getFullYear() === year
+        (s) => getYear(s.date) === year
       );
       seriesForYear.forEach((s) => {
         if (show) {
@@ -267,7 +267,7 @@ class DataLoader {
   // Get year checkbox state (0 = none, 1 = some, 2 = all)
   getYearCheckboxState(year) {
     const seriesForYear = this.allSeries.filter(
-      (s) => new Date(s.date).getFullYear() === year
+      (s) => getYear(s.date) === year
     );
     const visibleCount = seriesForYear.filter((s) =>
       this.visibleSeries.has(s.id)
@@ -297,7 +297,7 @@ class DataLoader {
   // Update all year checkboxes
   updateAllYearCheckboxStates() {
     const uniqueYears = [
-      ...new Set(this.allSeries.map((s) => new Date(s.date).getFullYear())),
+      ...new Set(this.allSeries.map((s) => getYear(s.date))),
     ];
     uniqueYears.forEach((year) => this.updateYearCheckboxState(year));
   }

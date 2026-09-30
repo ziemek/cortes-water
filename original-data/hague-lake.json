@@ -1,19 +1,26 @@
 [
   {
     "lake": "Hague",
-    "date": "2019-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2019-03-29T04:45:00.000Z",
+    "samplers": [
+      "Mary Claire",
+      "Gina"
     ],
+    "weather": "calm, sunny, some clouds, light wind",
+    "air_temperature": 13,
+    "secchi_depth": [
+      3.9,
+      3.9
+    ],
+    "nitrogen": 0.391,
+    "phosphorus": 0.0214,
+    "data_notes": "\"x\" note:DO recorded in %",
     "measurements": [
       {
         "depth": 0,
         "temperature": 10.9,
-        "DO": 13.59,
+        "DO": 123.7,
         "SPC": 46.9,
         "TDS": 30.55,
         "PH": 6.53
@@ -21,7 +28,7 @@
       {
         "depth": 1,
         "temperature": 9.7,
-        "DO": 14.64,
+        "DO": 129.6,
         "SPC": 46.9,
         "TDS": 30.55,
         "PH": 6.6
@@ -29,7 +36,7 @@
       {
         "depth": 2,
         "temperature": 9.4,
-        "DO": 13.36,
+        "DO": 117.4,
         "SPC": 46.9,
         "TDS": 30.55,
         "PH": 6.58
@@ -37,7 +44,7 @@
       {
         "depth": 3,
         "temperature": 8.2,
-        "DO": 14.04,
+        "DO": 119.9,
         "SPC": 47.1,
         "TDS": 30.55,
         "PH": 6.45
@@ -45,7 +52,7 @@
       {
         "depth": 4,
         "temperature": 6.9,
-        "DO": 14.09,
+        "DO": 116.5,
         "SPC": 47,
         "TDS": 30.55,
         "PH": 6.38
@@ -53,7 +60,7 @@
       {
         "depth": 5,
         "temperature": 5.8,
-        "DO": 14.11,
+        "DO": 113.5,
         "SPC": 47.2,
         "TDS": 30.55,
         "PH": 6.36
@@ -61,7 +68,7 @@
       {
         "depth": 6,
         "temperature": 5.3,
-        "DO": 13.7,
+        "DO": 108.8,
         "SPC": 47.1,
         "TDS": 30.55,
         "PH": 6.35
@@ -69,7 +76,7 @@
       {
         "depth": 7,
         "temperature": 5,
-        "DO": 13.48,
+        "DO": 106.2,
         "SPC": 47.2,
         "TDS": 30.55,
         "PH": 6.32
@@ -77,7 +84,7 @@
       {
         "depth": 8,
         "temperature": 4.9,
-        "DO": 13.13,
+        "DO": 103.2,
         "SPC": 47.1,
         "TDS": 30.55,
         "PH": 6.3
@@ -85,7 +92,7 @@
       {
         "depth": 9,
         "temperature": 4.9,
-        "DO": 13.15,
+        "DO": 103.3,
         "SPC": 47.2,
         "TDS": 30.55,
         "PH": 6.28
@@ -93,7 +100,7 @@
       {
         "depth": 10,
         "temperature": 4.9,
-        "DO": 13.12,
+        "DO": 103.1,
         "SPC": 47.1,
         "TDS": 30.55,
         "PH": 6.27
@@ -101,7 +108,7 @@
       {
         "depth": 11,
         "temperature": 4.9,
-        "DO": 12.84,
+        "DO": 100.9,
         "SPC": 47.1,
         "TDS": 30.55,
         "PH": 6.25
@@ -109,7 +116,7 @@
       {
         "depth": 12,
         "temperature": 4.9,
-        "DO": 12.83,
+        "DO": 100.8,
         "SPC": 47.2,
         "TDS": 30.55,
         "PH": 6.24
@@ -118,14 +125,21 @@
   },
   {
     "lake": "Hague",
-    "date": "2019-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2019-04-29T02:45:00.000Z",
+    "samplers": [
+      "Andrew Smith",
+      "Gina Trzesicka"
     ],
+    "weather": "calm, sunny",
+    "air_temperature": 11.2,
+    "secchi_depth": [
+      3.8,
+      3
+    ],
+    "nitrogen": 0.243,
+    "phosphorus": 0.012,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -235,14 +249,21 @@
   },
   {
     "lake": "Hague",
-    "date": "2019-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2019-05-22T02:00:00.000Z",
+    "samplers": [
+      "Gina Trzesicka",
+      "Ania Jasiak (Gina's guest)"
     ],
+    "weather": "Windy, cloudy",
+    "air_temperature": 18.6,
+    "secchi_depth": [
+      3.1,
+      3.1
+    ],
+    "nitrogen": 0.255,
+    "phosphorus": 0.0062,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -352,14 +373,21 @@
   },
   {
     "lake": "Hague",
-    "date": "2019-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2019-06-17T06:50:00.000Z",
+    "samplers": [
+      "Akshara Sangiorgio",
+      "Gina"
     ],
+    "weather": "sunny light breeze, hazy",
+    "air_temperature": 30,
+    "secchi_depth": [
+      4.5,
+      6.6
+    ],
+    "nitrogen": 0.18,
+    "phosphorus": 0.0057,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -469,14 +497,21 @@
   },
   {
     "lake": "Hague",
-    "date": "2019-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2019-07-17T09:00:00.000Z",
+    "samplers": [
+      "Akshara Sangiorgio",
+      "Gina"
     ],
+    "weather": "na",
+    "air_temperature": 21.2,
+    "secchi_depth": [
+      6.2,
+      5.3
+    ],
+    "nitrogen": 0.176,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -586,14 +621,21 @@
   },
   {
     "lake": "Hague",
-    "date": "2019-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2019-08-14T06:45:00.000Z",
+    "samplers": [
+      "Gina",
+      "Autumn (FOCI summer student0"
     ],
+    "weather": "morning rain, afternoon sunny, no breeze, a bit muggy",
+    "air_temperature": 27.4,
+    "secchi_depth": [
+      7.4,
+      5.4
+    ],
+    "nitrogen": 0.203,
+    "phosphorus": 0.014,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -703,14 +745,21 @@
   },
   {
     "lake": "Hague",
-    "date": "2019-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2019-09-17T05:00:00.000Z",
+    "samplers": [
+      "Gina",
+      "Autumn"
     ],
+    "weather": "sunny, windy, some clouds",
+    "air_temperature": 19,
+    "secchi_depth": [
+      4.3,
+      6.9
+    ],
+    "nitrogen": 0.169,
+    "phosphorus": 0.0069,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -820,27 +869,33 @@
   },
   {
     "lake": "Hague",
-    "date": "2019-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
+    "station": "DWH",
+    "date": "2019-11-06T05:30:00.000Z",
+    "samplers": [
+      "Carrie and Max"
+    ],
+    "weather": "overcast, no breeze",
     "air_temperature": null,
     "secchi_depth": [
-      null,
-      null
+      4.6,
+      5.3
     ],
+    "nitrogen": 0.239,
+    "phosphorus": 0.013,
+    "data_notes": "\"x\" = DO in percent",
     "measurements": [
       {
         "depth": 0,
-        "temperature": "na",
+        "temperature": null,
         "DO": null,
-        "SPC": "na",
-        "TDS": "na",
+        "SPC": null,
+        "TDS": null,
         "PH": null
       },
       {
         "depth": 1,
         "temperature": 12.1,
-        "DO": 10.45,
+        "DO": 97.8,
         "SPC": 47.4,
         "TDS": 31.2,
         "PH": null
@@ -848,7 +903,7 @@
       {
         "depth": 2,
         "temperature": 11.9,
-        "DO": 10.37,
+        "DO": 96.6,
         "SPC": 47.4,
         "TDS": 31.2,
         "PH": null
@@ -856,7 +911,7 @@
       {
         "depth": 3,
         "temperature": 11.9,
-        "DO": 9.55,
+        "DO": 89,
         "SPC": 47.2,
         "TDS": 31.2,
         "PH": null
@@ -864,7 +919,7 @@
       {
         "depth": 4,
         "temperature": 11.7,
-        "DO": 9.51,
+        "DO": 88.2,
         "SPC": 47.6,
         "TDS": 30.55,
         "PH": null
@@ -872,7 +927,7 @@
       {
         "depth": 5,
         "temperature": 11.6,
-        "DO": 9.79,
+        "DO": 90.6,
         "SPC": 47.2,
         "TDS": 30.55,
         "PH": null
@@ -880,7 +935,7 @@
       {
         "depth": 6,
         "temperature": 11.7,
-        "DO": 9.6,
+        "DO": 89,
         "SPC": 47.4,
         "TDS": 30.55,
         "PH": null
@@ -888,7 +943,7 @@
       {
         "depth": 7,
         "temperature": 11.6,
-        "DO": 9.6,
+        "DO": 88.8,
         "SPC": 47.4,
         "TDS": 30.55,
         "PH": null
@@ -896,7 +951,7 @@
       {
         "depth": 8,
         "temperature": 11.6,
-        "DO": 9.6,
+        "DO": 88.8,
         "SPC": 47.3,
         "TDS": 31.2,
         "PH": null
@@ -904,7 +959,7 @@
       {
         "depth": 9,
         "temperature": 11.6,
-        "DO": 9.6,
+        "DO": 88.8,
         "SPC": 47.8,
         "TDS": 31.2,
         "PH": null
@@ -912,7 +967,7 @@
       {
         "depth": 10,
         "temperature": 11.6,
-        "DO": 9.45,
+        "DO": 87.4,
         "SPC": 47.5,
         "TDS": 31.2,
         "PH": null
@@ -920,7 +975,7 @@
       {
         "depth": 11,
         "temperature": 11.6,
-        "DO": 9.47,
+        "DO": 87.6,
         "SPC": 47.6,
         "TDS": 31.2,
         "PH": null
@@ -928,7 +983,7 @@
       {
         "depth": 12,
         "temperature": 11.5,
-        "DO": 8.92,
+        "DO": 82.3,
         "SPC": 47,
         "TDS": 30.55,
         "PH": null
@@ -937,21 +992,27 @@
   },
   {
     "lake": "Hague",
-    "date": "2019-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2019-12-16T03:35:00.000Z",
+    "samplers": [
+      "na"
     ],
+    "weather": "clear",
+    "air_temperature": 15,
+    "secchi_depth": [
+      6.1,
+      5.3
+    ],
+    "nitrogen": 0.31,
+    "phosphorus": 0.012,
+    "data_notes": "\"na\" = not measured",
     "measurements": [
       {
         "depth": 0,
-        "temperature": "na",
+        "temperature": null,
         "DO": null,
-        "SPC": "na",
-        "TDS": "na",
+        "SPC": null,
+        "TDS": null,
         "PH": null
       },
       {
@@ -1054,14 +1115,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2020-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2020-01-22T06:15:00.000Z",
+    "samplers": [
+      "na"
     ],
+    "weather": "wind, drizzle, recent melt",
+    "air_temperature": 5.6,
+    "secchi_depth": [
+      4.1,
+      4.1
+    ],
+    "nitrogen": 0.275,
+    "phosphorus": 0.014,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -1171,14 +1238,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2020-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2020-02-24T03:00:00.000Z",
+    "samplers": [
+      "Max and Heidi"
     ],
+    "weather": "windy, sunny+clouds",
+    "air_temperature": 7.1,
+    "secchi_depth": [
+      3.2,
+      3.1
+    ],
+    "nitrogen": 0.298,
+    "phosphorus": 0.007,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -1288,14 +1361,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2020-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2020-03-27T02:30:00.000Z",
+    "samplers": [
+      "Max and Carrie"
     ],
+    "weather": "overcast, rain, no wind",
+    "air_temperature": 12.6,
+    "secchi_depth": [
+      3.2,
+      3
+    ],
+    "nitrogen": 0.303,
+    "phosphorus": 0.01,
+    "data_notes": "\"x\"=unstable DO",
     "measurements": [
       {
         "depth": 0,
@@ -1372,7 +1451,7 @@
       {
         "depth": 9,
         "temperature": 5.9,
-        "DO": 1.53,
+        "DO": 12.3,
         "SPC": 47,
         "TDS": 30.55,
         "PH": 6.33
@@ -1405,14 +1484,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2020-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
+    "station": "DWH",
+    "date": "2020-05-06T02:00:00.000Z",
+    "samplers": [
+      "Gina and Carrie"
+    ],
+    "weather": "sunny, calm",
     "air_temperature": null,
     "secchi_depth": [
-      null,
-      null
+      4.6,
+      4.4
     ],
+    "nitrogen": 0.22,
+    "phosphorus": 0.004,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -1522,14 +1607,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2020-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2020-06-01T07:00:00.000Z",
+    "samplers": [
+      "Gina and Ziemek (Gina's son)"
     ],
+    "weather": "sunny, light wind",
+    "air_temperature": 18.9,
+    "secchi_depth": [
+      4.5,
+      5.3
+    ],
+    "nitrogen": 0.204,
+    "phosphorus": 0.0037,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -1639,14 +1730,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2020-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2020-06-21T02:25:00.000Z",
+    "samplers": [
+      "Andrew and Carrie"
     ],
+    "weather": "windy, overcast, wind",
+    "air_temperature": 17.6,
+    "secchi_depth": [
+      5.4,
+      5.4
+    ],
+    "nitrogen": 0.198,
+    "phosphorus": 0.0072,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -1756,14 +1853,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2020-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
+    "station": "DWH",
+    "date": "2020-07-26T01:30:00.000Z",
+    "samplers": [
+      "Mary and Alma"
+    ],
+    "weather": "light wind, sunny",
     "air_temperature": null,
     "secchi_depth": [
-      null,
-      null
+      5.5,
+      5.9
     ],
+    "nitrogen": 0.173,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -1873,14 +1976,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2020-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2020-09-02T10:30:00.000Z",
+    "samplers": [
+      "Autumn and Sarah Moore"
     ],
+    "weather": "calm sunset, nice clouds",
+    "air_temperature": 19.7,
+    "secchi_depth": [
+      4.9,
+      4.9
+    ],
+    "nitrogen": 0.171,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -1990,14 +2099,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2020-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2020-09-23T02:00:00.000Z",
+    "samplers": [
+      "Gina and Carrie"
     ],
+    "weather": "sunny, calm changed to windy",
+    "air_temperature": 17.5,
+    "secchi_depth": [
+      4.9,
+      5.8
+    ],
+    "nitrogen": 0.195,
+    "phosphorus": 0.0046,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -2097,24 +2212,30 @@
       },
       {
         "depth": 12,
-        "temperature": "na",
+        "temperature": null,
         "DO": null,
-        "SPC": "na",
-        "TDS": "na",
+        "SPC": null,
+        "TDS": null,
         "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2020-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2020-11-03T03:00:00.000Z",
+    "samplers": [
+      "Gina and Carrie"
     ],
+    "weather": "cloudy, light to strong wind sw (changed from ne)",
+    "air_temperature": 11.5,
+    "secchi_depth": [
+      4,
+      3.7
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -2224,14 +2345,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2020-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2020-12-10T01:30:00.000Z",
+    "samplers": [
+      "Max and Carrie"
     ],
+    "weather": "high misty clouds",
+    "air_temperature": 9,
+    "secchi_depth": [
+      6.5,
+      6.6
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -2341,14 +2468,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2021-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2021-01-15T03:45:00.000Z",
+    "samplers": [
+      "Heidi and Carrie"
     ],
+    "weather": "calm sun high clouds",
+    "air_temperature": 8.7,
+    "secchi_depth": [
+      5.6,
+      6.1
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "no water samples",
     "measurements": [
       {
         "depth": 0,
@@ -2458,14 +2591,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2021-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2021-02-17T04:30:00.000Z",
+    "samplers": [
+      "Max and Heidi"
     ],
+    "weather": "Mostly cloudy",
+    "air_temperature": 7.8,
+    "secchi_depth": [
+      4.9,
+      4.5
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "no lab samples",
     "measurements": [
       {
         "depth": 0,
@@ -2575,14 +2714,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2021-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2021-03-19T02:00:00.000Z",
+    "samplers": [
+      "Carrie and Gina"
     ],
+    "weather": "nice and sunny turned to WET/rain",
+    "air_temperature": 7.8,
+    "secchi_depth": [
+      2.9,
+      2.9
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "murky water. No lab samples",
     "measurements": [
       {
         "depth": 0,
@@ -2692,14 +2837,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2021-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2021-04-21T02:15:00.000Z",
+    "samplers": [
+      "Carrie and Gina"
     ],
+    "weather": "sunny, calm",
+    "air_temperature": 18.4,
+    "secchi_depth": [
+      3.7,
+      4.4
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "no lab samples, but see Dillon Creek for April in DWG",
     "measurements": [
       {
         "depth": 0,
@@ -2809,14 +2960,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2021-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2021-05-06T05:00:00.000Z",
+    "samplers": [
+      "Gina and Lisa Ferentinos"
     ],
+    "weather": "cloudy, rain, windy",
+    "air_temperature": 14.5,
+    "secchi_depth": [
+      5.2,
+      5.2
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "no lab samples",
     "measurements": [
       {
         "depth": 0,
@@ -2926,21 +3083,27 @@
   },
   {
     "lake": "Hague",
-    "date": "2021-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2021-07-08T02:30:00.000Z",
+    "samplers": [
+      "Gina and Michelle Douglas (summer assistant)"
     ],
+    "weather": "sunny, warm, light breeze",
+    "air_temperature": 28.9,
+    "secchi_depth": [
+      6.7,
+      6.6
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "no water samples",
     "measurements": [
       {
         "depth": 0,
-        "temperature": "na",
+        "temperature": null,
         "DO": null,
-        "SPC": "na",
-        "TDS": "na",
+        "SPC": null,
+        "TDS": null,
         "PH": null
       },
       {
@@ -3043,14 +3206,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2021-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2021-07-29T02:45:00.000Z",
+    "samplers": [
+      "Gina and Michelle Douglas (summer assistant)"
     ],
+    "weather": "sunny, hot, calm",
+    "air_temperature": 21.7,
+    "secchi_depth": [
+      6.9,
+      6.9
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -3150,24 +3319,30 @@
       },
       {
         "depth": 12,
-        "temperature": "na",
+        "temperature": null,
         "DO": null,
-        "SPC": "na",
-        "TDS": "na",
+        "SPC": null,
+        "TDS": null,
         "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2021-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
+    "station": "DWH",
+    "date": "2021-08-27T05:00:00.000Z",
+    "samplers": [
+      "Gina"
+    ],
+    "weather": "windy, cloudy, light rain",
+    "air_temperature": 19.7,
     "secchi_depth": [
-      null,
+      5.7,
       null
     ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -3267,24 +3442,30 @@
       },
       {
         "depth": 12,
-        "temperature": "na",
+        "temperature": null,
         "DO": null,
-        "SPC": "na",
-        "TDS": "na",
+        "SPC": null,
+        "TDS": null,
         "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2021-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2021-09-19T17:30:00.000Z",
+    "samplers": [
+      "carrie and gina"
     ],
+    "weather": "clouds, sunny, light wind",
+    "air_temperature": 15.9,
+    "secchi_depth": [
+      6.1,
+      6.9
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "no water samples",
     "measurements": [
       {
         "depth": 0,
@@ -3384,24 +3565,30 @@
       },
       {
         "depth": 12,
-        "temperature": "na",
+        "temperature": null,
         "DO": null,
-        "SPC": "na",
-        "TDS": "na",
+        "SPC": null,
+        "TDS": null,
         "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2021-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2021-10-14T06:15:00.000Z",
+    "samplers": [
+      "Carrie and Gina"
     ],
+    "weather": "calm, light coulds, rain",
+    "air_temperature": 13,
+    "secchi_depth": [
+      4.3,
+      5.9
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "November -- skipped this month",
     "measurements": [
       {
         "depth": 0,
@@ -3511,14 +3698,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2022-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2022-01-19T03:30:00.000Z",
+    "samplers": [
+      "Carrie and Gina"
     ],
+    "weather": "calm, light clouds, foggy",
+    "air_temperature": 7.3,
+    "secchi_depth": [
+      4.5,
+      4.9
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "some ice on lake, less than on Gunflint",
     "measurements": [
       {
         "depth": 0,
@@ -3628,14 +3821,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2022-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2022-02-18T06:20:00.000Z",
+    "samplers": [
+      "Carrie and Gina"
     ],
+    "weather": "sunny, calm, light breeze",
+    "air_temperature": 9.1,
+    "secchi_depth": [
+      4.5,
+      4.7
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -3745,14 +3944,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2022-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2022-03-24T05:20:00.000Z",
+    "samplers": [
+      "Carrie and Gina"
     ],
+    "weather": "sunny, windy, some clouds",
+    "air_temperature": 9.6,
+    "secchi_depth": [
+      3.1,
+      4.3
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -3862,14 +4067,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2022-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2022-05-11T05:20:00.000Z",
+    "samplers": [
+      "Carrie and Gina"
     ],
+    "weather": "sunny, windy, some clouds",
+    "air_temperature": 16.3,
+    "secchi_depth": [
+      3.1,
+      3
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -3979,14 +4190,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2022-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2022-06-12T01:00:00.000Z",
+    "samplers": [
+      "Gina and Ziemek (Gina's son)"
     ],
+    "weather": "cloudy, windy",
+    "air_temperature": 15.8,
+    "secchi_depth": [
+      2.7,
+      3
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -4096,14 +4313,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2022-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2022-07-17T01:30:00.000Z",
+    "samplers": [
+      "Carrie and Gina"
     ],
+    "weather": "calm, cloudy",
+    "air_temperature": 18,
+    "secchi_depth": [
+      3.9,
+      4.1
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -4213,14 +4436,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2022-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2022-08-17T02:30:00.000Z",
+    "samplers": [
+      "Carrie and Gina"
     ],
+    "weather": "sunny, calm, ligh breeze",
+    "air_temperature": 22.2,
+    "secchi_depth": [
+      4.6,
+      5.5
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -4309,19 +4538,41 @@
         "SPC": 59.8,
         "TDS": 31,
         "PH": 5.8
+      },
+      {
+        "depth": 11,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 12,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2022-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2022-09-21T05:00:00.000Z",
+    "samplers": [
+      "Gina and Wisia (Gina's daughter)"
     ],
+    "weather": "sunny, calm, light breeze",
+    "air_temperature": 24.1,
+    "secchi_depth": [
+      4.1,
+      4.9
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -4418,19 +4669,33 @@
         "SPC": 65,
         "TDS": 42.1,
         "PH": 6.07
+      },
+      {
+        "depth": 12,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2022-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2022-10-19T03:00:00.000Z",
+    "samplers": [
+      "Gina and Wisia (Gina's daughter)"
     ],
+    "weather": "sunny, calm, light breeze",
+    "air_temperature": 16.7,
+    "secchi_depth": [
+      4.9,
+      4.7
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "time not noted",
     "measurements": [
       {
         "depth": 0,
@@ -4548,14 +4813,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2022-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2022-12-27T01:30:00.000Z",
+    "samplers": [
+      "Gina and Ziemek (Gina's son)"
     ],
+    "weather": "calm, light breeze",
+    "air_temperature": 7.7,
+    "secchi_depth": [
+      3.5,
+      4.37
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "December 23, 24, 25 - lakes partly frozen, could be 3/4, but ice not strong enough to walk on",
     "measurements": [
       {
         "depth": 0,
@@ -4697,14 +4968,20 @@
   },
   {
     "lake": "Hague",
-    "date": "2023-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2023-02-15T02:15:00.000Z",
+    "samplers": [
+      "Gina and Carrie"
     ],
+    "weather": "calm, light breeze, sunny",
+    "air_temperature": 3.4,
+    "secchi_depth": [
+      4,
+      4.8
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "a day after a very strong wind",
     "measurements": [
       {
         "depth": 0,
@@ -4846,14 +5123,21 @@
   },
   {
     "lake": "Hague",
-    "date": "2023-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2023-03-23T01:30:00.000Z",
+    "samplers": [
+      "Carrie",
+      "Gina"
     ],
+    "weather": "nice, sunny",
+    "air_temperature": 15,
+    "secchi_depth": [
+      2.8,
+      3.6
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "PH probe not working",
     "measurements": [
       {
         "depth": 0,
@@ -4974,19 +5258,42 @@
         "SPC": 48.4,
         "TDS": 31.2,
         "PH": null
+      },
+      {
+        "depth": 15,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 16,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2023-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2023-06-30T02:00:00.000Z",
+    "samplers": [
+      "Sue Ellingsen",
+      "Gina"
     ],
+    "weather": "sunny, calm, a bit of rain",
+    "air_temperature": 22.4,
+    "secchi_depth": [
+      4.7,
+      4.4
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "new probe installed, new calibrating agent",
     "measurements": [
       {
         "depth": 0,
@@ -5107,19 +5414,42 @@
         "SPC": 51.1,
         "TDS": 33.15,
         "PH": 6.69
+      },
+      {
+        "depth": 15,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 16,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2023-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2023-07-19T02:30:00.000Z",
+    "samplers": [
+      "Manuel (FOCI)",
+      "Gina"
     ],
+    "weather": "suuny w/clouds, calm",
+    "air_temperature": 21.2,
+    "secchi_depth": [
+      6.1,
+      5.7
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -5232,19 +5562,50 @@
         "SPC": 50.9,
         "TDS": 33.15,
         "PH": 8.66
+      },
+      {
+        "depth": 14,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 15,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 16,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2023-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2023-08-24T02:00:00.000Z",
+    "samplers": [
+      "Sue Ellingsen",
+      "Gina"
     ],
+    "weather": "nice and sunny",
+    "air_temperature": 18.2,
+    "secchi_depth": [
+      5.2,
+      4.8
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "after that, longer break due to vacations",
     "measurements": [
       {
         "depth": 0,
@@ -5357,19 +5718,50 @@
         "SPC": 58.4,
         "TDS": 37.7,
         "PH": 6.81
+      },
+      {
+        "depth": 14,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 15,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 16,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2023-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2023-11-14T03:30:00.000Z",
+    "samplers": [
+      "Carrie",
+      "Gina"
     ],
+    "weather": "sunny, calm, light clouds",
+    "air_temperature": 11,
+    "secchi_depth": [
+      5,
+      5.2
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -5490,19 +5882,42 @@
         "SPC": 49.9,
         "TDS": 32.5,
         "PH": 7.61
+      },
+      {
+        "depth": 15,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 16,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2023-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2023-12-24T05:45:00.000Z",
+    "samplers": [
+      "Gina",
+      "Ziemek"
     ],
+    "weather": "not noted",
+    "air_temperature": 7.7,
+    "secchi_depth": [
+      5.4,
+      5.2
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -5623,19 +6038,42 @@
         "SPC": 50.2,
         "TDS": 32.5,
         "PH": 7.13
+      },
+      {
+        "depth": 15,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 16,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2024-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2024-02-13T02:30:00.000Z",
+    "samplers": [
+      "Carrie",
+      "Gina"
     ],
+    "weather": "calm, sunny",
+    "air_temperature": 6.8,
+    "secchi_depth": [
+      3.9,
+      4.3
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -5756,19 +6194,42 @@
         "SPC": 48.2,
         "TDS": 31.2,
         "PH": 7.01
+      },
+      {
+        "depth": 15,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 16,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2024-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2024-04-04T02:30:00.000Z",
+    "samplers": [
+      "Carrie",
+      "Gina"
     ],
+    "weather": "sunny, light breeze",
+    "air_temperature": 12.4,
+    "secchi_depth": [
+      3.3,
+      3.6
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -5889,19 +6350,42 @@
         "SPC": 49.4,
         "TDS": 31.85,
         "PH": 6.63
+      },
+      {
+        "depth": 15,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 16,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2024-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2024-05-08T02:30:00.000Z",
+    "samplers": [
+      "Carrie",
+      "Gina"
     ],
+    "weather": "sunny, cold wind",
+    "air_temperature": 12,
+    "secchi_depth": [
+      3.3,
+      3.5
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "slight algae smell initial breath",
     "measurements": [
       {
         "depth": 0,
@@ -6014,19 +6498,50 @@
         "SPC": 48.7,
         "TDS": 31.85,
         "PH": 6.25
+      },
+      {
+        "depth": 14,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 15,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 16,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2024-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2024-06-14T02:30:00.000Z",
+    "samplers": [
+      "Carrie",
+      "Gina"
     ],
+    "weather": "cool, sunny, calm",
+    "air_temperature": 19.1,
+    "secchi_depth": [
+      4.9,
+      5.9
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -6147,19 +6662,42 @@
         "SPC": 56.5,
         "TDS": 36.4,
         "PH": 6.27
+      },
+      {
+        "depth": 15,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 16,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2024-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2024-07-19T01:30:00.000Z",
+    "samplers": [
+      "Sue",
+      "Gina"
     ],
+    "weather": "very hot, calm, sunny",
+    "air_temperature": 25.4,
+    "secchi_depth": [
+      5.5,
+      5.5
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -6272,19 +6810,50 @@
         "SPC": 65.6,
         "TDS": 42.9,
         "PH": 6.33
+      },
+      {
+        "depth": 14,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 15,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 16,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2024-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2024-08-15T01:30:00.000Z",
+    "samplers": [
+      "Gina",
+      "Xavier Lee (FOCI)"
     ],
+    "weather": "hot, cloudy, calm",
+    "air_temperature": 21.2,
+    "secchi_depth": [
+      4,
+      5
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -6405,19 +6974,42 @@
         "SPC": 68.5,
         "TDS": 44.85,
         "PH": 6.44
+      },
+      {
+        "depth": 15,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 16,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2024-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2024-09-12T04:30:00.000Z",
+    "samplers": [
+      "Norleen",
+      "Gina"
     ],
+    "weather": "some clouds, breeze",
+    "air_temperature": 24.5,
+    "secchi_depth": [
+      5,
+      5.5
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -6538,19 +7130,42 @@
         "SPC": 69.7,
         "TDS": 44.85,
         "PH": 6.45
+      },
+      {
+        "depth": 15,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 16,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2024-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": null,
+    "samplers": [
+      "Gina",
+      "Wisia (Gina's daughter)"
     ],
+    "weather": "partly cloudy, calm",
+    "air_temperature": 19.7,
+    "secchi_depth": [
+      5.2,
+      6.7
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -6671,19 +7286,42 @@
         "SPC": 76.8,
         "TDS": 50.5,
         "PH": 6.46
+      },
+      {
+        "depth": 15,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 16,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2024-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": "2024-12-20T03:30:00.000Z",
+    "samplers": [
+      "Gina",
+      "Ziemek (Gina's son)"
     ],
+    "weather": "rainy, clam",
+    "air_temperature": 6.9,
+    "secchi_depth": [
+      4,
+      4.8
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "unpleasant weather following this date",
     "measurements": [
       {
         "depth": 0,
@@ -6804,19 +7442,41 @@
         "SPC": 50.9,
         "TDS": 33.15,
         "PH": 7
+      },
+      {
+        "depth": 15,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 16,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2024-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
+    "station": "DWH",
+    "date": null,
+    "samplers": [
+      "Time: 15:15"
+    ],
+    "weather": "Date: March 2",
     "air_temperature": null,
     "secchi_depth": [
       null,
       null
     ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "Note: Lakes were partly frozen, mid-Feb thin ice",
     "measurements": [
       {
         "depth": 0,
@@ -6937,19 +7597,41 @@
         "SPC": 30.5,
         "TDS": 31.15,
         "PH": 6.85
+      },
+      {
+        "depth": 15,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 16,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
       }
     ]
   },
   {
     "lake": "Hague",
-    "date": "2024-01-01T12:00:00-08:00",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
+    "station": "DWH",
+    "date": null,
+    "samplers": [
+      "Gina & Ziemek"
     ],
+    "weather": "Lightning partly cloudy",
+    "air_temperature": 15,
+    "secchi_depth": [
+      4.4,
+      4.4
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": null,
     "measurements": [
       {
         "depth": 0,
@@ -7070,6 +7752,22 @@
         "SPC": 50.4,
         "TDS": 32.5,
         "PH": 6.35
+      },
+      {
+        "depth": 15,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
+      },
+      {
+        "depth": 16,
+        "temperature": null,
+        "DO": null,
+        "SPC": null,
+        "TDS": null,
+        "PH": null
       }
     ]
   }
