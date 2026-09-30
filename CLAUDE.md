@@ -16,7 +16,7 @@ There are no tests and no linter. Pushing to `main` deploys to GitHub Pages via 
 - Every `*.json` in `src/data/` except `water-data.json` is a source file: an array of sampling records (`lake`, `date`, `measurements[]`, plus optional `samplers`, `weather`, `secchi_depth`, `nitrogen`, `phosphorus`, `data_notes`).
 - `scripts/merge-data.js` merges them into `water-data.json`, the only file the app fetches. Never hand-edit `water-data.json`; it is committed, so regenerate it in the same commit as any source change.
 - Records are keyed by lake + Pacific calendar date. The merge fails if a record has no `lake` or valid `date`, or if two records share a key, so each sampling must live in exactly one source file.
-- `gunflint-lake.json` and `hague-lake.json` hold samplings through 2024, converted from the CSVs with `scripts/convert-csv.js`. Later samplings live in `water-quality.json` and the dated files.
+- `gunflint-lake.json` and `hague-lake.json` hold the samplings recorded in the CSVs (2019 – Dec 2024), converted with `scripts/convert-csv.js`. Everything else lives in `water-quality.json` and the dated files.
 - New samplings go in a new dated file (e.g. `2025-12-17.json`), one record per lake.
 - `original-data/` holds the raw field-sheet CSVs. They are the source of truth for pre-2024 dates and are not read by the app or build.
 
