@@ -1,6 +1,6 @@
 # Cortes Water
 
-Static D3 site charting lake-monitoring data (Gunflint and Hague lakes, Cortes Island). Plain ES modules in `src/js/`, no framework, no bundler. D3 v7 is loaded from a CDN in `src/index.html` and used as a global `d3`.
+Static D3 site charting lake-monitoring data (Gunflint and Hague lakes, Cortes Island). Plain ES modules in `src/js/`, no framework, no bundler. D3 v7 is loaded from a CDN in `src/index.html` and used as a global `d3`. When changing its version, update the `integrity` hash too; CI fails if it doesn't match the CDN file.
 
 ## Commands
 
@@ -11,7 +11,7 @@ Static D3 site charting lake-monitoring data (Gunflint and Hague lakes, Cortes I
 - `npm run validate-data` — check records for implausible values; issues listed in `scripts/known-data-issues.json` are ignored
 - `npm test` — `node:test` tests for the scripts in `test/` (none for the app code)
 
-There is no linter. Pull requests run `.github/workflows/ci.yml` (format, validate-data, test, build). Pushing to `main` runs the same checks, then deploys to GitHub Pages via `.github/workflows/gh-pages.yml`.
+There is no linter. Pull requests run `.github/workflows/ci.yml` (format, validate-data, test, build, D3 integrity hash). Pushing to `main` runs the same checks, then deploys to GitHub Pages via `.github/workflows/gh-pages.yml` (Pages actions, not a `gh-pages` branch).
 
 ## Data pipeline
 

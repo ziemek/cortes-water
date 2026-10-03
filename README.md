@@ -65,8 +65,8 @@ rebuild it while the dev server is running.
 
 ## Checks
 
-Pull requests run `.github/workflows/ci.yml`, which checks formatting, validates the data, runs the tests and builds the
-site. To run the same checks locally:
+Pull requests run `.github/workflows/ci.yml`, which checks formatting, validates the data, runs the tests, builds the
+site and checks the D3 `integrity` hash in `src/index.html` against the file the CDN serves. To run the same checks locally:
 
 ```bash
 npm run format:check
@@ -81,4 +81,4 @@ accepting issues, regenerate that list with `node scripts/validate-data.js --upd
 
 ## GitHub Pages Deployment
 
-This project is automatically deployed to GitHub Pages using GitHub Actions. The deployment workflow is triggered on every push to the `main` branch, runs the same checks as CI, and builds the site using the `npm run build` command before publishing to the `gh-pages` branch. You can view the live site at your repository's GitHub Pages URL once deployment is complete.
+This project is automatically deployed to GitHub Pages using GitHub Actions. The deployment workflow is triggered on every push to the `main` branch, runs the same checks as CI, builds the site with `npm run build`, and deploys `dist/` with GitHub's Pages actions (the repository's Pages source must be set to "GitHub Actions"). You can view the live site at your repository's GitHub Pages URL once deployment is complete.

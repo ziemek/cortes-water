@@ -1,8 +1,7 @@
 {
   "name": "cortes-water",
   "version": "1.0.0",
-  "description": "A simple webpage project",
-  "main": "src/js/main.js",
+  "description": "Charts of lake-monitoring data for Gunflint and Hague lakes, Cortes Island",
   "scripts": {
     "prestart": "npm run merge-data",
     "start": "five-server --root=src --open=false",
@@ -21,5 +20,9 @@
   "devDependencies": {
     "five-server": "^0.5.0",
     "prettier": "^3.9.9"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=24"
   }
 }
