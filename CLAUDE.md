@@ -1,6 +1,6 @@
 # Cortes Water
 
-Static D3 site charting lake-monitoring data (Gunflint and Hague lakes, Cortes Island). Plain ES modules in `src/js/`, no framework, no bundler. D3 v7 is loaded from a CDN in `src/index.html` and used as a global `d3`.
+Static D3 site charting lake-monitoring data (Gunflint and Hague lakes, Cortes Island). Plain ES modules in `src/js/`, no framework, no bundler. D3 v7 is loaded from a CDN in `src/index.html` and used as a global `d3`. When changing its version, update the `integrity` hash too; the deploy fails if it doesn't match the CDN file.
 
 ## Commands
 
@@ -9,7 +9,7 @@ Static D3 site charting lake-monitoring data (Gunflint and Hague lakes, Cortes I
 - `npm run build` — merge, then copy `src/` to `dist/`
 - `npm run format` / `format:check` — Prettier (JSON is ignored)
 
-There are no tests and no linter. Pushing to `main` deploys to GitHub Pages via `.github/workflows/gh-pages.yml`.
+There are no tests and no linter. Pushing to `main` deploys to GitHub Pages via `.github/workflows/gh-pages.yml` (Pages actions, not a `gh-pages` branch).
 
 ## Data pipeline
 

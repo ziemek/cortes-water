@@ -65,4 +65,4 @@ rebuild it while the dev server is running.
 
 ## GitHub Pages Deployment
 
-This project is automatically deployed to GitHub Pages using GitHub Actions. The deployment workflow is triggered on every push to the `main` branch and builds the site using the `npm run build` command before publishing to the `gh-pages` branch. You can view the live site at your repository's GitHub Pages URL once deployment is complete.
+This project is automatically deployed to GitHub Pages using GitHub Actions. The deployment workflow is triggered on every push to the `main` branch. It builds the site with `npm run build`, checks the D3 integrity hash against the CDN, and deploys `dist/` with GitHub's Pages actions (the repository's Pages source must be set to "GitHub Actions"). You can view the live site at your repository's GitHub Pages URL once deployment is complete.

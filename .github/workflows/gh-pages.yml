@@ -5,10 +5,15 @@ on:
     branches: [main]
 
 permissions:
-  contents: write
+  contents: read
+
+# One deploy at a time; let an in-progress deploy finish rather than cancel it
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -19,8 +24,31 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
+      # A wrong hash makes the browser refuse to run D3, so check it against
+      # the file the CDN actually serves before deploying
+      - name: Check D3 integrity hash
+        run: |
+          url=$(grep -o 'https://cdnjs[^"]*/d3\.min\.js' src/index.html)
+          expected=$(grep -A2 "$url" src/index.html | grep -o 'sha512-[^"]*')
+          actual="sha512-$(curl -fsSL "$url" | openssl dgst -sha512 -binary | base64 -w0)"
+          if [ "$actual" != "$expected" ]; then
+            echo "::error file=src/index.html::integrity for $url should be $actual"
+            exit 1
+          fi
+
+      - uses: actions/upload-pages-artifact@v5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
