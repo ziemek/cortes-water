@@ -20,6 +20,7 @@ See `data/README.md` for the layout, record format and how to add a sampling. Ke
 - `data/records/<lake>/<YYYY-MM-DD>.json` holds one sampling per file and is the source of truth. The merge fails if a file's `lake` or Pacific date doesn't match its path.
 - `data/raw/` holds legacy CSVs and unedited OCR output. Never edit it; the build doesn't read it.
 - `src/data/water-data.json` is generated and gitignored. Never hand-edit it.
+- To add a sampling from a field-sheet photo, use the `add-sampling` skill.
 
 ## Dates
 

@@ -13,6 +13,9 @@ Field-sheet photos are discarded after OCR, so `raw/ocr/` is the earliest copy o
 
 ## Adding a sampling
 
+In Claude Code, the `add-sampling` skill (`.claude/skills/add-sampling/`) does these steps from a photo of the field
+sheet.
+
 1. OCR the field sheet and save the output as `raw/ocr/<YYYY-MM-DD>-<lake>.json`. Don't edit it afterwards.
 2. Copy it to `records/<lake>/<YYYY-MM-DD>.json` (Pacific date of the sampling), as a single object, not an array.
 3. Check every value against the sheet and fix the record. `diff` against the OCR file shows what was corrected.
