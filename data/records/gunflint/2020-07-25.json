@@ -1,0 +1,32 @@
+{
+  "lake": "Gunflint",
+  "date": "2020-07-25T11:10:00-07:00",
+  "source": "csv/gunflint-lake.csv",
+  "station": "DWG",
+  "samplers": ["Alma and Mary"],
+  "weather": "light wind, sunny",
+  "air_temperature": null,
+  "secchi_depth": [5.7, 5.96],
+  "nitrogen": null,
+  "phosphorus": null,
+  "data_notes": null,
+  "measurements": [
+    {"depth": 0, "temperature": 23.5, "DO": 7.75, "SPC": 52, "TDS": 33.5, "PH": 7.56},
+    {"depth": 1, "temperature": 23.3, "DO": 7.65, "SPC": 52, "TDS": 33.8, "PH": 7.2},
+    {"depth": 2, "temperature": 23.2, "DO": 7.4, "SPC": 51.7, "TDS": 33.8, "PH": 7.2},
+    {"depth": 3, "temperature": 22.9, "DO": 7.69, "SPC": 52.2, "TDS": 33.8, "PH": 7.18},
+    {"depth": 4, "temperature": 21.9, "DO": 8.2, "SPC": 51.9, "TDS": 33.88, "PH": 7.12},
+    {"depth": 5, "temperature": 16.1, "DO": 11.2, "SPC": 47.5, "TDS": 31.2, "PH": 7.05},
+    {"depth": 6, "temperature": 11.2, "DO": 11.71, "SPC": 47.1, "TDS": 30.55, "PH": 6.8},
+    {"depth": 7, "temperature": 8.9, "DO": 10.75, "SPC": 46.5, "TDS": 30.55, "PH": 6.3},
+    {"depth": 8, "temperature": 7.6, "DO": 10.25, "SPC": 46.1, "TDS": 29.9, "PH": 6.2},
+    {"depth": 9, "temperature": 6.8, "DO": 9.85, "SPC": 46.1, "TDS": 29.25, "PH": 6.12},
+    {"depth": 10, "temperature": 6.8, "DO": 9.75, "SPC": 45.4, "TDS": 29.25, "PH": 6.1},
+    {"depth": 11, "temperature": 7.1, "DO": 9.1, "SPC": 44.6, "TDS": 29.25, "PH": 6.07},
+    {"depth": 12, "temperature": 6.6, "DO": 8.8, "SPC": 45, "TDS": 29.25, "PH": 6.06},
+    {"depth": 13, "temperature": 6.3, "DO": 7.6, "SPC": 46.2, "TDS": 29.9, "PH": 6},
+    {"depth": 14, "temperature": 6.6, "DO": 6.36, "SPC": 46.3, "TDS": 29.9, "PH": 5.95},
+    {"depth": 15, "temperature": 6.3, "DO": 5.26, "SPC": 47, "TDS": 31.2, "PH": 5.89},
+    {"depth": 16, "temperature": 6.2, "DO": 5.55, "SPC": 47.4, "TDS": 31.2, "PH": 5.87}
+  ]
+}

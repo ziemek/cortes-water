@@ -1,0 +1,28 @@
+{
+  "lake": "Hague",
+  "date": "2020-02-23T11:00:00-08:00",
+  "source": "csv/hague-lake.csv",
+  "station": "DWH",
+  "samplers": ["Max and Heidi"],
+  "weather": "windy, sunny+clouds",
+  "air_temperature": 7.1,
+  "secchi_depth": [3.2, 3.1],
+  "nitrogen": 0.298,
+  "phosphorus": 0.007,
+  "data_notes": null,
+  "measurements": [
+    {"depth": 0, "temperature": 4.8, "DO": 13.98, "SPC": 47.1, "TDS": 30.55, "PH": 7.78},
+    {"depth": 1, "temperature": 4.8, "DO": 13.7, "SPC": 47.2, "TDS": 30.55, "PH": 6.84},
+    {"depth": 2, "temperature": 4.8, "DO": 13.57, "SPC": 47.1, "TDS": 30.55, "PH": 6.6},
+    {"depth": 3, "temperature": 4.8, "DO": 13.53, "SPC": 47.1, "TDS": 30.55, "PH": 6.48},
+    {"depth": 4, "temperature": 4.8, "DO": 13.46, "SPC": 47.1, "TDS": 30.55, "PH": 6.41},
+    {"depth": 5, "temperature": 4.8, "DO": 13.39, "SPC": 47.1, "TDS": 30.55, "PH": 6.37},
+    {"depth": 6, "temperature": 4.8, "DO": 13.35, "SPC": 47.2, "TDS": 30.55, "PH": 6.34},
+    {"depth": 7, "temperature": 4.8, "DO": 13.33, "SPC": 47.1, "TDS": 30.55, "PH": 6.34},
+    {"depth": 8, "temperature": 4.8, "DO": 13.33, "SPC": 47.1, "TDS": 30.55, "PH": 6.35},
+    {"depth": 9, "temperature": 4.8, "DO": 13.33, "SPC": 47.1, "TDS": 30.55, "PH": 6.36},
+    {"depth": 10, "temperature": 4.8, "DO": 13.27, "SPC": 47.1, "TDS": 30.55, "PH": 6.39},
+    {"depth": 11, "temperature": 4.8, "DO": 13.27, "SPC": 47.1, "TDS": 30.55, "PH": 6.39},
+    {"depth": 12, "temperature": 4.8, "DO": 13.27, "SPC": 47.1, "TDS": 30.55, "PH": 6.39}
+  ]
+}

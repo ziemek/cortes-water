@@ -1,0 +1,32 @@
+{
+  "lake": "Gunflint",
+  "date": "2019-03-28T12:45:00-07:00",
+  "source": "csv/gunflint-lake.csv",
+  "station": "DWG",
+  "samplers": ["Mary Claire", "Gina"],
+  "weather": "calm, sunny, some clouds",
+  "air_temperature": 19.4,
+  "secchi_depth": [3.3, 3.6],
+  "nitrogen": 0.313,
+  "phosphorus": 0.0098,
+  "data_notes": "DO recorded in % by mistake",
+  "measurements": [
+    {"depth": 0, "temperature": 11.3, "DO": 119.2, "SPC": 49.2, "TDS": 31.38, "PH": 6.76},
+    {"depth": 1, "temperature": 10.2, "DO": 112, "SPC": 47.4, "TDS": 30.55, "PH": 6.6},
+    {"depth": 2, "temperature": 8.2, "DO": 110, "SPC": 47.4, "TDS": 30.65, "PH": 6.19},
+    {"depth": 3, "temperature": 6.1, "DO": 105, "SPC": 47.1, "TDS": 30.55, "PH": 6.08},
+    {"depth": 4, "temperature": 5.4, "DO": 104.4, "SPC": 46.9, "TDS": 30.55, "PH": 6.05},
+    {"depth": 5, "temperature": 5.1, "DO": 101.5, "SPC": 46.9, "TDS": 30.55, "PH": 6.03},
+    {"depth": 6, "temperature": 4.9, "DO": 99.2, "SPC": 46.8, "TDS": 30.55, "PH": 6.01},
+    {"depth": 7, "temperature": 4.7, "DO": 97, "SPC": 46.8, "TDS": 30.55, "PH": 6},
+    {"depth": 8, "temperature": 4.5, "DO": 98.3, "SPC": 46.8, "TDS": 30.55, "PH": 5.97},
+    {"depth": 9, "temperature": 4.4, "DO": 96.2, "SPC": 46.7, "TDS": 30.55, "PH": 5.96},
+    {"depth": 10, "temperature": 4.3, "DO": 95.6, "SPC": 46.8, "TDS": 30.55, "PH": 5.96},
+    {"depth": 11, "temperature": 4.3, "DO": 96.9, "SPC": 46.8, "TDS": 30.55, "PH": 5.95},
+    {"depth": 12, "temperature": 4.2, "DO": 95.2, "SPC": 46.8, "TDS": 30.55, "PH": 5.95},
+    {"depth": 13, "temperature": 4.2, "DO": 95.5, "SPC": 46.8, "TDS": 30.55, "PH": 5.95},
+    {"depth": 14, "temperature": 4.2, "DO": 95.4, "SPC": 46.8, "TDS": 30.55, "PH": 5.95},
+    {"depth": 15, "temperature": 4.2, "DO": 95.1, "SPC": 46.8, "TDS": 30.55, "PH": 5.95},
+    {"depth": 16, "temperature": 4.2, "DO": 89.3, "SPC": 47, "TDS": 30.55, "PH": 5.94}
+  ]
+}

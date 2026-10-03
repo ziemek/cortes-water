@@ -1,0 +1,28 @@
+{
+  "lake": "Hague",
+  "date": "2020-05-31T16:00:00-07:00",
+  "source": "csv/hague-lake.csv",
+  "station": "DWH",
+  "samplers": ["Gina and Ziemek (Gina's son)"],
+  "weather": "sunny, light wind",
+  "air_temperature": 18.9,
+  "secchi_depth": [4.5, 5.3],
+  "nitrogen": 0.204,
+  "phosphorus": 0.0037,
+  "data_notes": null,
+  "measurements": [
+    {"depth": 0, "temperature": 20.1, "DO": 9.72, "SPC": 47.8, "TDS": 31.55, "PH": 7.15},
+    {"depth": 1, "temperature": 19.9, "DO": 9.71, "SPC": 47.1, "TDS": 30.55, "PH": 7.07},
+    {"depth": 2, "temperature": 19.3, "DO": 9.9, "SPC": 47, "TDS": 30.55, "PH": 7.15},
+    {"depth": 3, "temperature": 19, "DO": 9.64, "SPC": 47, "TDS": 30.55, "PH": 7.14},
+    {"depth": 4, "temperature": 18, "DO": 10.35, "SPC": 46.5, "TDS": 30.55, "PH": 7.23},
+    {"depth": 5, "temperature": 16.4, "DO": 11.11, "SPC": 45.6, "TDS": 30.55, "PH": 7.12},
+    {"depth": 6, "temperature": 13.6, "DO": 13.66, "SPC": 45.9, "TDS": 30.55, "PH": 7.23},
+    {"depth": 7, "temperature": 10.2, "DO": 12, "SPC": 46.5, "TDS": 30.55, "PH": 6.17},
+    {"depth": 8, "temperature": 9.8, "DO": 9.97, "SPC": 46.1, "TDS": 30.55, "PH": 6.77},
+    {"depth": 9, "temperature": 9, "DO": 8.14, "SPC": 46.9, "TDS": 30.55, "PH": 6.5},
+    {"depth": 10, "temperature": 8.5, "DO": 7.14, "SPC": 46.9, "TDS": 30.55, "PH": 6.35},
+    {"depth": 11, "temperature": 8.4, "DO": 5.83, "SPC": 46.5, "TDS": 30.55, "PH": 6.15},
+    {"depth": 12, "temperature": 8.5, "DO": 5.6, "SPC": 47.2, "TDS": 30.55, "PH": 6.15}
+  ]
+}

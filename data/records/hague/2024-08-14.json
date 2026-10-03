@@ -1,0 +1,30 @@
+{
+  "lake": "Hague",
+  "date": "2024-08-14T10:30:00-07:00",
+  "source": "csv/hague-lake.csv",
+  "station": "DWH",
+  "samplers": ["Gina", "Xavier Lee (FOCI)"],
+  "weather": "hot, cloudy, calm",
+  "air_temperature": 21.2,
+  "secchi_depth": [4, 5],
+  "nitrogen": null,
+  "phosphorus": null,
+  "data_notes": null,
+  "measurements": [
+    {"depth": 0, "temperature": 24.5, "DO": 6.52, "SPC": 51.6, "TDS": 32.15, "PH": 7.6},
+    {"depth": 1, "temperature": 24.5, "DO": 6.25, "SPC": 51.4, "TDS": 32.15, "PH": 7.6},
+    {"depth": 2, "temperature": 24.6, "DO": 6.66, "SPC": 51.3, "TDS": 32.15, "PH": 7.58},
+    {"depth": 3, "temperature": 24.4, "DO": 6.76, "SPC": 51.4, "TDS": 32.15, "PH": 7.66},
+    {"depth": 4, "temperature": 24.6, "DO": 6.79, "SPC": 51.3, "TDS": 32.15, "PH": 7.6},
+    {"depth": 5, "temperature": 23.7, "DO": 7.38, "SPC": 51.2, "TDS": 32.15, "PH": 7.55},
+    {"depth": 6, "temperature": 20.5, "DO": 7.9, "SPC": 50, "TDS": 32.5, "PH": 7.07},
+    {"depth": 7, "temperature": 16.5, "DO": 6.25, "SPC": 59.5, "TDS": 32.15, "PH": 6.23},
+    {"depth": 8, "temperature": 13.9, "DO": 4.9, "SPC": 50.1, "TDS": 34.45, "PH": 6.03},
+    {"depth": 9, "temperature": 11.5, "DO": 1.8, "SPC": 54, "TDS": 34.75, "PH": 5.98},
+    {"depth": 10, "temperature": 10.2, "DO": 1.41, "SPC": 52.3, "TDS": 40.3, "PH": 6.2},
+    {"depth": 11, "temperature": 10.2, "DO": 1.6, "SPC": 64, "TDS": 42.25, "PH": 6.2},
+    {"depth": 12, "temperature": 10, "DO": 1.35, "SPC": 55, "TDS": 42.25, "PH": 6.23},
+    {"depth": 13, "temperature": 10, "DO": 1.24, "SPC": 65.5, "TDS": 42.25, "PH": 6.37},
+    {"depth": 14, "temperature": 9.9, "DO": 1.23, "SPC": 68.5, "TDS": 44.85, "PH": 6.44}
+  ]
+}

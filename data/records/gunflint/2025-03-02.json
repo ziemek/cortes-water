@@ -1,0 +1,28 @@
+{
+  "lake": "Gunflint",
+  "date": "2025-03-02T14:15:00-08:00",
+  "source": "ocr (output not kept)",
+  "samplers": ["Carrie", "Gino"],
+  "weather": "Sunny, light breeze, some clouds",
+  "air_temperature": 15.7,
+  "secchi_depth": [3.8, 3.1],
+  "measurements": [
+    {"depth": 0, "temperature": 6.2, "DO": 17.5, "SPC": 29.5, "TDS": 18.95, "PH": 6.82},
+    {"depth": 1, "temperature": 6.2, "DO": 13.17, "SPC": 50, "TDS": 32.5, "PH": 6.57},
+    {"depth": 2, "temperature": 6, "DO": 12.91, "SPC": 50.1, "TDS": 32.5, "PH": 6.55},
+    {"depth": 3, "temperature": 6, "DO": 12.84, "SPC": 50.2, "TDS": 32.5, "PH": 6.6},
+    {"depth": 4, "temperature": 5.3, "DO": 12.92, "SPC": 50.4, "TDS": 32.5, "PH": 6.62},
+    {"depth": 5, "temperature": 4.8, "DO": 12.31, "SPC": 50.4, "TDS": 32.5, "PH": 6.63},
+    {"depth": 6, "temperature": 4.8, "DO": 12.2, "SPC": 50.4, "TDS": 32.5, "PH": 6.65},
+    {"depth": 7, "temperature": 4.6, "DO": 12.26, "SPC": 50.7, "TDS": 32.15, "PH": 6.66},
+    {"depth": 8, "temperature": 4.5, "DO": 12.15, "SPC": 50.7, "TDS": 32.15, "PH": 6.68},
+    {"depth": 9, "temperature": 4.4, "DO": 12.11, "SPC": 50.7, "TDS": 33.15, "PH": 6.69},
+    {"depth": 10, "temperature": 4.4, "DO": 12.6, "SPC": 50.8, "TDS": 33.15, "PH": 6.69},
+    {"depth": 11, "temperature": 4.2, "DO": 12.19, "SPC": 50.9, "TDS": 33.15, "PH": 6.7},
+    {"depth": 12, "temperature": 4.2, "DO": 12.06, "SPC": 50.7, "TDS": 33.15, "PH": 6.7},
+    {"depth": 13, "temperature": 4.2, "DO": 12.09, "SPC": 50.8, "TDS": 33.15, "PH": 6.7},
+    {"depth": 14, "temperature": 4.2, "DO": 11.74, "SPC": 51, "TDS": 33.15, "PH": 6.69},
+    {"depth": 15, "temperature": 4.2, "DO": 11.55, "SPC": 51.2, "TDS": 33.15, "PH": 6.68},
+    {"depth": 16, "temperature": 4.1, "DO": 11.53, "SPC": 51.2, "TDS": 33.15, "PH": 6.67}
+  ]
+}

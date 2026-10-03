@@ -1,0 +1,26 @@
+{
+  "lake": "Hague",
+  "date": "2025-06-01T11:00:00-07:00",
+  "source": "ocr (output not kept)",
+  "samplers": ["Gina", "Ziemer"],
+  "weather": "windy, partly cloudy",
+  "air_temperature": 15,
+  "secchi_depth": [4.4, 4.4],
+  "measurements": [
+    {"depth": 0, "temperature": 16.6, "DO": 9.77, "SPC": 49.9, "TDS": 31.8, "PH": 7.37},
+    {"depth": 1, "temperature": 16.6, "DO": 9.82, "SPC": 49, "TDS": 31.85, "PH": 7.44},
+    {"depth": 2, "temperature": 16.5, "DO": 9.78, "SPC": 49, "TDS": 31.85, "PH": 7.47},
+    {"depth": 3, "temperature": 16.5, "DO": 9.78, "SPC": 48.9, "TDS": 31.85, "PH": 7.47},
+    {"depth": 4, "temperature": 16.5, "DO": 9.76, "SPC": 49, "TDS": 31.85, "PH": 7.48},
+    {"depth": 5, "temperature": 15.3, "DO": 10.7, "SPC": 48.1, "TDS": 31.85, "PH": 7.43},
+    {"depth": 6, "temperature": 12.7, "DO": 10.92, "SPC": 49.9, "TDS": 31.85, "PH": 7.29},
+    {"depth": 7, "temperature": 11.7, "DO": 10.51, "SPC": 49, "TDS": 31.85, "PH": 6.95},
+    {"depth": 8, "temperature": 9.4, "DO": 9.76, "SPC": 49.3, "TDS": 31.85, "PH": 6.8},
+    {"depth": 9, "temperature": 8.9, "DO": 8.96, "SPC": 49.5, "TDS": 31.85, "PH": 6.61},
+    {"depth": 10, "temperature": 8.3, "DO": 7.65, "SPC": 49.7, "TDS": 32.5, "PH": 6.44},
+    {"depth": 11, "temperature": 8.3, "DO": 7.41, "SPC": 49.7, "TDS": 32.5, "PH": 6.41},
+    {"depth": 12, "temperature": 8.3, "DO": 7.42, "SPC": 49.8, "TDS": 32.5, "PH": 6.41},
+    {"depth": 13, "temperature": 8.3, "DO": 7.09, "SPC": 49.9, "TDS": 32.5, "PH": 6.41},
+    {"depth": 14, "temperature": 8.3, "DO": 6.92, "SPC": 50.4, "TDS": 32.5, "PH": 6.35}
+  ]
+}

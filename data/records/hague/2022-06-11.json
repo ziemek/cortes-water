@@ -1,0 +1,28 @@
+{
+  "lake": "Hague",
+  "date": "2022-06-11T10:00:00-07:00",
+  "source": "csv/hague-lake.csv",
+  "station": "DWH",
+  "samplers": ["Gina and Ziemek (Gina's son)"],
+  "weather": "cloudy, windy",
+  "air_temperature": 15.8,
+  "secchi_depth": [2.7, 3],
+  "nitrogen": null,
+  "phosphorus": null,
+  "data_notes": null,
+  "measurements": [
+    {"depth": 0, "temperature": 18, "DO": 3.17, "SPC": 44.7, "TDS": 29.25, "PH": 7.12},
+    {"depth": 1, "temperature": 18.3, "DO": 3.47, "SPC": 44.7, "TDS": 29.25, "PH": 6.98},
+    {"depth": 2, "temperature": 18, "DO": 3.39, "SPC": 46.6, "TDS": 29.25, "PH": 6.98},
+    {"depth": 3, "temperature": 18, "DO": 3.53, "SPC": 44.8, "TDS": 29.25, "PH": 6.98},
+    {"depth": 4, "temperature": 17.9, "DO": 5.42, "SPC": 44.7, "TDS": 29.25, "PH": 6.91},
+    {"depth": 5, "temperature": 17, "DO": 6, "SPC": 44.6, "TDS": 29.25, "PH": 7},
+    {"depth": 6, "temperature": 14.3, "DO": 7.62, "SPC": 46.3, "TDS": 29.9, "PH": 6.96},
+    {"depth": 7, "temperature": 13.2, "DO": 7.97, "SPC": 45.9, "TDS": 29.9, "PH": 6.92},
+    {"depth": 8, "temperature": 12.2, "DO": 8, "SPC": 46.6, "TDS": 30.55, "PH": 6.85},
+    {"depth": 9, "temperature": 11.3, "DO": 7.61, "SPC": 47.4, "TDS": 31.2, "PH": 6.73},
+    {"depth": 10, "temperature": 10.1, "DO": 6.45, "SPC": 48.7, "TDS": 31.85, "PH": 6.6},
+    {"depth": 11, "temperature": 9.9, "DO": 4.5, "SPC": 49.1, "TDS": 31.85, "PH": 6.16},
+    {"depth": 12, "temperature": 9.8, "DO": 3.72, "SPC": 49, "TDS": 31.85, "PH": 6.06}
+  ]
+}

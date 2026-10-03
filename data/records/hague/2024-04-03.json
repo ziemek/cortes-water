@@ -1,0 +1,30 @@
+{
+  "lake": "Hague",
+  "date": "2024-04-03T11:30:00-07:00",
+  "source": "csv/hague-lake.csv",
+  "station": "DWH",
+  "samplers": ["Carrie", "Gina"],
+  "weather": "sunny, light breeze",
+  "air_temperature": 12.4,
+  "secchi_depth": [3.3, 3.6],
+  "nitrogen": null,
+  "phosphorus": null,
+  "data_notes": null,
+  "measurements": [
+    {"depth": 0, "temperature": 10.5, "DO": 13.08, "SPC": 49, "TDS": 31.85, "PH": 7.38},
+    {"depth": 1, "temperature": 9.8, "DO": 13.21, "SPC": 48.8, "TDS": 31.85, "PH": 7.42},
+    {"depth": 2, "temperature": 9.6, "DO": 13.1, "SPC": 48.8, "TDS": 31.85, "PH": 7.45},
+    {"depth": 3, "temperature": 9.6, "DO": 13.11, "SPC": 48.4, "TDS": 31.85, "PH": 7.41},
+    {"depth": 4, "temperature": 9.3, "DO": 12.76, "SPC": 49, "TDS": 31.85, "PH": 7.38},
+    {"depth": 5, "temperature": 7.6, "DO": 13.26, "SPC": 49.1, "TDS": 31.85, "PH": 7.12},
+    {"depth": 6, "temperature": 6.8, "DO": 12.65, "SPC": 49.3, "TDS": 31.85, "PH": 6.95},
+    {"depth": 7, "temperature": 5.9, "DO": 12.77, "SPC": 49.4, "TDS": 31.85, "PH": 6.76},
+    {"depth": 8, "temperature": 5.8, "DO": 12.55, "SPC": 49.3, "TDS": 31.85, "PH": 6.55},
+    {"depth": 9, "temperature": 5.7, "DO": 12.4, "SPC": 49.4, "TDS": 31.85, "PH": 6.56},
+    {"depth": 10, "temperature": 5.7, "DO": 12.47, "SPC": 49.4, "TDS": 31.85, "PH": 6.56},
+    {"depth": 11, "temperature": 5.7, "DO": 12.36, "SPC": 49.7, "TDS": 31.85, "PH": 6.58},
+    {"depth": 12, "temperature": 5.7, "DO": 12.45, "SPC": 49.4, "TDS": 31.85, "PH": 6.59},
+    {"depth": 13, "temperature": 5.7, "DO": 10.06, "SPC": 49.4, "TDS": 31.85, "PH": 6.62},
+    {"depth": 14, "temperature": 5.6, "DO": 12.22, "SPC": 49.4, "TDS": 31.85, "PH": 6.63}
+  ]
+}

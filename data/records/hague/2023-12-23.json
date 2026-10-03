@@ -1,0 +1,30 @@
+{
+  "lake": "Hague",
+  "date": "2023-12-23T13:45:00-08:00",
+  "source": "csv/hague-lake.csv",
+  "station": "DWH",
+  "samplers": ["Gina", "Ziemek"],
+  "weather": "not noted",
+  "air_temperature": 7.7,
+  "secchi_depth": [5.4, 5.2],
+  "nitrogen": null,
+  "phosphorus": null,
+  "data_notes": null,
+  "measurements": [
+    {"depth": 0, "temperature": 7.9, "DO": 13.45, "SPC": 50, "TDS": 32.5, "PH": 7.05},
+    {"depth": 1, "temperature": 7.9, "DO": 12.4, "SPC": 49.5, "TDS": 32.5, "PH": 7.1},
+    {"depth": 2, "temperature": 7.5, "DO": 12.7, "SPC": 49.9, "TDS": 32.5, "PH": 7.11},
+    {"depth": 3, "temperature": 7.5, "DO": 12.05, "SPC": 49.9, "TDS": 32.5, "PH": 7.12},
+    {"depth": 4, "temperature": 7.5, "DO": 12, "SPC": 50, "TDS": 32.5, "PH": 7.12},
+    {"depth": 5, "temperature": 7.5, "DO": 12.4, "SPC": 49.9, "TDS": 32.5, "PH": 7.12},
+    {"depth": 6, "temperature": 7.5, "DO": 12.2, "SPC": 49.9, "TDS": 32.5, "PH": 7.13},
+    {"depth": 7, "temperature": 7.5, "DO": 12.5, "SPC": 50, "TDS": 32.5, "PH": 7.12},
+    {"depth": 8, "temperature": 7.5, "DO": 11.92, "SPC": 49.7, "TDS": 32.5, "PH": 7.12},
+    {"depth": 9, "temperature": 7.5, "DO": 12.14, "SPC": 50.5, "TDS": 32.5, "PH": 7.12},
+    {"depth": 10, "temperature": 7.7, "DO": 11.9, "SPC": 49.4, "TDS": 32.5, "PH": 7.13},
+    {"depth": 11, "temperature": 7.8, "DO": 11.98, "SPC": 52, "TDS": 32.5, "PH": 7.13},
+    {"depth": 12, "temperature": 7.9, "DO": 11.9, "SPC": 50, "TDS": 31.95, "PH": 7.12},
+    {"depth": 13, "temperature": 7.9, "DO": 11.98, "SPC": 49.6, "TDS": 32.5, "PH": 7.12},
+    {"depth": 14, "temperature": 7.9, "DO": 11.9, "SPC": 50.2, "TDS": 32.5, "PH": 7.13}
+  ]
+}

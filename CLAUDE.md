@@ -4,8 +4,8 @@ Static D3 site charting lake-monitoring data (Gunflint and Hague lakes, Cortes I
 
 ## Commands
 
-- `npm start` — live-server on `src/` (does **not** re-run the data merge)
-- `npm run merge-data` — rebuild `src/data/water-data.json` from the source files
+- `npm start` — merge, then live-server on `src/` (edits to records need `npm run merge-data` while it runs)
+- `npm run merge-data` — rebuild `src/data/water-data.json` from `data/records/`
 - `npm run build` — merge, then copy `src/` to `dist/`
 - `npm run format` / `format:check` — Prettier (JSON is ignored)
 
@@ -13,19 +13,14 @@ There are no tests and no linter. Pushing to `main` deploys to GitHub Pages via 
 
 ## Data pipeline
 
-- Every `*.json` in `src/data/` except `water-data.json` is a source file: an array of sampling records (`lake`, `date`, `measurements[]`, plus optional `samplers`, `weather`, `secchi_depth`, `nitrogen`, `phosphorus`, `data_notes`).
-- `scripts/merge-data.js` merges them into `water-data.json`, the only file the app fetches. Never hand-edit `water-data.json`; it is committed, so regenerate it in the same commit as any source change.
-- Records are keyed by lake + Pacific calendar date. The merge fails if a record has no `lake` or valid `date`, or if two records share a key, so each sampling must live in exactly one source file.
-- `gunflint-lake.json` and `hague-lake.json` hold the samplings recorded in the CSVs (2019 – Dec 2024), converted with `scripts/convert-csv.js`. Everything else lives in `water-quality.json` and the dated files.
-- New samplings go in a new dated file (e.g. `2025-12-17.json`), one record per lake.
-- `original-data/` holds the raw field-sheet CSVs. They are the source of truth for pre-2024 dates and are not read by the app or build.
+See `data/README.md` for the layout, record format and how to add a sampling. Key rules:
+
+- `data/records/<lake>/<YYYY-MM-DD>.json` holds one sampling per file and is the source of truth. The merge fails if a file's `lake` or Pacific date doesn't match its path.
+- `data/raw/` holds legacy CSVs and unedited OCR output. Never edit it; the build doesn't read it.
+- `src/data/water-data.json` is generated and gitignored. Never hand-edit it.
 
 ## Dates
 
 - Write `date` as ISO 8601 local Pacific time with its offset: `2025-12-17T14:30:00-08:00` (`-07:00` during daylight time is also fine). Never write a bare `YYYY-MM-DD`; it parses as UTC midnight and lands on the previous day.
 - If the sampling time is unknown, use `T12:00:00` and say so in `data_notes`.
 - In app code, group and display dates through the `America/Vancouver` helpers in `src/js/utils.js` (`getDateOnly`, `getYear`, `formatDate`), not `toISOString()` or `getFullYear()`, which use UTC or the viewer's timezone.
-
-## Data quirks
-
-- Some early records store dissolved oxygen in % rather than mg/L (see `data_notes`); nothing filters them out yet.

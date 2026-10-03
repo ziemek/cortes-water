@@ -1,0 +1,26 @@
+{
+  "lake": "Hague",
+  "date": "2025-12-17T15:30:00-08:00",
+  "source": "ocr (output not kept)",
+  "samplers": ["Gina", "Carrie"],
+  "weather": "cloudy, calm, a day after a rainy and stormy day",
+  "air_temperature": 6.4,
+  "secchi_depth": [5.3, 5.2],
+  "measurements": [
+    {"depth": 0, "temperature": 8.2, "DO": 11.2, "SPC": 50.8, "TDS": 34.15, "PH": 6.94},
+    {"depth": 1, "temperature": 8.2, "DO": 10.63, "SPC": 50.8, "TDS": 32.15, "PH": 7.02},
+    {"depth": 2, "temperature": 8.2, "DO": 10.19, "SPC": 50.9, "TDS": 32.15, "PH": 7.06},
+    {"depth": 3, "temperature": 8.2, "DO": 10.87, "SPC": 50.8, "TDS": 32.15, "PH": 7.06},
+    {"depth": 4, "temperature": 8.2, "DO": 10.48, "SPC": 50.9, "TDS": 33.15, "PH": 7.05},
+    {"depth": 5, "temperature": 8.1, "DO": 9.81, "SPC": 50.9, "TDS": 33.15, "PH": 7.07},
+    {"depth": 6, "temperature": 8.1, "DO": 10.11, "SPC": 50.8, "TDS": 33.15, "PH": 7.11},
+    {"depth": 7, "temperature": 8.1, "DO": 10.24, "SPC": 50.8, "TDS": 33.15, "PH": 7.13},
+    {"depth": 8, "temperature": 8.1, "DO": 9.87, "SPC": 50.8, "TDS": 31.15, "PH": 7.15},
+    {"depth": 9, "temperature": 8.1, "DO": 10.01, "SPC": 50.8, "TDS": 32.15, "PH": 7.15},
+    {"depth": 10, "temperature": 8.1, "DO": 10.27, "SPC": 50.3, "TDS": 33.15, "PH": 7.16},
+    {"depth": 11, "temperature": 8.1, "DO": 10.21, "SPC": 50.3, "TDS": 32.15, "PH": 7.16},
+    {"depth": 12, "temperature": 8.1, "DO": 9.17, "SPC": 50.7, "TDS": 32.15, "PH": 7.17},
+    {"depth": 13, "temperature": 8.2, "DO": 2.65, "SPC": 50.7, "TDS": 33.15, "PH": 7.18},
+    {"depth": 14, "temperature": 8.2, "DO": 2.43, "SPC": 49.9, "TDS": 32.5, "PH": 7.19}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "lake": "Hague",
+  "date": "2021-07-28T11:45:00-07:00",
+  "source": "csv/hague-lake.csv",
+  "station": "DWH",
+  "samplers": ["Gina and Michelle Douglas (summer assistant)"],
+  "weather": "sunny, hot, calm",
+  "air_temperature": 21.7,
+  "secchi_depth": [6.9, 6.9],
+  "nitrogen": null,
+  "phosphorus": null,
+  "data_notes": null,
+  "measurements": [
+    {"depth": 0, "temperature": 24, "DO": 5.13, "SPC": 51.7, "TDS": 34.8, "PH": 7.5},
+    {"depth": 1, "temperature": 23.9, "DO": 6.7, "SPC": 51.7, "TDS": 34.8, "PH": 7.1},
+    {"depth": 2, "temperature": 23.7, "DO": 7.5, "SPC": 51.7, "TDS": 34.8, "PH": 7.08},
+    {"depth": 3, "temperature": 23.7, "DO": 7.86, "SPC": 51.7, "TDS": 34.8, "PH": 7.1},
+    {"depth": 4, "temperature": 23.6, "DO": 8.27, "SPC": 51.6, "TDS": 34.8, "PH": 7.1},
+    {"depth": 5, "temperature": 22.5, "DO": 9.08, "SPC": 51.4, "TDS": 34.15, "PH": 7.17},
+    {"depth": 6, "temperature": 17, "DO": 13.04, "SPC": 48.9, "TDS": 34.15, "PH": 7.44},
+    {"depth": 7, "temperature": 12, "DO": 14.67, "SPC": 49.2, "TDS": 34.85, "PH": 7.18},
+    {"depth": 8, "temperature": 10.3, "DO": 11.12, "SPC": 50.6, "TDS": 33.15, "PH": 6.68},
+    {"depth": 9, "temperature": 9.4, "DO": 6.75, "SPC": 52.1, "TDS": 34.8, "PH": 6.39},
+    {"depth": 10, "temperature": 8.9, "DO": 3.57, "SPC": 54.8, "TDS": 35.75, "PH": 6.24},
+    {"depth": 11, "temperature": 8.7, "DO": 2.23, "SPC": 57.4, "TDS": 37.05, "PH": 6.16}
+  ]
+}
