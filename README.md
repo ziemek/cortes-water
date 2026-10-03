@@ -63,6 +63,22 @@ Sampling data lives in `data/`. See [data/README.md](data/README.md) for the lay
 `npm start` and `npm run build` merge it into `src/data/water-data.json` automatically; run `npm run merge-data` to
 rebuild it while the dev server is running.
 
+## Checks
+
+Pull requests run `.github/workflows/ci.yml`, which checks formatting, validates the data, runs the tests and builds the
+site. To run the same checks locally:
+
+```bash
+npm run format:check
+npm run validate-data
+npm test
+```
+
+`validate-data` fails on any record the merge would reject, and on records with an unknown lake, no `source`, repeated
+depths, or values outside plausible ranges (set in `scripts/validate-data.js`). Problems already in the historical data
+are listed in `scripts/known-data-issues.json` and ignored, so only new problems fail the check. After fixing or
+accepting issues, regenerate that list with `node scripts/validate-data.js --update-known-issues`.
+
 ## GitHub Pages Deployment
 
-This project is automatically deployed to GitHub Pages using GitHub Actions. The deployment workflow is triggered on every push to the `main` branch and builds the site using the `npm run build` command before publishing to the `gh-pages` branch. You can view the live site at your repository's GitHub Pages URL once deployment is complete.
+This project is automatically deployed to GitHub Pages using GitHub Actions. The deployment workflow is triggered on every push to the `main` branch, runs the same checks as CI, and builds the site using the `npm run build` command before publishing to the `gh-pages` branch. You can view the live site at your repository's GitHub Pages URL once deployment is complete.
