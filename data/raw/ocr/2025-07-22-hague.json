@@ -1,12 +1,12 @@
 {
   "lake": "Hague",
   "date": "2025-07-22T11:00:00-07:00",
-  "source": "ocr/2025-07-22-hague.json",
-  "station": "DWH",
-  "samplers": ["Gina", "Slawka"],
+  "source": "photo pasted in chat (images/1.jpg, downscaled 2000x1506)",
+  "samplers": ["Gima", "SLAWKA"],
   "weather": "sunny, quiet, no wind",
   "air_temperature": 23.5,
   "secchi_depth": [5.5, 6],
+  "ocr_notes": ["Right page has no lake name; identified as Hague from the facing GUNFLINT page, 16 depths (0-15m) and SPC rising below 12m", "Time written \"11:00 AM\"; who \"Gima and SLAWKA\"; weather written \"no wimp\" (no wind)", "pH column written about half a row higher than the other columns; 16 entries, matched row for row", "DO 7m 9.76, last digit overwritten", "TDS written with trailing zero (35.10)"],
   "measurements": [
     {"depth": 0, "temperature": 24, "DO": 7.73, "SPC": 51.6, "TDS": 33.8, "PH": 7.43},
     {"depth": 1, "temperature": 23.9, "DO": 7.65, "SPC": 51.6, "TDS": 33.8, "PH": 7.57},
