@@ -1,0 +1,32 @@
+{
+  "lake": "Gunflint",
+  "date": "2021-03-31T04:10:00-07:00",
+  "source": "csv/gunflint-lake.csv",
+  "station": "DWG",
+  "samplers": ["Helen and Autumn"],
+  "weather": "overcast, light breeze",
+  "air_temperature": 12.5,
+  "secchi_depth": [4.5, 4.6],
+  "nitrogen": 0.186,
+  "phosphorus": 0.0041,
+  "data_notes": null,
+  "measurements": [
+    {"depth": 0, "temperature": 8.2, "DO": 13.68, "SPC": 48.8, "TDS": 31.85, "PH": 8.01},
+    {"depth": 1, "temperature": 8.1, "DO": 14.32, "SPC": 48.6, "TDS": 31.85, "PH": 6.98},
+    {"depth": 2, "temperature": 7.2, "DO": 14.44, "SPC": 48.7, "TDS": 31.85, "PH": 6.67},
+    {"depth": 3, "temperature": 7.1, "DO": 13.97, "SPC": 48.7, "TDS": 31.85, "PH": 6.6},
+    {"depth": 4, "temperature": 6.9, "DO": 14, "SPC": 48.7, "TDS": 31.85, "PH": 6.56},
+    {"depth": 5, "temperature": 6.8, "DO": 13.9, "SPC": 48.6, "TDS": 31.85, "PH": 6.53},
+    {"depth": 6, "temperature": 6.6, "DO": 13.6, "SPC": 48.6, "TDS": 31.85, "PH": 6.49},
+    {"depth": 7, "temperature": 6.5, "DO": 13.42, "SPC": 48.6, "TDS": 31.85, "PH": 6.41},
+    {"depth": 8, "temperature": 6.5, "DO": 13.35, "SPC": 48.6, "TDS": 31.85, "PH": 6.41},
+    {"depth": 9, "temperature": 6.4, "DO": 12.7, "SPC": 48.6, "TDS": 31.85, "PH": 6.39},
+    {"depth": 10, "temperature": 6.3, "DO": 13.13, "SPC": 48.7, "TDS": 31.85, "PH": 6.39},
+    {"depth": 11, "temperature": 6, "DO": 13.24, "SPC": 48.6, "TDS": 31.85, "PH": 6.39},
+    {"depth": 12, "temperature": 5.7, "DO": 12.3, "SPC": 48.6, "TDS": 31.85, "PH": 6.33},
+    {"depth": 13, "temperature": 5.7, "DO": 11.9, "SPC": 48.8, "TDS": 31.85, "PH": 6.34},
+    {"depth": 14, "temperature": 5.4, "DO": 12.18, "SPC": 48.5, "TDS": 31.85, "PH": 6.34},
+    {"depth": 15, "temperature": 5.3, "DO": 12.27, "SPC": 48.5, "TDS": 31.85, "PH": 6.35},
+    {"depth": 16, "temperature": 5.3, "DO": 12.06, "SPC": 48.5, "TDS": 31.85, "PH": 6.34}
+  ]
+}

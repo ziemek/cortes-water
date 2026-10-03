@@ -1,0 +1,34 @@
+{
+  "lake": "Gunflint",
+  "date": "2024-08-14T09:30:00-07:00",
+  "source": "csv/gunflint-lake.csv",
+  "station": "DGW",
+  "samplers": [
+    "Gina and Xavier Lee [Egzavier] FOCI student"
+  ],
+  "weather": "hot, cloudy, calm",
+  "air_temperature": 21.4,
+  "secchi_depth": [6.4, 4.6],
+  "nitrogen": null,
+  "phosphorus": null,
+  "data_notes": null,
+  "measurements": [
+    {"depth": 0, "temperature": 24.2, "DO": 6.38, "SPC": 56.4, "TDS": 36.4, "PH": 7.53},
+    {"depth": 1, "temperature": 24.2, "DO": 6.65, "SPC": 56.3, "TDS": 36.4, "PH": 7.52},
+    {"depth": 2, "temperature": 24.2, "DO": 6.88, "SPC": 56.2, "TDS": 36.4, "PH": 7.51},
+    {"depth": 3, "temperature": 24.2, "DO": 6.9, "SPC": 56, "TDS": 36.4, "PH": 7.52},
+    {"depth": 4, "temperature": 23.5, "DO": 7.22, "SPC": 55.1, "TDS": 36.4, "PH": 7.39},
+    {"depth": 5, "temperature": 17.7, "DO": 10.88, "SPC": 50.3, "TDS": 32.5, "PH": 7.19},
+    {"depth": 6, "temperature": 12.3, "DO": 14.01, "SPC": 48.8, "TDS": 31.85, "PH": 7.41},
+    {"depth": 7, "temperature": 10.9, "DO": 10.22, "SPC": 48.2, "TDS": 31.2, "PH": 7.3},
+    {"depth": 8, "temperature": 9.4, "DO": 8.68, "SPC": 48.7, "TDS": 31.85, "PH": 6.71},
+    {"depth": 9, "temperature": 7.7, "DO": 8.57, "SPC": 48.4, "TDS": 31.2, "PH": 6.38},
+    {"depth": 10, "temperature": 6.6, "DO": 8.19, "SPC": 48.7, "TDS": 31.2, "PH": 6.3},
+    {"depth": 11, "temperature": 6.1, "DO": 8.2, "SPC": 48.2, "TDS": 31.2, "PH": 6.29},
+    {"depth": 12, "temperature": 6.2, "DO": 7.4, "SPC": 48.6, "TDS": 31.85, "PH": 6.28},
+    {"depth": 13, "temperature": 6.1, "DO": 6.43, "SPC": 49, "TDS": 32.5, "PH": 6.24},
+    {"depth": 14, "temperature": 6.1, "DO": 4.72, "SPC": 51.1, "TDS": 33.5, "PH": 6.21},
+    {"depth": 15, "temperature": 5.9, "DO": 4.06, "SPC": 52.8, "TDS": 34.45, "PH": 6.24},
+    {"depth": 16, "temperature": 6.1, "DO": 3.46, "SPC": 52.2, "TDS": 35.75, "PH": 6.25}
+  ]
+}

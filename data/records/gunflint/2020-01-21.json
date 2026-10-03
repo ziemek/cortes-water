@@ -1,0 +1,32 @@
+{
+  "lake": "Gunflint",
+  "date": "2020-01-21T16:15:00-08:00",
+  "source": "csv/gunflint-lake.csv",
+  "station": "DWG",
+  "samplers": ["readers: Max and Heidi"],
+  "weather": "Weather: wind, rain, recent melt",
+  "air_temperature": 5.6,
+  "secchi_depth": [3.12, 3.56],
+  "nitrogen": 0.339,
+  "phosphorus": 0.011,
+  "data_notes": "had to go around as the stream between Hague and Gunlint was blocked",
+  "measurements": [
+    {"depth": 0, "temperature": 4.7, "DO": 14.71, "SPC": 47, "TDS": 31.2, "PH": 7.25},
+    {"depth": 1, "temperature": 4.7, "DO": 13.87, "SPC": 47.9, "TDS": 30.55, "PH": 7.05},
+    {"depth": 2, "temperature": 4.7, "DO": 13.43, "SPC": 47.9, "TDS": 30.55, "PH": 6.94},
+    {"depth": 3, "temperature": 4.7, "DO": 13.62, "SPC": 47, "TDS": 31.2, "PH": 6.86},
+    {"depth": 4, "temperature": 4.6, "DO": 13.35, "SPC": 47.7, "TDS": 30.55, "PH": 6.82},
+    {"depth": 5, "temperature": 4.6, "DO": 13.51, "SPC": 47.3, "TDS": 31.02, "PH": 6.82},
+    {"depth": 6, "temperature": 4.6, "DO": 13.35, "SPC": 47.7, "TDS": 30.55, "PH": 6.83},
+    {"depth": 7, "temperature": 4.6, "DO": 15.75, "SPC": 47.9, "TDS": 30.55, "PH": 6.83},
+    {"depth": 8, "temperature": 4.8, "DO": 13.17, "SPC": 46.9, "TDS": 30.55, "PH": 6.85},
+    {"depth": 9, "temperature": 4.7, "DO": 13.03, "SPC": 47.7, "TDS": 30.55, "PH": 6.86},
+    {"depth": 10, "temperature": 4.6, "DO": 13.25, "SPC": 47.2, "TDS": 30.55, "PH": 6.87},
+    {"depth": 11, "temperature": 4.6, "DO": 13.29, "SPC": 47.8, "TDS": 30.55, "PH": 6.89},
+    {"depth": 12, "temperature": 4.6, "DO": 13.2, "SPC": 47.2, "TDS": 30.55, "PH": 6.89},
+    {"depth": 13, "temperature": 4.7, "DO": 13.08, "SPC": 46.7, "TDS": 30.55, "PH": 6.89},
+    {"depth": 14, "temperature": 4.7, "DO": 12.88, "SPC": 47.1, "TDS": 30.55, "PH": 6.9},
+    {"depth": 15, "temperature": 4.6, "DO": 12.99, "SPC": 47.1, "TDS": 30.55, "PH": 6.9},
+    {"depth": 16, "temperature": 4.6, "DO": 13.27, "SPC": 47.5, "TDS": 30.55, "PH": 6.91}
+  ]
+}

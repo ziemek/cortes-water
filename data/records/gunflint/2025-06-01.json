@@ -1,0 +1,28 @@
+{
+  "lake": "Gunflint",
+  "date": "2025-06-01T11:00:00-07:00",
+  "source": "ocr (output not kept)",
+  "samplers": ["Gina", "Ziemer"],
+  "weather": "windy, partly cloudy",
+  "air_temperature": 19,
+  "secchi_depth": [3.6, 3.4],
+  "measurements": [
+    {"depth": 0, "temperature": 17.4, "DO": 9.77, "SPC": 50, "TDS": 32.5, "PH": 7.21},
+    {"depth": 1, "temperature": 17.3, "DO": 9.47, "SPC": 49.9, "TDS": 32.5, "PH": 7.25},
+    {"depth": 2, "temperature": 17.2, "DO": 9.53, "SPC": 49.8, "TDS": 32.5, "PH": 7.29},
+    {"depth": 3, "temperature": 17.2, "DO": 9.42, "SPC": 49.8, "TDS": 32.5, "PH": 7.3},
+    {"depth": 4, "temperature": 15.1, "DO": 11.04, "SPC": 49.4, "TDS": 31.85, "PH": 7.33},
+    {"depth": 5, "temperature": 9.5, "DO": 12.6, "SPC": 49.2, "TDS": 31.85, "PH": 7.08},
+    {"depth": 6, "temperature": 7.3, "DO": 10.95, "SPC": 49.4, "TDS": 31.85, "PH": 6.83},
+    {"depth": 7, "temperature": 6.3, "DO": 11.3, "SPC": 50, "TDS": 32.5, "PH": 6.5},
+    {"depth": 8, "temperature": 6, "DO": 11.07, "SPC": 50, "TDS": 32.5, "PH": 6.52},
+    {"depth": 9, "temperature": 5.3, "DO": 10.81, "SPC": 50.5, "TDS": 33.15, "PH": 6.49},
+    {"depth": 10, "temperature": 5, "DO": 10.24, "SPC": 51.1, "TDS": 33.15, "PH": 6.43},
+    {"depth": 11, "temperature": 4.8, "DO": 9.95, "SPC": 51.6, "TDS": 33.8, "PH": 6.39},
+    {"depth": 12, "temperature": 4.7, "DO": 9.77, "SPC": 51.7, "TDS": 33.8, "PH": 6.38},
+    {"depth": 13, "temperature": 4.6, "DO": 8.82, "SPC": 52, "TDS": 33.8, "PH": 6.37},
+    {"depth": 14, "temperature": 4.5, "DO": 8.75, "SPC": 52.5, "TDS": 33.8, "PH": 6.35},
+    {"depth": 15, "temperature": 4.5, "DO": 7.6, "SPC": 52.5, "TDS": 33.8, "PH": 6.33},
+    {"depth": 16, "temperature": 4.5, "DO": 7.55, "SPC": 53.3, "TDS": 34.45, "PH": 6.29}
+  ]
+}

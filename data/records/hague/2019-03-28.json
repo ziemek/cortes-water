@@ -1,0 +1,28 @@
+{
+  "lake": "Hague",
+  "date": "2019-03-28T13:45:00-07:00",
+  "source": "csv/hague-lake.csv",
+  "station": "DWH",
+  "samplers": ["Mary Claire", "Gina"],
+  "weather": "calm, sunny, some clouds, light wind",
+  "air_temperature": 13,
+  "secchi_depth": [3.9, 3.9],
+  "nitrogen": 0.391,
+  "phosphorus": 0.0214,
+  "data_notes": "\"x\" note:DO recorded in %",
+  "measurements": [
+    {"depth": 0, "temperature": 10.9, "DO": 123.7, "SPC": 46.9, "TDS": 30.55, "PH": 6.53},
+    {"depth": 1, "temperature": 9.7, "DO": 129.6, "SPC": 46.9, "TDS": 30.55, "PH": 6.6},
+    {"depth": 2, "temperature": 9.4, "DO": 117.4, "SPC": 46.9, "TDS": 30.55, "PH": 6.58},
+    {"depth": 3, "temperature": 8.2, "DO": 119.9, "SPC": 47.1, "TDS": 30.55, "PH": 6.45},
+    {"depth": 4, "temperature": 6.9, "DO": 116.5, "SPC": 47, "TDS": 30.55, "PH": 6.38},
+    {"depth": 5, "temperature": 5.8, "DO": 113.5, "SPC": 47.2, "TDS": 30.55, "PH": 6.36},
+    {"depth": 6, "temperature": 5.3, "DO": 108.8, "SPC": 47.1, "TDS": 30.55, "PH": 6.35},
+    {"depth": 7, "temperature": 5, "DO": 106.2, "SPC": 47.2, "TDS": 30.55, "PH": 6.32},
+    {"depth": 8, "temperature": 4.9, "DO": 103.2, "SPC": 47.1, "TDS": 30.55, "PH": 6.3},
+    {"depth": 9, "temperature": 4.9, "DO": 103.3, "SPC": 47.2, "TDS": 30.55, "PH": 6.28},
+    {"depth": 10, "temperature": 4.9, "DO": 103.1, "SPC": 47.1, "TDS": 30.55, "PH": 6.27},
+    {"depth": 11, "temperature": 4.9, "DO": 100.9, "SPC": 47.1, "TDS": 30.55, "PH": 6.25},
+    {"depth": 12, "temperature": 4.9, "DO": 100.8, "SPC": 47.2, "TDS": 30.55, "PH": 6.24}
+  ]
+}

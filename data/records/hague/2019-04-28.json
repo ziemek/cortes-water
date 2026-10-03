@@ -1,0 +1,28 @@
+{
+  "lake": "Hague",
+  "date": "2019-04-28T11:45:00-07:00",
+  "source": "csv/hague-lake.csv",
+  "station": "DWH",
+  "samplers": ["Andrew Smith", "Gina Trzesicka"],
+  "weather": "calm, sunny",
+  "air_temperature": 11.2,
+  "secchi_depth": [3.8, 3],
+  "nitrogen": 0.243,
+  "phosphorus": 0.012,
+  "data_notes": null,
+  "measurements": [
+    {"depth": 0, "temperature": 11.6, "DO": 12.6, "SPC": 46.8, "TDS": 30.55, "PH": 7.05},
+    {"depth": 1, "temperature": 11.5, "DO": 12.6, "SPC": 46.7, "TDS": 30.55, "PH": 6.89},
+    {"depth": 2, "temperature": 11.2, "DO": 12.5, "SPC": 46.7, "TDS": 30.55, "PH": 6.93},
+    {"depth": 3, "temperature": 11.1, "DO": 12.4, "SPC": 46.7, "TDS": 30.55, "PH": 6.89},
+    {"depth": 4, "temperature": 11.1, "DO": 12.45, "SPC": 46.7, "TDS": 30.55, "PH": 6.87},
+    {"depth": 5, "temperature": 11, "DO": 12.2, "SPC": 46.7, "TDS": 30.55, "PH": 6.84},
+    {"depth": 6, "temperature": 10.8, "DO": 12.3, "SPC": 46.7, "TDS": 30.55, "PH": 6.82},
+    {"depth": 7, "temperature": 10.7, "DO": 12.25, "SPC": 46.7, "TDS": 30.55, "PH": 6.79},
+    {"depth": 8, "temperature": 9.2, "DO": 12.09, "SPC": 47, "TDS": 30.55, "PH": 6.81},
+    {"depth": 9, "temperature": 8, "DO": 11.45, "SPC": 47.3, "TDS": 30.55, "PH": 6.71},
+    {"depth": 10, "temperature": 7.3, "DO": 11.15, "SPC": 47.3, "TDS": 30.55, "PH": 6.59},
+    {"depth": 11, "temperature": 7.1, "DO": 10.8, "SPC": 47.4, "TDS": 30.55, "PH": 6.46},
+    {"depth": 12, "temperature": 7, "DO": 7.1, "SPC": 47.4, "TDS": 30.55, "PH": 6.38}
+  ]
+}

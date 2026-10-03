@@ -1,0 +1,33 @@
+{
+  "lake": "Gunflint",
+  "date": "2022-12-26T10:30:00-08:00",
+  "source": "csv/gunflint-lake.csv",
+  "station": "DWG",
+  "samplers": ["Gina and Ziemek (Gina's son)"],
+  "weather": "calm",
+  "air_temperature": 7.1,
+  "secchi_depth": [2.7, 3.07],
+  "nitrogen": null,
+  "phosphorus": null,
+  "data_notes": "N,P not sampled",
+  "measurements": [
+    {"depth": 0, "temperature": 3.2, "DO": 19.19, "SPC": 51.7, "TDS": 33.8, "PH": 6.51},
+    {"depth": 1, "temperature": 3, "DO": 17.22, "SPC": 51.8, "TDS": 33.8, "PH": 6.34},
+    {"depth": 2, "temperature": 3, "DO": 15.19, "SPC": 51.8, "TDS": 33.8, "PH": 6.17},
+    {"depth": 3, "temperature": 3, "DO": 13.9, "SPC": 51.7, "TDS": 33.8, "PH": 6.66},
+    {"depth": 4, "temperature": 3, "DO": 13.36, "SPC": 51.7, "TDS": 33.8, "PH": 6.06},
+    {"depth": 5, "temperature": 3, "DO": 13.06, "SPC": 51.7, "TDS": 33.8, "PH": 6.05},
+    {"depth": 6, "temperature": 3, "DO": 12.96, "SPC": 51.6, "TDS": 33.8, "PH": 6.06},
+    {"depth": 7, "temperature": 3.1, "DO": 12.87, "SPC": 51.8, "TDS": 33.8, "PH": 6.06},
+    {"depth": 8, "temperature": 3.1, "DO": 12.87, "SPC": 51.5, "TDS": 33.8, "PH": 6.08},
+    {"depth": 9, "temperature": 3.1, "DO": 12.64, "SPC": 51.7, "TDS": 33.8, "PH": 6.08},
+    {"depth": 10, "temperature": 3.2, "DO": 12.99, "SPC": 51.8, "TDS": 33.8, "PH": 6.1},
+    {"depth": 11, "temperature": 3.1, "DO": 12.48, "SPC": 52, "TDS": 33.8, "PH": 6.11},
+    {"depth": 12, "temperature": 3.2, "DO": 12.45, "SPC": 51.7, "TDS": 33.8, "PH": 6.12},
+    {"depth": 13, "temperature": 3.2, "DO": 12.46, "SPC": 52.05, "TDS": 33.8, "PH": 6.12},
+    {"depth": 14, "temperature": 3.2, "DO": 12.27, "SPC": 52, "TDS": 33.8, "PH": 6.14},
+    {"depth": 15, "temperature": 3.3, "DO": 12.18, "SPC": 52.1, "TDS": 33.8, "PH": 6.1},
+    {"depth": 16, "temperature": 3.4, "DO": 11.99, "SPC": 52.2, "TDS": 33.8, "PH": 6.17},
+    {"depth": 17, "temperature": 3.4, "DO": 11.9, "SPC": 52.4, "TDS": 33.8, "PH": 6.2}
+  ]
+}

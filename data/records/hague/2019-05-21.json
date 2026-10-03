@@ -1,0 +1,28 @@
+{
+  "lake": "Hague",
+  "date": "2019-05-21T11:00:00-07:00",
+  "source": "csv/hague-lake.csv",
+  "station": "DWH",
+  "samplers": ["Gina Trzesicka", "Ania Jasiak (Gina's guest)"],
+  "weather": "Windy, cloudy",
+  "air_temperature": 18.6,
+  "secchi_depth": [3.1, 3.1],
+  "nitrogen": 0.255,
+  "phosphorus": 0.0062,
+  "data_notes": null,
+  "measurements": [
+    {"depth": 0, "temperature": 19.1, "DO": 9.7, "SPC": 46.7, "TDS": 30.55, "PH": 6.75},
+    {"depth": 1, "temperature": 19, "DO": 9.27, "SPC": 46.7, "TDS": 30.55, "PH": 6.84},
+    {"depth": 2, "temperature": 18.9, "DO": 9.3, "SPC": 47, "TDS": 30.55, "PH": 6.89},
+    {"depth": 3, "temperature": 19, "DO": 8.95, "SPC": 46.6, "TDS": 30.55, "PH": 6.92},
+    {"depth": 4, "temperature": 16, "DO": 10.73, "SPC": 46.2, "TDS": 29.9, "PH": 7.03},
+    {"depth": 5, "temperature": 14, "DO": 11.3, "SPC": 46.2, "TDS": 29.9, "PH": 6.93},
+    {"depth": 6, "temperature": 12.9, "DO": 11.01, "SPC": 45.8, "TDS": 29.9, "PH": 6.72},
+    {"depth": 7, "temperature": 11.1, "DO": 9.92, "SPC": 45.6, "TDS": 29.25, "PH": 6.47},
+    {"depth": 8, "temperature": 10.4, "DO": 9.83, "SPC": 46.1, "TDS": 29.9, "PH": 6.36},
+    {"depth": 9, "temperature": 9.3, "DO": 8.52, "SPC": 46.1, "TDS": 29.9, "PH": 6.19},
+    {"depth": 10, "temperature": 9.6, "DO": 8.1, "SPC": 45.7, "TDS": 29.9, "PH": 6.13},
+    {"depth": 11, "temperature": 8.9, "DO": 7.6, "SPC": 46.2, "TDS": 30.55, "PH": 6.06},
+    {"depth": 12, "temperature": 8.7, "DO": 6.89, "SPC": 46.1, "TDS": 29.9, "PH": 6.01}
+  ]
+}

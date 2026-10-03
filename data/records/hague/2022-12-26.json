@@ -1,0 +1,32 @@
+{
+  "lake": "Hague",
+  "date": "2022-12-26T09:30:00-08:00",
+  "source": "csv/hague-lake.csv",
+  "station": "DWH",
+  "samplers": ["Gina and Ziemek (Gina's son)"],
+  "weather": "calm, light breeze",
+  "air_temperature": 7.7,
+  "secchi_depth": [3.5, 4.37],
+  "nitrogen": null,
+  "phosphorus": null,
+  "data_notes": "December 23, 24, 25 - lakes partly frozen, could be 3/4, but ice not strong enough to walk on",
+  "measurements": [
+    {"depth": 0, "temperature": 3.2, "DO": 20.27, "SPC": 49.7, "TDS": 32.5, "PH": 6.53},
+    {"depth": 1, "temperature": 3.1, "DO": 16.7, "SPC": 49.7, "TDS": 32.5, "PH": 6.9},
+    {"depth": 2, "temperature": 3.1, "DO": 15.6, "SPC": 49.8, "TDS": 32.5, "PH": 5.85},
+    {"depth": 3, "temperature": 3.1, "DO": 15.12, "SPC": 49.7, "TDS": 32.5, "PH": 55.85},
+    {"depth": 4, "temperature": 3.1, "DO": 14.53, "SPC": 49.7, "TDS": 32.5, "PH": 5.9},
+    {"depth": 5, "temperature": 3.1, "DO": 14.75, "SPC": 49.7, "TDS": 32.5, "PH": 5.93},
+    {"depth": 6, "temperature": 3.1, "DO": 14.67, "SPC": 49.7, "TDS": 32.5, "PH": 5.97},
+    {"depth": 7, "temperature": 3.1, "DO": 14.62, "SPC": 49.7, "TDS": 32.5, "PH": 6},
+    {"depth": 8, "temperature": 3.1, "DO": 14.54, "SPC": 49.7, "TDS": 32.5, "PH": 6.02},
+    {"depth": 9, "temperature": 3.1, "DO": 14.53, "SPC": 49.7, "TDS": 32.5, "PH": 6.04},
+    {"depth": 10, "temperature": 3.1, "DO": 14.48, "SPC": 49.7, "TDS": 32.5, "PH": 6.05},
+    {"depth": 11, "temperature": 3.1, "DO": 14.45, "SPC": 49.7, "TDS": 32.5, "PH": 6.07},
+    {"depth": 12, "temperature": 3.1, "DO": 14.48, "SPC": 49.7, "TDS": 32.5, "PH": 6.09},
+    {"depth": 13, "temperature": 3.1, "DO": 14.44, "SPC": 49.7, "TDS": 32.5, "PH": 6.1},
+    {"depth": 14, "temperature": 3.1, "DO": 14.46, "SPC": 49.7, "TDS": 32.5, "PH": 6.11},
+    {"depth": 15, "temperature": 3.1, "DO": 14.32, "SPC": 49.7, "TDS": 32.5, "PH": 6.12},
+    {"depth": 16, "temperature": 3.2, "DO": 10.6, "SPC": 49.6, "TDS": 32.5, "PH": 6.11}
+  ]
+}

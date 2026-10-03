@@ -1,0 +1,31 @@
+{
+  "lake": "Gunflint",
+  "date": "2019-04-28T11:00:00-07:00",
+  "source": "csv/gunflint-lake.csv",
+  "station": "DWG",
+  "samplers": ["Andrew Smith", "Gina Trzesicka"],
+  "weather": "calm, sunny",
+  "air_temperature": 20.5,
+  "secchi_depth": [3.5, 4.6],
+  "nitrogen": 0.29,
+  "phosphorus": 0.0066,
+  "data_notes": null,
+  "measurements": [
+    {"depth": 0, "temperature": 12.5, "DO": 11.6, "SPC": 49.3, "TDS": 38.85, "PH": 7.6},
+    {"depth": 1, "temperature": 12, "DO": 11.73, "SPC": 48.8, "TDS": 31.85, "PH": 6.67},
+    {"depth": 2, "temperature": 12, "DO": 11.44, "SPC": 48.8, "TDS": 31.85, "PH": 6.48},
+    {"depth": 3, "temperature": 11.9, "DO": 10.98, "SPC": 48.8, "TDS": 31.85, "PH": 6.27},
+    {"depth": 4, "temperature": 11.4, "DO": 11.68, "SPC": 48.6, "TDS": 31.85, "PH": 6.34},
+    {"depth": 5, "temperature": 7.5, "DO": 12.3, "SPC": 47.9, "TDS": 31.3, "PH": 6.73},
+    {"depth": 6, "temperature": 5.8, "DO": 11.1, "SPC": 47.2, "TDS": 30.55, "PH": 6.33},
+    {"depth": 7, "temperature": 4.8, "DO": 12.25, "SPC": 46.3, "TDS": 30.55, "PH": 6.15},
+    {"depth": 9, "temperature": 4.6, "DO": 12.2, "SPC": 46.8, "TDS": 30.55, "PH": 6.07},
+    {"depth": 10, "temperature": 4.5, "DO": 12.3, "SPC": 46.8, "TDS": 30.55, "PH": 6.05},
+    {"depth": 11, "temperature": 4.4, "DO": 12.12, "SPC": 46.8, "TDS": 30.55, "PH": 6.04},
+    {"depth": 12, "temperature": 4.4, "DO": 11.89, "SPC": 46.8, "TDS": 30.55, "PH": 6.03},
+    {"depth": 13, "temperature": 4.3, "DO": 11.7, "SPC": 46.9, "TDS": 30.55, "PH": 6.02},
+    {"depth": 14, "temperature": 4.3, "DO": 11.9, "SPC": 46.9, "TDS": 30.55, "PH": 6.02},
+    {"depth": 15, "temperature": 4.3, "DO": 11.64, "SPC": 46.9, "TDS": 30.55, "PH": 6.02},
+    {"depth": 16, "temperature": 4.2, "DO": 11.3, "SPC": 47.1, "TDS": 30.55, "PH": 6.02}
+  ]
+}

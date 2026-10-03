@@ -1,0 +1,32 @@
+{
+  "lake": "Gunflint",
+  "date": "2023-12-23T11:10:00-08:00",
+  "source": "csv/gunflint-lake.csv",
+  "station": "DWG",
+  "samplers": ["Gina and ziemek"],
+  "weather": "weather - not noted",
+  "air_temperature": 7.2,
+  "secchi_depth": [2.9, 3.7],
+  "nitrogen": null,
+  "phosphorus": null,
+  "data_notes": "obstacles between Gunflint and Hague, (fallen trees)",
+  "measurements": [
+    {"depth": 0, "temperature": 7.8, "DO": 14.21, "SPC": 67, "TDS": 42.25, "PH": 6.81},
+    {"depth": 1, "temperature": 7.5, "DO": 12.9, "SPC": 50.8, "TDS": 33.15, "PH": 6.74},
+    {"depth": 2, "temperature": 7.7, "DO": 12.56, "SPC": 49.7, "TDS": 32.5, "PH": 6.69},
+    {"depth": 3, "temperature": 7.4, "DO": 12.57, "SPC": 50, "TDS": 32.5, "PH": 6.65},
+    {"depth": 4, "temperature": 7.7, "DO": 12.21, "SPC": 50.5, "TDS": 32.5, "PH": 6.7},
+    {"depth": 5, "temperature": 7.8, "DO": 11.7, "SPC": 49.9, "TDS": 32.5, "PH": 6.73},
+    {"depth": 6, "temperature": 7.5, "DO": 11.5, "SPC": 51.1, "TDS": 33.15, "PH": 7.72},
+    {"depth": 7, "temperature": 7.2, "DO": 11.7, "SPC": 51.7, "TDS": 33.15, "PH": 6.74},
+    {"depth": 8, "temperature": 7.9, "DO": 11.4, "SPC": 51.4, "TDS": 33.15, "PH": 6.75},
+    {"depth": 9, "temperature": 7.1, "DO": 11.3, "SPC": 51.5, "TDS": 33.15, "PH": 6.75},
+    {"depth": 10, "temperature": 7.2, "DO": 11.8, "SPC": 51.3, "TDS": 33.8, "PH": 6.75},
+    {"depth": 11, "temperature": 7.3, "DO": 11.5, "SPC": 51.5, "TDS": 33.15, "PH": 6.75},
+    {"depth": 12, "temperature": 7.2, "DO": 11.5, "SPC": 51.8, "TDS": 33.15, "PH": 6.72},
+    {"depth": 13, "temperature": 7.1, "DO": 10.04, "SPC": 51.9, "TDS": 33.15, "PH": 6.61},
+    {"depth": 14, "temperature": 6.2, "DO": 5.35, "SPC": 52.9, "TDS": 33.15, "PH": 6.33},
+    {"depth": 15, "temperature": 5.5, "DO": 3.2, "SPC": 55, "TDS": 33.15, "PH": 6.11},
+    {"depth": 16, "temperature": 5.7, "DO": 2.58, "SPC": 56, "TDS": 33.15, "PH": 6.11}
+  ]
+}

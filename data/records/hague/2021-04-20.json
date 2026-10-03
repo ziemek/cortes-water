@@ -1,0 +1,28 @@
+{
+  "lake": "Hague",
+  "date": "2021-04-20T11:15:00-07:00",
+  "source": "csv/hague-lake.csv",
+  "station": "DWH",
+  "samplers": ["Carrie and Gina"],
+  "weather": "sunny, calm",
+  "air_temperature": 18.4,
+  "secchi_depth": [3.7, 4.4],
+  "nitrogen": null,
+  "phosphorus": null,
+  "data_notes": "no lab samples, but see Dillon Creek for April in DWG",
+  "measurements": [
+    {"depth": 0, "temperature": 15.9, "DO": 11.72, "SPC": 48.5, "TDS": 31.2, "PH": 7.07},
+    {"depth": 1, "temperature": 15.7, "DO": 12.11, "SPC": 48.4, "TDS": 31.2, "PH": 7.06},
+    {"depth": 2, "temperature": 12, "DO": 13.65, "SPC": 48, "TDS": 31.2, "PH": 7.35},
+    {"depth": 3, "temperature": 10.2, "DO": 14, "SPC": 47.9, "TDS": 31.2, "PH": 7.12},
+    {"depth": 4, "temperature": 9.6, "DO": 14.17, "SPC": 47.8, "TDS": 31.2, "PH": 6.92},
+    {"depth": 5, "temperature": 8.8, "DO": 14.27, "SPC": 47.8, "TDS": 31.2, "PH": 6.97},
+    {"depth": 6, "temperature": 8.6, "DO": 14.38, "SPC": 47.8, "TDS": 31.2, "PH": 6.96},
+    {"depth": 7, "temperature": 8.3, "DO": 13.31, "SPC": 49.9, "TDS": 31.2, "PH": 6.81},
+    {"depth": 8, "temperature": 8.2, "DO": 13.18, "SPC": 48, "TDS": 31.2, "PH": 6.73},
+    {"depth": 9, "temperature": 8.1, "DO": 12.9, "SPC": 48, "TDS": 31.2, "PH": 6.7},
+    {"depth": 10, "temperature": 7.8, "DO": 12.11, "SPC": 48.2, "TDS": 31.2, "PH": 6.65},
+    {"depth": 11, "temperature": 7.2, "DO": 12.16, "SPC": 48.2, "TDS": 31.2, "PH": 6.59},
+    {"depth": 12, "temperature": 7.7, "DO": 11.77, "SPC": 48.3, "TDS": 31.2, "PH": 6.57}
+  ]
+}

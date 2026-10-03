@@ -1,0 +1,32 @@
+{
+  "lake": "Gunflint",
+  "date": "2024-10-13T14:10:00-07:00",
+  "source": "csv/gunflint-lake.csv",
+  "station": "DGW",
+  "samplers": ["Gina", "Wisia (Akshara)"],
+  "weather": "calm, cloudy",
+  "air_temperature": 18,
+  "secchi_depth": [4.3, 4.3],
+  "nitrogen": null,
+  "phosphorus": null,
+  "data_notes": null,
+  "measurements": [
+    {"depth": 0, "temperature": 15.9, "DO": 4.31, "SPC": 53.8, "TDS": 35.1, "PH": 7.68},
+    {"depth": 1, "temperature": 15.9, "DO": 5.19, "SPC": 53.9, "TDS": 35.1, "PH": 7.53},
+    {"depth": 2, "temperature": 15.7, "DO": 6.36, "SPC": 54.5, "TDS": 35.1, "PH": 7.47},
+    {"depth": 3, "temperature": 15.7, "DO": 7.18, "SPC": 53.9, "TDS": 35.1, "PH": 7.45},
+    {"depth": 4, "temperature": 15.7, "DO": 7.48, "SPC": 54.1, "TDS": 35.1, "PH": 7.42},
+    {"depth": 5, "temperature": 15.3, "DO": 7.95, "SPC": 54.8, "TDS": 35.1, "PH": 7.4},
+    {"depth": 6, "temperature": 15.1, "DO": 8.43, "SPC": 54.2, "TDS": 31.1, "PH": 7.3},
+    {"depth": 7, "temperature": 12.5, "DO": 9.5, "SPC": 49.5, "TDS": 31.85, "PH": 6.72},
+    {"depth": 8, "temperature": 10.4, "DO": 8, "SPC": 49.1, "TDS": 31.85, "PH": 6.31},
+    {"depth": 9, "temperature": 8.5, "DO": 7.74, "SPC": 48.8, "TDS": 31.2, "PH": 6.24},
+    {"depth": 10, "temperature": 7.2, "DO": 8.31, "SPC": 48.8, "TDS": 31.85, "PH": 6.23},
+    {"depth": 11, "temperature": 6.5, "DO": 8.1, "SPC": 48.8, "TDS": 31.85, "PH": 6.22},
+    {"depth": 12, "temperature": 6.1, "DO": 7.67, "SPC": 48.6, "TDS": 31.85, "PH": 6.2},
+    {"depth": 13, "temperature": 6.5, "DO": 7.07, "SPC": 51.6, "TDS": 33.15, "PH": 6.13},
+    {"depth": 14, "temperature": 6.4, "DO": 4.91, "SPC": 52.2, "TDS": 34.45, "PH": 6.09},
+    {"depth": 15, "temperature": 6.5, "DO": 4.11, "SPC": 54.9, "TDS": 35.75, "PH": 6.08},
+    {"depth": 16, "temperature": 6.2, "DO": 3.19, "SPC": 59.9, "TDS": 39, "PH": 6.09}
+  ]
+}

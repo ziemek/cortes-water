@@ -1,0 +1,29 @@
+{
+  "lake": "Hague",
+  "date": "2023-08-23T11:00:00-07:00",
+  "source": "csv/hague-lake.csv",
+  "station": "DWH",
+  "samplers": ["Sue Ellingsen", "Gina"],
+  "weather": "nice and sunny",
+  "air_temperature": 18.2,
+  "secchi_depth": [5.2, 4.8],
+  "nitrogen": null,
+  "phosphorus": null,
+  "data_notes": "after that, longer break due to vacations",
+  "measurements": [
+    {"depth": 0, "temperature": 21.3, "DO": 5.65, "SPC": 52.8, "TDS": 34.45, "PH": 8.13},
+    {"depth": 1, "temperature": 21.3, "DO": 6.6, "SPC": 52.8, "TDS": 34.45, "PH": 8.14},
+    {"depth": 2, "temperature": 21.3, "DO": 7.05, "SPC": 52.8, "TDS": 34.45, "PH": 8.14},
+    {"depth": 3, "temperature": 21.2, "DO": 7.42, "SPC": 52.7, "TDS": 34.45, "PH": 8.13},
+    {"depth": 4, "temperature": 21.1, "DO": 7.63, "SPC": 52.7, "TDS": 34.45, "PH": 8.13},
+    {"depth": 5, "temperature": 21, "DO": 7.75, "SPC": 52.7, "TDS": 34.45, "PH": 6.13},
+    {"depth": 6, "temperature": 21, "DO": 7.88, "SPC": 52.7, "TDS": 34.45, "PH": 8.11},
+    {"depth": 7, "temperature": 16, "DO": 10.41, "SPC": 51.1, "TDS": 33.15, "PH": 7.58},
+    {"depth": 8, "temperature": 12.5, "DO": 9.48, "SPC": 49.7, "TDS": 32.5, "PH": 7.12},
+    {"depth": 9, "temperature": 10.8, "DO": 5.46, "SPC": 50.8, "TDS": 33.15, "PH": 6.64},
+    {"depth": 10, "temperature": 10.5, "DO": 3.68, "SPC": 52.8, "TDS": 34.45, "PH": 6.59},
+    {"depth": 11, "temperature": 9.7, "DO": 1.62, "SPC": 55.5, "TDS": 35.75, "PH": 6.67},
+    {"depth": 12, "temperature": 9.5, "DO": 1.47, "SPC": 56.5, "TDS": 37.05, "PH": 6.73},
+    {"depth": 13, "temperature": 9.5, "DO": 1.4, "SPC": 58.4, "TDS": 37.7, "PH": 6.81}
+  ]
+}

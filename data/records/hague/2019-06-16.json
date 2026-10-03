@@ -1,0 +1,28 @@
+{
+  "lake": "Hague",
+  "date": "2019-06-16T15:50:00-07:00",
+  "source": "csv/hague-lake.csv",
+  "station": "DWH",
+  "samplers": ["Akshara Sangiorgio", "Gina"],
+  "weather": "sunny light breeze, hazy",
+  "air_temperature": 30,
+  "secchi_depth": [4.5, 6.6],
+  "nitrogen": 0.18,
+  "phosphorus": 0.0057,
+  "data_notes": null,
+  "measurements": [
+    {"depth": 0, "temperature": 24, "DO": 9.28, "SPC": 49.5, "TDS": 31.85, "PH": 7.25},
+    {"depth": 1, "temperature": 23.8, "DO": 9.05, "SPC": 28.3, "TDS": 31.2, "PH": 6.93},
+    {"depth": 2, "temperature": 23.4, "DO": 8.95, "SPC": 48.1, "TDS": 31.2, "PH": 6.76},
+    {"depth": 3, "temperature": 22.7, "DO": 8.92, "SPC": 48.2, "TDS": 31.2, "PH": 6.69},
+    {"depth": 4, "temperature": 22.4, "DO": 8.9, "SPC": 48, "TDS": 31.2, "PH": 6.62},
+    {"depth": 5, "temperature": 18, "DO": 10.86, "SPC": 46.4, "TDS": 29.9, "PH": 6.83},
+    {"depth": 6, "temperature": 14.2, "DO": 12.91, "SPC": 46.5, "TDS": 29.25, "PH": 6.69},
+    {"depth": 7, "temperature": 12.5, "DO": 11.89, "SPC": 45.4, "TDS": 29.9, "PH": 6.55},
+    {"depth": 8, "temperature": 11.3, "DO": 9.57, "SPC": 46.2, "TDS": 29.9, "PH": 6.41},
+    {"depth": 9, "temperature": 10, "DO": 7.86, "SPC": 46.3, "TDS": 29.9, "PH": 6.25},
+    {"depth": 10, "temperature": 9.4, "DO": 5.78, "SPC": 46, "TDS": 30.55, "PH": 6.09},
+    {"depth": 11, "temperature": 9.5, "DO": 4.16, "SPC": 46.4, "TDS": 30.55, "PH": 5.95},
+    {"depth": 12, "temperature": 9.4, "DO": 3.79, "SPC": 46.6, "TDS": 30.55, "PH": 5.88}
+  ]
+}

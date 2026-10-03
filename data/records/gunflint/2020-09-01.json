@@ -1,0 +1,32 @@
+{
+  "lake": "Gunflint",
+  "date": "2020-09-01T22:22:00-07:00",
+  "source": "csv/gunflint-lake.csv",
+  "station": "DWG",
+  "samplers": ["Autumn and Sarah Moore"],
+  "weather": "calm sunset, late evening",
+  "air_temperature": null,
+  "secchi_depth": [5.4, 4.2],
+  "nitrogen": null,
+  "phosphorus": null,
+  "data_notes": null,
+  "measurements": [
+    {"depth": 0, "temperature": 21.9, "DO": 8.01, "SPC": 58.1, "TDS": 34.45, "PH": 7.1},
+    {"depth": 1, "temperature": 21.5, "DO": 8.09, "SPC": 52.5, "TDS": 34.45, "PH": 7.13},
+    {"depth": 2, "temperature": 22, "DO": 8.07, "SPC": 52.4, "TDS": 33.8, "PH": 7.15},
+    {"depth": 3, "temperature": 21.5, "DO": 7.92, "SPC": 52.6, "TDS": 33.8, "PH": 7.09},
+    {"depth": 4, "temperature": 21, "DO": 7.94, "SPC": 52.5, "TDS": 33.8, "PH": 7.03},
+    {"depth": 5, "temperature": 20.4, "DO": 8.03, "SPC": 52, "TDS": 33.8, "PH": 7.05},
+    {"depth": 6, "temperature": 15, "DO": 9.95, "SPC": 47.4, "TDS": 30.55, "PH": 6.97},
+    {"depth": 7, "temperature": 12.1, "DO": 10.09, "SPC": 46.7, "TDS": 30.55, "PH": 6.76},
+    {"depth": 8, "temperature": 10.3, "DO": 10.11, "SPC": 46.1, "TDS": 30.55, "PH": 6.63},
+    {"depth": 9, "temperature": 8.7, "DO": 9.36, "SPC": 45.6, "TDS": 29.2, "PH": 6.51},
+    {"depth": 10, "temperature": 7.2, "DO": 9.05, "SPC": 45.4, "TDS": 29.9, "PH": 6.23},
+    {"depth": 11, "temperature": 6.8, "DO": 8.49, "SPC": 45.7, "TDS": 29.9, "PH": 6.05},
+    {"depth": 12, "temperature": 6.5, "DO": 8.4, "SPC": 45.6, "TDS": 29.9, "PH": 5.98},
+    {"depth": 13, "temperature": 6.3, "DO": 7.9, "SPC": 47.4, "TDS": 30.55, "PH": 5.91},
+    {"depth": 14, "temperature": 6.6, "DO": 6.51, "SPC": 48.5, "TDS": 31.2, "PH": 5.86},
+    {"depth": 15, "temperature": 6.3, "DO": 4.82, "SPC": 49.2, "TDS": 31.8, "PH": 5.81},
+    {"depth": 16, "temperature": 6.1, "DO": 4.46, "SPC": 50.1, "TDS": 32.5, "PH": 5.78}
+  ]
+}

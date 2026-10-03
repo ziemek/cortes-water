@@ -1,0 +1,27 @@
+{
+  "lake": "Hague",
+  "date": "2019-12-15T11:35:00-08:00",
+  "source": "csv/hague-lake.csv",
+  "station": "DWH",
+  "samplers": ["na"],
+  "weather": "clear",
+  "air_temperature": 15,
+  "secchi_depth": [6.1, 5.3],
+  "nitrogen": 0.31,
+  "phosphorus": 0.012,
+  "data_notes": "\"na\" = not measured",
+  "measurements": [
+    {"depth": 1, "temperature": 8.3, "DO": 11.4, "SPC": 48, "TDS": 31.2, "PH": 6.99},
+    {"depth": 2, "temperature": 7.9, "DO": 10.1, "SPC": 47.4, "TDS": 31, "PH": 6.89},
+    {"depth": 3, "temperature": 7.8, "DO": 10, "SPC": 47.6, "TDS": 30, "PH": 6.9},
+    {"depth": 4, "temperature": 7.9, "DO": 10.64, "SPC": 47.6, "TDS": 31.2, "PH": 6.91},
+    {"depth": 5, "temperature": 7.7, "DO": 9.8, "SPC": 47.5, "TDS": 31.2, "PH": 6.94},
+    {"depth": 6, "temperature": 7.9, "DO": 9.78, "SPC": 47.5, "TDS": 31.2, "PH": 6.96},
+    {"depth": 7, "temperature": 7.9, "DO": 9.84, "SPC": 47.6, "TDS": 31.2, "PH": 6.99},
+    {"depth": 8, "temperature": 7.9, "DO": 11.7, "SPC": 47.4, "TDS": 31.2, "PH": 7},
+    {"depth": 9, "temperature": 7.9, "DO": 11.8, "SPC": 47.5, "TDS": 31.2, "PH": 7.01},
+    {"depth": 10, "temperature": 8, "DO": 12.03, "SPC": 47.7, "TDS": 31.2, "PH": 7.02},
+    {"depth": 11, "temperature": 7.6, "DO": 11.2, "SPC": 47.6, "TDS": 31.2, "PH": 7.02},
+    {"depth": 12, "temperature": 7.6, "DO": 11.3, "SPC": 47.6, "TDS": 31.2, "PH": 7.02}
+  ]
+}

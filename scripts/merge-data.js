@@ -3,8 +3,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const DATA_DIR = path.resolve(__dirname, '../src/data');
-const OUTPUT_FILE = path.join(DATA_DIR, 'water-data.json');
+const RECORDS_DIR = path.resolve(__dirname, '../data/records');
+const OUTPUT_FILE = path.resolve(__dirname, '../src/data/water-data.json');
 
 // en-CA formats dates as YYYY-MM-DD
 const pacificDateFormat = new Intl.DateTimeFormat('en-CA', {
@@ -19,124 +19,85 @@ function getDateKey(dateString) {
   return pacificDateFormat.format(new Date(dateString));
 }
 
-function getMergeKey(record) {
-  // Create merge key: <lake-name>-<date without time>
-  const lakeName = record.lake.toLowerCase();
-  const dateKey = getDateKey(record.date);
-  return `${lakeName}-${dateKey}`;
+// Each record file is data/records/<lake>/<YYYY-MM-DD>.json and must match
+// the lake and Pacific date inside it.
+function checkRecord(record, lakeDir, fileName) {
+  if (!record || typeof record !== 'object' || Array.isArray(record)) {
+    return 'must contain a single record object';
+  }
+  if (!record.lake || !record.date || isNaN(new Date(record.date))) {
+    return `missing lake or valid date (${record.lake}, ${record.date})`;
+  }
+  if (record.lake.toLowerCase() !== lakeDir) {
+    return `lake "${record.lake}" does not match folder "${lakeDir}"`;
+  }
+  const expected = `${getDateKey(record.date)}.json`;
+  if (fileName !== expected) {
+    return `date ${record.date} should be in ${expected}`;
+  }
+  return null;
 }
 
 function mergeWaterData() {
-  console.log('Starting water data merge...');
-
-  // Check if data directory exists
-  if (!fs.existsSync(DATA_DIR)) {
-    console.error(`Error: Data directory ${DATA_DIR} does not exist`);
-    process.exit(1);
-  }
-
-  // Get all JSON files in the data directory
-  const files = fs
-    .readdirSync(DATA_DIR)
-    .filter((file) => file.endsWith('.json') && file !== 'water-data.json') // Exclude the output file
-    .map((file) => path.join(DATA_DIR, file));
-
-  console.log(
-    `Found ${files.length} JSON files to process:`,
-    files.map((f) => path.basename(f))
-  );
-
-  // Map to store merged data by key
-  const mergedData = new Map();
-  const sourceFiles = new Map();
+  const records = [];
   const errors = [];
 
-  // Process each file
-  files.forEach((filePath) => {
-    const fileName = path.basename(filePath);
-    console.log(`Processing ${fileName}...`);
+  const lakeDirs = fs
+    .readdirSync(RECORDS_DIR, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name);
 
-    try {
-      const fileContent = fs.readFileSync(filePath, 'utf8');
-      const data = JSON.parse(fileContent);
+  for (const lakeDir of lakeDirs) {
+    const files = fs
+      .readdirSync(path.join(RECORDS_DIR, lakeDir))
+      .filter((file) => file.endsWith('.json'));
 
-      if (!Array.isArray(data)) {
-        console.warn(
-          `Warning: ${fileName} does not contain an array, skipping.`
+    for (const fileName of files) {
+      const label = `${lakeDir}/${fileName}`;
+      try {
+        const record = JSON.parse(
+          fs.readFileSync(path.join(RECORDS_DIR, lakeDir, fileName), 'utf8')
         );
-        return;
+        const error = checkRecord(record, lakeDir, fileName);
+        if (error) {
+          errors.push(`${label}: ${error}`);
+          continue;
+        }
+        // source is provenance for editors, not app data
+        const { source, ...appRecord } = record;
+        records.push(appRecord);
+      } catch (error) {
+        errors.push(`${label}: ${error.message}`);
       }
-
-      // Process each record in the file
-      data.forEach((record) => {
-        if (!record.lake || !record.date || isNaN(new Date(record.date))) {
-          errors.push(
-            `${fileName}: record missing lake or valid date (${record.lake}, ${record.date})`
-          );
-          return;
-        }
-
-        const mergeKey = getMergeKey(record);
-
-        if (mergedData.has(mergeKey)) {
-          errors.push(
-            `${fileName}: duplicate sampling ${mergeKey}, already in ${sourceFiles.get(mergeKey)}`
-          );
-          return;
-        }
-
-        mergedData.set(mergeKey, record);
-        sourceFiles.set(mergeKey, fileName);
-      });
-
-      console.log(`Processed ${data.length} records from ${fileName}`);
-    } catch (error) {
-      errors.push(`${fileName}: ${error.message}`);
     }
-  });
+  }
 
   if (errors.length > 0) {
-    console.error(`\nMerge failed with ${errors.length} error(s):`);
+    console.error(`Merge failed with ${errors.length} error(s):`);
     errors.forEach((error) => console.error(`  ${error}`));
     process.exit(1);
   }
 
-  // Convert Map to array and sort by lake and date
-  const finalData = Array.from(mergedData.values()).sort((a, b) => {
-    // First sort by lake name
-    const lakeCompare = a.lake.localeCompare(b.lake);
-    if (lakeCompare !== 0) return lakeCompare;
+  records.sort(
+    (a, b) =>
+      a.lake.localeCompare(b.lake) || new Date(a.date) - new Date(b.date)
+  );
 
-    // Then sort by date
-    const dateA = new Date(a.date);
-    const dateB = new Date(b.date);
-    return dateA - dateB;
-  });
+  fs.mkdirSync(path.dirname(OUTPUT_FILE), { recursive: true });
+  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(records, null, 2), 'utf8');
 
-  console.log(`Merged data contains ${finalData.length} unique records`);
-
-  // Write the merged data to the output file
-  try {
-    fs.writeFileSync(OUTPUT_FILE, JSON.stringify(finalData, null, 2), 'utf8');
-    console.log(`Successfully wrote merged data to ${OUTPUT_FILE}`);
-
-    // Log summary by lake
-    const summary = finalData.reduce((acc, record) => {
-      acc[record.lake] = (acc[record.lake] || 0) + 1;
-      return acc;
-    }, {});
-
-    console.log('Summary by lake:');
-    Object.entries(summary).forEach(([lake, count]) => {
-      console.log(`  ${lake}: ${count} records`);
-    });
-  } catch (error) {
-    console.error('Error writing merged data:', error.message);
-    process.exit(1);
-  }
+  const summary = records.reduce((acc, record) => {
+    acc[record.lake] = (acc[record.lake] || 0) + 1;
+    return acc;
+  }, {});
+  const counts = Object.entries(summary)
+    .map(([lake, count]) => `${lake} ${count}`)
+    .join(', ');
+  console.log(
+    `Wrote ${records.length} records to src/data/water-data.json (${counts})`
+  );
 }
 
-// Run the merge if this script is executed directly
 if (require.main === module) {
   mergeWaterData();
 }

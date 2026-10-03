@@ -1,0 +1,32 @@
+{
+  "lake": "Gunflint",
+  "date": "2024-09-11T12:10:00-07:00",
+  "source": "csv/gunflint-lake.csv",
+  "station": "DGW",
+  "samplers": ["Gina and Norleen Lilico"],
+  "weather": "Sunny, some clouds, calm",
+  "air_temperature": 19.7,
+  "secchi_depth": [5.2, 6.7],
+  "nitrogen": null,
+  "phosphorus": null,
+  "data_notes": null,
+  "measurements": [
+    {"depth": 0, "temperature": 22.6, "DO": 5.66, "SPC": 55.8, "TDS": 36.4, "PH": 7.63},
+    {"depth": 1, "temperature": 21.9, "DO": 6.17, "SPC": 55.9, "TDS": 36.4, "PH": 7.58},
+    {"depth": 2, "temperature": 21.8, "DO": 6.73, "SPC": 56.1, "TDS": 36.4, "PH": 7.54},
+    {"depth": 3, "temperature": 21.9, "DO": 7.03, "SPC": 55.8, "TDS": 36.4, "PH": 7.55},
+    {"depth": 4, "temperature": 21.7, "DO": 7.3, "SPC": 55.7, "TDS": 36.4, "PH": 7.56},
+    {"depth": 5, "temperature": 19.2, "DO": 8.75, "SPC": 52.1, "TDS": 33.8, "PH": 7.27},
+    {"depth": 6, "temperature": 15.3, "DO": 11.17, "SPC": 48.7, "TDS": 31.25, "PH": 7.01},
+    {"depth": 7, "temperature": 10.5, "DO": 11, "SPC": 49.7, "TDS": 31.2, "PH": 6.41},
+    {"depth": 8, "temperature": 9.1, "DO": 7.97, "SPC": 47.9, "TDS": 31.2, "PH": 6.23},
+    {"depth": 9, "temperature": 7.4, "DO": 8.27, "SPC": 48.4, "TDS": 31.2, "PH": 6.25},
+    {"depth": 10, "temperature": 6.7, "DO": 8.35, "SPC": 48, "TDS": 31.2, "PH": 6.27},
+    {"depth": 11, "temperature": 6.1, "DO": 7.8, "SPC": 48.5, "TDS": 31.2, "PH": 6.21},
+    {"depth": 12, "temperature": 6.5, "DO": 7.43, "SPC": 48.4, "TDS": 31.2, "PH": 6.24},
+    {"depth": 13, "temperature": 6.7, "DO": 7.21, "SPC": 48.8, "TDS": 31.2, "PH": 6.21},
+    {"depth": 14, "temperature": 6.1, "DO": 4.44, "SPC": 52.1, "TDS": 33.6, "PH": 6.17},
+    {"depth": 15, "temperature": 6.4, "DO": 3.22, "SPC": 54, "TDS": 35.1, "PH": 6.2},
+    {"depth": 16, "temperature": 6.3, "DO": 2.97, "SPC": 54.2, "TDS": 35.1, "PH": 6.23}
+  ]
+}

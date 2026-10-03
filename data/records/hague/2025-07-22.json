@@ -1,0 +1,26 @@
+{
+  "lake": "Hague",
+  "date": "2025-07-22T11:00:00-08:00",
+  "source": "ocr (output not kept)",
+  "samplers": ["Gina", "Slawka"],
+  "weather": "Sunny, quiet, no wind",
+  "air_temperature": 23.5,
+  "secchi_depth": [5.5, 6],
+  "measurements": [
+    {"depth": 0, "temperature": 24, "DO": 7.73, "SPC": 51.6, "TDS": 33.8, "PH": 7.43},
+    {"depth": 1, "temperature": 23.9, "DO": 7.65, "SPC": 51.6, "TDS": 33.8, "PH": 7.47},
+    {"depth": 2, "temperature": 23.7, "DO": 7.7, "SPC": 51.6, "TDS": 33.8, "PH": 7.63},
+    {"depth": 3, "temperature": 23.3, "DO": 7.95, "SPC": 51.5, "TDS": 33.1, "PH": 7.7},
+    {"depth": 4, "temperature": 22.7, "DO": 8.15, "SPC": 51.4, "TDS": 33.1, "PH": 7.87},
+    {"depth": 5, "temperature": 21.2, "DO": 8.25, "SPC": 51.1, "TDS": 33.15, "PH": 8.04},
+    {"depth": 6, "temperature": 15.4, "DO": 9.9, "SPC": 50.1, "TDS": 32.5, "PH": 7.42},
+    {"depth": 7, "temperature": 12.8, "DO": 9.76, "SPC": 49.8, "TDS": 32.5, "PH": 6.97},
+    {"depth": 8, "temperature": 10.8, "DO": 9.2, "SPC": 50.8, "TDS": 33.1, "PH": 6.54},
+    {"depth": 9, "temperature": 9.5, "DO": 5.69, "SPC": 52.5, "TDS": 34.45, "PH": 6.32},
+    {"depth": 10, "temperature": 8.9, "DO": 4.74, "SPC": 54.1, "TDS": 35.1, "PH": 6.24},
+    {"depth": 11, "temperature": 9.1, "DO": 4.42, "SPC": 54.2, "TDS": 35.1, "PH": 6.3},
+    {"depth": 12, "temperature": 8.9, "DO": 3.84, "SPC": 56.4, "TDS": 31.25, "PH": 6.35},
+    {"depth": 13, "temperature": 8.9, "DO": 3.41, "SPC": 62.7, "TDS": 40.95, "PH": 6.4},
+    {"depth": 14, "temperature": 8.9, "DO": 2.79, "SPC": 63.5, "TDS": 41.6, "PH": 6.45}
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "lake": "Gunflint",
+  "date": "2022-01-18T11:30:00-08:00",
+  "source": "csv/gunflint-lake.csv",
+  "station": "DWG",
+  "samplers": ["Carrie and Gina"],
+  "weather": "quiet, foggy, cloudy",
+  "air_temperature": 13.4,
+  "secchi_depth": [2.8, 2.9],
+  "nitrogen": null,
+  "phosphorus": null,
+  "data_notes": "no water samples, some parts of lake still covered with thin ice, with ice bubles on the surface",
+  "measurements": [
+    {"depth": 0, "temperature": 5.2, "DO": 15.05, "SPC": 54.3, "TDS": 36.4, "PH": 7.53},
+    {"depth": 1, "temperature": 4.8, "DO": 13.43, "SPC": 43.1, "TDS": 27.95, "PH": 6.2},
+    {"depth": 2, "temperature": 4.5, "DO": 13.2, "SPC": 43.5, "TDS": 28.6, "PH": 6.04},
+    {"depth": 3, "temperature": 4.5, "DO": 11.84, "SPC": 44.7, "TDS": 29.35, "PH": 6},
+    {"depth": 4, "temperature": 4.4, "DO": 11.95, "SPC": 45.2, "TDS": 28.6, "PH": 5.95},
+    {"depth": 5, "temperature": 4.6, "DO": 11.42, "SPC": 45.5, "TDS": 29.25, "PH": 5.91},
+    {"depth": 6, "temperature": 4.2, "DO": 11.23, "SPC": 46.5, "TDS": 29.9, "PH": 5.89},
+    {"depth": 7, "temperature": 4.4, "DO": 11.36, "SPC": 46, "TDS": 29.9, "PH": 5.89},
+    {"depth": 8, "temperature": 4.6, "DO": 11.07, "SPC": 46.3, "TDS": 29.9, "PH": 5.9},
+    {"depth": 9, "temperature": 4.7, "DO": 10.93, "SPC": 46.3, "TDS": 29.9, "PH": 5.91},
+    {"depth": 10, "temperature": 4.6, "DO": 11.26, "SPC": 46.1, "TDS": 29.9, "PH": 5.91},
+    {"depth": 11, "temperature": 4.9, "DO": 10.78, "SPC": 46.4, "TDS": 30.55, "PH": 5.92},
+    {"depth": 12, "temperature": 4.7, "DO": 11.01, "SPC": 46.1, "TDS": 29.9, "PH": 5.92},
+    {"depth": 13, "temperature": 4.7, "DO": 11.13, "SPC": 46.8, "TDS": 29.9, "PH": 5.93},
+    {"depth": 14, "temperature": 4.7, "DO": 11.06, "SPC": 46.1, "TDS": 30.55, "PH": 5.92},
+    {"depth": 15, "temperature": 4.6, "DO": 9.59, "SPC": 46.7, "TDS": 30.55, "PH": 5.92},
+    {"depth": 16, "temperature": 4.8, "DO": 10.8, "SPC": 46.2, "TDS": 30.55, "PH": 5.93}
+  ]
+}

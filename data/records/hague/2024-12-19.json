@@ -1,0 +1,26 @@
+{
+  "lake": "Hague",
+  "date": "2024-12-19T11:30:00-08:00",
+  "source": "ocr (output not kept)",
+  "samplers": ["Gimel Ziemek"],
+  "weather": "rain",
+  "air_temperature": 6.9,
+  "secchi_depth": [4, 4.8],
+  "measurements": [
+    {"depth": 0, "temperature": 7, "DO": 10.1, "SPC": 50.9, "TDS": 33.15, "PH": 6.88},
+    {"depth": 1, "temperature": 7, "DO": 9.8, "SPC": 50.9, "TDS": 33.15, "PH": 6.94},
+    {"depth": 2, "temperature": 7, "DO": 9.7, "SPC": 50, "TDS": 33.15, "PH": 6.95},
+    {"depth": 3, "temperature": 7, "DO": 9.5, "SPC": 50.8, "TDS": 33.15, "PH": 6.77},
+    {"depth": 4, "temperature": 7, "DO": 9.4, "SPC": 50.9, "TDS": 33.15, "PH": 6.78},
+    {"depth": 5, "temperature": 7, "DO": 9.3, "SPC": 50.9, "TDS": 33.15, "PH": 6.99},
+    {"depth": 6, "temperature": 7, "DO": 9.4, "SPC": 50.9, "TDS": 33.15, "PH": 6.99},
+    {"depth": 7, "temperature": 7, "DO": 9.2, "SPC": 50.9, "TDS": 33.15, "PH": 7.01},
+    {"depth": 8, "temperature": 7, "DO": 9.3, "SPC": 50.8, "TDS": 33.15, "PH": 7},
+    {"depth": 9, "temperature": 7, "DO": 9.3, "SPC": 50.8, "TDS": 33.15, "PH": 7},
+    {"depth": 10, "temperature": 7, "DO": 9.3, "SPC": 51.9, "TDS": 33.15, "PH": 6.99},
+    {"depth": 11, "temperature": 7, "DO": 9.2, "SPC": 50.9, "TDS": 33.15, "PH": 7},
+    {"depth": 12, "temperature": 7, "DO": 9.2, "SPC": 50.9, "TDS": 33.15, "PH": 7},
+    {"depth": 13, "temperature": 7, "DO": 9.2, "SPC": 50.9, "TDS": 33.15, "PH": 7.01},
+    {"depth": 14, "temperature": 7, "DO": 9.3, "SPC": 50.8, "TDS": 33.15, "PH": 7}
+  ]
+}

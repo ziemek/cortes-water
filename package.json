@@ -4,10 +4,11 @@
   "description": "A simple webpage project",
   "main": "src/js/main.js",
   "scripts": {
+    "prestart": "npm run merge-data",
     "start": "live-server src",
     "merge-data": "node scripts/merge-data.js",
     "prebuild": "npm run merge-data",
-    "build": "mkdir -p dist && cp -r src/* dist/ && echo 'Build complete'",
+    "build": "rm -rf dist && mkdir -p dist && cp -r src/* dist/ && echo 'Build complete'",
     "clean": "rm -rf dist",
     "format": "prettier --write .",
     "format:check": "prettier --check ."

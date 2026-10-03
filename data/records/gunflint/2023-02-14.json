@@ -1,0 +1,33 @@
+{
+  "lake": "Gunflint",
+  "date": "2023-02-14T11:15:00-08:00",
+  "source": "csv/gunflint-lake.csv",
+  "station": "DWG",
+  "samplers": ["Gina and Carrie"],
+  "weather": "sunny, light breeze, blue sky",
+  "air_temperature": 7.5,
+  "secchi_depth": [3.1, 3.7],
+  "nitrogen": null,
+  "phosphorus": null,
+  "data_notes": "N,P not sampled, very strong winds day before",
+  "measurements": [
+    {"depth": 0, "temperature": 4.7, "DO": 12.27, "SPC": 48.4, "TDS": 31.2, "PH": 6.73},
+    {"depth": 1, "temperature": 4.5, "DO": 12.14, "SPC": 48.5, "TDS": 31.2, "PH": 6.32},
+    {"depth": 2, "temperature": 4.5, "DO": 11.84, "SPC": 48.5, "TDS": 31.2, "PH": 6.23},
+    {"depth": 3, "temperature": 4.4, "DO": 11.92, "SPC": 48.5, "TDS": 31.85, "PH": 6.22},
+    {"depth": 4, "temperature": 4.4, "DO": 11.75, "SPC": 48.5, "TDS": 31.85, "PH": 6.22},
+    {"depth": 5, "temperature": 4.4, "DO": 11.98, "SPC": 48.5, "TDS": 31.2, "PH": 6.25},
+    {"depth": 6, "temperature": 4.4, "DO": 11.9, "SPC": 48.5, "TDS": 31.2, "PH": 6.27},
+    {"depth": 7, "temperature": 4.4, "DO": 11.97, "SPC": 48.5, "TDS": 31.85, "PH": 6.29},
+    {"depth": 8, "temperature": 4.4, "DO": 11.78, "SPC": 48.5, "TDS": 31.2, "PH": 6.3},
+    {"depth": 9, "temperature": 4.4, "DO": 11.67, "SPC": 48.5, "TDS": 31.2, "PH": 6.23},
+    {"depth": 10, "temperature": 4.4, "DO": 12, "SPC": 48.5, "TDS": 31.2, "PH": 6.23},
+    {"depth": 11, "temperature": 4.4, "DO": 11.78, "SPC": 48.5, "TDS": 31.2, "PH": 6.23},
+    {"depth": 12, "temperature": 4.4, "DO": 11.9, "SPC": 48.5, "TDS": 31.85, "PH": 6.23},
+    {"depth": 13, "temperature": 4.4, "DO": 11.77, "SPC": 48.5, "TDS": 31.85, "PH": 6.34},
+    {"depth": 14, "temperature": 4.4, "DO": 11.75, "SPC": 48.5, "TDS": 31.2, "PH": 6.34},
+    {"depth": 15, "temperature": 4.4, "DO": 11.63, "SPC": 48.6, "TDS": 31.85, "PH": 6.34},
+    {"depth": 16, "temperature": 4.4, "DO": 11.76, "SPC": 48.6, "TDS": 31.85, "PH": 6.34},
+    {"depth": 17, "temperature": 4.4, "DO": 10.87, "SPC": 48.6, "TDS": 31.85, "PH": 6.34}
+  ]
+}

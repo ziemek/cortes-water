@@ -1,0 +1,32 @@
+{
+  "lake": "Gunflint",
+  "date": "2020-05-05T10:00:00-07:00",
+  "source": "csv/gunflint-lake.csv",
+  "station": "DWG",
+  "samplers": ["Gina and Carrie"],
+  "weather": "sunny and calm",
+  "air_temperature": null,
+  "secchi_depth": [4.8, 5.1],
+  "nitrogen": 0.175,
+  "phosphorus": 0.014,
+  "data_notes": "2020-04-21, It looked ike algae bloom, water samples were taken by Carrie and sent to lab by 8 Lane",
+  "measurements": [
+    {"depth": 0, "temperature": 14.4, "DO": 11.85, "SPC": 48, "TDS": 31.2, "PH": 6.71},
+    {"depth": 1, "temperature": 14, "DO": 11.31, "SPC": 47.9, "TDS": 31.2, "PH": 6.32},
+    {"depth": 2, "temperature": 13.9, "DO": 10.6, "SPC": 47.9, "TDS": 31.2, "PH": 6.35},
+    {"depth": 3, "temperature": 13.7, "DO": 10.9, "SPC": 47.8, "TDS": 31.2, "PH": 6.46},
+    {"depth": 4, "temperature": 11.9, "DO": 11.9, "SPC": 47.5, "TDS": 30.55, "PH": 6.6},
+    {"depth": 5, "temperature": 9.4, "DO": 12.3, "SPC": 46.8, "TDS": 30.55, "PH": 6.15},
+    {"depth": 6, "temperature": 7.4, "DO": 12.1, "SPC": 46.5, "TDS": 30, "PH": 6.07},
+    {"depth": 7, "temperature": 6.1, "DO": 12.1, "SPC": 46.3, "TDS": 29.9, "PH": 5.99},
+    {"depth": 8, "temperature": 5.6, "DO": 11.77, "SPC": 46.2, "TDS": 29.9, "PH": 5.96},
+    {"depth": 9, "temperature": 5.3, "DO": 11.64, "SPC": 46.2, "TDS": 29.9, "PH": 5.94},
+    {"depth": 10, "temperature": 5.2, "DO": 11.74, "SPC": 46.2, "TDS": 29.9, "PH": 5.93},
+    {"depth": 11, "temperature": 5.3, "DO": 12.46, "SPC": 46.1, "TDS": 29.9, "PH": 5.94},
+    {"depth": 12, "temperature": 5.1, "DO": 12.1, "SPC": 46.2, "TDS": 29.9, "PH": 5.96},
+    {"depth": 13, "temperature": 5, "DO": 12.04, "SPC": 46.1, "TDS": 29.9, "PH": 5.99},
+    {"depth": 14, "temperature": 4.9, "DO": 11.6, "SPC": 46.3, "TDS": 29.9, "PH": 5.99},
+    {"depth": 15, "temperature": 4.9, "DO": 11.26, "SPC": 46.6, "TDS": 30.55, "PH": 5.99},
+    {"depth": 16, "temperature": 5, "DO": 9.4, "SPC": 48.5, "TDS": 31.2, "PH": 5.94}
+  ]
+}
