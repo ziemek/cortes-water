@@ -1,4 +1,5 @@
-// Utility functions for charts and data processing
+// Date, formatting, color and statistics helpers. Nothing here touches the
+// DOM, and d3 is only used inside the color functions.
 import { config } from './config.js';
 
 const SAMPLING_TIME_ZONE = 'America/Vancouver';
@@ -10,6 +11,47 @@ const pacificDateFormat = new Intl.DateTimeFormat('en-CA', {
   month: '2-digit',
   day: '2-digit',
 });
+
+// Calendar date (YYYY-MM-DD) of a sampling in the lakes' local time,
+// independent of the viewer's timezone
+export function getDateOnly(date) {
+  return pacificDateFormat.format(new Date(date));
+}
+
+export function getYear(date) {
+  return Number(getDateOnly(date).slice(0, 4));
+}
+
+// Format date for display
+export function formatDate(date) {
+  return new Date(date).toLocaleDateString('en-US', {
+    timeZone: SAMPLING_TIME_ZONE,
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  });
+}
+
+// Format date-only string for display
+export function formatDateOnly(dateOnlyString) {
+  const date = new Date(dateOnlyString + 'T12:00:00Z');
+  return date.toLocaleDateString('en-US', {
+    timeZone: 'UTC',
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  });
+}
+
+// Get parameter label
+export function getParameterLabel(param) {
+  return config.parameterLabels[param] || param;
+}
+
+// Display text for an optional value, "N/A" when it wasn't recorded
+export function formatValue(value, unit = '') {
+  return value === null || value === undefined ? 'N/A' : `${value}${unit}`;
+}
 
 // Dynamic color generation
 export function generateColorPalette(baseColors, count) {
@@ -49,170 +91,53 @@ export function getSeasonColor(date) {
   return config.seasonColors.winter;
 }
 
-// Generate time-based color gradient
-export function getTimeGradientColor(date, minDate, maxDate) {
-  const totalTime = maxDate.getTime() - minDate.getTime();
-  const currentTime = new Date(date).getTime() - minDate.getTime();
-  const ratio = currentTime / totalTime;
-
-  // Color gradient from blue (early) to red (late)
-  const hue = 240 - ratio * 120; // 240 = blue, 120 = red
+// Color for a position (0 = earliest, 1 = latest) on the blue-to-green
+// time gradient
+export function timeGradientColor(ratio) {
+  const hue = 240 - ratio * 120; // 240 = blue, 120 = green
   return d3.hsl(hue, 0.7, 0.5).hex();
 }
 
-// Format date for display
-export function formatDate(dateString) {
-  const date = new Date(dateString);
-  return date.toLocaleDateString('en-US', {
-    timeZone: SAMPLING_TIME_ZONE,
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
+export function getTimeGradientColor(date, minDate, maxDate) {
+  const totalTime = maxDate.getTime() - minDate.getTime();
+  const currentTime = new Date(date).getTime() - minDate.getTime();
+  return timeGradientColor(totalTime > 0 ? currentTime / totalTime : 0);
+}
+
+const mean = (values) => values.reduce((a, b) => a + b, 0) / values.length;
+
+/**
+ * Least-squares fit of y on x.
+ * @param {{x: number, y: number}[]} points
+ * @returns {{slope: number, intercept: number, rSquared: number} | null}
+ *   null when the line is undefined (fewer than 2 points or no spread in x);
+ *   rSquared is NaN when every y is the same.
+ */
+export function linearRegression(points) {
+  if (points.length < 2) return null;
+
+  const xMean = mean(points.map((d) => d.x));
+  const yMean = mean(points.map((d) => d.y));
+  let sxx = 0;
+  let sxy = 0;
+  let totalSumSquares = 0;
+  points.forEach(({ x, y }) => {
+    sxx += (x - xMean) ** 2;
+    sxy += (x - xMean) * (y - yMean);
+    totalSumSquares += (y - yMean) ** 2;
   });
-}
+  if (sxx === 0) return null;
 
-// Get parameter label
-export function getParameterLabel(param) {
-  return config.parameterLabels[param] || param;
-}
-
-// Initialize global tooltip
-export const tooltip = d3
-  .select('body')
-  .append('div')
-  .attr('class', 'tooltip')
-  .style('opacity', 0);
-
-// Add grid to chart
-export function addGrid(svg, xScale, yScale, width, height) {
-  // X grid
-  svg
-    .append('g')
-    .attr('class', 'grid')
-    .attr('transform', `translate(0,${height})`)
-    .call(d3.axisBottom(xScale).tickSize(-height).tickFormat(''));
-
-  // Y grid
-  svg
-    .append('g')
-    .attr('class', 'grid')
-    .call(d3.axisLeft(yScale).tickSize(-width).tickFormat(''));
-}
-
-// Add axes to chart
-export function addAxes(svg, xScale, yScale, height, xLabel, yLabel) {
-  // X axis
-  svg
-    .append('g')
-    .attr('class', 'axis')
-    .attr('transform', `translate(0,${height})`)
-    .call(d3.axisBottom(xScale));
-
-  // Y axis
-  svg.append('g').attr('class', 'axis').call(d3.axisLeft(yScale));
-
-  // Y axis label
-  if (yLabel) {
-    svg
-      .append('text')
-      .attr('transform', 'rotate(-90)')
-      .attr('y', -50)
-      .attr('x', -height / 2)
-      .attr('dy', '1em')
-      .style('text-anchor', 'middle')
-      .style('font-size', '14px')
-      .style('fill', '#666')
-      .text(yLabel);
-  }
-
-  // X axis label
-  if (xLabel) {
-    svg
-      .append('text')
-      .attr('transform', `translate(${xScale.range()[1] / 2}, ${height + 40})`)
-      .style('text-anchor', 'middle')
-      .style('font-size', '14px')
-      .style('fill', '#666')
-      .text(xLabel);
-  }
-}
-
-// Add trend line to scatter plot
-export function addTrendLine(svg, data, xScale, yScale, xParam, yParam) {
-  // Calculate linear regression
-  const n = data.length;
-  const sumX = d3.sum(data, (d) => d.x);
-  const sumY = d3.sum(data, (d) => d.y);
-  const sumXY = d3.sum(data, (d) => d.x * d.y);
-  const sumXX = d3.sum(data, (d) => d.x * d.x);
-
-  const slope = (n * sumXY - sumX * sumY) / (n * sumXX - sumX * sumX);
-  const intercept = (sumY - slope * sumX) / n;
-
-  // Calculate R-squared
-  const yMean = sumY / n;
-  const totalSumSquares = d3.sum(data, (d) => Math.pow(d.y - yMean, 2));
-  const residualSumSquares = d3.sum(data, (d) =>
-    Math.pow(d.y - (slope * d.x + intercept), 2)
+  const slope = sxy / sxx;
+  const intercept = yMean - slope * xMean;
+  const residualSumSquares = points.reduce(
+    (sum, { x, y }) => sum + (y - (slope * x + intercept)) ** 2,
+    0
   );
-  const rSquared = 1 - residualSumSquares / totalSumSquares;
 
-  // Draw trend line
-  const xDomain = xScale.domain();
-  const trendLineData = [
-    { x: xDomain[0], y: slope * xDomain[0] + intercept },
-    { x: xDomain[1], y: slope * xDomain[1] + intercept },
-  ];
-
-  const line = d3
-    .line()
-    .x((d) => xScale(d.x))
-    .y((d) => yScale(d.y));
-
-  svg
-    .append('path')
-    .datum(trendLineData)
-    .attr('class', 'trend-line')
-    .attr('d', line)
-    .style('stroke', '#333')
-    .style('stroke-width', 2)
-    .style('stroke-dasharray', '5,5')
-    .style('fill', 'none')
-    .style('opacity', 0.8);
-
-  // Add R-squared label
-  svg
-    .append('text')
-    .attr('x', xScale.range()[1] - 10)
-    .attr('y', yScale.range()[1] + 20)
-    .attr('text-anchor', 'end')
-    .style('font-size', '12px')
-    .style('fill', '#666')
-    .text(`R² = ${rSquared.toFixed(3)}`);
-}
-
-// Convert date string to valid CSS ID
-export function dateToValidId(dateString) {
-  return dateString.replace(/[:.]/g, '-');
-}
-
-// Calendar date (YYYY-MM-DD) of a sampling in the lakes' local time,
-// independent of the viewer's timezone
-export function getDateOnly(dateString) {
-  return pacificDateFormat.format(new Date(dateString));
-}
-
-export function getYear(dateString) {
-  return Number(getDateOnly(dateString).slice(0, 4));
-}
-
-// Format date-only string for display
-export function formatDateOnly(dateOnlyString) {
-  const date = new Date(dateOnlyString + 'T12:00:00Z');
-  return date.toLocaleDateString('en-US', {
-    timeZone: 'UTC',
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-  });
+  return {
+    slope,
+    intercept,
+    rSquared: 1 - residualSumSquares / totalSumSquares,
+  };
 }

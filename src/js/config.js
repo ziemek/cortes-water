@@ -1,6 +1,5 @@
 // Configuration and constants for the water quality visualization
 export const config = {
-  maxVisibleDefault: 12, // Show first 12 series by default (deprecated, now using recent months)
   recentMonthsDefault: 18, // Show the most recent 18 months of data by default
   baseColorPalettes: {
     Gunflint: ['#FF6B6B', '#FF8E53', '#FF9F43'],
@@ -32,8 +31,10 @@ export const config = {
 
 export const chartDimensions = {
   margin: { top: 20, right: 30, bottom: 80, left: 60 },
-  width: 550,
-  height: 400,
+  depthProfile: {
+    width: 550,
+    height: 400,
+  },
   scatter: {
     width: 550,
     height: 400,
@@ -42,7 +43,7 @@ export const chartDimensions = {
     width: 550,
     height: 300,
   },
-  correlation: {
+  secchiCorrelation: {
     width: 300,
     height: 300,
   },
