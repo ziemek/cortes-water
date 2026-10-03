@@ -21,16 +21,19 @@ transparency measurements to help understand water quality trends.
 │       ├── controls-manager.js         # UI control management
 │       ├── legend-manager.js           # Chart legend handling
 │       ├── time-series-charts.js       # Time-based visualizations
-│       ├── depth-profile-charts.js     # Depth-based charts
-│       ├── horizontal-depth-charts.js  # Horizontal depth analysis
+│       ├── depth-profile-charts.js     # Depth profiles, vertical or horizontal
 │       ├── correlation-charts.js       # Data correlation analysis
 │       ├── secchi-analysis.js          # Secchi disk transparency
-│       └── utils.js                    # Utility functions
+│       ├── chart-utils.js              # Shared D3 axes, tooltips and trend lines
+│       └── utils.js                    # Date, formatting and statistics helpers (no DOM)
 ├── data/                               # Source data, see data/README.md
 │   ├── raw/                            # Legacy CSVs and unedited OCR output
 │   └── records/                        # One verified JSON file per sampling
 ├── scripts/
-│   └── merge-data.js                   # Merges data/records into src/data/water-data.json
+│   ├── merge-data.js                   # Merges data/records into src/data/water-data.json
+│   ├── validate-data.js                # Checks records for implausible values
+│   └── known-data-issues.json          # Existing data problems validate-data ignores
+├── test/                               # node --test suites
 ├── package.json                        # Project dependencies
 └── README.md
 ```
@@ -49,7 +52,7 @@ transparency measurements to help understand water quality trends.
    npm start
    ```
 
-   This will start a live server on `http://localhost:8080` and automatically open the website in your default browser. The server will reload automatically when you make changes to any files.
+   This starts a live server on `http://localhost:5500` that reloads when files in `src/` change.
 
 3. **Build for production:**
    ```bash

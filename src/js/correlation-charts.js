@@ -1,139 +1,91 @@
 // Correlation Scatter Plot Charts
 import { chartDimensions, config } from './config.js';
+import { getParameterLabel, getTimeGradientColor } from './utils.js';
 import {
-  tooltip,
-  formatDate,
-  formatValue,
-  getParameterLabel,
-  getTimeGradientColor,
-  addGrid,
   addAxes,
+  addGrid,
   addTrendLine,
-} from './utils.js';
+  createChartSvg,
+  hideTooltip,
+  samplingTooltip,
+  showNoData,
+  showTooltip,
+} from './chart-utils.js';
+
+// Correlation views by parameter button; byDepth draws one chart per depth
+// range instead of one for the whole profile
+const CORRELATIONS = {
+  temp_oxygen: {
+    title: 'Temperature vs Dissolved Oxygen',
+    x: 'temperature',
+    y: 'DO',
+    byDepth: true,
+  },
+  conductivity_tds: {
+    title: 'Specific Conductance vs Total Dissolved Solids',
+    x: 'SPC',
+    y: 'TDS',
+    byDepth: false,
+  },
+  ph_oxygen: {
+    title: 'pH vs Dissolved Oxygen',
+    x: 'PH',
+    y: 'DO',
+    byDepth: true,
+  },
+};
+
+export const correlationParameters = Object.keys(CORRELATIONS);
 
 export class CorrelationCharts {
   constructor(dataLoader) {
     this.dataLoader = dataLoader;
   }
 
-  // Create Temperature-Oxygen Scatter Plot
-  createTemperatureOxygenScatter() {
+  createCorrelationView(parameter) {
+    const { title, x, y, byDepth } = CORRELATIONS[parameter];
     const container = d3.select('#chartsContainer');
     container.selectAll('*').remove();
 
     const visibleData = this.dataLoader.getVisibleData();
+    const ranges = byDepth ? config.depthRanges : [null];
 
-    // Create depth-grouped charts
-    config.depthRanges.forEach((range) => {
+    ranges.forEach((range) => {
       const chartDiv = container.append('div').attr('class', 'chart-container');
 
       chartDiv
         .append('h3')
         .attr('class', 'chart-title')
-        .text(`Temperature vs Dissolved Oxygen - ${range.name}`);
+        .text(range ? `${title} - ${range.name}` : title);
 
-      this.createScatterChart(
-        chartDiv,
-        visibleData,
-        'temperature',
-        'DO',
-        range
-      );
+      this.createScatterChart(chartDiv, visibleData, x, y, range);
     });
   }
 
-  // Create Conductivity-TDS Scatter Plot
-  createConductivityTDSScatter() {
-    const container = d3.select('#chartsContainer');
-    container.selectAll('*').remove();
+  createScatterChart(container, datasets, xParam, yParam, depthRange) {
+    const hasValue = (value) => value !== null && value !== undefined;
+    const inRange = (m) =>
+      !depthRange || (m.depth >= depthRange.min && m.depth <= depthRange.max);
 
-    const visibleData = this.dataLoader.getVisibleData();
+    const scatterData = datasets.flatMap((dataset) =>
+      dataset.measurements
+        .filter((m) => inRange(m) && hasValue(m[xParam]) && hasValue(m[yParam]))
+        .map((m) => ({ x: m[xParam], y: m[yParam], depth: m.depth, dataset }))
+    );
 
-    const chartDiv = container.append('div').attr('class', 'chart-container');
-
-    chartDiv
-      .append('h3')
-      .attr('class', 'chart-title')
-      .text('Specific Conductance vs Total Dissolved Solids');
-
-    this.createScatterChart(chartDiv, visibleData, 'SPC', 'TDS');
-  }
-
-  // Create pH-Oxygen Scatter Plot
-  createPHOxygenScatter() {
-    const container = d3.select('#chartsContainer');
-    container.selectAll('*').remove();
-
-    const visibleData = this.dataLoader.getVisibleData();
-
-    // Create depth-grouped charts
-    config.depthRanges.forEach((range) => {
-      const chartDiv = container.append('div').attr('class', 'chart-container');
-
-      chartDiv
-        .append('h3')
-        .attr('class', 'chart-title')
-        .text(`pH vs Dissolved Oxygen - ${range.name}`);
-
-      this.createScatterChart(chartDiv, visibleData, 'PH', 'DO', range);
-    });
-  }
-
-  // Generic scatter plot creation
-  createScatterChart(container, datasets, xParam, yParam, depthRange = null) {
-    const margin = chartDimensions.margin;
-    const width = chartDimensions.scatter.width - margin.left - margin.right;
-    const height = chartDimensions.scatter.height - margin.bottom - margin.top;
-
-    const svg = container
-      .append('svg')
-      .attr('width', width + margin.left + margin.right)
-      .attr('height', height + margin.top + margin.bottom)
-      .append('g')
-      .attr('transform', `translate(${margin.left},${margin.top})`);
-
-    // Process data points
-    const scatterData = [];
-    datasets.forEach((dataset) => {
-      let measurements = dataset.measurements;
-
-      // Filter by depth range if specified
-      if (depthRange) {
-        measurements = measurements.filter(
-          (m) => m.depth >= depthRange.min && m.depth <= depthRange.max
-        );
-      }
-
-      measurements.forEach((m) => {
-        if (
-          m[xParam] !== null &&
-          m[yParam] !== null &&
-          m[xParam] !== undefined &&
-          m[yParam] !== undefined
-        ) {
-          scatterData.push({
-            x: m[xParam],
-            y: m[yParam],
-            depth: m.depth,
-            lake: dataset.lake,
-            date: dataset.date,
-            weather: dataset.weather,
-            airTemp: dataset.air_temperature,
-          });
-        }
-      });
-    });
+    const xLabel = getParameterLabel(xParam);
+    const yLabel = getParameterLabel(yParam);
 
     if (scatterData.length === 0) {
-      container
-        .append('p')
-        .style('text-align', 'center')
-        .style('color', '#666')
-        .text(`No data available for ${xParam} vs ${yParam} correlation`);
+      showNoData(container, `No data available for ${xLabel} vs ${yLabel}`);
       return;
     }
 
-    // Set up scales
+    const { svg, width, height } = createChartSvg(
+      container,
+      chartDimensions.scatter
+    );
+
     const xScale = d3
       .scaleLinear()
       .domain(d3.extent(scatterData, (d) => d.x))
@@ -144,63 +96,42 @@ export class CorrelationCharts {
       .domain(d3.extent(scatterData, (d) => d.y))
       .range([height, 0]);
 
-    // Get date range for time gradient
-    const dateRange = d3.extent(scatterData, (d) => new Date(d.date));
-
-    // Add grid and axes
-    addGrid(svg, xScale, yScale, width, height);
-    addAxes(
-      svg,
-      xScale,
-      yScale,
-      height,
-      getParameterLabel(xParam),
-      getParameterLabel(yParam)
+    const [minDate, maxDate] = d3.extent(
+      scatterData,
+      (d) => new Date(d.dataset.date)
     );
 
-    // Add scatter points
+    addGrid(svg, xScale, yScale, width, height);
+    addAxes(svg, xScale, yScale, height, xLabel, yLabel);
+
     svg
-      .selectAll('.scatter-dot')
+      .append('g')
+      .selectAll('circle')
       .data(scatterData)
-      .enter()
-      .append('circle')
+      .join('circle')
       .attr('class', 'scatter-dot')
       .attr('cx', (d) => xScale(d.x))
       .attr('cy', (d) => yScale(d.y))
       .attr('r', 4)
       .style('fill', (d) =>
-        getTimeGradientColor(d.date, dateRange[0], dateRange[1])
+        getTimeGradientColor(d.dataset.date, minDate, maxDate)
       )
-      .style('stroke', 'white')
-      .style('stroke-width', 1)
-      .style('opacity', 0.7)
-      .style('cursor', 'pointer')
-      .on('mouseover', function (event, d) {
-        d3.select(this).style('opacity', 1).attr('r', 6);
-
-        tooltip.transition().duration(200).style('opacity', 0.9);
-        tooltip
-          .html(
-            `
-                    <strong>${d.lake} Lake</strong><br/>
-                    Date: ${formatDate(d.date)}<br/>
-                    Depth: ${d.depth}m<br/>
-                    ${getParameterLabel(xParam)}: ${d.x}<br/>
-                    ${getParameterLabel(yParam)}: ${d.y}<br/>
-                    Weather: ${formatValue(d.weather)}<br/>
-                    Air Temp: ${formatValue(d.airTemp, '°C')}
-                `
-          )
-          .style('left', event.pageX + 10 + 'px')
-          .style('top', event.pageY - 28 + 'px');
+      .on('mouseover', (event, d) => {
+        d3.select(event.currentTarget).attr('r', 6);
+        showTooltip(
+          event,
+          samplingTooltip(d.dataset, [
+            `Depth: ${d.depth}m`,
+            `${xLabel}: ${d.x}`,
+            `${yLabel}: ${d.y}`,
+          ])
+        );
       })
-      .on('mouseout', function (d) {
-        d3.select(this).style('opacity', 0.7).attr('r', 4);
-
-        tooltip.transition().duration(500).style('opacity', 0);
+      .on('mouseout', (event) => {
+        d3.select(event.currentTarget).attr('r', 4);
+        hideTooltip();
       });
 
-    // Add trend line
     addTrendLine(svg, scatterData, xScale, yScale);
   }
 }

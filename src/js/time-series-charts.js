@@ -1,195 +1,110 @@
 // Time Series Chart Visualization
 import { chartDimensions, config } from './config.js';
+import { getParameterLabel } from './utils.js';
 import {
-  tooltip,
-  formatDate,
-  formatValue,
-  getParameterLabel,
-  getTimeTickInterval,
   addGrid,
-} from './utils.js';
+  addTimeAxes,
+  createChartSvg,
+  hideTooltip,
+  samplingTooltip,
+  showNoData,
+  showTooltip,
+} from './chart-utils.js';
 
 export class TimeSeriesCharts {
   constructor(dataLoader) {
     this.dataLoader = dataLoader;
   }
 
-  // Enhanced time series visualization
-  createTimeSeriesView(currentParameter) {
+  // One chart per depth range, one line per lake
+  createTimeSeriesView(parameter) {
     const container = d3.select('#chartsContainer');
     container.selectAll('*').remove();
 
-    // Group data by depth ranges
     config.depthRanges.forEach((range) => {
       const chartDiv = container.append('div').attr('class', 'chart-container');
-
-      chartDiv.append('h3').attr('class', 'chart-title').text(`${range.name}`);
-
-      this.createTimeChart(chartDiv, range, currentParameter);
+      chartDiv.append('h3').attr('class', 'chart-title').text(range.name);
+      this.createTimeChart(chartDiv, range, parameter);
     });
   }
 
-  createTimeChart(container, depthRange, currentParameter) {
-    const margin = chartDimensions.margin;
-    const width = chartDimensions.timeSeries.width - margin.left - margin.right;
-    const height =
-      chartDimensions.timeSeries.height - margin.bottom - margin.top;
-
-    const svg = container
-      .append('svg')
-      .attr('width', width + margin.left + margin.right)
-      .attr('height', height + margin.top + margin.bottom)
-      .append('g')
-      .attr('transform', `translate(${margin.left},${margin.top})`);
-
-    // Process visible data for time series
-    const visibleData = this.dataLoader.getVisibleData();
-    const timeSeriesData = [];
-
-    visibleData.forEach((dataset) => {
-      const relevantMeasurements = dataset.measurements.filter(
-        (m) =>
-          m.depth >= depthRange.min &&
-          m.depth <= depthRange.max &&
-          m[currentParameter] !== null &&
-          m[currentParameter] !== undefined
-      );
-
-      if (relevantMeasurements.length > 0) {
-        const avgValue = d3.mean(
-          relevantMeasurements,
-          (d) => d[currentParameter]
-        );
-        if (avgValue !== undefined && avgValue !== null) {
-          timeSeriesData.push({
-            lake: dataset.lake,
-            date: new Date(dataset.date),
-            value: avgValue,
-            weather: dataset.weather,
-            airTemp: dataset.air_temperature,
-          });
-        }
-      }
+  createTimeChart(container, depthRange, parameter) {
+    // Each sampling's mean value over the depth range
+    const points = this.dataLoader.getVisibleData().flatMap((dataset) => {
+      const values = dataset.measurements
+        .filter((m) => m.depth >= depthRange.min && m.depth <= depthRange.max)
+        .map((m) => m[parameter])
+        .filter((value) => value !== null && value !== undefined);
+      if (values.length === 0) return [];
+      return [
+        { dataset, date: new Date(dataset.date), value: d3.mean(values) },
+      ];
     });
 
-    if (timeSeriesData.length === 0) {
-      container
-        .append('p')
-        .style('text-align', 'center')
-        .style('color', '#666')
-        .text('No visible data for this depth range');
+    if (points.length === 0) {
+      showNoData(container, 'No visible data for this depth range');
       return;
     }
 
-    // Group by lake
-    const dataByLake = d3.group(timeSeriesData, (d) => d.lake);
+    const { svg, width, height } = createChartSvg(
+      container,
+      chartDimensions.timeSeries
+    );
 
     const xScale = d3
       .scaleTime()
-      .domain(d3.extent(timeSeriesData, (d) => d.date))
+      .domain(d3.extent(points, (d) => d.date))
       .range([0, width]);
 
     const yScale = d3
       .scaleLinear()
-      .domain(d3.extent(timeSeriesData, (d) => d.value))
+      .domain(d3.extent(points, (d) => d.value))
       .range([height, 0]);
 
-    // Add grid and axes
     addGrid(svg, xScale, yScale, width, height);
+    addTimeAxes(svg, xScale, yScale, height, getParameterLabel(parameter));
 
-    // Calculate optimal tick interval based on date range
-    const dateExtent = d3.extent(timeSeriesData, (d) => d.date);
-    const tickInterval = getTimeTickInterval(dateExtent);
-
-    // Add axes with dynamic time formatting
-    svg
-      .append('g')
-      .attr('class', 'axis')
-      .attr('transform', `translate(0,${height})`)
-      .call(
-        d3
-          .axisBottom(xScale)
-          .ticks(tickInterval)
-          .tickFormat(d3.timeFormat('%b %Y'))
-      );
-
-    svg.append('g').attr('class', 'axis').call(d3.axisLeft(yScale));
-
-    // Add axis labels
-    svg
-      .append('text')
-      .attr('transform', 'rotate(-90)')
-      .attr('y', -55)
-      .attr('x', -height / 2)
-      .attr('dy', '1em')
-      .style('text-anchor', 'middle')
-      .style('font-size', '14px')
-      .style('fill', '#666')
-      .text(getParameterLabel(currentParameter));
-
-    svg
-      .append('text')
-      .attr('transform', `translate(${width / 2}, ${height + 60})`)
-      .style('text-anchor', 'middle')
-      .style('font-size', '14px')
-      .style('fill', '#666')
-      .text('Date');
-
-    // Line generator
     const line = d3
       .line()
       .x((d) => xScale(d.date))
       .y((d) => yScale(d.value))
       .curve(d3.curveMonotoneX);
 
-    // Add lines for each lake
-    dataByLake.forEach((lakeData, lakeName) => {
-      const sortedData = lakeData.sort((a, b) => a.date - b.date);
+    d3.group(points, (d) => d.dataset.lake).forEach((lakePoints, lakeName) => {
+      lakePoints.sort((a, b) => a.date - b.date);
       const color = config.baseColorPalettes[lakeName][0];
 
       svg
         .append('path')
-        .datum(sortedData)
+        .datum(lakePoints)
         .attr('class', 'line')
         .attr('d', line)
         .style('stroke', color)
         .style('stroke-width', '2')
-        .style('fill', 'none')
         .style('opacity', 0.8);
 
-      // Add dots
       svg
-        .selectAll(`.dot-${lakeName}`)
-        .data(sortedData)
-        .enter()
-        .append('circle')
-        .attr('class', `dot dot-${lakeName}`)
+        .append('g')
+        .selectAll('circle')
+        .data(lakePoints)
+        .join('circle')
+        .attr('class', 'dot')
+        .attr('r', 3)
         .attr('cx', (d) => xScale(d.date))
         .attr('cy', (d) => yScale(d.value))
-        .attr('r', 3)
         .style('fill', color)
         .style('stroke', 'white')
         .style('stroke-width', 1)
-        .style('cursor', 'pointer')
-        .on('mouseover', function (event, d) {
-          tooltip.transition().duration(200).style('opacity', 0.9);
-          tooltip
-            .html(
-              `
-                        <strong>${d.lake} Lake</strong><br/>
-                        Date: ${formatDate(d.date)}<br/>
-                        Depth Range: ${depthRange.name}<br/>
-                        Avg ${getParameterLabel(currentParameter)}: ${d.value.toFixed(2)}<br/>
-                        Weather: ${formatValue(d.weather)}<br/>
-                        Air Temp: ${formatValue(d.airTemp, '°C')}
-                    `
-            )
-            .style('left', event.pageX + 10 + 'px')
-            .style('top', event.pageY - 28 + 'px');
-        })
-        .on('mouseout', function (d) {
-          tooltip.transition().duration(500).style('opacity', 0);
-        });
+        .on('mouseover', (event, d) =>
+          showTooltip(
+            event,
+            samplingTooltip(d.dataset, [
+              `Depth Range: ${depthRange.name}`,
+              `Avg ${getParameterLabel(parameter)}: ${d.value.toFixed(2)}`,
+            ])
+          )
+        )
+        .on('mouseout', hideTooltip);
     });
   }
 }

@@ -3,113 +3,103 @@ import DataLoader from './data-loader.js';
 import { ControlsManager } from './controls-manager.js';
 import { TimeSeriesCharts } from './time-series-charts.js';
 import { DepthProfileCharts } from './depth-profile-charts.js';
-import { HorizontalDepthCharts } from './horizontal-depth-charts.js';
-import { CorrelationCharts } from './correlation-charts.js';
+import {
+  CorrelationCharts,
+  correlationParameters,
+} from './correlation-charts.js';
 import { SecchiAnalysis } from './secchi-analysis.js';
 import { LegendManager } from './legend-manager.js';
 
 class WaterQualityApp {
   constructor() {
-    // Initialize components
     this.dataLoader = new DataLoader();
-    this.controlsManager = new ControlsManager(this.dataLoader);
+    this.controlsManager = new ControlsManager(this.dataLoader, () =>
+      this.updateVisualization()
+    );
     this.timeSeriesCharts = new TimeSeriesCharts(this.dataLoader);
     this.depthProfileCharts = new DepthProfileCharts(this.dataLoader);
-    this.horizontalDepthCharts = new HorizontalDepthCharts(this.dataLoader);
     this.correlationCharts = new CorrelationCharts(this.dataLoader);
     this.secchiAnalysis = new SecchiAnalysis(this.dataLoader);
     this.legendManager = new LegendManager(this.dataLoader);
 
-    // State
     this.currentParameter = 'temperature';
-    this.currentView = 'time';
-
-    // Make app globally available for controls
-    window.app = this;
+    this.viewDropdown = document.getElementById('viewType');
   }
 
   async initialize() {
     try {
-      // Load data
       await this.dataLoader.loadData();
-
-      // Create visibility controls
-      this.controlsManager.createVisibilityControls();
-
-      // Initial visualization
-      this.updateVisualization();
-
-      // Setup event listeners
-      this.setupEventListeners();
     } catch (error) {
-      console.error('Failed to initialize application:', error);
+      console.error('Error loading data:', error);
+      d3.select('#chartsContainer')
+        .append('p')
+        .attr('class', 'load-error')
+        .text(
+          'Could not load data/water-data.json. Run `npm run merge-data` to generate it.'
+        );
+      return;
     }
+
+    this.controlsManager.createVisibilityControls();
+    this.updateVisualization();
+    this.setupEventListeners();
   }
 
   setupEventListeners() {
-    // Parameter button listeners
     document.querySelectorAll('.param-btn').forEach((btn) => {
-      btn.addEventListener('click', (e) => {
+      btn.addEventListener('click', () => {
         document
           .querySelectorAll('.param-btn')
-          .forEach((b) => b.classList.remove('active'));
-        e.target.classList.add('active');
-        this.currentParameter = e.target.getAttribute('data-param');
+          .forEach((b) => b.classList.toggle('active', b === btn));
+        this.currentParameter = btn.dataset.param;
         this.updateVisualization();
       });
     });
 
-    // View dropdown listener
-    const viewDropdown = document.getElementById('viewType');
-    viewDropdown.addEventListener('change', (e) => {
-      const selectedView = e.target.value;
-      if (selectedView === 'depthProfiles') {
-        this.currentView = 'depth';
-      } else if (selectedView === 'horizontalDepth') {
-        this.currentView = 'horizontal';
-      } else {
-        this.currentView = 'time';
-      }
-      this.updateVisualization();
-    });
+    this.viewDropdown.addEventListener('change', () =>
+      this.updateVisualization()
+    );
+  }
+
+  // Analysis views have their own layout, so the view dropdown only applies
+  // to single parameters
+  isAnalysisParameter(parameter) {
+    return correlationParameters.includes(parameter) || parameter === 'secchi';
   }
 
   updateVisualization() {
-    // Update view toggle availability based on current parameter
-    this.currentView = this.controlsManager.updateViewToggleVisibility(
-      this.currentParameter
-    );
+    const parameter = this.currentParameter;
+    const isAnalysis = this.isAnalysisParameter(parameter);
 
-    // Create appropriate visualization
-    if (this.currentView === 'depth') {
-      this.depthProfileCharts.createDepthProfiles(this.currentParameter);
-      this.legendManager.updateLegend('depth');
-    } else if (this.currentView === 'horizontal') {
-      this.horizontalDepthCharts.createHorizontalDepthProfiles(
-        this.currentParameter
-      );
-      this.legendManager.updateLegend('horizontal');
-    } else if (this.currentParameter === 'temp_oxygen') {
-      this.correlationCharts.createTemperatureOxygenScatter();
+    this.viewDropdown.disabled = isAnalysis;
+    this.viewDropdown.parentElement.classList.toggle('disabled', isAnalysis);
+    if (isAnalysis) this.viewDropdown.value = 'timeSeries';
+    const view = this.viewDropdown.value;
+
+    if (correlationParameters.includes(parameter)) {
+      this.correlationCharts.createCorrelationView(parameter);
       this.legendManager.updateCorrelationLegend();
-    } else if (this.currentParameter === 'conductivity_tds') {
-      this.correlationCharts.createConductivityTDSScatter();
-      this.legendManager.updateCorrelationLegend();
-    } else if (this.currentParameter === 'ph_oxygen') {
-      this.correlationCharts.createPHOxygenScatter();
-      this.legendManager.updateCorrelationLegend();
-    } else if (this.currentParameter === 'secchi') {
+    } else if (parameter === 'secchi') {
       this.secchiAnalysis.createSecchiDepthAnalysis();
       this.legendManager.updateSecchiLegend();
+    } else if (view === 'depthProfiles' || view === 'horizontalDepth') {
+      this.depthProfileCharts.createDepthProfiles(parameter, {
+        horizontal: view === 'horizontalDepth',
+      });
+      this.legendManager.updateLakeLegend(
+        'Depth Profile Summary',
+        'Each line represents a different sampling date.'
+      );
     } else {
-      this.timeSeriesCharts.createTimeSeriesView(this.currentParameter);
-      this.legendManager.updateLegend('time');
+      this.timeSeriesCharts.createTimeSeriesView(parameter);
+      this.legendManager.updateLakeLegend(
+        'Time Series Summary',
+        'Each line represents a lake; each point is one sampling date, averaged over the depth range.'
+      );
     }
   }
 }
 
-// Initialize the application when DOM is ready
-document.addEventListener('DOMContentLoaded', function () {
-  const app = new WaterQualityApp();
-  app.initialize();
+document.addEventListener('DOMContentLoaded', () => {
+  new WaterQualityApp().initialize();
 });
