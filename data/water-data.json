@@ -1,8 +1,8 @@
 [
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2019-03-28T12:45:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Mary Claire",
       "Gina"
@@ -157,8 +157,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2019-04-28T11:00:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Andrew Smith",
       "Gina Trzesicka"
@@ -305,8 +305,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2019-05-21T10:00:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Gina Trzesicka",
       "Ania (Gina's guest)"
@@ -461,8 +461,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2019-06-16T14:50:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Akshara Sangiorgio",
       "Gina"
@@ -617,8 +617,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2019-07-16T17:00:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Akshara Sangiorgio",
       "Gina"
@@ -773,8 +773,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2019-08-13T14:45:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Gina",
       "Autumn (FOCI summer student0"
@@ -929,8 +929,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2019-09-16T14:45:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Gina",
       "Autumn"
@@ -1085,8 +1085,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2019-11-05T16:00:00-08:00",
+    "station": "DWG",
     "samplers": [
       "readers: Carrie and Max"
     ],
@@ -1240,8 +1240,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2019-12-15T12:47:00-08:00",
+    "station": "DWG",
     "samplers": [
       "readers: Carrie and Heidi"
     ],
@@ -1387,8 +1387,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2020-01-21T16:15:00-08:00",
+    "station": "DWG",
     "samplers": [
       "readers: Max and Heidi"
     ],
@@ -1542,8 +1542,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2020-02-23T11:46:00-08:00",
+    "station": "DWG",
     "samplers": [
       "Heidi and Max"
     ],
@@ -1697,8 +1697,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2020-03-26T12:11:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Max and Carrie"
     ],
@@ -1844,8 +1844,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2020-05-05T10:00:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Gina and Carrie"
     ],
@@ -1999,8 +1999,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2020-05-31T15:00:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Gina and Ziemek"
     ],
@@ -2154,8 +2154,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2020-06-20T12:00:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Andrew and Carrie"
     ],
@@ -2309,8 +2309,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2020-07-25T11:10:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Alma and Mary"
     ],
@@ -2464,8 +2464,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2020-09-01T22:22:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Autumn and Sarah Moore"
     ],
@@ -2619,8 +2619,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2020-09-22T10:00:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Gina and Carrie"
     ],
@@ -2766,8 +2766,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2020-11-02T10:30:00-08:00",
+    "station": "DWG",
     "samplers": [
       "Gina and Carrie"
     ],
@@ -2921,8 +2921,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2020-12-09T09:30:00-08:00",
+    "station": "DWG",
     "samplers": [
       "Max and Carrie"
     ],
@@ -3076,8 +3076,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2021-01-14T10:50:00-08:00",
+    "station": "DWG",
     "samplers": [
       "Heidi and Carrie"
     ],
@@ -3231,8 +3231,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2021-02-16T11:30:00-08:00",
+    "station": "DWG",
     "samplers": [
       "Max and Heidi"
     ],
@@ -3386,8 +3386,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2021-03-18T10:00:00-07:00",
+    "station": "DWG",
     "samplers": [
       "nice",
       "sunny",
@@ -3543,8 +3543,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2021-03-31T04:10:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Helen and Autumn"
     ],
@@ -3698,8 +3698,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2021-04-20T10:15:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -3853,8 +3853,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2021-05-27T13:15:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Gina",
       "Lisa Ferentinos"
@@ -4009,8 +4009,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2021-07-07T10:45:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Michelle Douglas (summer assistant)",
       "Gina"
@@ -4165,8 +4165,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2021-07-28T10:45:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Michelle Douglas (summer assistant)",
       "Gina"
@@ -4321,8 +4321,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2021-08-26T13:00:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Gina"
     ],
@@ -4476,8 +4476,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2021-09-19T13:30:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -4631,8 +4631,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2021-10-13T14:30:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -4778,8 +4778,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2022-01-18T11:30:00-08:00",
+    "station": "DWG",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -4933,8 +4933,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2022-02-17T14:20:00-08:00",
+    "station": "DWG",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -5088,8 +5088,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2022-03-23T13:20:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -5243,8 +5243,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2022-05-10T13:20:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -5398,8 +5398,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2022-06-11T09:00:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Gina",
       "Ziemek (Gina's son)"
@@ -5554,8 +5554,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2022-07-16T09:30:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -5709,8 +5709,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2022-08-16T10:20:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -5864,8 +5864,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2022-09-20T13:00:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Gina and Wisia (Gina's daughter)"
     ],
@@ -6019,8 +6019,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2022-10-18T12:00:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Gina and Wisia"
     ],
@@ -6182,8 +6182,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2022-12-26T10:30:00-08:00",
+    "station": "DWG",
     "samplers": [
       "Gina and Ziemek (Gina's son)"
     ],
@@ -6345,8 +6345,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2023-02-14T11:15:00-08:00",
+    "station": "DWG",
     "samplers": [
       "Gina and Carrie"
     ],
@@ -6508,8 +6508,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2023-03-22T11:30:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -6663,8 +6663,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2023-04-25T14:30:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -6818,8 +6818,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2023-06-29T10:00:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Sue Ellingsen and Gina"
     ],
@@ -6973,8 +6973,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2023-07-18T10:20:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Manuel and Gina"
     ],
@@ -7128,8 +7128,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2023-08-22T10:00:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Sue Ellingsen and Gina"
     ],
@@ -7283,8 +7283,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2023-11-23T10:30:00-08:00",
+    "station": "DWG",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -7438,8 +7438,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2023-12-23T11:10:00-08:00",
+    "station": "DWG",
     "samplers": [
       "Gina and ziemek"
     ],
@@ -7593,8 +7593,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2024-02-12T09:30:00-08:00",
+    "station": "DWG",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -7748,8 +7748,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DWG",
     "date": "2024-04-03T10:30:00-07:00",
+    "station": "DWG",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -7903,8 +7903,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DGW",
     "date": "2024-05-07T10:30:00-07:00",
+    "station": "DGW",
     "samplers": [
       "Carrie and gina"
     ],
@@ -8058,8 +8058,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DGW",
     "date": "2024-06-13T10:30:00-07:00",
+    "station": "DGW",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -8213,8 +8213,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DGW",
     "date": "2024-07-18T09:30:00-07:00",
+    "station": "DGW",
     "samplers": [
       "Sue Ellingsen and Gina"
     ],
@@ -8368,8 +8368,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DGW",
     "date": "2024-08-14T09:30:00-07:00",
+    "station": "DGW",
     "samplers": [
       "Gina and Xavier Lee [Egzavier] FOCI student"
     ],
@@ -8523,8 +8523,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DGW",
     "date": "2024-09-11T12:10:00-07:00",
+    "station": "DGW",
     "samplers": [
       "Gina and Norleen Lilico"
     ],
@@ -8678,8 +8678,8 @@
   },
   {
     "lake": "Gunflint",
-    "station": "DGW",
     "date": "2024-10-13T14:10:00-07:00",
+    "station": "DGW",
     "samplers": [
       "Gina",
       "Wisia (Akshara)"
@@ -10049,8 +10049,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2019-03-28T13:45:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Mary Claire",
       "Gina"
@@ -10173,8 +10173,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2019-04-28T11:45:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Andrew Smith",
       "Gina Trzesicka"
@@ -10297,8 +10297,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2019-05-21T11:00:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Gina Trzesicka",
       "Ania Jasiak (Gina's guest)"
@@ -10421,8 +10421,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2019-06-16T15:50:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Akshara Sangiorgio",
       "Gina"
@@ -10545,8 +10545,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2019-07-16T18:00:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Akshara Sangiorgio",
       "Gina"
@@ -10669,8 +10669,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2019-08-13T15:45:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Gina",
       "Autumn (FOCI summer student0"
@@ -10793,8 +10793,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2019-09-16T14:00:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Gina",
       "Autumn"
@@ -10917,8 +10917,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2019-11-05T13:30:00-08:00",
+    "station": "DWH",
     "samplers": [
       "Carrie and Max"
     ],
@@ -11032,8 +11032,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2019-12-15T11:35:00-08:00",
+    "station": "DWH",
     "samplers": [
       "na"
     ],
@@ -11147,8 +11147,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2020-01-21T14:15:00-08:00",
+    "station": "DWH",
     "samplers": [
       "na"
     ],
@@ -11270,8 +11270,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2020-02-23T11:00:00-08:00",
+    "station": "DWH",
     "samplers": [
       "Max and Heidi"
     ],
@@ -11393,8 +11393,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2020-03-26T11:30:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Max and Carrie"
     ],
@@ -11516,8 +11516,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2020-05-05T11:00:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Gina and Carrie"
     ],
@@ -11639,8 +11639,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2020-05-31T16:00:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Gina and Ziemek (Gina's son)"
     ],
@@ -11762,8 +11762,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2020-06-20T11:25:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Andrew and Carrie"
     ],
@@ -11885,8 +11885,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2020-07-25T10:30:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Mary and Alma"
     ],
@@ -12008,8 +12008,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2020-09-01T19:30:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Autumn and Sarah Moore"
     ],
@@ -12131,8 +12131,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2020-09-22T11:00:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Gina and Carrie"
     ],
@@ -12246,8 +12246,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2020-11-02T11:00:00-08:00",
+    "station": "DWH",
     "samplers": [
       "Gina and Carrie"
     ],
@@ -12369,8 +12369,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2020-12-09T09:30:00-08:00",
+    "station": "DWH",
     "samplers": [
       "Max and Carrie"
     ],
@@ -12492,8 +12492,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2021-01-14T11:45:00-08:00",
+    "station": "DWH",
     "samplers": [
       "Heidi and Carrie"
     ],
@@ -12615,8 +12615,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2021-02-16T12:30:00-08:00",
+    "station": "DWH",
     "samplers": [
       "Max and Heidi"
     ],
@@ -12738,8 +12738,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2021-03-18T11:00:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -12861,8 +12861,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2021-04-20T11:15:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -12984,8 +12984,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2021-05-05T14:00:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Gina and Lisa Ferentinos"
     ],
@@ -13107,8 +13107,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2021-07-07T11:30:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Gina and Michelle Douglas (summer assistant)"
     ],
@@ -13222,8 +13222,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2021-07-28T11:45:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Gina and Michelle Douglas (summer assistant)"
     ],
@@ -13337,8 +13337,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2021-08-26T14:00:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Gina"
     ],
@@ -13452,8 +13452,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2021-09-19T02:30:00-07:00",
+    "station": "DWH",
     "samplers": [
       "carrie and gina"
     ],
@@ -13567,8 +13567,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2021-10-13T15:15:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -13690,8 +13690,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2022-01-18T11:30:00-08:00",
+    "station": "DWH",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -13813,8 +13813,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2022-02-17T14:20:00-08:00",
+    "station": "DWH",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -13936,8 +13936,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2022-03-23T14:20:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -14059,8 +14059,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2022-05-10T14:20:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -14182,8 +14182,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2022-06-11T10:00:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Gina and Ziemek (Gina's son)"
     ],
@@ -14305,8 +14305,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2022-07-16T10:30:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -14428,8 +14428,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2022-08-16T11:30:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -14535,8 +14535,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2022-09-20T14:00:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Gina and Wisia (Gina's daughter)"
     ],
@@ -14650,8 +14650,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2022-10-18T12:00:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Gina and Wisia (Gina's daughter)"
     ],
@@ -14781,8 +14781,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2022-12-26T09:30:00-08:00",
+    "station": "DWH",
     "samplers": [
       "Gina and Ziemek (Gina's son)"
     ],
@@ -14936,8 +14936,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2023-02-14T10:15:00-08:00",
+    "station": "DWH",
     "samplers": [
       "Gina and Carrie"
     ],
@@ -15091,8 +15091,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2023-03-22T10:30:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Carrie",
       "Gina"
@@ -15231,8 +15231,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2023-06-29T11:00:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Sue Ellingsen",
       "Gina"
@@ -15371,8 +15371,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2023-07-18T11:30:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Manuel (FOCI)",
       "Gina"
@@ -15503,8 +15503,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2023-08-23T11:00:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Sue Ellingsen",
       "Gina"
@@ -15635,8 +15635,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2023-11-13T11:30:00-08:00",
+    "station": "DWH",
     "samplers": [
       "Carrie",
       "Gina"
@@ -15775,8 +15775,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2023-12-23T13:45:00-08:00",
+    "station": "DWH",
     "samplers": [
       "Gina",
       "Ziemek"
@@ -15915,8 +15915,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2024-02-12T10:30:00-08:00",
+    "station": "DWH",
     "samplers": [
       "Carrie",
       "Gina"
@@ -16055,8 +16055,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2024-04-03T11:30:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Carrie",
       "Gina"
@@ -16195,8 +16195,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2024-05-07T11:30:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Carrie",
       "Gina"
@@ -16327,8 +16327,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2024-06-13T11:30:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Carrie",
       "Gina"
@@ -16467,8 +16467,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2024-07-18T10:30:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Sue",
       "Gina"
@@ -16599,8 +16599,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2024-08-14T10:30:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Gina",
       "Xavier Lee (FOCI)"
@@ -16739,8 +16739,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2024-09-11T13:30:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Norleen",
       "Gina"
@@ -16879,8 +16879,8 @@
   },
   {
     "lake": "Hague",
-    "station": "DWH",
     "date": "2024-10-13T15:00:00-07:00",
+    "station": "DWH",
     "samplers": [
       "Gina",
       "Wisia (Gina's daughter)"
