@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  pull_request:
+  workflow_call:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+
+      - run: npm ci
+      - run: npm run format:check
+      - run: npm run validate-data
+      - run: npm test
+      - run: npm run build
+
+      # A wrong hash makes the browser refuse to run D3, so check it against
+      # the file the CDN actually serves
+      - name: Check D3 integrity hash
+        run: |
+          url=$(grep -o 'https://cdnjs[^"]*/d3\.min\.js' src/index.html)
+          expected=$(grep -A2 "$url" src/index.html | grep -o 'sha512-[^"]*')
+          actual="sha512-$(curl -fsSL "$url" | openssl dgst -sha512 -binary | base64 -w0)"
+          if [ "$actual" != "$expected" ]; then
+            echo "::error file=src/index.html::integrity for $url should be $actual"
+            exit 1
+          fi

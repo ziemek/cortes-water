@@ -17,7 +17,7 @@ Field-sheet photos are discarded after OCR, so `raw/ocr/` is the earliest copy o
 2. Copy it to `records/<lake>/<YYYY-MM-DD>.json` (Pacific date of the sampling), as a single object, not an array.
 3. Check every value against the sheet and fix the record. `diff` against the OCR file shows what was corrected.
 4. Set `"source": "ocr/<YYYY-MM-DD>-<lake>.json"`.
-5. Run `npm start` and check the charts.
+5. Run `npm run validate-data`, then `npm start` and check the charts.
 
 To correct an existing sampling, edit its file in `records/` directly.
 
