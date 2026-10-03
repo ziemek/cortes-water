@@ -8,8 +8,10 @@ Static D3 site charting lake-monitoring data (Gunflint and Hague lakes, Cortes I
 - `npm run merge-data` — rebuild `src/data/water-data.json` from `data/records/`
 - `npm run build` — merge, then copy `src/` to `dist/`
 - `npm run format` / `format:check` — Prettier (JSON is ignored)
+- `npm run validate-data` — check records for implausible values; issues listed in `scripts/known-data-issues.json` are ignored
+- `npm test` — `node:test` tests for the scripts in `test/` (none for the app code)
 
-There are no tests and no linter. Pushing to `main` deploys to GitHub Pages via `.github/workflows/gh-pages.yml`.
+There is no linter. Pull requests run `.github/workflows/ci.yml` (format, validate-data, test, build). Pushing to `main` runs the same checks, then deploys to GitHub Pages via `.github/workflows/gh-pages.yml`.
 
 ## Data pipeline
 
