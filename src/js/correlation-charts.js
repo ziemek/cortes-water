@@ -3,6 +3,7 @@ import { chartDimensions, config } from './config.js';
 import {
   tooltip,
   formatDate,
+  formatValue,
   getParameterLabel,
   getTimeGradientColor,
   addGrid,
@@ -186,8 +187,8 @@ export class CorrelationCharts {
                     Depth: ${d.depth}m<br/>
                     ${getParameterLabel(xParam)}: ${d.x}<br/>
                     ${getParameterLabel(yParam)}: ${d.y}<br/>
-                    Weather: ${d.weather || 'N/A'}<br/>
-                    Air Temp: ${d.airTemp || 'N/A'}°C
+                    Weather: ${formatValue(d.weather)}<br/>
+                    Air Temp: ${formatValue(d.airTemp, '°C')}
                 `
           )
           .style('left', event.pageX + 10 + 'px')
@@ -200,6 +201,6 @@ export class CorrelationCharts {
       });
 
     // Add trend line
-    addTrendLine(svg, scatterData, xScale, yScale, xParam, yParam);
+    addTrendLine(svg, scatterData, xScale, yScale);
   }
 }

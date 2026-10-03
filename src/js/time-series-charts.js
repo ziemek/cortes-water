@@ -3,35 +3,15 @@ import { chartDimensions, config } from './config.js';
 import {
   tooltip,
   formatDate,
+  formatValue,
   getParameterLabel,
+  getTimeTickInterval,
   addGrid,
-  addAxes,
 } from './utils.js';
 
 export class TimeSeriesCharts {
   constructor(dataLoader) {
     this.dataLoader = dataLoader;
-  }
-
-  // Calculate optimal tick interval based on date range
-  getOptimalTickInterval(dateExtent) {
-    const [startDate, endDate] = dateExtent;
-    const timeDiffMonths =
-      (endDate.getFullYear() - startDate.getFullYear()) * 12 +
-      (endDate.getMonth() - startDate.getMonth());
-
-    // Choose tick interval based on total time span
-    if (timeDiffMonths <= 6) {
-      return d3.timeMonth.every(1); // Monthly ticks for 6 months or less
-    } else if (timeDiffMonths <= 12) {
-      return d3.timeMonth.every(2); // Every 2 months for up to 1 year
-    } else if (timeDiffMonths <= 24) {
-      return d3.timeMonth.every(3); // Every 3 months for up to 2 years
-    } else if (timeDiffMonths <= 48) {
-      return d3.timeMonth.every(6); // Every 6 months for up to 4 years
-    } else {
-      return d3.timeYear.every(1); // Yearly ticks for longer periods
-    }
   }
 
   // Enhanced time series visualization
@@ -119,7 +99,7 @@ export class TimeSeriesCharts {
 
     // Calculate optimal tick interval based on date range
     const dateExtent = d3.extent(timeSeriesData, (d) => d.date);
-    const tickInterval = this.getOptimalTickInterval(dateExtent);
+    const tickInterval = getTimeTickInterval(dateExtent);
 
     // Add axes with dynamic time formatting
     svg
@@ -200,8 +180,8 @@ export class TimeSeriesCharts {
                         Date: ${formatDate(d.date)}<br/>
                         Depth Range: ${depthRange.name}<br/>
                         Avg ${getParameterLabel(currentParameter)}: ${d.value.toFixed(2)}<br/>
-                        Weather: ${d.weather}<br/>
-                        Air Temp: ${d.airTemp}°C
+                        Weather: ${formatValue(d.weather)}<br/>
+                        Air Temp: ${formatValue(d.airTemp, '°C')}
                     `
             )
             .style('left', event.pageX + 10 + 'px')

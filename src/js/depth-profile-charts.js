@@ -3,6 +3,7 @@ import { chartDimensions, config } from './config.js';
 import {
   tooltip,
   formatDate,
+  formatValue,
   getParameterLabel,
   generateColorPalette,
   addGrid,
@@ -139,8 +140,8 @@ export class DepthProfileCharts {
                             Date: ${formatDate(dataset.date)}<br/>
                             Depth: ${d.depth}m<br/>
                             ${getParameterLabel(currentParameter)}: ${d[currentParameter]}<br/>
-                            Weather: ${dataset.weather}<br/>
-                            Air Temp: ${dataset.air_temperature}°C
+                            Weather: ${formatValue(dataset.weather)}<br/>
+                            Air Temp: ${formatValue(dataset.air_temperature, '°C')}
                         `
               )
               .style('left', event.pageX + 10 + 'px')

@@ -3,35 +3,27 @@ import { chartDimensions, config } from './config.js';
 import {
   tooltip,
   formatDate,
+  formatValue,
   getSeasonColor,
+  getTimeTickInterval,
+  linearRegression,
   addGrid,
   addAxes,
 } from './utils.js';
 
+// Mean of a sampling's Secchi readings, undefined when none were taken
+function getMeanSecchi(dataset) {
+  return d3.mean(dataset.secchi_depth || []);
+}
+
+// The 0 m reading, undefined when the profile doesn't include one
+function getSurfaceMeasurement(dataset) {
+  return (dataset.measurements || []).find((m) => m.depth === 0);
+}
+
 export class SecchiAnalysis {
   constructor(dataLoader) {
     this.dataLoader = dataLoader;
-  }
-
-  // Calculate optimal tick interval based on date range
-  getOptimalTickInterval(dateExtent) {
-    const [startDate, endDate] = dateExtent;
-    const timeDiffMonths =
-      (endDate.getFullYear() - startDate.getFullYear()) * 12 +
-      (endDate.getMonth() - startDate.getMonth());
-
-    // Choose tick interval based on total time span
-    if (timeDiffMonths <= 6) {
-      return d3.timeMonth.every(1); // Monthly ticks for 6 months or less
-    } else if (timeDiffMonths <= 12) {
-      return d3.timeMonth.every(2); // Every 2 months for up to 1 year
-    } else if (timeDiffMonths <= 24) {
-      return d3.timeMonth.every(3); // Every 3 months for up to 2 years
-    } else if (timeDiffMonths <= 48) {
-      return d3.timeMonth.every(6); // Every 6 months for up to 4 years
-    } else {
-      return d3.timeYear.every(1); // Yearly ticks for longer periods
-    }
   }
 
   // Create Secchi Depth Time Series
@@ -80,22 +72,16 @@ export class SecchiAnalysis {
     // Process data
     const timeSeriesData = datasets
       .map((dataset) => {
-        const avgSecchi = d3.mean(
-          dataset.secchi_depth.filter((d) => d !== null && d !== undefined)
-        );
-        const surfaceMeasurement =
-          dataset.measurements && dataset.measurements[0];
+        const surfaceMeasurement = getSurfaceMeasurement(dataset);
         return {
           lake: dataset.lake,
           date: new Date(dataset.date),
-          value: avgSecchi,
+          value: getMeanSecchi(dataset),
           weather: dataset.weather,
           airTemp: dataset.air_temperature,
-          surfaceTemp: surfaceMeasurement
-            ? surfaceMeasurement.temperature
-            : null,
-          surfaceDO: surfaceMeasurement ? surfaceMeasurement.DO : null,
-          surfacePH: surfaceMeasurement ? surfaceMeasurement.PH : null,
+          surfaceTemp: surfaceMeasurement?.temperature,
+          surfaceDO: surfaceMeasurement?.DO,
+          surfacePH: surfaceMeasurement?.PH,
         };
       })
       .filter((d) => d.value !== undefined && d.value !== null);
@@ -127,7 +113,7 @@ export class SecchiAnalysis {
 
     // Calculate optimal tick interval based on date range
     const dateExtent = d3.extent(timeSeriesData, (d) => d.date);
-    const tickInterval = this.getOptimalTickInterval(dateExtent);
+    const tickInterval = getTimeTickInterval(dateExtent);
 
     // Add axes with dynamic time formatting
     svg
@@ -207,11 +193,11 @@ export class SecchiAnalysis {
                         <strong>${d.lake} Lake</strong><br/>
                         Date: ${formatDate(d.date)}<br/>
                         Secchi Depth: ${d.value.toFixed(2)}m<br/>
-                        ${d.surfaceTemp !== null ? `Surface Temp: ${d.surfaceTemp.toFixed(1)}°C<br/>` : ''}
-                        ${d.surfaceDO !== null ? `Surface DO: ${d.surfaceDO.toFixed(2)} mg/L<br/>` : ''}
-                        ${d.surfacePH !== null ? `Surface pH: ${d.surfacePH.toFixed(2)}<br/>` : ''}
-                        Weather: ${d.weather}<br/>
-                        Air Temp: ${d.airTemp}°C
+                        ${d.surfaceTemp != null ? `Surface Temp: ${d.surfaceTemp.toFixed(1)}°C<br/>` : ''}
+                        ${d.surfaceDO != null ? `Surface DO: ${d.surfaceDO.toFixed(2)} mg/L<br/>` : ''}
+                        ${d.surfacePH != null ? `Surface pH: ${d.surfacePH.toFixed(2)}<br/>` : ''}
+                        Weather: ${formatValue(d.weather)}<br/>
+                        Air Temp: ${formatValue(d.airTemp, '°C')}
                     `
             )
             .style('left', event.pageX + 10 + 'px')
@@ -260,19 +246,11 @@ export class SecchiAnalysis {
     // Process data
     const correlationData = datasets
       .map((dataset) => {
-        const avgSecchi = d3.mean(
-          dataset.secchi_depth.filter((d) => d !== null && d !== undefined)
-        );
-        const surfaceMeasurement =
-          dataset.measurements && dataset.measurements[0];
-        const surfaceValue = surfaceMeasurement
-          ? surfaceMeasurement[param.param]
-          : null;
         return {
           lake: dataset.lake,
           date: new Date(dataset.date),
-          secchi: avgSecchi,
-          value: surfaceValue,
+          secchi: getMeanSecchi(dataset),
+          value: getSurfaceMeasurement(dataset)?.[param.param],
           weather: dataset.weather,
           airTemp: dataset.air_temperature,
         };
@@ -328,8 +306,8 @@ export class SecchiAnalysis {
                         Date: ${formatDate(d.date)}<br/>
                         Secchi Depth: ${d.secchi.toFixed(2)}m<br/>
                         ${param.label}: ${d.value.toFixed(2)}<br/>
-                        Weather: ${d.weather}<br/>
-                        Air Temp: ${d.airTemp}°C
+                        Weather: ${formatValue(d.weather)}<br/>
+                        Air Temp: ${formatValue(d.airTemp, '°C')}
                     `
             )
             .style('left', event.pageX + 10 + 'px')
@@ -341,22 +319,14 @@ export class SecchiAnalysis {
     });
 
     // Add trend line
-    const xValues = correlationData.map((d) => d.value);
-    const yValues = correlationData.map((d) => d.secchi);
+    const fit = linearRegression(
+      correlationData.map((d) => ({ x: d.value, y: d.secchi }))
+    );
+    if (!fit) return;
 
-    const xMean = d3.mean(xValues);
-    const yMean = d3.mean(yValues);
-
-    const slope =
-      d3.sum(xValues.map((x, i) => (x - xMean) * (yValues[i] - yMean))) /
-      d3.sum(xValues.map((x) => Math.pow(x - xMean, 2)));
-
-    const intercept = yMean - slope * xMean;
-
-    const x1 = d3.min(xValues);
-    const x2 = d3.max(xValues);
-    const y1 = slope * x1 + intercept;
-    const y2 = slope * x2 + intercept;
+    const [x1, x2] = xScale.domain();
+    const y1 = fit.slope * x1 + fit.intercept;
+    const y2 = fit.slope * x2 + fit.intercept;
 
     svg
       .append('line')

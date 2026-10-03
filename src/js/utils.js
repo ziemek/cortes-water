@@ -53,10 +53,10 @@ export function getSeasonColor(date) {
 export function getTimeGradientColor(date, minDate, maxDate) {
   const totalTime = maxDate.getTime() - minDate.getTime();
   const currentTime = new Date(date).getTime() - minDate.getTime();
-  const ratio = currentTime / totalTime;
+  const ratio = totalTime > 0 ? currentTime / totalTime : 0;
 
-  // Color gradient from blue (early) to red (late)
-  const hue = 240 - ratio * 120; // 240 = blue, 120 = red
+  // Color gradient from blue (early) to green (late)
+  const hue = 240 - ratio * 120; // 240 = blue, 120 = green
   return d3.hsl(hue, 0.7, 0.5).hex();
 }
 
@@ -74,6 +74,27 @@ export function formatDate(dateString) {
 // Get parameter label
 export function getParameterLabel(param) {
   return config.parameterLabels[param] || param;
+}
+
+// Display text for an optional value, "N/A" when it wasn't recorded
+export function formatValue(value, unit = '') {
+  return value === null || value === undefined ? 'N/A' : `${value}${unit}`;
+}
+
+// Tick interval for a time axis, based on the number of Pacific calendar
+// months the extent spans
+export function getTimeTickInterval([startDate, endDate]) {
+  const months = (date) => {
+    const [year, month] = getDateOnly(date).split('-').map(Number);
+    return year * 12 + month;
+  };
+  const span = months(endDate) - months(startDate);
+
+  if (span <= 6) return d3.timeMonth.every(1);
+  if (span <= 12) return d3.timeMonth.every(2);
+  if (span <= 24) return d3.timeMonth.every(3);
+  if (span <= 48) return d3.timeMonth.every(6);
+  return d3.timeYear.every(1);
 }
 
 // Initialize global tooltip
@@ -137,25 +158,41 @@ export function addAxes(svg, xScale, yScale, height, xLabel, yLabel) {
   }
 }
 
-// Add trend line to scatter plot
-export function addTrendLine(svg, data, xScale, yScale, xParam, yParam) {
-  // Calculate linear regression
-  const n = data.length;
-  const sumX = d3.sum(data, (d) => d.x);
-  const sumY = d3.sum(data, (d) => d.y);
-  const sumXY = d3.sum(data, (d) => d.x * d.y);
-  const sumXX = d3.sum(data, (d) => d.x * d.x);
+/**
+ * Least-squares fit of y on x.
+ * @param {{x: number, y: number}[]} points
+ * @returns {{slope: number, intercept: number, rSquared: number} | null}
+ *   null when the line is undefined (fewer than 2 points or no spread in x);
+ *   rSquared is NaN when every y is the same.
+ */
+export function linearRegression(points) {
+  const n = points.length;
+  if (n < 2) return null;
 
-  const slope = (n * sumXY - sumX * sumY) / (n * sumXX - sumX * sumX);
-  const intercept = (sumY - slope * sumX) / n;
+  const xMean = d3.mean(points, (d) => d.x);
+  const yMean = d3.mean(points, (d) => d.y);
+  const sxx = d3.sum(points, (d) => (d.x - xMean) ** 2);
+  if (sxx === 0) return null;
 
-  // Calculate R-squared
-  const yMean = sumY / n;
-  const totalSumSquares = d3.sum(data, (d) => Math.pow(d.y - yMean, 2));
-  const residualSumSquares = d3.sum(data, (d) =>
-    Math.pow(d.y - (slope * d.x + intercept), 2)
+  const sxy = d3.sum(points, (d) => (d.x - xMean) * (d.y - yMean));
+  const slope = sxy / sxx;
+  const intercept = yMean - slope * xMean;
+
+  const totalSumSquares = d3.sum(points, (d) => (d.y - yMean) ** 2);
+  const residualSumSquares = d3.sum(
+    points,
+    (d) => (d.y - (slope * d.x + intercept)) ** 2
   );
   const rSquared = 1 - residualSumSquares / totalSumSquares;
+
+  return { slope, intercept, rSquared };
+}
+
+// Add trend line to scatter plot
+export function addTrendLine(svg, data, xScale, yScale) {
+  const fit = linearRegression(data);
+  if (!fit) return;
+  const { slope, intercept, rSquared } = fit;
 
   // Draw trend line
   const xDomain = xScale.domain();
@@ -179,6 +216,8 @@ export function addTrendLine(svg, data, xScale, yScale, xParam, yParam) {
     .style('stroke-dasharray', '5,5')
     .style('fill', 'none')
     .style('opacity', 0.8);
+
+  if (!Number.isFinite(rSquared)) return;
 
   // Add R-squared label
   svg

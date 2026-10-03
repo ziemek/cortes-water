@@ -190,7 +190,8 @@ export class LegendManager {
         ).html(`
                     <strong>Time Series Summary</strong><br/>
                     <span style="font-size: 12px; color: #666;">
-                        Each line represents a different sampling date. 
+                        Each line represents a lake; each point is one sampling date,
+                        averaged over the depth range.
                         Hover over data points for detailed information.
                     </span>
                 `);
