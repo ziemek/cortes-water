@@ -1,6 +1,16 @@
 // Utility functions for charts and data processing
 import { config } from './config.js';
 
+const SAMPLING_TIME_ZONE = 'America/Vancouver';
+
+// en-CA formats dates as YYYY-MM-DD
+const pacificDateFormat = new Intl.DateTimeFormat('en-CA', {
+  timeZone: SAMPLING_TIME_ZONE,
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+});
+
 // Dynamic color generation
 export function generateColorPalette(baseColors, count) {
   if (count <= baseColors.length) {
@@ -32,7 +42,7 @@ export function generateColorPalette(baseColors, count) {
 
 // Generate season color
 export function getSeasonColor(date) {
-  const month = new Date(date).getMonth();
+  const month = Number(getDateOnly(date).slice(5, 7)) - 1;
   if (month >= 2 && month <= 4) return config.seasonColors.spring;
   if (month >= 5 && month <= 7) return config.seasonColors.summer;
   if (month >= 8 && month <= 10) return config.seasonColors.fall;
@@ -54,6 +64,7 @@ export function getTimeGradientColor(date, minDate, maxDate) {
 export function formatDate(dateString) {
   const date = new Date(dateString);
   return date.toLocaleDateString('en-US', {
+    timeZone: SAMPLING_TIME_ZONE,
     year: 'numeric',
     month: 'short',
     day: 'numeric',
@@ -185,15 +196,21 @@ export function dateToValidId(dateString) {
   return dateString.replace(/[:.]/g, '-');
 }
 
-// Extract date-only string (YYYY-MM-DD) from datetime string
+// Calendar date (YYYY-MM-DD) of a sampling in the lakes' local time,
+// independent of the viewer's timezone
 export function getDateOnly(dateString) {
-  return new Date(dateString).toISOString().split('T')[0];
+  return pacificDateFormat.format(new Date(dateString));
+}
+
+export function getYear(dateString) {
+  return Number(getDateOnly(dateString).slice(0, 4));
 }
 
 // Format date-only string for display
 export function formatDateOnly(dateOnlyString) {
-  const date = new Date(dateOnlyString + 'T00:00:00');
+  const date = new Date(dateOnlyString + 'T12:00:00Z');
   return date.toLocaleDateString('en-US', {
+    timeZone: 'UTC',
     year: 'numeric',
     month: 'short',
     day: 'numeric',

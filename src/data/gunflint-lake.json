@@ -2,7 +2,7 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2019-03-29T03:45:00.000Z",
+    "date": "2019-03-28T12:45:00-07:00",
     "samplers": [
       "Mary Claire",
       "Gina"
@@ -158,7 +158,7 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2019-04-29T02:00:00.000Z",
+    "date": "2019-04-28T11:00:00-07:00",
     "samplers": [
       "Andrew Smith",
       "Gina Trzesicka"
@@ -238,14 +238,6 @@
         "PH": 6.15
       },
       {
-        "depth": 8,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
         "depth": 9,
         "temperature": 4.6,
         "DO": 12.2,
@@ -314,7 +306,7 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2019-05-22T01:00:00.000Z",
+    "date": "2019-05-21T10:00:00-07:00",
     "samplers": [
       "Gina Trzesicka",
       "Ania (Gina's guest)"
@@ -470,7 +462,7 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2020-04-07T05:50:00.000Z",
+    "date": "2019-06-16T14:50:00-07:00",
     "samplers": [
       "Akshara Sangiorgio",
       "Gina"
@@ -626,7 +618,7 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2019-07-17T08:00:00.000Z",
+    "date": "2019-07-16T17:00:00-07:00",
     "samplers": [
       "Akshara Sangiorgio",
       "Gina"
@@ -782,7 +774,7 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2020-01-09T06:45:00.000Z",
+    "date": "2019-08-13T14:45:00-07:00",
     "samplers": [
       "Gina",
       "Autumn (FOCI summer student0"
@@ -938,7 +930,7 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2020-04-10T05:45:00.000Z",
+    "date": "2019-09-16T14:45:00-07:00",
     "samplers": [
       "Gina",
       "Autumn"
@@ -1094,7 +1086,7 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2019-05-12T19:00:00.000Z",
+    "date": "2019-11-05T16:00:00-08:00",
     "samplers": [
       "readers: Carrie and Max"
     ],
@@ -1249,11 +1241,11 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2021-09-02T07:15:00.000Z",
+    "date": "2019-12-15T12:47:00-08:00",
     "samplers": [
       "readers: Carrie and Heidi"
     ],
-    "weather": "Weather: wind, rain, recent melt",
+    "weather": "clear",
     "air_temperature": 5.8,
     "secchi_depth": [
       4.7,
@@ -1263,14 +1255,6 @@
     "phosphorus": 0.0067,
     "data_notes": null,
     "measurements": [
-      {
-        "depth": 0,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
       {
         "depth": 1,
         "temperature": 6.8,
@@ -1398,7 +1382,26 @@
         "SPC": 52.4,
         "TDS": 34.45,
         "PH": 3.3
-      },
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2020-01-21T16:15:00-08:00",
+    "samplers": [
+      "readers: Max and Heidi"
+    ],
+    "weather": "Weather: wind, rain, recent melt",
+    "air_temperature": 5.6,
+    "secchi_depth": [
+      3.12,
+      3.56
+    ],
+    "nitrogen": 0.339,
+    "phosphorus": 0.011,
+    "data_notes": "had to go around as the stream between Hague and Gunlint was blocked",
+    "measurements": [
       {
         "depth": 0,
         "temperature": 4.7,
@@ -1414,26 +1417,7 @@
         "SPC": 47.9,
         "TDS": 30.55,
         "PH": 7.05
-      }
-    ]
-  },
-  {
-    "lake": "Gunflint",
-    "station": "DWG",
-    "date": "2021-11-03T02:46:00.000Z",
-    "samplers": [
-      "readers: Max and Heidi"
-    ],
-    "weather": "a bit windy, sun + clouds",
-    "air_temperature": 5.6,
-    "secchi_depth": [
-      3.12,
-      3.56
-    ],
-    "nitrogen": 0.339,
-    "phosphorus": 0.011,
-    "data_notes": "had to go around as the stream between Hague and Gunlint was blocked",
-    "measurements": [
+      },
       {
         "depth": 2,
         "temperature": 4.7,
@@ -1553,7 +1537,26 @@
         "SPC": 47.5,
         "TDS": 30.55,
         "PH": 6.91
-      },
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2020-02-23T11:46:00-08:00",
+    "samplers": [
+      "Heidi and Max"
+    ],
+    "weather": "a bit windy, sun + clouds",
+    "air_temperature": 6.6,
+    "secchi_depth": [
+      3.7,
+      3.7
+    ],
+    "nitrogen": 0.236,
+    "phosphorus": 0.0032,
+    "data_notes": null,
+    "measurements": [
       {
         "depth": 0,
         "temperature": 4.6,
@@ -1569,26 +1572,7 @@
         "SPC": 45.4,
         "TDS": 29.25,
         "PH": 6.25
-      }
-    ]
-  },
-  {
-    "lake": "Gunflint",
-    "station": "DWG",
-    "date": "2022-02-04T04:11:00.000Z",
-    "samplers": [
-      "Max and Carrie"
-    ],
-    "weather": "overcast, no wind",
-    "air_temperature": 12.6,
-    "secchi_depth": [
-      4.2,
-      4.45
-    ],
-    "nitrogen": 0.23,
-    "phosphorus": 0.0032,
-    "data_notes": null,
-    "measurements": [
+      },
       {
         "depth": 2,
         "temperature": 4.6,
@@ -1708,7 +1692,26 @@
         "SPC": 45.5,
         "TDS": 29.25,
         "PH": 6.32
-      },
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2020-03-26T12:11:00-07:00",
+    "samplers": [
+      "Max and Carrie"
+    ],
+    "weather": "overcast, no wind",
+    "air_temperature": 12.6,
+    "secchi_depth": [
+      4.2,
+      4.45
+    ],
+    "nitrogen": 0.23,
+    "phosphorus": 0.0032,
+    "data_notes": null,
+    "measurements": [
       {
         "depth": 1,
         "temperature": 8.2,
@@ -1842,32 +1845,7 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2020-05-06T01:00:00.000Z",
-    "samplers": [],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
-    ],
-    "nitrogen": null,
-    "phosphorus": null,
-    "data_notes": null,
-    "measurements": [
-      {
-        "depth": 0,
-        "temperature": 14.4,
-        "DO": 11.85,
-        "SPC": 48,
-        "TDS": 31.2,
-        "PH": 6.71
-      }
-    ]
-  },
-  {
-    "lake": "Gunflint",
-    "station": "MAY",
-    "date": null,
+    "date": "2020-05-05T10:00:00-07:00",
     "samplers": [
       "Gina and Carrie"
     ],
@@ -1881,6 +1859,14 @@
     "phosphorus": 0.014,
     "data_notes": "2020-04-21, It looked ike algae bloom, water samples were taken by Carrie and sent to lab by 8 Lane",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 14.4,
+        "DO": 11.85,
+        "SPC": 48,
+        "TDS": 31.2,
+        "PH": 6.71
+      },
       {
         "depth": 1,
         "temperature": 14,
@@ -2014,7 +2000,7 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2021-08-07T03:00:00.000Z",
+    "date": "2020-05-31T15:00:00-07:00",
     "samplers": [
       "Gina and Ziemek"
     ],
@@ -2163,21 +2149,13 @@
         "SPC": 46.6,
         "TDS": 30.55,
         "PH": 5.77
-      },
-      {
-        "depth": 0,
-        "temperature": 20.5,
-        "DO": 9,
-        "SPC": 49.4,
-        "TDS": 32.5,
-        "PH": 7.11
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2022-01-08T03:10:00.000Z",
+    "date": "2020-06-20T12:00:00-07:00",
     "samplers": [
       "Andrew and Carrie"
     ],
@@ -2191,6 +2169,14 @@
     "phosphorus": null,
     "data_notes": null,
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 20.5,
+        "DO": 9,
+        "SPC": 49.4,
+        "TDS": 32.5,
+        "PH": 7.11
+      },
       {
         "depth": 1,
         "temperature": 20.6,
@@ -2318,21 +2304,13 @@
         "SPC": 48.3,
         "TDS": 31.2,
         "PH": 5.96
-      },
-      {
-        "depth": 0,
-        "temperature": 23.5,
-        "DO": 7.75,
-        "SPC": 52,
-        "TDS": 33.5,
-        "PH": 7.56
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2020-01-10T14:22:00.000Z",
+    "date": "2020-07-25T11:10:00-07:00",
     "samplers": [
       "Alma and Mary"
     ],
@@ -2346,6 +2324,14 @@
     "phosphorus": null,
     "data_notes": null,
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 23.5,
+        "DO": 7.75,
+        "SPC": 52,
+        "TDS": 33.5,
+        "PH": 7.56
+      },
       {
         "depth": 1,
         "temperature": 23.3,
@@ -2473,21 +2459,13 @@
         "SPC": 47.4,
         "TDS": 31.2,
         "PH": 5.87
-      },
-      {
-        "depth": 0,
-        "temperature": 21.9,
-        "DO": 8.01,
-        "SPC": 58.1,
-        "TDS": 34.45,
-        "PH": 7.1
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2021-10-10T01:00:00.000Z",
+    "date": "2020-09-01T22:22:00-07:00",
     "samplers": [
       "Autumn and Sarah Moore"
     ],
@@ -2501,6 +2479,14 @@
     "phosphorus": null,
     "data_notes": null,
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 21.9,
+        "DO": 8.01,
+        "SPC": 58.1,
+        "TDS": 34.45,
+        "PH": 7.1
+      },
       {
         "depth": 1,
         "temperature": 21.5,
@@ -2628,21 +2614,13 @@
         "SPC": 50.1,
         "TDS": 32.5,
         "PH": 5.78
-      },
-      {
-        "depth": 0,
-        "temperature": 20.7,
-        "DO": 6.77,
-        "SPC": 53,
-        "TDS": 34.45,
-        "PH": 6.96
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2020-02-12T02:30:00.000Z",
+    "date": "2020-09-22T10:00:00-07:00",
     "samplers": [
       "Gina and Carrie"
     ],
@@ -2656,6 +2634,14 @@
     "phosphorus": null,
     "data_notes": null,
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 20.7,
+        "DO": 6.77,
+        "SPC": 53,
+        "TDS": 34.45,
+        "PH": 6.96
+      },
       {
         "depth": 1,
         "temperature": 20.6,
@@ -2775,29 +2761,13 @@
         "SPC": 49.8,
         "TDS": 32.5,
         "PH": 5.75
-      },
-      {
-        "depth": 16,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
-      },
-      {
-        "depth": 0,
-        "temperature": 12,
-        "DO": 10.4,
-        "SPC": 52,
-        "TDS": 33.8,
-        "PH": 6.16
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": null,
+    "date": "2020-11-02T10:30:00-08:00",
     "samplers": [
       "Gina and Carrie"
     ],
@@ -2811,6 +2781,14 @@
     "phosphorus": null,
     "data_notes": "no water samples taken",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 12,
+        "DO": 10.4,
+        "SPC": 52,
+        "TDS": 33.8,
+        "PH": 6.16
+      },
       {
         "depth": 1,
         "temperature": 11.8,
@@ -2944,7 +2922,7 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2020-01-03T02:30:00.000Z",
+    "date": "2020-12-09T09:30:00-08:00",
     "samplers": [
       "Max and Carrie"
     ],
@@ -3093,315 +3071,13 @@
         "SPC": 52.9,
         "TDS": 33.8,
         "PH": 5.9
-      },
-      {
-        "depth": 1,
-        "temperature": 12,
-        "DO": 10.4,
-        "SPC": 52,
-        "TDS": 33.8,
-        "PH": 6.76
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2020-09-13T00:30:00.000Z",
-    "samplers": [
-      "Carrie and Gina"
-    ],
-    "weather": "calm, later light wind",
-    "air_temperature": 17,
-    "secchi_depth": [
-      4.6,
-      4.3
-    ],
-    "nitrogen": null,
-    "phosphorus": null,
-    "data_notes": "no lab samples",
-    "measurements": [
-      {
-        "depth": 2,
-        "temperature": 11.8,
-        "DO": 10.8,
-        "SPC": 51.6,
-        "TDS": 33.5,
-        "PH": 6.18
-      },
-      {
-        "depth": 3,
-        "temperature": 11.8,
-        "DO": 10.62,
-        "SPC": 51.5,
-        "TDS": 33.15,
-        "PH": 6.21
-      },
-      {
-        "depth": 4,
-        "temperature": 11.8,
-        "DO": 10.33,
-        "SPC": 51.1,
-        "TDS": 33.15,
-        "PH": 6.31
-      },
-      {
-        "depth": 5,
-        "temperature": 11.7,
-        "DO": 9.97,
-        "SPC": 51.2,
-        "TDS": 33.15,
-        "PH": 6.36
-      },
-      {
-        "depth": 6,
-        "temperature": 11.6,
-        "DO": 10.09,
-        "SPC": 50.9,
-        "TDS": 33.15,
-        "PH": 6.43
-      },
-      {
-        "depth": 7,
-        "temperature": 11.7,
-        "DO": 10,
-        "SPC": 51.4,
-        "TDS": 33.8,
-        "PH": 6.44
-      },
-      {
-        "depth": 8,
-        "temperature": 11.4,
-        "DO": 9.36,
-        "SPC": 50.3,
-        "TDS": 32.5,
-        "PH": 6.5
-      },
-      {
-        "depth": 9,
-        "temperature": 9.4,
-        "DO": 7.42,
-        "SPC": 46.5,
-        "TDS": 30.55,
-        "PH": 6.02
-      },
-      {
-        "depth": 10,
-        "temperature": 7.8,
-        "DO": 7.53,
-        "SPC": 46.1,
-        "TDS": 29.9,
-        "PH": 5.94
-      },
-      {
-        "depth": 11,
-        "temperature": 9.4,
-        "DO": 6.53,
-        "SPC": 46.7,
-        "TDS": 29.9,
-        "PH": 5.88
-      },
-      {
-        "depth": 12,
-        "temperature": 6.3,
-        "DO": 7.21,
-        "SPC": 46.3,
-        "TDS": 29.9,
-        "PH": 5.86
-      },
-      {
-        "depth": 13,
-        "temperature": 6.5,
-        "DO": 6.73,
-        "SPC": 47.5,
-        "TDS": 31.3,
-        "PH": 5.82
-      },
-      {
-        "depth": 14,
-        "temperature": 6.5,
-        "DO": 3.54,
-        "SPC": 50.4,
-        "TDS": 32.5,
-        "PH": 5.78
-      },
-      {
-        "depth": 15,
-        "temperature": 6.2,
-        "DO": 2.32,
-        "SPC": 51,
-        "TDS": 33.15,
-        "PH": 5.74
-      },
-      {
-        "depth": 16,
-        "temperature": 6.3,
-        "DO": 2.08,
-        "SPC": 54.6,
-        "TDS": 35.1,
-        "PH": 5.73
-      },
-      {
-        "depth": 0,
-        "temperature": 7,
-        "DO": 11.85,
-        "SPC": 50.2,
-        "TDS": 31.2,
-        "PH": 6.66
-      }
-    ]
-  },
-  {
-    "lake": "Gunflint",
-    "station": "DWG",
-    "date": null,
-    "samplers": [
-      "Max and Carrie"
-    ],
-    "weather": "high misty, clouds",
-    "air_temperature": 9.8,
-    "secchi_depth": [
-      4.05,
-      4.2
-    ],
-    "nitrogen": null,
-    "phosphorus": null,
-    "data_notes": null,
-    "measurements": [
-      {
-        "depth": 1,
-        "temperature": 8.1,
-        "DO": 11.89,
-        "SPC": 48.7,
-        "TDS": 31.85,
-        "PH": 6.52
-      },
-      {
-        "depth": 2,
-        "temperature": 8.1,
-        "DO": 11.33,
-        "SPC": 49.8,
-        "TDS": 31.85,
-        "PH": 6.48
-      },
-      {
-        "depth": 3,
-        "temperature": 7.7,
-        "DO": 10.69,
-        "SPC": 49.9,
-        "TDS": 32.5,
-        "PH": 6.45
-      },
-      {
-        "depth": 4,
-        "temperature": 8,
-        "DO": 10.54,
-        "SPC": 49.8,
-        "TDS": 32.5,
-        "PH": 6.43
-      },
-      {
-        "depth": 5,
-        "temperature": 7.8,
-        "DO": 10.54,
-        "SPC": 49.9,
-        "TDS": 31.85,
-        "PH": 6.43
-      },
-      {
-        "depth": 6,
-        "temperature": 7.9,
-        "DO": 10.55,
-        "SPC": 49.7,
-        "TDS": 32.5,
-        "PH": 6.41
-      },
-      {
-        "depth": 7,
-        "temperature": 7.9,
-        "DO": 10.43,
-        "SPC": 49.2,
-        "TDS": 32.5,
-        "PH": 6.42
-      },
-      {
-        "depth": 8,
-        "temperature": 8.1,
-        "DO": 10.61,
-        "SPC": 49.6,
-        "TDS": 32.5,
-        "PH": 6.43
-      },
-      {
-        "depth": 9,
-        "temperature": 7.8,
-        "DO": 10.52,
-        "SPC": 49.6,
-        "TDS": 32.5,
-        "PH": 6.44
-      },
-      {
-        "depth": 10,
-        "temperature": 7.9,
-        "DO": 10.21,
-        "SPC": 49.9,
-        "TDS": 32.5,
-        "PH": 6.45
-      },
-      {
-        "depth": 11,
-        "temperature": 7.7,
-        "DO": 10.38,
-        "SPC": 50.2,
-        "TDS": 32.5,
-        "PH": 6.44
-      },
-      {
-        "depth": 12,
-        "temperature": 7.8,
-        "DO": 10.43,
-        "SPC": 49.4,
-        "TDS": 32.5,
-        "PH": 6.44
-      },
-      {
-        "depth": 13,
-        "temperature": 7.9,
-        "DO": 10.36,
-        "SPC": 49.9,
-        "TDS": 32.5,
-        "PH": 6.45
-      },
-      {
-        "depth": 14,
-        "temperature": 7.3,
-        "DO": 10.8,
-        "SPC": 49.9,
-        "TDS": 32.5,
-        "PH": 6.46
-      },
-      {
-        "depth": 15,
-        "temperature": 6.4,
-        "DO": 2.97,
-        "SPC": 50.9,
-        "TDS": 33.15,
-        "PH": 5.9
-      },
-      {
-        "depth": 16,
-        "temperature": 6.1,
-        "DO": 2.03,
-        "SPC": 52.9,
-        "TDS": 33.8,
-        "PH": 5.9
-      }
-    ]
-  },
-  {
-    "lake": "Gunflint",
-    "station": "DWG",
-    "date": "2022-02-02T02:50:00.000Z",
+    "date": "2021-01-14T10:50:00-08:00",
     "samplers": [
       "Heidi and Carrie"
     ],
@@ -3556,7 +3232,7 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2021-02-17T03:30:00.000Z",
+    "date": "2021-02-16T11:30:00-08:00",
     "samplers": [
       "Max and Heidi"
     ],
@@ -3711,7 +3387,7 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2021-03-19T01:00:00.000Z",
+    "date": "2021-03-18T10:00:00-07:00",
     "samplers": [
       "nice",
       "sunny",
@@ -3868,8 +3544,10 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2021-03-31T19:10:00.000Z",
-    "samplers": [],
+    "date": "2021-03-31T04:10:00-07:00",
+    "samplers": [
+      "Helen and Autumn"
+    ],
     "weather": "overcast, light breeze",
     "air_temperature": 12.5,
     "secchi_depth": [
@@ -3895,6 +3573,14 @@
         "SPC": 48.6,
         "TDS": 31.85,
         "PH": 6.98
+      },
+      {
+        "depth": 2,
+        "temperature": 7.2,
+        "DO": 14.44,
+        "SPC": 48.7,
+        "TDS": 31.85,
+        "PH": 6.67
       },
       {
         "depth": 3,
@@ -4013,7 +3699,7 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2021-04-21T01:15:00.000Z",
+    "date": "2021-04-20T10:15:00-07:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -4168,7 +3854,7 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2021-05-28T04:15:00.000Z",
+    "date": "2021-05-27T13:15:00-07:00",
     "samplers": [
       "Gina",
       "Lisa Ferentinos"
@@ -4324,7 +4010,7 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2021-07-29T01:45:00.000Z",
+    "date": "2021-07-07T10:45:00-07:00",
     "samplers": [
       "Michelle Douglas (summer assistant)",
       "Gina"
@@ -4474,21 +4160,13 @@
         "SPC": 50.7,
         "TDS": 31.15,
         "PH": 6.04
-      },
-      {
-        "depth": 0,
-        "temperature": 24.9,
-        "DO": 4.48,
-        "SPC": 56.6,
-        "TDS": 37.05,
-        "PH": 7.79
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": null,
+    "date": "2021-07-28T10:45:00-07:00",
     "samplers": [
       "Michelle Douglas (summer assistant)",
       "Gina"
@@ -4503,6 +4181,14 @@
     "phosphorus": null,
     "data_notes": "no water sample, still no serious rain",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 24.9,
+        "DO": 4.48,
+        "SPC": 56.6,
+        "TDS": 37.05,
+        "PH": 7.79
+      },
       {
         "depth": 1,
         "temperature": 24.5,
@@ -4636,7 +4322,7 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2021-09-20T04:30:00.000Z",
+    "date": "2021-08-26T13:00:00-07:00",
     "samplers": [
       "Gina"
     ],
@@ -4785,21 +4471,13 @@
         "SPC": 52.8,
         "TDS": 34.45,
         "PH": 5.94
-      },
-      {
-        "depth": 0,
-        "temperature": 18.9,
-        "DO": 5.88,
-        "SPC": 54,
-        "TDS": 36.4,
-        "PH": 7.98
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2021-10-14T05:30:00.000Z",
+    "date": "2021-09-19T13:30:00-07:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -4813,6 +4491,14 @@
     "phosphorus": null,
     "data_notes": "no water sample",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 18.9,
+        "DO": 5.88,
+        "SPC": 54,
+        "TDS": 36.4,
+        "PH": 7.98
+      },
       {
         "depth": 1,
         "temperature": 18.9,
@@ -4940,21 +4626,13 @@
         "SPC": 54.3,
         "TDS": 35.1,
         "PH": 6.04
-      },
-      {
-        "depth": 0,
-        "temperature": 14,
-        "DO": 6.6,
-        "SPC": 53.3,
-        "TDS": 34.45,
-        "PH": 6.46
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2022-01-19T03:30:00.000Z",
+    "date": "2021-10-13T14:30:00-07:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -4968,6 +4646,14 @@
     "phosphorus": null,
     "data_notes": "no water sample",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 14,
+        "DO": 6.6,
+        "SPC": 53.3,
+        "TDS": 34.45,
+        "PH": 6.46
+      },
       {
         "depth": 1,
         "temperature": 13.9,
@@ -4983,14 +4669,6 @@
         "SPC": 53,
         "TDS": 34.45,
         "PH": 6.39
-      },
-      {
-        "depth": 3,
-        "temperature": null,
-        "DO": null,
-        "SPC": null,
-        "TDS": null,
-        "PH": null
       },
       {
         "depth": 4,
@@ -5095,21 +4773,13 @@
         "SPC": 52.2,
         "TDS": 34.45,
         "PH": 5.89
-      },
-      {
-        "depth": 0,
-        "temperature": 5.2,
-        "DO": 15.05,
-        "SPC": 54.3,
-        "TDS": 36.4,
-        "PH": 7.53
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2022-02-18T06:20:00.000Z",
+    "date": "2022-01-18T11:30:00-08:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -5123,6 +4793,14 @@
     "phosphorus": null,
     "data_notes": "no water samples, some parts of lake still covered with thin ice, with ice bubles on the surface",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 5.2,
+        "DO": 15.05,
+        "SPC": 54.3,
+        "TDS": 36.4,
+        "PH": 7.53
+      },
       {
         "depth": 1,
         "temperature": 4.8,
@@ -5250,21 +4928,13 @@
         "SPC": 46.2,
         "TDS": 30.55,
         "PH": 5.93
-      },
-      {
-        "depth": 0,
-        "temperature": 5.3,
-        "DO": 14.14,
-        "SPC": 46.3,
-        "TDS": 29.9,
-        "PH": 6.55
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2022-03-24T04:20:00.000Z",
+    "date": "2022-02-17T14:20:00-08:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -5278,6 +4948,14 @@
     "phosphorus": null,
     "data_notes": "N, P - not done",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 5.3,
+        "DO": 14.14,
+        "SPC": 46.3,
+        "TDS": 29.9,
+        "PH": 6.55
+      },
       {
         "depth": 1,
         "temperature": 4.9,
@@ -5405,21 +5083,13 @@
         "SPC": 46.7,
         "TDS": 30.55,
         "PH": 6.19
-      },
-      {
-        "depth": 0,
-        "temperature": 7.4,
-        "DO": 13.7,
-        "SPC": 46.6,
-        "TDS": 30.55,
-        "PH": 6.16
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2022-05-11T04:20:00.000Z",
+    "date": "2022-03-23T13:20:00-07:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -5433,6 +5103,14 @@
     "phosphorus": null,
     "data_notes": "N, P - not done",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 7.4,
+        "DO": 13.7,
+        "SPC": 46.6,
+        "TDS": 30.55,
+        "PH": 6.16
+      },
       {
         "depth": 1,
         "temperature": 7.3,
@@ -5560,21 +5238,13 @@
         "SPC": 46.8,
         "TDS": 30.55,
         "PH": 5.98
-      },
-      {
-        "depth": 0,
-        "temperature": 15.3,
-        "DO": 10.51,
-        "SPC": 44.6,
-        "TDS": 29.25,
-        "PH": 5.9
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": null,
+    "date": "2022-05-10T13:20:00-07:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -5588,6 +5258,14 @@
     "phosphorus": null,
     "data_notes": "N, P - not done",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 15.3,
+        "DO": 10.51,
+        "SPC": 44.6,
+        "TDS": 29.25,
+        "PH": 5.9
+      },
       {
         "depth": 1,
         "temperature": 14.5,
@@ -5721,7 +5399,7 @@
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2022-07-17T00:30:00.000Z",
+    "date": "2022-06-11T09:00:00-07:00",
     "samplers": [
       "Gina",
       "Ziemek (Gina's son)"
@@ -5871,21 +5549,13 @@
         "SPC": 47.4,
         "TDS": 30.55,
         "PH": 6.06
-      },
-      {
-        "depth": 0,
-        "temperature": 21.7,
-        "DO": 5.33,
-        "SPC": 48,
-        "TDS": 31.2,
-        "PH": 6.67
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2022-08-17T01:20:00.000Z",
+    "date": "2022-07-16T09:30:00-07:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -5899,6 +5569,14 @@
     "phosphorus": null,
     "data_notes": "N.P not doen",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 21.7,
+        "DO": 5.33,
+        "SPC": 48,
+        "TDS": 31.2,
+        "PH": 6.67
+      },
       {
         "depth": 1,
         "temperature": 21.8,
@@ -6026,25 +5704,17 @@
         "SPC": 47.6,
         "TDS": 31.2,
         "PH": 6
-      },
-      {
-        "depth": 0,
-        "temperature": 24.8,
-        "DO": 9.26,
-        "SPC": 51,
-        "TDS": 32.15,
-        "PH": 6.68
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2022-09-21T04:00:00.000Z",
+    "date": "2022-08-16T10:20:00-07:00",
     "samplers": [
       "Carrie and Gina"
     ],
-    "weather": "sunny, calm, light breeze",
+    "weather": "sunny, calm, very quiet",
     "air_temperature": 20.6,
     "secchi_depth": [
       4.1,
@@ -6054,6 +5724,14 @@
     "phosphorus": null,
     "data_notes": "N, P not sampled",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 24.8,
+        "DO": 9.26,
+        "SPC": 51,
+        "TDS": 32.15,
+        "PH": 6.68
+      },
       {
         "depth": 1,
         "temperature": 25,
@@ -6181,7 +5859,26 @@
         "SPC": 48.5,
         "TDS": 31.85,
         "PH": 5.87
-      },
+      }
+    ]
+  },
+  {
+    "lake": "Gunflint",
+    "station": "DWG",
+    "date": "2022-09-20T13:00:00-07:00",
+    "samplers": [
+      "Gina and Wisia (Gina's daughter)"
+    ],
+    "weather": "sunny, calm, light breeze",
+    "air_temperature": 19.6,
+    "secchi_depth": [
+      3.9,
+      4.9
+    ],
+    "nitrogen": null,
+    "phosphorus": null,
+    "data_notes": "N, P not sampled",
+    "measurements": [
       {
         "depth": 0,
         "temperature": 20.2,
@@ -6197,26 +5894,7 @@
         "SPC": 51.4,
         "TDS": 33.8,
         "PH": 6.95
-      }
-    ]
-  },
-  {
-    "lake": "Gunflint",
-    "station": "DWG",
-    "date": "2022-10-18T15:00:00.000Z",
-    "samplers": [
-      "Gina and Wisia (Gina's daughter)"
-    ],
-    "weather": null,
-    "air_temperature": 19.6,
-    "secchi_depth": [
-      3.9,
-      4.9
-    ],
-    "nitrogen": null,
-    "phosphorus": null,
-    "data_notes": "N, P not sampled",
-    "measurements": [
+      },
       {
         "depth": 2,
         "temperature": 19.8,
@@ -6336,21 +6014,13 @@
         "SPC": 51.1,
         "TDS": 32.5,
         "PH": 5.93
-      },
-      {
-        "depth": 0,
-        "temperature": 17.6,
-        "DO": 4.35,
-        "SPC": 51.4,
-        "TDS": 33.15,
-        "PH": 7.37
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2022-12-27T02:30:00.000Z",
+    "date": "2022-10-18T12:00:00-07:00",
     "samplers": [
       "Gina and Wisia"
     ],
@@ -6364,6 +6034,14 @@
     "phosphorus": null,
     "data_notes": "N,P not sampled, time not noted",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 17.6,
+        "DO": 4.35,
+        "SPC": 51.4,
+        "TDS": 33.15,
+        "PH": 7.37
+      },
       {
         "depth": 1,
         "temperature": 17.4,
@@ -6499,21 +6177,13 @@
         "SPC": 52.7,
         "TDS": 34.45,
         "PH": 5.98
-      },
-      {
-        "depth": 0,
-        "temperature": 3.2,
-        "DO": 19.19,
-        "SPC": 51.7,
-        "TDS": 33.8,
-        "PH": 6.51
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2023-02-15T03:15:00.000Z",
+    "date": "2022-12-26T10:30:00-08:00",
     "samplers": [
       "Gina and Ziemek (Gina's son)"
     ],
@@ -6527,6 +6197,14 @@
     "phosphorus": null,
     "data_notes": "N,P not sampled",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 3.2,
+        "DO": 19.19,
+        "SPC": 51.7,
+        "TDS": 33.8,
+        "PH": 6.51
+      },
       {
         "depth": 1,
         "temperature": 3,
@@ -6662,21 +6340,13 @@
         "SPC": 52.4,
         "TDS": 33.8,
         "PH": 6.2
-      },
-      {
-        "depth": 0,
-        "temperature": 4.7,
-        "DO": 12.27,
-        "SPC": 48.4,
-        "TDS": 31.2,
-        "PH": 6.73
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2023-03-23T02:30:00.000Z",
+    "date": "2023-02-14T11:15:00-08:00",
     "samplers": [
       "Gina and Carrie"
     ],
@@ -6690,6 +6360,14 @@
     "phosphorus": null,
     "data_notes": "N,P not sampled, very strong winds day before",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 4.7,
+        "DO": 12.27,
+        "SPC": 48.4,
+        "TDS": 31.2,
+        "PH": 6.73
+      },
       {
         "depth": 1,
         "temperature": 4.5,
@@ -6825,21 +6503,13 @@
         "SPC": 48.6,
         "TDS": 31.85,
         "PH": 6.34
-      },
-      {
-        "depth": 0,
-        "temperature": 8.6,
-        "DO": 13.62,
-        "SPC": 48.9,
-        "TDS": 31.85,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2023-04-26T05:30:00.000Z",
+    "date": "2023-03-22T11:30:00-07:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -6853,6 +6523,14 @@
     "phosphorus": null,
     "data_notes": "N,P not sampled, PH - not working",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 8.6,
+        "DO": 13.62,
+        "SPC": 48.9,
+        "TDS": 31.85,
+        "PH": null
+      },
       {
         "depth": 1,
         "temperature": 8.2,
@@ -6980,21 +6658,13 @@
         "SPC": 50.1,
         "TDS": 31.15,
         "PH": null
-      },
-      {
-        "depth": 0,
-        "temperature": 12.7,
-        "DO": 13.63,
-        "SPC": 49.48,
-        "TDS": 32.5,
-        "PH": null
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2023-06-30T01:00:00.000Z",
+    "date": "2023-04-25T14:30:00-07:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -7008,6 +6678,14 @@
     "phosphorus": null,
     "data_notes": "N,P not sampled, PH - not working",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 12.7,
+        "DO": 13.63,
+        "SPC": 49.48,
+        "TDS": 32.5,
+        "PH": null
+      },
       {
         "depth": 1,
         "temperature": 11.6,
@@ -7135,21 +6813,13 @@
         "SPC": 55.2,
         "TDS": 31.85,
         "PH": null
-      },
-      {
-        "depth": 0,
-        "temperature": 24,
-        "DO": 7.57,
-        "SPC": 59,
-        "TDS": 37.7,
-        "PH": 8.15
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2023-07-19T01:20:00.000Z",
+    "date": "2023-06-29T10:00:00-07:00",
     "samplers": [
       "Sue Ellingsen and Gina"
     ],
@@ -7163,6 +6833,14 @@
     "phosphorus": null,
     "data_notes": "New PH PROBLE installed, new fresh ph calibrations agent, new fresh ph calibrations agent",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 24,
+        "DO": 7.57,
+        "SPC": 59,
+        "TDS": 37.7,
+        "PH": 8.15
+      },
       {
         "depth": 1,
         "temperature": 24,
@@ -7290,21 +6968,13 @@
         "SPC": 52.4,
         "TDS": 34.45,
         "PH": 6.62
-      },
-      {
-        "depth": 0,
-        "temperature": 25.3,
-        "DO": 4.54,
-        "SPC": 56.7,
-        "TDS": 37.95,
-        "PH": 8.03
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2023-08-23T01:00:00.000Z",
+    "date": "2023-07-18T10:20:00-07:00",
     "samplers": [
       "Manuel and Gina"
     ],
@@ -7318,6 +6988,14 @@
     "phosphorus": null,
     "data_notes": null,
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 25.3,
+        "DO": 4.54,
+        "SPC": 56.7,
+        "TDS": 37.95,
+        "PH": 8.03
+      },
       {
         "depth": 1,
         "temperature": 25.2,
@@ -7445,21 +7123,13 @@
         "SPC": 51.6,
         "TDS": 33.8,
         "PH": 6.69
-      },
-      {
-        "depth": 0,
-        "temperature": 17.7,
-        "DO": 5.14,
-        "SPC": 57.3,
-        "TDS": 37.05,
-        "PH": 8.31
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2023-11-24T02:30:00.000Z",
+    "date": "2023-08-22T10:00:00-07:00",
     "samplers": [
       "Sue Ellingsen and Gina"
     ],
@@ -7473,6 +7143,14 @@
     "phosphorus": null,
     "data_notes": null,
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 17.7,
+        "DO": 5.14,
+        "SPC": 57.3,
+        "TDS": 37.05,
+        "PH": 8.31
+      },
       {
         "depth": 1,
         "temperature": 21.2,
@@ -7600,21 +7278,13 @@
         "SPC": 54.3,
         "TDS": 35.1,
         "PH": 6.5
-      },
-      {
-        "depth": 0,
-        "temperature": 7.4,
-        "DO": 11.3,
-        "SPC": 53.5,
-        "TDS": 35.1,
-        "PH": 7.4
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2023-12-24T03:10:00.000Z",
+    "date": "2023-11-23T10:30:00-08:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -7628,6 +7298,14 @@
     "phosphorus": null,
     "data_notes": null,
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 7.4,
+        "DO": 11.3,
+        "SPC": 53.5,
+        "TDS": 35.1,
+        "PH": 7.4
+      },
       {
         "depth": 1,
         "temperature": 10.4,
@@ -7755,21 +7433,13 @@
         "SPC": 54.7,
         "TDS": 35.75,
         "PH": 6.36
-      },
-      {
-        "depth": 0,
-        "temperature": 7.8,
-        "DO": 14.21,
-        "SPC": 67,
-        "TDS": 42.25,
-        "PH": 6.81
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2024-02-13T01:30:00.000Z",
+    "date": "2023-12-23T11:10:00-08:00",
     "samplers": [
       "Gina and ziemek"
     ],
@@ -7783,6 +7453,14 @@
     "phosphorus": null,
     "data_notes": "obstacles between Gunflint and Hague, (fallen trees)",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 7.8,
+        "DO": 14.21,
+        "SPC": 67,
+        "TDS": 42.25,
+        "PH": 6.81
+      },
       {
         "depth": 1,
         "temperature": 7.5,
@@ -7910,21 +7588,13 @@
         "SPC": 56,
         "TDS": 33.15,
         "PH": 6.11
-      },
-      {
-        "depth": 0,
-        "temperature": 6.1,
-        "DO": 11.03,
-        "SPC": 46.4,
-        "TDS": 29.9,
-        "PH": 6.47
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2024-04-04T01:30:00.000Z",
+    "date": "2024-02-12T09:30:00-08:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -7938,6 +7608,14 @@
     "phosphorus": null,
     "data_notes": null,
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 6.1,
+        "DO": 11.03,
+        "SPC": 46.4,
+        "TDS": 29.9,
+        "PH": 6.47
+      },
       {
         "depth": 1,
         "temperature": 5.9,
@@ -8065,21 +7743,13 @@
         "SPC": 50.9,
         "TDS": 33.15,
         "PH": 6.47
-      },
-      {
-        "depth": 0,
-        "temperature": 11.5,
-        "DO": 11.1,
-        "SPC": 50,
-        "TDS": 35.1,
-        "PH": 7.04
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DWG",
-    "date": "2024-05-08T01:30:00.000Z",
+    "date": "2024-04-03T10:30:00-07:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -8093,6 +7763,14 @@
     "phosphorus": null,
     "data_notes": "no N, P samples taken",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 11.5,
+        "DO": 11.1,
+        "SPC": 50,
+        "TDS": 35.1,
+        "PH": 7.04
+      },
       {
         "depth": 1,
         "temperature": 10.3,
@@ -8220,21 +7898,13 @@
         "SPC": 49.2,
         "TDS": 31.85,
         "PH": 6.63
-      },
-      {
-        "depth": 0,
-        "temperature": 15.8,
-        "DO": 10.47,
-        "SPC": 50.2,
-        "TDS": 33.5,
-        "PH": 7.72
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DGW",
-    "date": "2024-06-14T01:30:00.000Z",
+    "date": "2024-05-07T10:30:00-07:00",
     "samplers": [
       "Carrie and gina"
     ],
@@ -8248,6 +7918,14 @@
     "phosphorus": null,
     "data_notes": "no N< P samples, slight algae smell initial breath",
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 15.8,
+        "DO": 10.47,
+        "SPC": 50.2,
+        "TDS": 33.5,
+        "PH": 7.72
+      },
       {
         "depth": 1,
         "temperature": 15.3,
@@ -8375,21 +8053,13 @@
         "SPC": 51.8,
         "TDS": 31.5,
         "PH": 6.29
-      },
-      {
-        "depth": 0,
-        "temperature": 20,
-        "DO": 7.93,
-        "SPC": 53.3,
-        "TDS": 34.45,
-        "PH": 7.43
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DGW",
-    "date": "2024-07-19T00:30:00.000Z",
+    "date": "2024-06-13T10:30:00-07:00",
     "samplers": [
       "Carrie and Gina"
     ],
@@ -8403,6 +8073,14 @@
     "phosphorus": null,
     "data_notes": null,
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 20,
+        "DO": 7.93,
+        "SPC": 53.3,
+        "TDS": 34.45,
+        "PH": 7.43
+      },
       {
         "depth": 1,
         "temperature": 19.7,
@@ -8530,21 +8208,13 @@
         "SPC": 52.5,
         "TDS": 33.8,
         "PH": 6.16
-      },
-      {
-        "depth": 0,
-        "temperature": 25.3,
-        "DO": 4.46,
-        "SPC": 57.9,
-        "TDS": 37.05,
-        "PH": 7.81
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DGW",
-    "date": "2024-08-15T00:30:00.000Z",
+    "date": "2024-07-18T09:30:00-07:00",
     "samplers": [
       "Sue Ellingsen and Gina"
     ],
@@ -8558,6 +8228,14 @@
     "phosphorus": null,
     "data_notes": null,
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 25.3,
+        "DO": 4.46,
+        "SPC": 57.9,
+        "TDS": 37.05,
+        "PH": 7.81
+      },
       {
         "depth": 1,
         "temperature": 24.7,
@@ -8685,21 +8363,13 @@
         "SPC": 56,
         "TDS": 36.4,
         "PH": 6.26
-      },
-      {
-        "depth": 0,
-        "temperature": 24.2,
-        "DO": 6.38,
-        "SPC": 56.4,
-        "TDS": 36.4,
-        "PH": 7.53
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DGW",
-    "date": "2024-09-12T03:10:00.000Z",
+    "date": "2024-08-14T09:30:00-07:00",
     "samplers": [
       "Gina and Xavier Lee [Egzavier] FOCI student"
     ],
@@ -8713,6 +8383,14 @@
     "phosphorus": null,
     "data_notes": null,
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 24.2,
+        "DO": 6.38,
+        "SPC": 56.4,
+        "TDS": 36.4,
+        "PH": 7.53
+      },
       {
         "depth": 1,
         "temperature": 24.2,
@@ -8840,21 +8518,13 @@
         "SPC": 52.2,
         "TDS": 35.75,
         "PH": 6.25
-      },
-      {
-        "depth": 0,
-        "temperature": 22.6,
-        "DO": 5.66,
-        "SPC": 55.8,
-        "TDS": 36.4,
-        "PH": 7.63
       }
     ]
   },
   {
     "lake": "Gunflint",
     "station": "DGW",
-    "date": null,
+    "date": "2024-09-11T12:10:00-07:00",
     "samplers": [
       "Gina and Norleen Lilico"
     ],
@@ -8868,6 +8538,14 @@
     "phosphorus": null,
     "data_notes": null,
     "measurements": [
+      {
+        "depth": 0,
+        "temperature": 22.6,
+        "DO": 5.66,
+        "SPC": 55.8,
+        "TDS": 36.4,
+        "PH": 7.63
+      },
       {
         "depth": 1,
         "temperature": 21.9,
@@ -9001,7 +8679,7 @@
   {
     "lake": "Gunflint",
     "station": "DGW",
-    "date": "2024-10-14T05:10:00.000Z",
+    "date": "2024-10-13T14:10:00-07:00",
     "samplers": [
       "Gina",
       "Wisia (Akshara)"
@@ -9151,310 +8829,6 @@
         "SPC": 59.9,
         "TDS": 39,
         "PH": 6.09
-      }
-    ]
-  },
-  {
-    "lake": "Gunflint",
-    "station": "DWG",
-    "date": null,
-    "samplers": [
-      "Carrie",
-      "Gina"
-    ],
-    "weather": null,
-    "air_temperature": null,
-    "secchi_depth": [
-      null,
-      null
-    ],
-    "nitrogen": null,
-    "phosphorus": null,
-    "data_notes": "Note: Lakes were partly frozen, from mid-Feb-- thin ice",
-    "measurements": [
-      {
-        "depth": 0,
-        "temperature": 6.2,
-        "DO": 19.5,
-        "SPC": 28.5,
-        "TDS": 18.33,
-        "PH": 6.82
-      },
-      {
-        "depth": 2,
-        "temperature": 6,
-        "DO": 12.91,
-        "SPC": 50.1,
-        "TDS": 32.5,
-        "PH": 6.53
-      },
-      {
-        "depth": 3,
-        "temperature": 5.6,
-        "DO": 12.54,
-        "SPC": 50.2,
-        "TDS": 32.5,
-        "PH": 6.6
-      },
-      {
-        "depth": 4,
-        "temperature": 5.3,
-        "DO": 12.82,
-        "SPC": 50.4,
-        "TDS": 32.5,
-        "PH": 6.62
-      },
-      {
-        "depth": 5,
-        "temperature": 4.8,
-        "DO": 12.81,
-        "SPC": 50.6,
-        "TDS": 32.5,
-        "PH": 6.63
-      },
-      {
-        "depth": 6,
-        "temperature": 4.8,
-        "DO": 12.26,
-        "SPC": 50.4,
-        "TDS": 32.5,
-        "PH": 6.65
-      },
-      {
-        "depth": 7,
-        "temperature": 4.6,
-        "DO": 12.26,
-        "SPC": 50.7,
-        "TDS": 32.5,
-        "PH": 6.66
-      },
-      {
-        "depth": 8,
-        "temperature": 4.5,
-        "DO": 12.15,
-        "SPC": 50.7,
-        "TDS": 32.5,
-        "PH": 6.68
-      },
-      {
-        "depth": 9,
-        "temperature": 4.4,
-        "DO": 12.11,
-        "SPC": 50.7,
-        "TDS": 33.15,
-        "PH": 6.68
-      },
-      {
-        "depth": 10,
-        "temperature": 4.4,
-        "DO": 12.16,
-        "SPC": 50.8,
-        "TDS": 33.15,
-        "PH": 6.68
-      },
-      {
-        "depth": 11,
-        "temperature": 4.3,
-        "DO": 12.09,
-        "SPC": 50.9,
-        "TDS": 33.15,
-        "PH": 6.68
-      },
-      {
-        "depth": 12,
-        "temperature": 4.2,
-        "DO": 12.06,
-        "SPC": 50.7,
-        "TDS": 33.15,
-        "PH": 6.7
-      },
-      {
-        "depth": 13,
-        "temperature": 4.2,
-        "DO": 12.09,
-        "SPC": 50.8,
-        "TDS": 33.15,
-        "PH": 6.7
-      },
-      {
-        "depth": 14,
-        "temperature": 4.2,
-        "DO": 11.79,
-        "SPC": 51,
-        "TDS": 33.15,
-        "PH": 6.65
-      },
-      {
-        "depth": 15,
-        "temperature": 4.2,
-        "DO": 11.55,
-        "SPC": 51.2,
-        "TDS": 33.15,
-        "PH": 6.68
-      },
-      {
-        "depth": 16,
-        "temperature": 4.1,
-        "DO": 11.35,
-        "SPC": 51.2,
-        "TDS": 33.15,
-        "PH": 6.67
-      }
-    ]
-  },
-  {
-    "lake": "Gunflint",
-    "station": "DWG",
-    "date": null,
-    "samplers": [
-      "Ziemek",
-      "Gina"
-    ],
-    "weather": "Weather: Sunny, light breeze, some clouds",
-    "air_temperature": 19,
-    "secchi_depth": [
-      3.6,
-      3.6
-    ],
-    "nitrogen": null,
-    "phosphorus": null,
-    "data_notes": "Gina was away from end of April until beginning of May",
-    "measurements": [
-      {
-        "depth": 0,
-        "temperature": 17.4,
-        "DO": 9.77,
-        "SPC": 50,
-        "TDS": 32.5,
-        "PH": 7.21
-      },
-      {
-        "depth": 1,
-        "temperature": 17.5,
-        "DO": 9.47,
-        "SPC": 49.9,
-        "TDS": 4,
-        "PH": 7.25
-      },
-      {
-        "depth": 2,
-        "temperature": 17.2,
-        "DO": 9.55,
-        "SPC": 49.8,
-        "TDS": 4,
-        "PH": 7.29
-      },
-      {
-        "depth": 3,
-        "temperature": 17.2,
-        "DO": 9.42,
-        "SPC": 49.8,
-        "TDS": 4,
-        "PH": 7.3
-      },
-      {
-        "depth": 4,
-        "temperature": 15.1,
-        "DO": 11.04,
-        "SPC": 49.4,
-        "TDS": 31.85,
-        "PH": 7.33
-      },
-      {
-        "depth": 5,
-        "temperature": 9.5,
-        "DO": 12.6,
-        "SPC": 49.2,
-        "TDS": 31.85,
-        "PH": 7.08
-      },
-      {
-        "depth": 6,
-        "temperature": 7.3,
-        "DO": 10.95,
-        "SPC": 49.4,
-        "TDS": 31.85,
-        "PH": 6.83
-      },
-      {
-        "depth": 7,
-        "temperature": 6.3,
-        "DO": 11.3,
-        "SPC": 50,
-        "TDS": 32.5,
-        "PH": 6.85
-      },
-      {
-        "depth": 8,
-        "temperature": 6,
-        "DO": 11.07,
-        "SPC": 50,
-        "TDS": 32.5,
-        "PH": 6.52
-      },
-      {
-        "depth": 9,
-        "temperature": 5.3,
-        "DO": 10.81,
-        "SPC": 50.5,
-        "TDS": 33.15,
-        "PH": 6.47
-      },
-      {
-        "depth": 10,
-        "temperature": 5,
-        "DO": 10.74,
-        "SPC": 51.1,
-        "TDS": 33.15,
-        "PH": 6.43
-      },
-      {
-        "depth": 11,
-        "temperature": 4.8,
-        "DO": 9.95,
-        "SPC": 51.6,
-        "TDS": 33.8,
-        "PH": 6.39
-      },
-      {
-        "depth": 12,
-        "temperature": 4.7,
-        "DO": 9.27,
-        "SPC": 51.7,
-        "TDS": 33.8,
-        "PH": 6.38
-      },
-      {
-        "depth": 13,
-        "temperature": 4.6,
-        "DO": 8.82,
-        "SPC": 52,
-        "TDS": 33.8,
-        "PH": 6.37
-      },
-      {
-        "depth": 14,
-        "temperature": 4.5,
-        "DO": 8.25,
-        "SPC": 52.5,
-        "TDS": 33.8,
-        "PH": 6.35
-      },
-      {
-        "depth": 15,
-        "temperature": 4.5,
-        "DO": 7.8,
-        "SPC": 52.5,
-        "TDS": 33.8,
-        "PH": 6.33
-      },
-      {
-        "depth": 16,
-        "temperature": 4.5,
-        "DO": 7.55,
-        "SPC": 53.3,
-        "TDS": 34.45,
-        "PH": 6.31
       }
     ]
   }

@@ -6,10 +6,17 @@ const path = require('path');
 const DATA_DIR = path.resolve(__dirname, '../src/data');
 const OUTPUT_FILE = path.join(DATA_DIR, 'water-data.json');
 
+// en-CA formats dates as YYYY-MM-DD
+const pacificDateFormat = new Intl.DateTimeFormat('en-CA', {
+  timeZone: 'America/Vancouver',
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+});
+
+// Calendar date of the sampling in the lakes' local time
 function getDateKey(dateString) {
-  // Parse the date and return just the date part (YYYY-MM-DD)
-  const date = new Date(dateString);
-  return date.toISOString().split('T')[0];
+  return pacificDateFormat.format(new Date(dateString));
 }
 
 function getMergeKey(record) {
@@ -41,6 +48,8 @@ function mergeWaterData() {
 
   // Map to store merged data by key
   const mergedData = new Map();
+  const sourceFiles = new Map();
+  const errors = [];
 
   // Process each file
   files.forEach((filePath) => {
@@ -60,32 +69,37 @@ function mergeWaterData() {
 
       // Process each record in the file
       data.forEach((record) => {
-        if (!record.lake || !record.date) {
-          console.warn(
-            `Warning: Record missing lake or date in ${fileName}, skipping:`,
-            record
+        if (!record.lake || !record.date || isNaN(new Date(record.date))) {
+          errors.push(
+            `${fileName}: record missing lake or valid date (${record.lake}, ${record.date})`
           );
           return;
         }
 
         const mergeKey = getMergeKey(record);
 
-        // If we already have data for this key, skip it (keep first occurrence)
         if (mergedData.has(mergeKey)) {
-          console.log(
-            `Duplicate key found: ${mergeKey}, keeping first occurrence`
+          errors.push(
+            `${fileName}: duplicate sampling ${mergeKey}, already in ${sourceFiles.get(mergeKey)}`
           );
-          return; // Skip this record
+          return;
         }
 
         mergedData.set(mergeKey, record);
+        sourceFiles.set(mergeKey, fileName);
       });
 
       console.log(`Processed ${data.length} records from ${fileName}`);
     } catch (error) {
-      console.error(`Error processing ${fileName}:`, error.message);
+      errors.push(`${fileName}: ${error.message}`);
     }
   });
+
+  if (errors.length > 0) {
+    console.error(`\nMerge failed with ${errors.length} error(s):`);
+    errors.forEach((error) => console.error(`  ${error}`));
+    process.exit(1);
+  }
 
   // Convert Map to array and sort by lake and date
   const finalData = Array.from(mergedData.values()).sort((a, b) => {
