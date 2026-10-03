@@ -38,46 +38,60 @@ function checkRecord(record, lakeDir, fileName) {
   return null;
 }
 
-function mergeWaterData() {
+/**
+ * Reads and checks every record file under recordsDir.
+ * @returns {{records: {label: string, record: object}[], errors: string[]}}
+ *   label is "<lake>/<file>"; records that fail checkRecord are left out.
+ */
+function loadRecords(recordsDir = RECORDS_DIR) {
   const records = [];
   const errors = [];
 
   const lakeDirs = fs
-    .readdirSync(RECORDS_DIR, { withFileTypes: true })
+    .readdirSync(recordsDir, { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
-    .map((entry) => entry.name);
+    .map((entry) => entry.name)
+    .sort();
 
   for (const lakeDir of lakeDirs) {
     const files = fs
-      .readdirSync(path.join(RECORDS_DIR, lakeDir))
-      .filter((file) => file.endsWith('.json'));
+      .readdirSync(path.join(recordsDir, lakeDir))
+      .filter((file) => file.endsWith('.json'))
+      .sort();
 
     for (const fileName of files) {
       const label = `${lakeDir}/${fileName}`;
       try {
         const record = JSON.parse(
-          fs.readFileSync(path.join(RECORDS_DIR, lakeDir, fileName), 'utf8')
+          fs.readFileSync(path.join(recordsDir, lakeDir, fileName), 'utf8')
         );
         const error = checkRecord(record, lakeDir, fileName);
         if (error) {
           errors.push(`${label}: ${error}`);
           continue;
         }
-        // source is provenance for editors, not app data
-        const { source, ...appRecord } = record;
-        records.push(appRecord);
+        records.push({ label, record });
       } catch (error) {
         errors.push(`${label}: ${error.message}`);
       }
     }
   }
 
+  return { records, errors };
+}
+
+function mergeWaterData() {
+  const { records: loaded, errors } = loadRecords();
   if (errors.length > 0) {
     console.error(`Merge failed with ${errors.length} error(s):`);
     errors.forEach((error) => console.error(`  ${error}`));
     process.exit(1);
   }
 
+  // source is provenance for editors, not app data
+  const records = loaded.map(
+    ({ record: { source, ...appRecord } }) => appRecord
+  );
   records.sort(
     (a, b) =>
       a.lake.localeCompare(b.lake) || new Date(a.date) - new Date(b.date)
@@ -102,4 +116,4 @@ if (require.main === module) {
   mergeWaterData();
 }
 
-module.exports = { mergeWaterData };
+module.exports = { checkRecord, loadRecords, mergeWaterData };

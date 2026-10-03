@@ -7,9 +7,11 @@
     "prestart": "npm run merge-data",
     "start": "five-server --root=src --open=false",
     "merge-data": "node scripts/merge-data.js",
+    "validate-data": "node scripts/validate-data.js",
     "prebuild": "npm run merge-data",
     "build": "rm -rf dist && mkdir -p dist && cp -r src/* dist/ && echo 'Build complete'",
     "clean": "rm -rf dist",
+    "test": "node --test",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
