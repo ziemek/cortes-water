@@ -4,7 +4,7 @@ Static D3 site charting lake-monitoring data (Gunflint and Hague lakes, Cortes I
 
 ## Commands
 
-- `npm start` — merge, then live-server on `src/` (edits to records need `npm run merge-data` while it runs)
+- `npm start` — merge, then five-server (live reload) on `src/` at http://localhost:5500 (edits to records need `npm run merge-data` while it runs)
 - `npm run merge-data` — rebuild `src/data/water-data.json` from `data/records/`
 - `npm run build` — merge, then copy `src/` to `dist/`
 - `npm run format` / `format:check` — Prettier (JSON is ignored)

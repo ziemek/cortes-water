@@ -5,7 +5,7 @@
   "main": "src/js/main.js",
   "scripts": {
     "prestart": "npm run merge-data",
-    "start": "live-server src",
+    "start": "five-server --root=src --open=false",
     "merge-data": "node scripts/merge-data.js",
     "prebuild": "npm run merge-data",
     "build": "rm -rf dist && mkdir -p dist && cp -r src/* dist/ && echo 'Build complete'",
@@ -17,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "live-server": "^1.2.2",
-    "prettier": "^3.5.3"
+    "five-server": "^0.5.0",
+    "prettier": "^3.9.9"
   }
 }
