@@ -20,36 +20,31 @@ export class ControlsManager {
     if (allSeries.length < MIN_SERIES_FOR_CONTROLS) return;
 
     const controlsDiv = d3
-      .select('.container')
+      .select('#samplingFilters')
       .append('div')
       .attr('id', 'visibilityControls')
       .attr('class', 'visibility-controls');
-
-    controlsDiv.append('h4').text('Select Datasets');
 
     const yearGrid = controlsDiv
       .append('div')
       .attr('class', 'checkbox-grid year-grid');
 
-    this.addCheckbox(
-      yearGrid,
-      'vis-all-years',
-      `All Years (${allSeries.length})`,
-      allSeries
-    ).classed('all-years', true);
+    this.addCheckbox(yearGrid, 'vis-all-years', `All`, allSeries).classed(
+      'all-years',
+      true
+    );
 
     const byYear = d3.group(allSeries, (s) => s.year);
     [...byYear.keys()].sort().forEach((year) => {
       const series = byYear.get(year);
-      this.addCheckbox(
-        yearGrid,
-        `vis-year-${year}`,
-        `${year} (${series.length})`,
-        series
-      );
+      this.addCheckbox(yearGrid, `vis-year-${year}`, `${year}`, series);
     });
 
-    const dateGrid = controlsDiv
+    const dateDetails = controlsDiv
+      .append('details')
+      .attr('class', 'date-details');
+    dateDetails.append('summary').text('Individual dates');
+    const dateGrid = dateDetails
       .append('div')
       .attr('class', 'checkbox-grid date-grid');
 
@@ -59,7 +54,7 @@ export class ControlsManager {
       this.addCheckbox(
         dateGrid,
         `vis-date-${dateOnly}`,
-        `${formatDateOnly(dateOnly)} (${series.length})`,
+        formatDateOnly(dateOnly),
         series
       );
     });
@@ -82,6 +77,7 @@ export class ControlsManager {
       });
 
     item.append('label').attr('for', id).text(label);
+    item.attr('title', `${series.length} samplings`);
 
     this.checkboxes.push({ input, series });
     return item;
@@ -90,6 +86,12 @@ export class ControlsManager {
   // Checked when all of a checkbox's series are shown, indeterminate when
   // only some are
   syncCheckboxes() {
+    const allSeries = this.dataLoader.getAllSeries();
+    const shown = allSeries.filter((s) => this.dataLoader.isVisible(s));
+    d3.select('#samplingCount').text(
+      `${shown.length} of ${allSeries.length} samplings`
+    );
+
     this.checkboxes.forEach(({ input, series }) => {
       const visibleCount = series.filter((s) =>
         this.dataLoader.isVisible(s)

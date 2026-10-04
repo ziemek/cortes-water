@@ -1,5 +1,5 @@
-// Date, formatting, color and statistics helpers. Nothing here touches the
-// DOM, and d3 is only used inside the color functions.
+// Date, formatting and statistics helpers. Nothing here touches the DOM or
+// uses d3, so it can be tested under Node.
 import { config } from './config.js';
 
 const SAMPLING_TIME_ZONE = 'America/Vancouver';
@@ -53,55 +53,13 @@ export function formatValue(value, unit = '') {
   return value === null || value === undefined ? 'N/A' : `${value}${unit}`;
 }
 
-// Dynamic color generation
-export function generateColorPalette(baseColors, count) {
-  if (count <= baseColors.length) {
-    return baseColors.slice(0, count);
-  }
-
-  const colors = [...baseColors];
-  const hslBase = baseColors.map((hex) => d3.hsl(hex));
-
-  for (let i = baseColors.length; i < count; i++) {
-    const baseIndex = i % baseColors.length;
-    const variation = Math.floor(i / baseColors.length);
-
-    const baseHsl = hslBase[baseIndex];
-    const newHsl = d3.hsl(
-      (baseHsl.h + variation * 25) % 360,
-      Math.max(0.3, baseHsl.s - variation * 0.1),
-      Math.max(
-        0.3,
-        Math.min(0.8, baseHsl.l + (variation % 2 === 0 ? 0.1 : -0.1))
-      )
-    );
-
-    colors.push(newHsl.hex());
-  }
-
-  return colors;
-}
-
-// Generate season color
-export function getSeasonColor(date) {
-  const month = Number(getDateOnly(date).slice(5, 7)) - 1;
-  if (month >= 2 && month <= 4) return config.seasonColors.spring;
-  if (month >= 5 && month <= 7) return config.seasonColors.summer;
-  if (month >= 8 && month <= 10) return config.seasonColors.fall;
-  return config.seasonColors.winter;
-}
-
-// Color for a position (0 = earliest, 1 = latest) on the blue-to-green
-// time gradient
-export function timeGradientColor(ratio) {
-  const hue = 240 - ratio * 120; // 240 = blue, 120 = green
-  return d3.hsl(hue, 0.7, 0.5).hex();
-}
-
-export function getTimeGradientColor(date, minDate, maxDate) {
-  const totalTime = maxDate.getTime() - minDate.getTime();
-  const currentTime = new Date(date).getTime() - minDate.getTime();
-  return timeGradientColor(totalTime > 0 ? currentTime / totalTime : 0);
+// Season of a sampling by its Pacific calendar month
+export function getSeason(date) {
+  const month = Number(getDateOnly(date).slice(5, 7));
+  if (month >= 3 && month <= 5) return 'spring';
+  if (month >= 6 && month <= 8) return 'summer';
+  if (month >= 9 && month <= 11) return 'fall';
+  return 'winter';
 }
 
 const mean = (values) => values.reduce((a, b) => a + b, 0) / values.length;

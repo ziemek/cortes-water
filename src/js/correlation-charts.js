@@ -1,6 +1,7 @@
 // Correlation Scatter Plot Charts
 import { chartDimensions, config } from './config.js';
-import { getParameterLabel, getTimeGradientColor } from './utils.js';
+import { getParameterLabel } from './utils.js';
+import { getTimeGradientColor } from './theme.js';
 import {
   addAxes,
   addGrid,
@@ -56,7 +57,7 @@ export class CorrelationCharts {
       chartDiv
         .append('h3')
         .attr('class', 'chart-title')
-        .text(range ? `${title} - ${range.name}` : title);
+        .text(range ? range.name : 'All depths');
 
       this.createScatterChart(chartDiv, visibleData, x, y, range);
     });
@@ -89,11 +90,13 @@ export class CorrelationCharts {
     const xScale = d3
       .scaleLinear()
       .domain(d3.extent(scatterData, (d) => d.x))
+      .nice()
       .range([0, width]);
 
     const yScale = d3
       .scaleLinear()
       .domain(d3.extent(scatterData, (d) => d.y))
+      .nice()
       .range([height, 0]);
 
     const [minDate, maxDate] = d3.extent(
@@ -112,12 +115,12 @@ export class CorrelationCharts {
       .attr('class', 'scatter-dot')
       .attr('cx', (d) => xScale(d.x))
       .attr('cy', (d) => yScale(d.y))
-      .attr('r', 4)
+      .attr('r', 4.5)
       .style('fill', (d) =>
         getTimeGradientColor(d.dataset.date, minDate, maxDate)
       )
       .on('mouseover', (event, d) => {
-        d3.select(event.currentTarget).attr('r', 6);
+        d3.select(event.currentTarget).attr('r', 6.5);
         showTooltip(
           event,
           samplingTooltip(d.dataset, [
@@ -128,7 +131,7 @@ export class CorrelationCharts {
         );
       })
       .on('mouseout', (event) => {
-        d3.select(event.currentTarget).attr('r', 4);
+        d3.select(event.currentTarget).attr('r', 4.5);
         hideTooltip();
       });
 

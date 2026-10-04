@@ -47,24 +47,35 @@ export function samplingTooltip(dataset, details) {
 }
 
 /**
- * Appends an SVG of the given outer size with a plot group inset by the
- * standard margins.
+ * Appends an SVG as wide as the container, with its height from the given
+ * aspect ratio, and a plot group inset by the standard margins.
  * @returns {{svg: d3.Selection, width: number, height: number}} the plot
  *   group and its inner size
  */
-export function createChartSvg(container, { width, height }) {
+export function createChartSvg(container, { aspect, minHeight, maxHeight }) {
   const { margin } = chartDimensions;
+  const node = container.node();
+  const style = getComputedStyle(node);
+  const contentWidth =
+    node.clientWidth -
+    parseFloat(style.paddingLeft) -
+    parseFloat(style.paddingRight);
+  const outerWidth = Math.max(260, Math.floor(contentWidth));
+  const outerHeight = Math.round(
+    Math.min(maxHeight, Math.max(minHeight, outerWidth * aspect))
+  );
   const svg = container
     .append('svg')
-    .attr('width', width)
-    .attr('height', height)
+    .attr('class', 'chart-svg')
+    .attr('width', outerWidth)
+    .attr('height', outerHeight)
     .append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`);
 
   return {
     svg,
-    width: width - margin.left - margin.right,
-    height: height - margin.top - margin.bottom,
+    width: outerWidth - margin.left - margin.right,
+    height: outerHeight - margin.top - margin.bottom,
   };
 }
 
@@ -78,12 +89,24 @@ export function addGrid(svg, xScale, yScale, width, height) {
     .append('g')
     .attr('class', 'grid')
     .attr('transform', `translate(0,${height})`)
-    .call(d3.axisBottom(xScale).tickSize(-height).tickFormat(''));
+    .call(
+      d3
+        .axisBottom(xScale)
+        .ticks(Math.max(2, Math.floor(width / 80)))
+        .tickSize(-height)
+        .tickFormat('')
+    );
 
   svg
     .append('g')
     .attr('class', 'grid')
-    .call(d3.axisLeft(yScale).tickSize(-width).tickFormat(''));
+    .call(
+      d3
+        .axisLeft(yScale)
+        .ticks(Math.max(4, Math.floor(height / 40)))
+        .tickSize(-width)
+        .tickFormat('')
+    );
 }
 
 function addAxisLabels(svg, width, height, xLabel, yLabel, offsets) {
@@ -113,13 +136,20 @@ export function addAxes(svg, xScale, yScale, height, xLabel, yLabel) {
     .append('g')
     .attr('class', 'axis')
     .attr('transform', `translate(0,${height})`)
-    .call(d3.axisBottom(xScale));
+    .call(
+      d3
+        .axisBottom(xScale)
+        .ticks(Math.max(2, Math.floor(xScale.range()[1] / 80)))
+    );
 
-  svg.append('g').attr('class', 'axis').call(d3.axisLeft(yScale));
+  svg
+    .append('g')
+    .attr('class', 'axis')
+    .call(d3.axisLeft(yScale).ticks(Math.max(4, Math.floor(height / 40))));
 
   addAxisLabels(svg, xScale.range()[1], height, xLabel, yLabel, {
-    xLabel: 40,
-    yLabel: -50,
+    xLabel: 42,
+    yLabel: -58,
   });
 }
 
@@ -139,8 +169,13 @@ export function getTimeTickInterval([startDate, endDate]) {
   return d3.timeYear.every(1);
 }
 
-// Axes for a chart with dates on x, ticked to suit the date range
+// Axes for a chart with dates on x, ticked to suit the date range and
+// thinned so labels don't collide at narrow widths
 export function addTimeAxes(svg, xScale, yScale, height, yLabel) {
+  const width = xScale.range()[1];
+  const ticks = xScale.ticks(getTimeTickInterval(xScale.domain()));
+  const step = Math.max(1, Math.ceil((ticks.length * 72) / width));
+
   svg
     .append('g')
     .attr('class', 'axis')
@@ -148,16 +183,16 @@ export function addTimeAxes(svg, xScale, yScale, height, yLabel) {
     .call(
       d3
         .axisBottom(xScale)
-        .ticks(getTimeTickInterval(xScale.domain()))
+        .tickValues(ticks.filter((_, i) => i % step === 0))
         .tickFormat(d3.timeFormat('%b %Y'))
     );
 
-  svg.append('g').attr('class', 'axis').call(d3.axisLeft(yScale));
+  svg
+    .append('g')
+    .attr('class', 'axis')
+    .call(d3.axisLeft(yScale).ticks(Math.max(4, Math.floor(height / 40))));
 
-  addAxisLabels(svg, xScale.range()[1], height, 'Date', yLabel, {
-    xLabel: 60,
-    yLabel: -55,
-  });
+  addAxisLabels(svg, width, height, null, yLabel, { xLabel: 0, yLabel: -58 });
 }
 
 /**
@@ -190,7 +225,7 @@ export function addTrendLine(
     .append('text')
     .attr('class', 'trend-label')
     .attr('x', xScale.range()[1] - 10)
-    .attr('y', yScale.range()[1] + 20)
+    .attr('y', yScale.range()[1] + 16)
     .attr('text-anchor', 'end')
     .text(`R² = ${fit.rSquared.toFixed(3)}`);
 }

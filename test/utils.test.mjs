@@ -5,11 +5,10 @@ import {
   formatDateOnly,
   formatValue,
   getDateOnly,
-  getSeasonColor,
+  getSeason,
   getYear,
   linearRegression,
 } from '../src/js/utils.js';
-import { config } from '../src/js/config.js';
 
 test('dates use the Pacific calendar date, not UTC', () => {
   // 17:30 Pacific on Dec 31 is 01:30 UTC on Jan 1
@@ -17,7 +16,15 @@ test('dates use the Pacific calendar date, not UTC', () => {
   assert.strictEqual(getDateOnly(evening), '2024-12-31');
   assert.strictEqual(getYear(evening), 2024);
   assert.strictEqual(formatDate(evening), 'Dec 31, 2024');
-  assert.strictEqual(getSeasonColor(evening), config.seasonColors.winter);
+  assert.strictEqual(getSeason(evening), 'winter');
+});
+
+test('getSeason splits the year at Mar, Jun, Sep and Dec', () => {
+  assert.strictEqual(getSeason('2025-02-28T12:00:00-08:00'), 'winter');
+  assert.strictEqual(getSeason('2025-03-01T12:00:00-08:00'), 'spring');
+  assert.strictEqual(getSeason('2025-06-01T12:00:00-07:00'), 'summer');
+  assert.strictEqual(getSeason('2025-09-01T12:00:00-07:00'), 'fall');
+  assert.strictEqual(getSeason('2025-12-01T12:00:00-08:00'), 'winter');
 });
 
 test('formatDateOnly shows the given calendar date', () => {

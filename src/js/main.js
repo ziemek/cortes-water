@@ -9,6 +9,43 @@ import {
 } from './correlation-charts.js';
 import { SecchiAnalysis } from './secchi-analysis.js';
 import { LegendManager } from './legend-manager.js';
+import { renderLakeSummary } from './lake-summary.js';
+
+const MEASURE_NAMES = {
+  temperature: 'Temperature',
+  DO: 'Dissolved oxygen',
+  SPC: 'Specific conductance',
+  TDS: 'Total dissolved solids',
+  PH: 'pH',
+};
+
+const ANALYSIS_HEADINGS = {
+  temp_oxygen: [
+    'Temperature vs dissolved oxygen',
+    'Every depth reading, split by depth range.',
+  ],
+  conductivity_tds: [
+    'Specific conductance vs total dissolved solids',
+    'Every depth reading across the whole profile.',
+  ],
+  ph_oxygen: [
+    'pH vs dissolved oxygen',
+    'Every depth reading, split by depth range.',
+  ],
+  secchi: [
+    'Water clarity (Secchi depth)',
+    'How far down a Secchi disk stays visible, and how that tracks surface conditions.',
+  ],
+};
+
+const VIEW_SUBTITLES = {
+  timeSeries:
+    'Each point is one sampling, averaged over the depth range. One line per lake.',
+  depthProfiles:
+    'One line per sampling, reading down from the surface. Faint lines are earlier; the latest is full color.',
+  horizontalDepth:
+    'One line per sampling, with depth across the bottom. Faint lines are earlier; the latest is full color.',
+};
 
 class WaterQualityApp {
   constructor() {
@@ -23,7 +60,7 @@ class WaterQualityApp {
     this.legendManager = new LegendManager(this.dataLoader);
 
     this.currentParameter = 'temperature';
-    this.viewDropdown = document.getElementById('viewType');
+    this.currentView = 'timeSeries';
   }
 
   async initialize() {
@@ -40,6 +77,7 @@ class WaterQualityApp {
       return;
     }
 
+    renderLakeSummary(this.dataLoader.getAllSeries());
     this.controlsManager.createVisibilityControls();
     this.updateVisualization();
     this.setupEventListeners();
@@ -48,33 +86,81 @@ class WaterQualityApp {
   setupEventListeners() {
     document.querySelectorAll('.param-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
-        document
-          .querySelectorAll('.param-btn')
-          .forEach((b) => b.classList.toggle('active', b === btn));
         this.currentParameter = btn.dataset.param;
         this.updateVisualization();
       });
     });
 
-    this.viewDropdown.addEventListener('change', () =>
-      this.updateVisualization()
-    );
+    document.querySelectorAll('.view-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        this.currentView = btn.dataset.view;
+        this.updateVisualization();
+      });
+    });
+
+    // Charts size to their containers, so redraw when the width changes
+    const chartsContainer = document.getElementById('chartsContainer');
+    let lastWidth = Math.round(chartsContainer.getBoundingClientRect().width);
+    let pending = null;
+    new ResizeObserver(([entry]) => {
+      const width = Math.round(entry.contentRect.width);
+      if (width === lastWidth) return;
+      lastWidth = width;
+      clearTimeout(pending);
+      pending = setTimeout(() => this.updateVisualization(), 120);
+    }).observe(chartsContainer);
+
+    // The sampling filters popover closes on an outside click or Escape
+    const filters = document.getElementById('filtersPopover');
+    document.addEventListener('click', (event) => {
+      if (!filters.contains(event.target)) filters.open = false;
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') filters.open = false;
+    });
   }
 
-  // Analysis views have their own layout, so the view dropdown only applies
-  // to single parameters
+  // Analysis views have their own layout, so the view choice only applies
+  // to single measures
   isAnalysisParameter(parameter) {
     return correlationParameters.includes(parameter) || parameter === 'secchi';
+  }
+
+  syncControls(isAnalysis) {
+    document.querySelectorAll('.param-btn').forEach((btn) => {
+      const active = btn.dataset.param === this.currentParameter;
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-pressed', active);
+    });
+    document.querySelectorAll('.view-btn').forEach((btn) => {
+      const active = btn.dataset.view === this.currentView;
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-checked', active);
+      btn.disabled = isAnalysis;
+    });
+    document
+      .getElementById('viewGroup')
+      ?.classList.toggle('disabled', isAnalysis);
+  }
+
+  setHeading(title, subtitle) {
+    d3.select('#viewTitle').text(title);
+    d3.select('#viewSubtitle').text(subtitle);
   }
 
   updateVisualization() {
     const parameter = this.currentParameter;
     const isAnalysis = this.isAnalysisParameter(parameter);
+    const view = isAnalysis ? parameter : this.currentView;
 
-    this.viewDropdown.disabled = isAnalysis;
-    this.viewDropdown.parentElement.classList.toggle('disabled', isAnalysis);
-    if (isAnalysis) this.viewDropdown.value = 'timeSeries';
-    const view = this.viewDropdown.value;
+    this.syncControls(isAnalysis);
+    d3.select('#chartsContainer').attr('data-view', view);
+
+    if (isAnalysis) {
+      this.setHeading(...ANALYSIS_HEADINGS[parameter]);
+    } else {
+      this.setHeading(MEASURE_NAMES[parameter], VIEW_SUBTITLES[view]);
+    }
 
     if (correlationParameters.includes(parameter)) {
       this.correlationCharts.createCorrelationView(parameter);
@@ -87,14 +173,13 @@ class WaterQualityApp {
         horizontal: view === 'horizontalDepth',
       });
       this.legendManager.updateLakeLegend(
-        'Depth Profile Summary',
-        'Each line represents a different sampling date.'
+        'Hover a point for its sampling details.',
+        { ramp: true }
       );
     } else {
       this.timeSeriesCharts.createTimeSeriesView(parameter);
       this.legendManager.updateLakeLegend(
-        'Time Series Summary',
-        'Each line represents a lake; each point is one sampling date, averaged over the depth range.'
+        'Hover a point for its sampling details.'
       );
     }
   }

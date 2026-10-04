@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cortes Island - Lake Monitoring Data</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"
       integrity="sha512-vc58qvvBdrDR4etbxMdlTt4GBQk1qjvyORR2nrsPsFPyrs+/u5c3+1Ct6upOgdZoIl7eq6k3a1UPDSNAQi/32A=="
@@ -13,59 +19,96 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Cortes Island - Lake Monitoring Data</h1>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="16" r="15" />
+            <path d="M5 15c3-2.5 5.5-2.5 8.5 0s5.5 2.5 8.5 0 4-2 5 -1" />
+            <path d="M6 21c3-2.5 5.5-2.5 8.5 0s5.5 2.5 8.5 0" />
+          </svg>
+          <div>
+            <h1>Cortes Island Lakes</h1>
+            <p>Gunflint &amp; Hague water quality</p>
+          </div>
+        </div>
 
-      <div class="controls">
-        <div class="controls-wrapper">
-          <div class="primary-controls">
-            <div class="parameter-group">
-              <button class="param-btn active" data-param="temperature">
+        <details class="filters" id="filtersPopover">
+          <summary>
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M2 4h12M4 8h8M6 12h4" />
+            </svg>
+            <span id="samplingCount">Samplings</span>
+          </summary>
+          <div class="filters-panel">
+            <h3>Show samplings from</h3>
+            <div id="samplingFilters"></div>
+          </div>
+        </details>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="lake-cards" id="lakeSummary"></section>
+
+      <nav class="toolbar" aria-label="Charts">
+        <div class="tab-groups">
+          <div class="tab-group">
+            <span class="tab-label">Measure</span>
+            <div class="pills">
+              <button class="param-btn" data-param="temperature">
                 Temperature
               </button>
-              <button class="param-btn" data-param="DO">
-                Dissolved Oxygen
-              </button>
+              <button class="param-btn" data-param="DO">Oxygen</button>
               <button class="param-btn" data-param="SPC">Conductance</button>
-              <button class="param-btn" data-param="TDS">
-                Total Dissolved Solids
-              </button>
+              <button class="param-btn" data-param="TDS">Solids</button>
               <button class="param-btn" data-param="PH">pH</button>
             </div>
-
-            <div class="view-toggle-container">
-              <label for="viewType">View Type:</label>
-              <select id="viewType" name="viewType">
-                <option value="timeSeries">Time Series</option>
-                <option value="depthProfiles">Depth Profiles</option>
-                <option value="horizontalDepth">Horizontal Depth</option>
-              </select>
-            </div>
           </div>
-
-          <div class="analysis-controls">
-            <div class="parameter-group">
+          <div class="tab-group">
+            <span class="tab-label">Relationships</span>
+            <div class="pills">
               <button class="param-btn" data-param="temp_oxygen">
-                Temperature vs Oxygen
+                Temp × O₂
               </button>
               <button class="param-btn" data-param="conductivity_tds">
-                Conductivity vs TDS
+                Cond. × TDS
               </button>
-              <button class="param-btn" data-param="ph_oxygen">
-                pH vs Dissolved Oxygen
-              </button>
-              <button class="param-btn" data-param="secchi">
-                Secchi Depth Analysis
-              </button>
+              <button class="param-btn" data-param="ph_oxygen">pH × O₂</button>
+              <button class="param-btn" data-param="secchi">Clarity</button>
             </div>
           </div>
         </div>
-      </div>
+      </nav>
+
+      <section class="view-head">
+        <div class="view-head-row">
+          <div>
+            <h2 id="viewTitle"></h2>
+            <p id="viewSubtitle"></p>
+          </div>
+          <div
+            class="segmented"
+            id="viewGroup"
+            role="radiogroup"
+            aria-label="Chart view"
+          >
+            <button class="view-btn" role="radio" data-view="timeSeries">
+              Over time
+            </button>
+            <button class="view-btn" role="radio" data-view="depthProfiles">
+              Profile
+            </button>
+            <button class="view-btn" role="radio" data-view="horizontalDepth">
+              Profile ↔
+            </button>
+          </div>
+        </div>
+        <div class="key" id="legend"></div>
+      </section>
 
       <div class="charts-grid" id="chartsContainer"></div>
-
-      <div class="legend" id="legend"></div>
-    </div>
+    </main>
 
     <script type="module" src="js/main.js"></script>
   </body>
