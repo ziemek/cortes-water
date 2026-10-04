@@ -1,6 +1,6 @@
 // Secchi Depth Analysis Charts
-import { chartDimensions, config } from './config.js';
-import { getSeasonColor } from './utils.js';
+import { chartDimensions } from './config.js';
+import { getLakeColor, getSeasonColor } from './theme.js';
 import {
   addAxes,
   addGrid,
@@ -51,7 +51,7 @@ export class SecchiAnalysis {
     chartDiv
       .append('h3')
       .attr('class', 'chart-title')
-      .text('Secchi Depth Time Series Analysis');
+      .text('Secchi depth over time');
     this.createSecchiTimeSeriesChart(chartDiv, samplings);
 
     const surfaceParamsDiv = container
@@ -60,11 +60,14 @@ export class SecchiAnalysis {
     surfaceParamsDiv
       .append('h3')
       .attr('class', 'chart-title')
-      .text('Secchi Depth vs Surface Parameters');
+      .text('Secchi depth vs surface conditions');
 
     const grid = surfaceParamsDiv.append('div').attr('class', 'secchi-grid');
-    SURFACE_PARAMETERS.forEach((param) => {
-      this.createSecchiCorrelationChart(grid.append('div'), samplings, param);
+    // Cells are all added before drawing so each is measured at its final
+    // grid width
+    const cells = SURFACE_PARAMETERS.map(() => grid.append('div'));
+    SURFACE_PARAMETERS.forEach((param, i) => {
+      this.createSecchiCorrelationChart(cells[i], samplings, param);
     });
   }
 
@@ -76,7 +79,7 @@ export class SecchiAnalysis {
 
     const { svg, width, height } = createChartSvg(
       container,
-      chartDimensions.timeSeries
+      chartDimensions.secchiTimeSeries
     );
 
     const xScale = d3
@@ -108,7 +111,7 @@ export class SecchiAnalysis {
 
     d3.group(samplings, (d) => d.dataset.lake).forEach((lakeData, lakeName) => {
       lakeData.sort((a, b) => a.date - b.date);
-      const lakeColor = config.baseColorPalettes[lakeName][0];
+      const lakeColor = getLakeColor(lakeName);
 
       svg
         .append('path')
@@ -116,8 +119,7 @@ export class SecchiAnalysis {
         .attr('class', 'line')
         .attr('d', line)
         .style('stroke', lakeColor)
-        .style('stroke-width', '2')
-        .style('opacity', 0.8);
+        .style('stroke-width', '2');
 
       svg
         .append('g')
@@ -182,7 +184,7 @@ export class SecchiAnalysis {
       .attr('cy', (d) => yScale(d.y))
       .attr('r', 5)
       .style('fill', (d) => getSeasonColor(d.date))
-      .style('stroke', (d) => config.baseColorPalettes[d.dataset.lake][0])
+      .style('stroke', (d) => getLakeColor(d.dataset.lake))
       .on('mouseover', (event, d) =>
         showTooltip(
           event,

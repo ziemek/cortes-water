@@ -1,17 +1,23 @@
-// Legend Management
+// Chart key shown above the charts
 import { config } from './config.js';
-import { formatDate, timeGradientColor } from './utils.js';
+import { formatDate } from './utils.js';
+import {
+  cssVar,
+  fadedLakeColor,
+  getLakeColor,
+  timeGradientColor,
+} from './theme.js';
+import { FAINTEST } from './depth-profile-charts.js';
 
-const SEASONS = [
-  { name: 'Spring', color: config.seasonColors.spring },
-  { name: 'Summer', color: config.seasonColors.summer },
-  { name: 'Fall', color: config.seasonColors.fall },
-  { name: 'Winter', color: config.seasonColors.winter },
-];
+const SEASONS = ['spring', 'summer', 'fall', 'winter'];
 
 function formatDateRange(datasets) {
   const [start, end] = d3.extent(datasets, (d) => new Date(d.date));
-  return `${formatDate(start)} - ${formatDate(end)}`;
+  return `${formatDate(start)} – ${formatDate(end)}`;
+}
+
+function plural(count, word) {
+  return `${count} ${word}${count === 1 ? '' : 's'}`;
 }
 
 export class LegendManager {
@@ -25,111 +31,108 @@ export class LegendManager {
     return legend;
   }
 
-  // Summary of the visible samplings for each lake, under a short
-  // explanation of the chart
-  updateLakeLegend(title, description) {
+  appendNote(legend, text) {
+    legend.append('p').attr('class', 'key-note').text(text);
+  }
+
+  // One entry per lake: a line swatch (or a faint-to-solid ramp for depth
+  // profiles), the lake name and its visible sampling count and dates
+  updateLakeLegend(note, { ramp = false } = {}) {
     const legend = this.clearLegend();
-    const visibleData = this.dataLoader.getVisibleData();
+    const items = legend.append('div').attr('class', 'key-items');
 
-    const summary = legend.append('div').attr('class', 'legend-summary');
-    summary.append('strong').text(title);
-    summary.append('br');
-    summary
-      .append('span')
-      .attr('class', 'legend-note')
-      .text(`${description} Hover over data points for detailed information.`);
+    d3.group(this.dataLoader.getVisibleData(), (d) => d.lake).forEach(
+      (lakeData, lake) => {
+        const color = getLakeColor(lake);
+        const item = items.append('div').attr('class', 'key-item');
+        const swatch = item
+          .append('span')
+          .attr('class', ramp ? 'key-ramp' : 'key-line');
+        if (ramp) {
+          const faint = fadedLakeColor(lake, FAINTEST);
+          swatch.style(
+            'background',
+            `linear-gradient(90deg, ${faint}, ${color})`
+          );
+        } else {
+          swatch.style('--swatch', color);
+        }
 
-    d3.group(visibleData, (d) => d.lake).forEach((lakeData, lake) => {
-      const legendItem = legend.append('div').attr('class', 'legend-item');
+        const text = item.append('span').attr('class', 'key-text');
+        text.append('strong').text(`${lake} Lake`);
+        text
+          .append('span')
+          .attr('class', 'key-meta')
+          .text(
+            `${plural(lakeData.length, 'sampling')} · ${formatDateRange(lakeData)}`
+          );
+      }
+    );
 
-      const legendHeader = legendItem
-        .append('div')
-        .attr('class', 'legend-header');
-      legendHeader
-        .append('div')
-        .attr('class', 'legend-color')
-        .style('background-color', config.baseColorPalettes[lake][0]);
-      legendHeader.append('span').text(`${lake} Lake`);
-
-      const metadata = legendItem
-        .append('div')
-        .attr('class', 'legend-metadata');
-      metadata.append('div').text(`${lakeData.length} datasets`);
-      metadata.append('div').text(formatDateRange(lakeData));
-    });
+    this.appendNote(legend, note);
   }
 
   updateCorrelationLegend() {
     const legend = this.clearLegend();
+    const visibleData = this.dataLoader.getVisibleData();
+    const items = legend.append('div').attr('class', 'key-items');
+    const item = items.append('div').attr('class', 'key-item');
 
-    const section = legend.append('div').attr('class', 'legend-section');
-    section.append('h4').text('Time Gradient');
-
-    const gradientRow = section.append('div').attr('class', 'legend-row');
-    const gradientSvg = gradientRow
-      .append('svg')
-      .attr('width', 200)
-      .attr('height', 20);
-
-    const gradient = gradientSvg
-      .append('defs')
-      .append('linearGradient')
-      .attr('id', 'timeGradient')
-      .attr('x1', '0%')
-      .attr('x2', '100%');
-    gradient
-      .append('stop')
-      .attr('offset', '0%')
-      .style('stop-color', timeGradientColor(0));
-    gradient
-      .append('stop')
-      .attr('offset', '100%')
-      .style('stop-color', timeGradientColor(1));
-
-    gradientSvg
-      .append('rect')
-      .attr('width', 200)
-      .attr('height', 20)
-      .style('fill', 'url(#timeGradient)');
-
-    gradientRow
+    item
       .append('span')
-      .attr('class', 'gradient-label')
-      .text('Earlier → Later');
+      .attr('class', 'key-ramp wide')
+      .style(
+        'background',
+        `linear-gradient(90deg, ${timeGradientColor(0)}, ${timeGradientColor(1)})`
+      );
+    const text = item.append('span').attr('class', 'key-text');
+    text.append('strong').text('Sampling date');
+    if (visibleData.length > 0) {
+      text
+        .append('span')
+        .attr('class', 'key-meta')
+        .text(`Earlier → later · ${formatDateRange(visibleData)}`);
+    }
 
-    this.appendDataOverview(legend);
+    this.appendNote(
+      legend,
+      'Each dot is one depth reading from either lake; the dashed line is the least-squares fit.'
+    );
   }
 
   updateSecchiLegend() {
     const legend = this.clearLegend();
-
-    const section = legend.append('div').attr('class', 'legend-section');
-    section.append('h4').text('Seasonal Color Coding');
+    const items = legend.append('div').attr('class', 'key-items');
 
     SEASONS.forEach((season) => {
-      const row = section.append('div').attr('class', 'legend-row');
-      row
-        .append('div')
-        .attr('class', 'season-swatch')
-        .style('background-color', season.color);
-      row.append('span').text(season.name);
+      const item = items.append('div').attr('class', 'key-item');
+      item
+        .append('span')
+        .attr('class', 'key-dot')
+        .style('background', cssVar(config.seasonColorVars[season]));
+      item
+        .append('span')
+        .attr('class', 'key-text')
+        .append('strong')
+        .text(season[0].toUpperCase() + season.slice(1));
     });
 
-    this.appendDataOverview(legend);
-  }
+    Object.keys(config.lakeColorVars).forEach((lake) => {
+      const item = items.append('div').attr('class', 'key-item');
+      item
+        .append('span')
+        .attr('class', 'key-dot ring')
+        .style('border-color', getLakeColor(lake));
+      item
+        .append('span')
+        .attr('class', 'key-text')
+        .append('strong')
+        .text(`${lake} Lake`);
+    });
 
-  // Lakes, sampling count and date range of the visible samplings
-  appendDataOverview(legend) {
-    const visibleData = this.dataLoader.getVisibleData();
-    if (visibleData.length === 0) return;
-
-    const lakes = [...new Set(visibleData.map((d) => d.lake))];
-    const overview = legend.append('div').attr('class', 'data-overview');
-    overview.append('strong').text('Data Overview:');
-    [
-      `Lakes: ${lakes.join(', ')}`,
-      `Datasets: ${visibleData.length}`,
-      `Date Range: ${formatDateRange(visibleData)}`,
-    ].forEach((line) => overview.append('div').text(line));
+    this.appendNote(
+      legend,
+      'Dot fill is the season of the sampling; the ring is the lake. Surface charts use the 0 m reading.'
+    );
   }
 }

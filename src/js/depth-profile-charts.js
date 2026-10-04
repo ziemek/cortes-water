@@ -1,6 +1,7 @@
 // Depth Profile Chart Visualization
-import { chartDimensions, config } from './config.js';
-import { generateColorPalette, getParameterLabel } from './utils.js';
+import { chartDimensions } from './config.js';
+import { getParameterLabel } from './utils.js';
+import { fadedLakeColor, getLakeColor } from './theme.js';
 import {
   addAxes,
   addGrid,
@@ -10,6 +11,9 @@ import {
   showNoData,
   showTooltip,
 } from './chart-utils.js';
+
+// How far toward the lake color the earliest sampling's line is faded
+export const FAINTEST = 0.3;
 
 export class DepthProfileCharts {
   constructor(dataLoader) {
@@ -33,28 +37,32 @@ export class DepthProfileCharts {
     dataByLake.forEach((lakeData, lake) => {
       const chartDiv = container.append('div').attr('class', 'chart-container');
 
-      chartDiv
-        .append('h3')
-        .attr('class', 'chart-title')
-        .text(horizontal ? `${lake} - Horizontal Depth View` : lake);
+      chartDiv.append('h3').attr('class', 'chart-title').text(`${lake} Lake`);
 
-      this.createDepthChart(chartDiv, lakeData, lake, parameter, horizontal);
+      this.createDepthChart(chartDiv, lakeData, parameter, horizontal);
     });
   }
 
-  // Each sampling keeps the same color whichever samplings are visible
-  getSamplingColors(lakeName) {
-    const lakeSeries = this.dataLoader
-      .getAllSeries()
-      .filter((s) => s.lake === lakeName);
-    const colors = generateColorPalette(
-      config.baseColorPalettes[lakeName],
-      lakeSeries.length
+  // Samplings shade from faint (earliest shown) to the full lake color
+  // (latest shown)
+  getSamplingColors(lakeData) {
+    const { lake } = lakeData[0];
+    const ramp = d3.interpolateLab(
+      fadedLakeColor(lake, FAINTEST),
+      getLakeColor(lake)
     );
-    return new Map(lakeSeries.map((s, i) => [s.dataset, colors[i]]));
+    const sorted = [...lakeData].sort(
+      (a, b) => new Date(a.date) - new Date(b.date)
+    );
+    return new Map(
+      sorted.map((d, i) => [
+        d,
+        ramp(sorted.length > 1 ? i / (sorted.length - 1) : 1),
+      ])
+    );
   }
 
-  createDepthChart(container, lakeData, lakeName, parameter, horizontal) {
+  createDepthChart(container, lakeData, parameter, horizontal) {
     const hasValue = (m) => m[parameter] !== null && m[parameter] !== undefined;
     const allValues = lakeData.flatMap((d) =>
       d.measurements.filter(hasValue).map((m) => m[parameter])
@@ -105,44 +113,46 @@ export class DepthProfileCharts {
       .y(y)
       .curve(horizontal ? d3.curveMonotoneX : d3.curveMonotoneY);
 
-    const colors = this.getSamplingColors(lakeName);
+    const colors = this.getSamplingColors(lakeData);
 
-    lakeData.forEach((dataset) => {
-      const measurements = dataset.measurements.filter(hasValue);
-      if (measurements.length === 0) return;
-      const color = colors.get(dataset);
+    // Latest sampling drawn last so it sits on top
+    [...lakeData]
+      .sort((a, b) => new Date(a.date) - new Date(b.date))
+      .forEach((dataset) => {
+        const measurements = dataset.measurements.filter(hasValue);
+        if (measurements.length === 0) return;
+        const color = colors.get(dataset);
 
-      svg
-        .append('path')
-        .datum(measurements)
-        .attr('class', 'line')
-        .attr('d', line)
-        .style('stroke', color)
-        .style('stroke-width', '2')
-        .style('opacity', 0.8);
+        svg
+          .append('path')
+          .datum(measurements)
+          .attr('class', 'line')
+          .attr('d', line)
+          .style('stroke', color)
+          .style('stroke-width', '2');
 
-      svg
-        .append('g')
-        .selectAll('circle')
-        .data(measurements)
-        .join('circle')
-        .attr('class', 'dot')
-        .attr('r', 3)
-        .attr('cx', x)
-        .attr('cy', y)
-        .style('fill', color)
-        .style('stroke', 'white')
-        .style('stroke-width', 1)
-        .on('mouseover', (event, m) =>
-          showTooltip(
-            event,
-            samplingTooltip(dataset, [
-              `Depth: ${m.depth}m`,
-              `${parameterLabel}: ${m[parameter]}`,
-            ])
+        svg
+          .append('g')
+          .selectAll('circle')
+          .data(measurements)
+          .join('circle')
+          .attr('class', 'dot')
+          .attr('r', 4)
+          .attr('cx', x)
+          .attr('cy', y)
+          .style('fill', color)
+          .style('stroke', 'var(--chart-surface)')
+          .style('stroke-width', 2)
+          .on('mouseover', (event, m) =>
+            showTooltip(
+              event,
+              samplingTooltip(dataset, [
+                `Depth: ${m.depth}m`,
+                `${parameterLabel}: ${m[parameter]}`,
+              ])
+            )
           )
-        )
-        .on('mouseout', hideTooltip);
-    });
+          .on('mouseout', hideTooltip);
+      });
   }
 }
